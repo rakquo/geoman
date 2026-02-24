@@ -106,5 +106,77 @@
     "lng": 130.8456,
     "hint": "Capital of Australia's Northern Territory, gateway to Kakadu",
     "difficulty": "medium"
+  },
+  {
+    "id": 13,
+    "name": "Gold Coast",
+    "acceptedAnswers": ["gold coast"],
+    "lat": -28.0167,
+    "lng": 153.4000,
+    "hint": "Australian coastal city famous for its long sandy beaches and surfing",
+    "difficulty": "medium"
+  },
+  {
+    "id": 14,
+    "name": "Christchurch",
+    "acceptedAnswers": ["christchurch"],
+    "lat": -43.5321,
+    "lng": 172.6362,
+    "hint": "Largest city in New Zealand's South Island, rebuilt after major earthquakes",
+    "difficulty": "medium"
+  },
+  {
+    "id": 15,
+    "name": "Cairns",
+    "acceptedAnswers": ["cairns"],
+    "lat": -16.9186,
+    "lng": 145.7781,
+    "hint": "Tropical city in far north Queensland, gateway to the Great Barrier Reef",
+    "difficulty": "hard"
+  },
+  {
+    "id": 16,
+    "name": "Townsville",
+    "acceptedAnswers": ["townsville"],
+    "lat": -19.2590,
+    "lng": 146.8169,
+    "hint": "North Queensland city on the coast, near Magnetic Island",
+    "difficulty": "hard"
+  },
+  {
+    "id": 17,
+    "name": "Hamilton",
+    "acceptedAnswers": ["hamilton", "hamilton nz"],
+    "lat": -37.7870,
+    "lng": 175.2793,
+    "hint": "New Zealand's fourth-largest city, in the fertile Waikato region",
+    "difficulty": "hard"
+  },
+  {
+    "id": 18,
+    "name": "Dunedin",
+    "acceptedAnswers": ["dunedin"],
+    "lat": -45.8788,
+    "lng": 170.5028,
+    "hint": "Scottish-influenced city in southern New Zealand, home to the world's steepest street",
+    "difficulty": "hard"
+  },
+  {
+    "id": 19,
+    "name": "Lae",
+    "acceptedAnswers": ["lae"],
+    "lat": -6.7340,
+    "lng": 147.0026,
+    "hint": "Second-largest city in Papua New Guinea, a major industrial and port center",
+    "difficulty": "hard"
+  },
+  {
+    "id": 20,
+    "name": "Nadi",
+    "acceptedAnswers": ["nadi"],
+    "lat": -17.7765,
+    "lng": 177.9500,
+    "hint": "Fiji's tourism hub on the western coast of Viti Levu, home to the international airport",
+    "difficulty": "hard"
   }
 ]

@@ -106,5 +106,77 @@
     "lng": 21.0122,
     "hint": "Capital of Poland, rebuilt after extensive WWII destruction",
     "difficulty": "medium"
+  },
+  {
+    "id": 13,
+    "name": "Moscow",
+    "acceptedAnswers": ["moscow", "moskva", "moskow"],
+    "lat": 55.7558,
+    "lng": 37.6173,
+    "hint": "Capital of Russia, home to the Kremlin and Red Square",
+    "difficulty": "easy"
+  },
+  {
+    "id": 14,
+    "name": "Copenhagen",
+    "acceptedAnswers": ["copenhagen", "kobenhavn", "københavn"],
+    "lat": 55.6761,
+    "lng": 12.5683,
+    "hint": "Capital of Denmark, known for Tivoli Gardens and the Little Mermaid statue",
+    "difficulty": "medium"
+  },
+  {
+    "id": 15,
+    "name": "Dublin",
+    "acceptedAnswers": ["dublin", "baile atha cliath"],
+    "lat": 53.3498,
+    "lng": -6.2603,
+    "hint": "Capital of Ireland, famous for its literary history and Georgian architecture",
+    "difficulty": "easy"
+  },
+  {
+    "id": 16,
+    "name": "Oslo",
+    "acceptedAnswers": ["oslo"],
+    "lat": 59.9139,
+    "lng": 10.7522,
+    "hint": "Capital of Norway, situated at the head of a fjord",
+    "difficulty": "medium"
+  },
+  {
+    "id": 17,
+    "name": "Helsinki",
+    "acceptedAnswers": ["helsinki", "helsingfors"],
+    "lat": 60.1699,
+    "lng": 24.9384,
+    "hint": "Capital of Finland, a Baltic Sea port known for design and architecture",
+    "difficulty": "medium"
+  },
+  {
+    "id": 18,
+    "name": "Budapest",
+    "acceptedAnswers": ["budapest"],
+    "lat": 47.4979,
+    "lng": 19.0402,
+    "hint": "Capital of Hungary, formed by uniting Buda and Pest on opposite banks of the Danube",
+    "difficulty": "medium"
+  },
+  {
+    "id": 19,
+    "name": "Bucharest",
+    "acceptedAnswers": ["bucharest", "bucuresti", "bucurești"],
+    "lat": 44.4268,
+    "lng": 26.1025,
+    "hint": "Capital of Romania, nicknamed Little Paris for its elegant Belle Epoque buildings",
+    "difficulty": "hard"
+  },
+  {
+    "id": 20,
+    "name": "Brussels",
+    "acceptedAnswers": ["brussels", "bruxelles", "brussel"],
+    "lat": 50.8503,
+    "lng": 4.3517,
+    "hint": "Capital of Belgium and de facto capital of the European Union",
+    "difficulty": "medium"
   }
 ]

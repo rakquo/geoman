@@ -106,5 +106,77 @@
     "lng": 101.6869,
     "hint": "Capital of Malaysia, known for the Petronas Twin Towers",
     "difficulty": "medium"
+  },
+  {
+    "id": 13,
+    "name": "Shanghai",
+    "acceptedAnswers": ["shanghai"],
+    "lat": 31.2304,
+    "lng": 121.4737,
+    "hint": "China's largest city, major global financial hub on the Huangpu River",
+    "difficulty": "easy"
+  },
+  {
+    "id": 14,
+    "name": "Osaka",
+    "acceptedAnswers": ["osaka", "ōsaka"],
+    "lat": 34.6937,
+    "lng": 135.5023,
+    "hint": "Japan's kitchen, a major port city known for street food and Osaka Castle",
+    "difficulty": "medium"
+  },
+  {
+    "id": 15,
+    "name": "Hanoi",
+    "acceptedAnswers": ["hanoi", "ha noi"],
+    "lat": 21.0278,
+    "lng": 105.8342,
+    "hint": "Capital of Vietnam, known for its centuries-old architecture and rich food culture",
+    "difficulty": "medium"
+  },
+  {
+    "id": 16,
+    "name": "Dhaka",
+    "acceptedAnswers": ["dhaka", "dacca"],
+    "lat": 23.8103,
+    "lng": 90.4125,
+    "hint": "Capital of Bangladesh, one of the most densely populated cities in the world",
+    "difficulty": "medium"
+  },
+  {
+    "id": 17,
+    "name": "Islamabad",
+    "acceptedAnswers": ["islamabad"],
+    "lat": 33.6844,
+    "lng": 73.0479,
+    "hint": "Purpose-built capital of Pakistan, nestled against the Margalla Hills",
+    "difficulty": "medium"
+  },
+  {
+    "id": 18,
+    "name": "Karachi",
+    "acceptedAnswers": ["karachi"],
+    "lat": 24.8607,
+    "lng": 67.0011,
+    "hint": "Pakistan's largest city and main seaport on the Arabian Sea coast",
+    "difficulty": "medium"
+  },
+  {
+    "id": 19,
+    "name": "Manila",
+    "acceptedAnswers": ["manila", "maynila"],
+    "lat": 14.5995,
+    "lng": 120.9842,
+    "hint": "Capital of the Philippines, a densely packed city on Manila Bay",
+    "difficulty": "medium"
+  },
+  {
+    "id": 20,
+    "name": "Ho Chi Minh City",
+    "acceptedAnswers": ["ho chi minh city", "ho chi minh", "saigon", "hcmc"],
+    "lat": 10.8231,
+    "lng": 106.6297,
+    "hint": "Vietnam's largest city, formerly known as Saigon, a bustling southern hub",
+    "difficulty": "hard"
   }
 ]
