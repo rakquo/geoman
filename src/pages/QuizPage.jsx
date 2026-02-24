@@ -10,6 +10,7 @@ import {
 } from 'react-simple-maps'
 import { CheckCircle, XCircle, RotateCcw, ArrowLeft, Trophy } from 'lucide-react'
 import { continents } from '../data/continents'
+// world-atlas only has numeric IDs, not ISO_A3 — we show all land and zoom via projection
 import { getProjectionConfig, topology } from '../utils/mapConfig'
 import { checkAnswer } from '../utils/scoring'
 import { useQuizContext } from '../context/QuizContext'
@@ -19,32 +20,29 @@ const modeConfig = {
   physical: { categories: ['rivers', 'lakes', 'mountains', 'features'], label: 'Physical Map' },
 }
 
-const MemoGeo = memo(function MemoGeo({ geo, isInContinent }) {
-  return (
-    <Geography
-      geography={geo}
-      style={{
-        default: {
-          fill: isInContinent ? 'var(--color-land)' : 'transparent',
-          stroke: isInContinent ? 'var(--color-border-geo)' : 'transparent',
-          strokeWidth: 0.5,
-          outline: 'none',
-        },
-        hover: {
-          fill: isInContinent ? 'var(--color-land)' : 'transparent',
-          stroke: isInContinent ? 'var(--color-border-geo)' : 'transparent',
-          strokeWidth: 0.5,
-          outline: 'none',
-        },
-        pressed: {
-          fill: isInContinent ? 'var(--color-land)' : 'transparent',
-          stroke: isInContinent ? 'var(--color-border-geo)' : 'transparent',
-          strokeWidth: 0.5,
-          outline: 'none',
-        },
-      }}
-    />
-  )
+const geoStyle = {
+  default: {
+    fill: 'var(--color-land)',
+    stroke: 'var(--color-border-geo)',
+    strokeWidth: 0.5,
+    outline: 'none',
+  },
+  hover: {
+    fill: 'var(--color-land)',
+    stroke: 'var(--color-border-geo)',
+    strokeWidth: 0.5,
+    outline: 'none',
+  },
+  pressed: {
+    fill: 'var(--color-land)',
+    stroke: 'var(--color-border-geo)',
+    strokeWidth: 0.5,
+    outline: 'none',
+  },
+}
+
+const MemoGeo = memo(function MemoGeo({ geo }) {
+  return <Geography geography={geo} style={geoStyle} />
 })
 
 export default function QuizPage() {
@@ -52,7 +50,6 @@ export default function QuizPage() {
   const navigate = useNavigate()
   const continent = continents[continentId]
   const config = getProjectionConfig(continentId)
-  const countryCodes = new Set(continent?.countries || [])
   const { dispatch } = useQuizContext()
 
   const [quizItems, setQuizItems] = useState([])
@@ -240,16 +237,9 @@ export default function QuizPage() {
         >
           <Geographies geography={topology}>
             {({ geographies }) =>
-              geographies.map((geo) => {
-                const code = geo.properties.ISO_A3 || geo.properties.iso_a3 || ''
-                return (
-                  <MemoGeo
-                    key={geo.rsmKey}
-                    geo={geo}
-                    isInContinent={countryCodes.has(code)}
-                  />
-                )
-              })
+              geographies.map((geo) => (
+                <MemoGeo key={geo.rsmKey} geo={geo} />
+              ))
             }
           </Geographies>
 
