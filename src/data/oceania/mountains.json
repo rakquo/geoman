@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "name": "Kosciuszko",
+    "acceptedAnswers": ["kosciuszko", "mount kosciuszko", "mt kosciuszko"],
+    "lat": -36.4564,
+    "lng": 148.2632,
+    "hint": "The highest mountain on the Australian mainland, in the Snowy Mountains of New South Wales",
+    "difficulty": "medium"
+  },
+  {
+    "id": 2,
+    "name": "Cook/Aoraki",
+    "acceptedAnswers": ["cook", "aoraki", "mount cook", "aoraki mount cook", "mt cook", "aoraki/mount cook"],
+    "lat": -43.5950,
+    "lng": 170.1418,
+    "hint": "New Zealand's highest mountain, in the Southern Alps of the South Island, sacred to Maori people",
+    "difficulty": "medium"
+  },
+  {
+    "id": 3,
+    "name": "Wilhelm",
+    "acceptedAnswers": ["wilhelm", "mount wilhelm", "mt wilhelm"],
+    "lat": -5.7800,
+    "lng": 145.0294,
+    "hint": "The highest mountain in Papua New Guinea and the highest in Oceania outside Indonesia",
+    "difficulty": "hard"
+  },
+  {
+    "id": 4,
+    "name": "Giluwe",
+    "acceptedAnswers": ["giluwe", "mount giluwe", "mt giluwe"],
+    "lat": -6.0500,
+    "lng": 143.8833,
+    "hint": "The second-highest mountain in Papua New Guinea, an extinct volcano and one of the highest volcanoes in Oceania",
+    "difficulty": "hard"
+  },
+  {
+    "id": 5,
+    "name": "Ruapehu",
+    "acceptedAnswers": ["ruapehu", "mount ruapehu", "mt ruapehu"],
+    "lat": -39.2817,
+    "lng": 175.5685,
+    "hint": "The highest mountain in New Zealand's North Island, an active stratovolcano with a crater lake",
+    "difficulty": "hard"
+  },
+  {
+    "id": 6,
+    "name": "Taranaki",
+    "acceptedAnswers": ["taranaki", "mount taranaki", "mt taranaki", "mount egmont"],
+    "lat": -39.2967,
+    "lng": 174.0639,
+    "hint": "A symmetrical volcanic cone on New Zealand's North Island, also known as Mount Egmont",
+    "difficulty": "hard"
+  },
+  {
+    "id": 7,
+    "name": "Bogong",
+    "acceptedAnswers": ["bogong", "mount bogong", "mt bogong"],
+    "lat": -36.7397,
+    "lng": 147.2992,
+    "hint": "The highest mountain in the state of Victoria, Australia, in the Alpine National Park",
+    "difficulty": "hard"
+  },
+  {
+    "id": 8,
+    "name": "Ossa",
+    "acceptedAnswers": ["ossa", "mount ossa"],
+    "lat": -41.8750,
+    "lng": 146.0500,
+    "hint": "The highest mountain in Tasmania, Australia, located in the Cradle Mountain-Lake St Clair National Park",
+    "difficulty": "hard"
+  }
+]

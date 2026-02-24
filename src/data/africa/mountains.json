@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "name": "Kilimanjaro",
+    "acceptedAnswers": ["kilimanjaro", "mount kilimanjaro", "mt kilimanjaro"],
+    "lat": -3.0674,
+    "lng": 37.3556,
+    "hint": "Africa's highest peak, a free-standing volcanic mountain in Tanzania near the Kenyan border",
+    "difficulty": "easy"
+  },
+  {
+    "id": 2,
+    "name": "Mount Kenya",
+    "acceptedAnswers": ["mount kenya", "mt kenya", "kenya"],
+    "lat": -0.1521,
+    "lng": 37.3084,
+    "hint": "Africa's second-highest mountain, an extinct volcano in central Kenya straddling the equator",
+    "difficulty": "medium"
+  },
+  {
+    "id": 3,
+    "name": "Ras Dashen",
+    "acceptedAnswers": ["ras dashen", "ras dejen", "mount ras dashen"],
+    "lat": 13.2400,
+    "lng": 38.3700,
+    "hint": "The highest mountain in Ethiopia, located in the Simien Mountains of the northern highlands",
+    "difficulty": "hard"
+  },
+  {
+    "id": 4,
+    "name": "Mount Stanley",
+    "acceptedAnswers": ["mount stanley", "mt stanley", "stanley", "margherita peak"],
+    "lat": 0.3858,
+    "lng": 29.8717,
+    "hint": "The highest peak of the Rwenzori Mountains on the Uganda-DRC border, also called Margherita Peak",
+    "difficulty": "hard"
+  },
+  {
+    "id": 5,
+    "name": "Mount Meru",
+    "acceptedAnswers": ["mount meru", "mt meru", "meru"],
+    "lat": -3.2458,
+    "lng": 36.7525,
+    "hint": "Tanzania's second-highest mountain, an active volcano near Arusha, often used to acclimatize for Kilimanjaro",
+    "difficulty": "hard"
+  },
+  {
+    "id": 6,
+    "name": "Toubkal",
+    "acceptedAnswers": ["toubkal", "mount toubkal", "jebel toubkal", "jbel toubkal"],
+    "lat": 31.0597,
+    "lng": -7.9147,
+    "hint": "The highest mountain in North Africa and the Atlas Mountains, located in Morocco",
+    "difficulty": "hard"
+  },
+  {
+    "id": 7,
+    "name": "Mount Cameroon",
+    "acceptedAnswers": ["mount cameroon", "mt cameroon", "cameroon mountain", "fako"],
+    "lat": 4.2032,
+    "lng": 9.1703,
+    "hint": "The highest mountain in West Africa, an active volcano near the coast of Cameroon",
+    "difficulty": "hard"
+  },
+  {
+    "id": 8,
+    "name": "Thabana Ntlenyana",
+    "acceptedAnswers": ["thabana ntlenyana", "drakensberg", "drakensberg mountains"],
+    "lat": -29.4667,
+    "lng": 29.2750,
+    "hint": "The highest point in the Drakensberg range and in southern Africa, located in Lesotho",
+    "difficulty": "hard"
+  },
+  {
+    "id": 9,
+    "name": "Mount Elgon",
+    "acceptedAnswers": ["mount elgon", "mt elgon", "elgon"],
+    "lat": 1.1167,
+    "lng": 34.5500,
+    "hint": "An extinct shield volcano on the border of Uganda and Kenya, with one of the world's largest calderas",
+    "difficulty": "hard"
+  },
+  {
+    "id": 10,
+    "name": "Simien Mountains",
+    "acceptedAnswers": ["simien mountains", "simien", "simien mountain range"],
+    "lat": 13.2500,
+    "lng": 38.3000,
+    "hint": "A UNESCO World Heritage mountain range in northern Ethiopia, home to the endemic gelada baboon",
+    "difficulty": "hard"
+  }
+]

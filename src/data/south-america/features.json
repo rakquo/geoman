@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "name": "Amazon Rainforest",
+    "acceptedAnswers": ["amazon rainforest", "amazon", "amazonia"],
+    "lat": -3.4653,
+    "lng": -62.2159,
+    "hint": "The world's largest tropical rainforest, covering much of the Amazon Basin in South America",
+    "difficulty": "easy"
+  },
+  {
+    "id": 2,
+    "name": "Atacama Desert",
+    "acceptedAnswers": ["atacama desert", "atacama"],
+    "lat": -24.5000,
+    "lng": -69.2500,
+    "hint": "The driest non-polar desert in the world, a plateau in northern Chile west of the Andes",
+    "difficulty": "medium"
+  },
+  {
+    "id": 3,
+    "name": "Patagonia",
+    "acceptedAnswers": ["patagonia"],
+    "lat": -46.0000,
+    "lng": -69.0000,
+    "hint": "A sparsely populated region at the southern end of South America, shared by Argentina and Chile",
+    "difficulty": "medium"
+  },
+  {
+    "id": 4,
+    "name": "Pampas",
+    "acceptedAnswers": ["pampas", "the pampas"],
+    "lat": -35.5000,
+    "lng": -63.0000,
+    "hint": "Vast fertile grasslands in Argentina, Uruguay, and southern Brazil, the heartland of gaucho culture",
+    "difficulty": "medium"
+  },
+  {
+    "id": 5,
+    "name": "Pantanal",
+    "acceptedAnswers": ["pantanal", "the pantanal"],
+    "lat": -18.0000,
+    "lng": -57.0000,
+    "hint": "The world's largest tropical wetland area, mostly in Brazil's Mato Grosso do Sul, rich in wildlife",
+    "difficulty": "hard"
+  },
+  {
+    "id": 6,
+    "name": "Altiplano",
+    "acceptedAnswers": ["altiplano", "andean plateau"],
+    "lat": -17.0000,
+    "lng": -68.0000,
+    "hint": "A high plateau in the Andes of South America, the most extensive high plateau outside Tibet",
+    "difficulty": "hard"
+  },
+  {
+    "id": 7,
+    "name": "Gran Chaco",
+    "acceptedAnswers": ["gran chaco", "chaco"],
+    "lat": -22.0000,
+    "lng": -60.0000,
+    "hint": "A hot and semi-arid lowland region shared by Argentina, Paraguay, Bolivia, and Brazil",
+    "difficulty": "hard"
+  },
+  {
+    "id": 8,
+    "name": "Llanos",
+    "acceptedAnswers": ["llanos", "the llanos"],
+    "lat": 7.0000,
+    "lng": -69.0000,
+    "hint": "Vast tropical grasslands in Venezuela and Colombia, drained by the Orinoco River system",
+    "difficulty": "hard"
+  }
+]

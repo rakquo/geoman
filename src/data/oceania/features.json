@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "name": "Great Barrier Reef",
+    "acceptedAnswers": ["great barrier reef", "barrier reef"],
+    "lat": -18.2871,
+    "lng": 147.6992,
+    "hint": "The world's largest coral reef system, stretching over 2,300 km along the northeast coast of Australia",
+    "difficulty": "easy"
+  },
+  {
+    "id": 2,
+    "name": "Outback",
+    "acceptedAnswers": ["outback", "australian outback", "the outback"],
+    "lat": -25.0000,
+    "lng": 134.0000,
+    "hint": "The vast, remote, arid interior of Australia, sparsely populated and largely desert or semi-arid land",
+    "difficulty": "easy"
+  },
+  {
+    "id": 3,
+    "name": "Great Dividing Range",
+    "acceptedAnswers": ["great dividing range", "great divide"],
+    "lat": -30.0000,
+    "lng": 149.0000,
+    "hint": "Australia's most substantial mountain range, stretching along the entire eastern coast from Queensland to Victoria",
+    "difficulty": "medium"
+  },
+  {
+    "id": 4,
+    "name": "Nullarbor Plain",
+    "acceptedAnswers": ["nullarbor plain", "nullarbor"],
+    "lat": -31.5000,
+    "lng": 127.0000,
+    "hint": "A vast flat, almost treeless limestone plateau spanning the border of South and Western Australia",
+    "difficulty": "hard"
+  },
+  {
+    "id": 5,
+    "name": "Tasmania Wilderness",
+    "acceptedAnswers": ["tasmania wilderness", "tasmanian wilderness", "tasmanian wilderness world heritage area"],
+    "lat": -42.5000,
+    "lng": 146.0000,
+    "hint": "A UNESCO World Heritage area covering about 20% of Tasmania, one of the last temperate wilderness areas on Earth",
+    "difficulty": "hard"
+  },
+  {
+    "id": 6,
+    "name": "Milford Sound",
+    "acceptedAnswers": ["milford sound", "piopiotahi"],
+    "lat": -44.6714,
+    "lng": 167.9256,
+    "hint": "A dramatic fiord in New Zealand's Fiordland National Park, carved by glaciers and framed by steep cliffs",
+    "difficulty": "medium"
+  },
+  {
+    "id": 7,
+    "name": "Uluru",
+    "acceptedAnswers": ["uluru", "ayers rock", "uluru/ayers rock"],
+    "lat": -25.3444,
+    "lng": 131.0369,
+    "hint": "A massive sandstone monolith in central Australia, sacred to the Anangu Aboriginal people",
+    "difficulty": "easy"
+  },
+  {
+    "id": 8,
+    "name": "Kakadu",
+    "acceptedAnswers": ["kakadu", "kakadu national park"],
+    "lat": -13.0000,
+    "lng": 132.5000,
+    "hint": "Australia's largest national park in the Northern Territory, with Aboriginal rock art dating back 20,000+ years",
+    "difficulty": "medium"
+  }
+]

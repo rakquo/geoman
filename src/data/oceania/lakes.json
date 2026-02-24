@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "name": "Eyre",
+    "acceptedAnswers": ["eyre", "lake eyre", "kati thanda"],
+    "lat": -28.3700,
+    "lng": 137.3700,
+    "hint": "Australia's largest lake, a usually dry salt flat in South Australia that rarely fills with water",
+    "difficulty": "medium"
+  },
+  {
+    "id": 2,
+    "name": "Torrens",
+    "acceptedAnswers": ["torrens", "lake torrens"],
+    "lat": -31.8200,
+    "lng": 137.8700,
+    "hint": "A large salt lake in South Australia, usually dry, the second-largest lake in Australia",
+    "difficulty": "hard"
+  },
+  {
+    "id": 3,
+    "name": "Taupo",
+    "acceptedAnswers": ["taupo", "lake taupo"],
+    "lat": -38.8000,
+    "lng": 175.9000,
+    "hint": "New Zealand's largest lake, filling a caldera created by a massive volcanic eruption in the North Island",
+    "difficulty": "medium"
+  },
+  {
+    "id": 4,
+    "name": "Gairdner",
+    "acceptedAnswers": ["gairdner", "lake gairdner"],
+    "lat": -31.6000,
+    "lng": 136.0000,
+    "hint": "A large salt lake in South Australia, used for land speed record attempts due to its flat surface",
+    "difficulty": "hard"
+  },
+  {
+    "id": 5,
+    "name": "Frome",
+    "acceptedAnswers": ["frome", "lake frome"],
+    "lat": -30.6000,
+    "lng": 139.8000,
+    "hint": "A salt lake in South Australia, east of the Flinders Ranges, usually dry",
+    "difficulty": "hard"
+  },
+  {
+    "id": 6,
+    "name": "Te Anau",
+    "acceptedAnswers": ["te anau", "lake te anau"],
+    "lat": -45.4200,
+    "lng": 167.7500,
+    "hint": "The largest lake on New Zealand's South Island, gateway to Fiordland National Park and Milford Sound",
+    "difficulty": "hard"
+  }
+]

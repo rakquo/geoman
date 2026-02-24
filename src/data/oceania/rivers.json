@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "name": "Murray",
+    "acceptedAnswers": ["murray", "murray river"],
+    "lat": -35.3900,
+    "lng": 139.3800,
+    "hint": "Australia's longest river, flowing from the Australian Alps to the Southern Ocean in South Australia",
+    "difficulty": "easy"
+  },
+  {
+    "id": 2,
+    "name": "Darling",
+    "acceptedAnswers": ["darling", "darling river"],
+    "lat": -32.0000,
+    "lng": 142.0000,
+    "hint": "Australia's longest river when measured to its farthest headwater, a major tributary of the Murray",
+    "difficulty": "medium"
+  },
+  {
+    "id": 3,
+    "name": "Murrumbidgee",
+    "acceptedAnswers": ["murrumbidgee", "murrumbidgee river"],
+    "lat": -34.7500,
+    "lng": 146.0000,
+    "hint": "A major tributary of the Murray River, flowing through the agricultural heartland of New South Wales",
+    "difficulty": "hard"
+  },
+  {
+    "id": 4,
+    "name": "Waikato",
+    "acceptedAnswers": ["waikato", "waikato river"],
+    "lat": -37.7833,
+    "lng": 175.3167,
+    "hint": "New Zealand's longest river, flowing from Lake Taupo through the North Island to the Tasman Sea",
+    "difficulty": "hard"
+  },
+  {
+    "id": 5,
+    "name": "Clutha",
+    "acceptedAnswers": ["clutha", "clutha river"],
+    "lat": -46.2400,
+    "lng": 169.8200,
+    "hint": "The highest-volume river in New Zealand, flowing through Central Otago on the South Island",
+    "difficulty": "hard"
+  },
+  {
+    "id": 6,
+    "name": "Lachlan",
+    "acceptedAnswers": ["lachlan", "lachlan river"],
+    "lat": -33.9400,
+    "lng": 146.4300,
+    "hint": "A river in central New South Wales, Australia, a tributary of the Murrumbidgee",
+    "difficulty": "hard"
+  },
+  {
+    "id": 7,
+    "name": "Cooper Creek",
+    "acceptedAnswers": ["cooper creek", "cooper"],
+    "lat": -27.7000,
+    "lng": 141.0000,
+    "hint": "An intermittent river in central Australia, famous as the site where explorers Burke and Wills perished",
+    "difficulty": "hard"
+  },
+  {
+    "id": 8,
+    "name": "Fly River",
+    "acceptedAnswers": ["fly river", "fly"],
+    "lat": -7.5000,
+    "lng": 141.5000,
+    "hint": "The second-longest river in Papua New Guinea, flowing through dense tropical rainforest to the Gulf of Papua",
+    "difficulty": "hard"
+  }
+]

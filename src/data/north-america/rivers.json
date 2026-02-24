@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "name": "Mississippi",
+    "acceptedAnswers": ["mississippi", "mississippi river"],
+    "lat": 32.3547,
+    "lng": -90.8779,
+    "hint": "The second-longest river in North America, flowing south through the central United States to the Gulf of Mexico",
+    "difficulty": "easy"
+  },
+  {
+    "id": 2,
+    "name": "Missouri",
+    "acceptedAnswers": ["missouri", "missouri river"],
+    "lat": 41.2600,
+    "lng": -95.9400,
+    "hint": "The longest river in North America, a major tributary of the Mississippi, flowing from Montana",
+    "difficulty": "medium"
+  },
+  {
+    "id": 3,
+    "name": "Colorado",
+    "acceptedAnswers": ["colorado", "colorado river"],
+    "lat": 36.1000,
+    "lng": -111.8500,
+    "hint": "A major river of the American Southwest, carving the Grand Canyon on its way to the Gulf of California",
+    "difficulty": "medium"
+  },
+  {
+    "id": 4,
+    "name": "Rio Grande",
+    "acceptedAnswers": ["rio grande", "rio grande river", "rio bravo"],
+    "lat": 29.7500,
+    "lng": -104.4000,
+    "hint": "A major river forming much of the US-Mexico border, known as Rio Bravo in Mexico",
+    "difficulty": "medium"
+  },
+  {
+    "id": 5,
+    "name": "Columbia",
+    "acceptedAnswers": ["columbia", "columbia river"],
+    "lat": 46.2500,
+    "lng": -119.2000,
+    "hint": "The largest river in the Pacific Northwest, flowing from British Columbia through Washington and Oregon",
+    "difficulty": "hard"
+  },
+  {
+    "id": 6,
+    "name": "St. Lawrence",
+    "acceptedAnswers": ["st. lawrence", "st lawrence", "saint lawrence", "st. lawrence river"],
+    "lat": 47.0000,
+    "lng": -70.0000,
+    "hint": "A major river connecting the Great Lakes to the Atlantic Ocean, flowing through Quebec, Canada",
+    "difficulty": "medium"
+  },
+  {
+    "id": 7,
+    "name": "Yukon",
+    "acceptedAnswers": ["yukon", "yukon river"],
+    "lat": 63.0000,
+    "lng": -150.0000,
+    "hint": "A major river flowing through Canada's Yukon Territory and Alaska to the Bering Sea",
+    "difficulty": "hard"
+  },
+  {
+    "id": 8,
+    "name": "Ohio",
+    "acceptedAnswers": ["ohio", "ohio river"],
+    "lat": 38.7500,
+    "lng": -85.0000,
+    "hint": "A major tributary of the Mississippi, flowing along the borders of several eastern US states",
+    "difficulty": "hard"
+  },
+  {
+    "id": 9,
+    "name": "Arkansas",
+    "acceptedAnswers": ["arkansas", "arkansas river"],
+    "lat": 35.3500,
+    "lng": -97.5000,
+    "hint": "A major tributary of the Mississippi, originating near Leadville, Colorado and flowing through Kansas and Oklahoma",
+    "difficulty": "hard"
+  },
+  {
+    "id": 10,
+    "name": "Mackenzie",
+    "acceptedAnswers": ["mackenzie", "mackenzie river"],
+    "lat": 65.0000,
+    "lng": -128.0000,
+    "hint": "Canada's longest river system, flowing north through the Northwest Territories to the Arctic Ocean",
+    "difficulty": "hard"
+  }
+]

@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "name": "Yangtze",
+    "acceptedAnswers": ["yangtze", "yangtze river", "chang jiang", "changjiang"],
+    "lat": 30.8025,
+    "lng": 111.2492,
+    "hint": "The longest river in Asia, flowing through central China to the East China Sea",
+    "difficulty": "easy"
+  },
+  {
+    "id": 2,
+    "name": "Yellow River",
+    "acceptedAnswers": ["yellow river", "huang he", "huanghe"],
+    "lat": 35.0500,
+    "lng": 110.5000,
+    "hint": "China's second-longest river, often called the cradle of Chinese civilization",
+    "difficulty": "medium"
+  },
+  {
+    "id": 3,
+    "name": "Ganges",
+    "acceptedAnswers": ["ganges", "ganga", "ganges river"],
+    "lat": 25.3000,
+    "lng": 83.0100,
+    "hint": "A sacred river in India flowing through the plains of northern India to the Bay of Bengal",
+    "difficulty": "easy"
+  },
+  {
+    "id": 4,
+    "name": "Mekong",
+    "acceptedAnswers": ["mekong", "mekong river"],
+    "lat": 15.1200,
+    "lng": 105.8000,
+    "hint": "A major river flowing through six countries in Southeast Asia, from the Tibetan Plateau to the South China Sea",
+    "difficulty": "medium"
+  },
+  {
+    "id": 5,
+    "name": "Indus",
+    "acceptedAnswers": ["indus", "indus river", "sindhu"],
+    "lat": 27.0000,
+    "lng": 68.5000,
+    "hint": "One of the longest rivers in Asia, flowing through Pakistan, the cradle of the Indus Valley Civilization",
+    "difficulty": "medium"
+  },
+  {
+    "id": 6,
+    "name": "Brahmaputra",
+    "acceptedAnswers": ["brahmaputra", "brahmaputra river", "tsangpo"],
+    "lat": 26.1500,
+    "lng": 91.7700,
+    "hint": "A major river originating in Tibet, flowing through India and Bangladesh before joining the Ganges",
+    "difficulty": "hard"
+  },
+  {
+    "id": 7,
+    "name": "Tigris",
+    "acceptedAnswers": ["tigris", "tigris river", "dijla"],
+    "lat": 33.3400,
+    "lng": 44.3900,
+    "hint": "One of two great rivers of Mesopotamia, flowing through Iraq alongside its twin",
+    "difficulty": "medium"
+  },
+  {
+    "id": 8,
+    "name": "Euphrates",
+    "acceptedAnswers": ["euphrates", "euphrates river", "furat"],
+    "lat": 33.5000,
+    "lng": 43.5000,
+    "hint": "The longest river in western Asia, historically defining the western border of Mesopotamia",
+    "difficulty": "medium"
+  },
+  {
+    "id": 9,
+    "name": "Ob",
+    "acceptedAnswers": ["ob", "ob river"],
+    "lat": 61.0700,
+    "lng": 73.3700,
+    "hint": "A major river in western Siberia, one of the longest in Russia, flowing north into the Arctic Ocean",
+    "difficulty": "hard"
+  },
+  {
+    "id": 10,
+    "name": "Lena",
+    "acceptedAnswers": ["lena", "lena river"],
+    "lat": 62.5000,
+    "lng": 129.8000,
+    "hint": "One of the longest rivers in the world, flowing through eastern Siberia to the Laptev Sea in the Arctic",
+    "difficulty": "hard"
+  }
+]

@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "name": "Everest",
+    "acceptedAnswers": ["everest", "mount everest", "mt everest", "sagarmatha", "chomolungma"],
+    "lat": 27.9881,
+    "lng": 86.9250,
+    "hint": "The highest mountain on Earth at 8,849 meters, on the border of Nepal and Tibet",
+    "difficulty": "easy"
+  },
+  {
+    "id": 2,
+    "name": "K2",
+    "acceptedAnswers": ["k2", "mount k2", "chhogori", "godwin-austen"],
+    "lat": 35.8825,
+    "lng": 76.5133,
+    "hint": "The second-highest mountain in the world, on the China-Pakistan border in the Karakoram range",
+    "difficulty": "medium"
+  },
+  {
+    "id": 3,
+    "name": "Kangchenjunga",
+    "acceptedAnswers": ["kangchenjunga", "kanchenjunga", "mount kangchenjunga"],
+    "lat": 27.7025,
+    "lng": 88.1475,
+    "hint": "The third-highest mountain in the world, on the border of Nepal and Sikkim, India",
+    "difficulty": "hard"
+  },
+  {
+    "id": 4,
+    "name": "Fuji",
+    "acceptedAnswers": ["fuji", "mount fuji", "mt fuji", "fujisan", "fujiyama"],
+    "lat": 35.3606,
+    "lng": 138.7274,
+    "hint": "Japan's highest and most iconic mountain, a symmetrical volcanic cone southwest of Tokyo",
+    "difficulty": "easy"
+  },
+  {
+    "id": 5,
+    "name": "Elbrus",
+    "acceptedAnswers": ["elbrus", "mount elbrus", "mt elbrus"],
+    "lat": 43.3499,
+    "lng": 42.4453,
+    "hint": "The highest mountain in Europe and the Caucasus, a dormant volcano in southern Russia",
+    "difficulty": "medium"
+  },
+  {
+    "id": 6,
+    "name": "Annapurna",
+    "acceptedAnswers": ["annapurna", "mount annapurna", "annapurna i"],
+    "lat": 28.5955,
+    "lng": 83.8203,
+    "hint": "A massif in the Himalayas of north-central Nepal, one of the most dangerous peaks to climb",
+    "difficulty": "medium"
+  },
+  {
+    "id": 7,
+    "name": "Nanga Parbat",
+    "acceptedAnswers": ["nanga parbat", "mount nanga parbat"],
+    "lat": 35.2375,
+    "lng": 74.5892,
+    "hint": "The ninth-highest mountain in the world, known as the 'Killer Mountain', in Pakistan",
+    "difficulty": "hard"
+  },
+  {
+    "id": 8,
+    "name": "Makalu",
+    "acceptedAnswers": ["makalu", "mount makalu"],
+    "lat": 27.8897,
+    "lng": 87.0886,
+    "hint": "The fifth-highest mountain in the world, located on the border of Nepal and Tibet, near Everest",
+    "difficulty": "hard"
+  },
+  {
+    "id": 9,
+    "name": "Cho Oyu",
+    "acceptedAnswers": ["cho oyu", "mount cho oyu"],
+    "lat": 28.0942,
+    "lng": 86.6608,
+    "hint": "The sixth-highest mountain in the world, on the Nepal-Tibet border, considered the easiest 8,000m peak",
+    "difficulty": "hard"
+  },
+  {
+    "id": 10,
+    "name": "Kinabalu",
+    "acceptedAnswers": ["kinabalu", "mount kinabalu", "mt kinabalu"],
+    "lat": 6.0753,
+    "lng": 116.5584,
+    "hint": "The highest peak in Borneo and Malaysia, located in Sabah on the island of Borneo",
+    "difficulty": "hard"
+  }
+]

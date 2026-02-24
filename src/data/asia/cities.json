@@ -1,0 +1,110 @@
+[
+  {
+    "id": 1,
+    "name": "Tokyo",
+    "acceptedAnswers": ["tokyo"],
+    "lat": 35.6762,
+    "lng": 139.6503,
+    "hint": "The capital of Japan and the most populous metropolitan area in the world",
+    "difficulty": "easy"
+  },
+  {
+    "id": 2,
+    "name": "Beijing",
+    "acceptedAnswers": ["beijing", "peking"],
+    "lat": 39.9042,
+    "lng": 116.4074,
+    "hint": "China's capital city, home to the Forbidden City and Tiananmen Square",
+    "difficulty": "easy"
+  },
+  {
+    "id": 3,
+    "name": "Mumbai",
+    "acceptedAnswers": ["mumbai", "bombay"],
+    "lat": 19.0760,
+    "lng": 72.8777,
+    "hint": "India's financial capital, formerly known as Bombay, on the west coast",
+    "difficulty": "easy"
+  },
+  {
+    "id": 4,
+    "name": "Delhi",
+    "acceptedAnswers": ["delhi", "new delhi"],
+    "lat": 28.7041,
+    "lng": 77.1025,
+    "hint": "India's capital territory, one of the oldest continuously inhabited cities in the world",
+    "difficulty": "easy"
+  },
+  {
+    "id": 5,
+    "name": "Shanghai",
+    "acceptedAnswers": ["shanghai"],
+    "lat": 31.2304,
+    "lng": 121.4737,
+    "hint": "China's largest city by population, a global financial hub at the Yangtze River Delta",
+    "difficulty": "easy"
+  },
+  {
+    "id": 6,
+    "name": "Seoul",
+    "acceptedAnswers": ["seoul"],
+    "lat": 37.5665,
+    "lng": 126.9780,
+    "hint": "The capital of South Korea, divided from its northern counterpart by a demilitarized zone",
+    "difficulty": "easy"
+  },
+  {
+    "id": 7,
+    "name": "Bangkok",
+    "acceptedAnswers": ["bangkok", "krung thep"],
+    "lat": 13.7563,
+    "lng": 100.5018,
+    "hint": "Thailand's capital, known for ornate temples and vibrant street life along the Chao Phraya River",
+    "difficulty": "medium"
+  },
+  {
+    "id": 8,
+    "name": "Jakarta",
+    "acceptedAnswers": ["jakarta"],
+    "lat": -6.2088,
+    "lng": 106.8456,
+    "hint": "The capital of Indonesia, located on the northwest coast of Java",
+    "difficulty": "medium"
+  },
+  {
+    "id": 9,
+    "name": "Riyadh",
+    "acceptedAnswers": ["riyadh"],
+    "lat": 24.7136,
+    "lng": 46.6753,
+    "hint": "The capital of Saudi Arabia, located in the center of the Arabian Peninsula",
+    "difficulty": "medium"
+  },
+  {
+    "id": 10,
+    "name": "Singapore",
+    "acceptedAnswers": ["singapore"],
+    "lat": 1.3521,
+    "lng": 103.8198,
+    "hint": "A city-state and island country at the southern tip of the Malay Peninsula",
+    "difficulty": "easy"
+  },
+  {
+    "id": 11,
+    "name": "Kuala Lumpur",
+    "acceptedAnswers": ["kuala lumpur", "kl"],
+    "lat": 3.1390,
+    "lng": 101.6869,
+    "hint": "Malaysia's capital, famous for the Petronas Twin Towers",
+    "difficulty": "medium"
+  },
+  {
+    "id": 12,
+    "name": "Dubai",
+    "acceptedAnswers": ["dubai"],
+    "lat": 25.2048,
+    "lng": 55.2708,
+    "hint": "A city in the UAE known for luxury shopping, ultramodern architecture, and the Burj Khalifa",
+    "difficulty": "easy"
+  }
+]

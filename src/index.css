@@ -1,0 +1,77 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: 'DM Serif Display', serif;
+  --font-body: 'DM Sans', system-ui, -apple-system, sans-serif;
+
+  --color-bg: #FAFAF8;
+  --color-surface: #FFFFFF;
+  --color-text: #1A1A1A;
+  --color-text-muted: #6B7280;
+  --color-border: #E5E5E0;
+
+  --color-land: #E8E4DA;
+  --color-land-hover: #D4CFC3;
+  --color-land-active: #2D3A2E;
+  --color-water: #D4E4ED;
+  --color-border-geo: #C8C3B8;
+
+  --color-correct: #2D6A4F;
+  --color-correct-bg: #D8F3DC;
+  --color-incorrect: #9B2226;
+  --color-incorrect-bg: #FDE8E8;
+
+  --color-accent: #2563EB;
+  --color-accent-hover: #1D4ED8;
+
+  --color-marker: #1E40AF;
+  --color-marker-text: #FFFFFF;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+}
+
+@keyframes pulse-marker {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.3);
+    opacity: 0.8;
+  }
+}
+
+.marker-pulse {
+  animation: pulse-marker 1s ease-in-out infinite;
+}
+
+.map-tooltip {
+  pointer-events: none;
+  position: fixed;
+  z-index: 50;
+  padding: 6px 12px;
+  background: var(--color-text);
+  color: white;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  white-space: nowrap;
+  transform: translate(-50%, -100%);
+  margin-top: -10px;
+}

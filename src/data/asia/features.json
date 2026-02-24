@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "name": "Gobi Desert",
+    "acceptedAnswers": ["gobi desert", "gobi"],
+    "lat": 42.5900,
+    "lng": 103.4300,
+    "hint": "A vast desert in northern China and southern Mongolia, known for dinosaur fossil discoveries",
+    "difficulty": "medium"
+  },
+  {
+    "id": 2,
+    "name": "Thar Desert",
+    "acceptedAnswers": ["thar desert", "thar", "great indian desert"],
+    "lat": 27.0000,
+    "lng": 71.0000,
+    "hint": "A large arid region in northwestern India and eastern Pakistan, also called the Great Indian Desert",
+    "difficulty": "hard"
+  },
+  {
+    "id": 3,
+    "name": "Tibetan Plateau",
+    "acceptedAnswers": ["tibetan plateau", "tibet plateau", "roof of the world"],
+    "lat": 33.0000,
+    "lng": 88.0000,
+    "hint": "The highest and largest plateau in the world, often called the 'Roof of the World'",
+    "difficulty": "medium"
+  },
+  {
+    "id": 4,
+    "name": "Deccan Plateau",
+    "acceptedAnswers": ["deccan plateau", "deccan"],
+    "lat": 17.0000,
+    "lng": 77.0000,
+    "hint": "A large plateau in southern India, bounded by the Eastern and Western Ghats mountain ranges",
+    "difficulty": "hard"
+  },
+  {
+    "id": 5,
+    "name": "Siberian Taiga",
+    "acceptedAnswers": ["siberian taiga", "taiga", "siberian forest"],
+    "lat": 60.0000,
+    "lng": 100.0000,
+    "hint": "The world's largest terrestrial biome, a vast boreal forest stretching across northern Russia",
+    "difficulty": "medium"
+  },
+  {
+    "id": 6,
+    "name": "Arabian Desert",
+    "acceptedAnswers": ["arabian desert", "arabian"],
+    "lat": 23.0000,
+    "lng": 46.0000,
+    "hint": "A vast desert covering most of the Arabian Peninsula, including the Rub' al Khali (Empty Quarter)",
+    "difficulty": "medium"
+  },
+  {
+    "id": 7,
+    "name": "Western Ghats",
+    "acceptedAnswers": ["western ghats", "sahyadri", "sahyadri mountains"],
+    "lat": 13.0000,
+    "lng": 75.5000,
+    "hint": "A UNESCO World Heritage mountain range along the western coast of India, a biodiversity hotspot",
+    "difficulty": "hard"
+  },
+  {
+    "id": 8,
+    "name": "Sundarbans",
+    "acceptedAnswers": ["sundarbans", "sundarban"],
+    "lat": 21.9497,
+    "lng": 89.1833,
+    "hint": "The world's largest mangrove forest, spanning the delta of the Ganges in Bangladesh and India",
+    "difficulty": "hard"
+  }
+]

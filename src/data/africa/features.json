@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "name": "Sahara Desert",
+    "acceptedAnswers": ["sahara desert", "sahara"],
+    "lat": 23.4162,
+    "lng": 25.6628,
+    "hint": "The world's largest hot desert, spanning most of North Africa across 11 countries",
+    "difficulty": "easy"
+  },
+  {
+    "id": 2,
+    "name": "Kalahari Desert",
+    "acceptedAnswers": ["kalahari desert", "kalahari"],
+    "lat": -23.5000,
+    "lng": 22.0000,
+    "hint": "A large semi-arid savanna in southern Africa covering parts of Botswana, Namibia, and South Africa",
+    "difficulty": "medium"
+  },
+  {
+    "id": 3,
+    "name": "Congo Rainforest",
+    "acceptedAnswers": ["congo rainforest", "congo basin rainforest", "congo basin"],
+    "lat": 0.5000,
+    "lng": 22.0000,
+    "hint": "The world's second-largest tropical rainforest, in the Congo River Basin of Central Africa",
+    "difficulty": "medium"
+  },
+  {
+    "id": 4,
+    "name": "Serengeti",
+    "acceptedAnswers": ["serengeti", "serengeti plain", "serengeti plains"],
+    "lat": -2.3333,
+    "lng": 34.8333,
+    "hint": "A vast ecosystem in East Africa famous for its annual migration of over a million wildebeest",
+    "difficulty": "easy"
+  },
+  {
+    "id": 5,
+    "name": "Great Rift Valley",
+    "acceptedAnswers": ["great rift valley", "rift valley", "east african rift"],
+    "lat": -1.0000,
+    "lng": 36.0000,
+    "hint": "A continuous geographic trench running from Lebanon to Mozambique, most prominent in East Africa",
+    "difficulty": "medium"
+  },
+  {
+    "id": 6,
+    "name": "Ethiopian Highlands",
+    "acceptedAnswers": ["ethiopian highlands", "abyssinian highlands"],
+    "lat": 9.0000,
+    "lng": 39.0000,
+    "hint": "A rugged mass of mountains in Ethiopia, sometimes called the Roof of Africa, source of the Blue Nile",
+    "difficulty": "hard"
+  },
+  {
+    "id": 7,
+    "name": "Namib Desert",
+    "acceptedAnswers": ["namib desert", "namib"],
+    "lat": -24.0000,
+    "lng": 15.0000,
+    "hint": "A coastal desert in southern Africa, considered the oldest desert in the world, famous for its sand dunes",
+    "difficulty": "hard"
+  },
+  {
+    "id": 8,
+    "name": "Okavango Delta",
+    "acceptedAnswers": ["okavango delta", "okavango"],
+    "lat": -19.5000,
+    "lng": 22.5000,
+    "hint": "A large inland delta in Botswana where the Okavango River empties into the Kalahari, a UNESCO World Heritage Site",
+    "difficulty": "hard"
+  }
+]

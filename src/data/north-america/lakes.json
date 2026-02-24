@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "name": "Superior",
+    "acceptedAnswers": ["superior", "lake superior"],
+    "lat": 47.7000,
+    "lng": -87.5000,
+    "hint": "The largest of the Great Lakes and the largest freshwater lake by surface area in the world",
+    "difficulty": "easy"
+  },
+  {
+    "id": 2,
+    "name": "Michigan",
+    "acceptedAnswers": ["michigan", "lake michigan"],
+    "lat": 43.6200,
+    "lng": -87.1000,
+    "hint": "The only Great Lake entirely within the United States, bordered by Michigan, Wisconsin, Illinois, and Indiana",
+    "difficulty": "medium"
+  },
+  {
+    "id": 3,
+    "name": "Huron",
+    "acceptedAnswers": ["huron", "lake huron"],
+    "lat": 44.8000,
+    "lng": -82.4000,
+    "hint": "The second-largest of the Great Lakes, bordered by Michigan and Ontario, Canada",
+    "difficulty": "medium"
+  },
+  {
+    "id": 4,
+    "name": "Erie",
+    "acceptedAnswers": ["erie", "lake erie"],
+    "lat": 42.2000,
+    "lng": -81.2000,
+    "hint": "The fourth-largest and shallowest of the Great Lakes, bordered by four US states and Ontario",
+    "difficulty": "medium"
+  },
+  {
+    "id": 5,
+    "name": "Ontario",
+    "acceptedAnswers": ["ontario", "lake ontario"],
+    "lat": 43.7000,
+    "lng": -77.9000,
+    "hint": "The smallest and easternmost of the Great Lakes, connected to the Atlantic via the St. Lawrence River",
+    "difficulty": "medium"
+  },
+  {
+    "id": 6,
+    "name": "Great Bear",
+    "acceptedAnswers": ["great bear", "great bear lake"],
+    "lat": 66.0000,
+    "lng": -121.0000,
+    "hint": "The largest lake entirely within Canada, located in the Northwest Territories on the Arctic Circle",
+    "difficulty": "hard"
+  },
+  {
+    "id": 7,
+    "name": "Great Slave",
+    "acceptedAnswers": ["great slave", "great slave lake"],
+    "lat": 61.7000,
+    "lng": -114.0000,
+    "hint": "The deepest lake in North America, in Canada's Northwest Territories, source of the Mackenzie River",
+    "difficulty": "hard"
+  },
+  {
+    "id": 8,
+    "name": "Winnipeg",
+    "acceptedAnswers": ["winnipeg", "lake winnipeg"],
+    "lat": 52.1000,
+    "lng": -97.2500,
+    "hint": "A large lake in Manitoba, Canada, a remnant of the prehistoric glacial Lake Agassiz",
+    "difficulty": "hard"
+  }
+]

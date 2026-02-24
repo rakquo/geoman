@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "name": "Ladoga",
+    "acceptedAnswers": ["ladoga", "lake ladoga"],
+    "lat": 61.0000,
+    "lng": 31.5000,
+    "hint": "The largest lake in Europe, located in northwestern Russia near St. Petersburg",
+    "difficulty": "hard"
+  },
+  {
+    "id": 2,
+    "name": "Onega",
+    "acceptedAnswers": ["onega", "lake onega"],
+    "lat": 61.5000,
+    "lng": 35.5000,
+    "hint": "The second-largest lake in Europe, located in northwestern Russia in Karelia",
+    "difficulty": "hard"
+  },
+  {
+    "id": 3,
+    "name": "Vanern",
+    "acceptedAnswers": ["vanern", "lake vanern", "vanern lake", "vanern"],
+    "lat": 58.9200,
+    "lng": 13.5000,
+    "hint": "The largest lake in Sweden and the third-largest in Europe",
+    "difficulty": "hard"
+  },
+  {
+    "id": 4,
+    "name": "Saimaa",
+    "acceptedAnswers": ["saimaa", "lake saimaa"],
+    "lat": 61.3500,
+    "lng": 28.1000,
+    "hint": "The largest lake in Finland, famous for the endangered Saimaa ringed seal",
+    "difficulty": "hard"
+  },
+  {
+    "id": 5,
+    "name": "Lake Geneva",
+    "acceptedAnswers": ["lake geneva", "geneva", "lac leman", "lac de geneve"],
+    "lat": 46.4500,
+    "lng": 6.5000,
+    "hint": "A crescent-shaped lake on the border of Switzerland and France, one of Europe's largest Alpine lakes",
+    "difficulty": "medium"
+  },
+  {
+    "id": 6,
+    "name": "Lake Constance",
+    "acceptedAnswers": ["lake constance", "constance", "bodensee"],
+    "lat": 47.6300,
+    "lng": 9.3700,
+    "hint": "A lake on the Rhine at the northern foot of the Alps, bordering Germany, Austria, and Switzerland",
+    "difficulty": "medium"
+  },
+  {
+    "id": 7,
+    "name": "Balaton",
+    "acceptedAnswers": ["balaton", "lake balaton"],
+    "lat": 46.8400,
+    "lng": 17.7200,
+    "hint": "The largest lake in Central Europe, known as the Hungarian Sea",
+    "difficulty": "medium"
+  },
+  {
+    "id": 8,
+    "name": "Lago di Garda",
+    "acceptedAnswers": ["lago di garda", "lake garda", "garda"],
+    "lat": 45.6400,
+    "lng": 10.6600,
+    "hint": "The largest lake in Italy, located in the northern part of the country between Milan and Venice",
+    "difficulty": "medium"
+  }
+]

@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "name": "Nile",
+    "acceptedAnswers": ["nile", "nile river", "river nile"],
+    "lat": 25.6872,
+    "lng": 32.6396,
+    "hint": "The longest river in Africa, flowing northward through eleven countries to the Mediterranean Sea",
+    "difficulty": "easy"
+  },
+  {
+    "id": 2,
+    "name": "Congo",
+    "acceptedAnswers": ["congo", "congo river", "zaire river"],
+    "lat": -4.3200,
+    "lng": 15.3100,
+    "hint": "Africa's second-longest river and the deepest in the world, flowing through the Congo Basin",
+    "difficulty": "easy"
+  },
+  {
+    "id": 3,
+    "name": "Niger",
+    "acceptedAnswers": ["niger", "niger river"],
+    "lat": 11.8600,
+    "lng": 3.4100,
+    "hint": "West Africa's principal river, forming a great arc through Mali and Niger before reaching Nigeria",
+    "difficulty": "medium"
+  },
+  {
+    "id": 4,
+    "name": "Zambezi",
+    "acceptedAnswers": ["zambezi", "zambezi river", "zambeze"],
+    "lat": -17.9244,
+    "lng": 25.8567,
+    "hint": "The fourth-longest river in Africa, famous for Victoria Falls on its course through southern Africa",
+    "difficulty": "medium"
+  },
+  {
+    "id": 5,
+    "name": "Orange",
+    "acceptedAnswers": ["orange", "orange river"],
+    "lat": -28.7500,
+    "lng": 17.6300,
+    "hint": "The longest river in South Africa, flowing westward to the Atlantic Ocean",
+    "difficulty": "hard"
+  },
+  {
+    "id": 6,
+    "name": "Limpopo",
+    "acceptedAnswers": ["limpopo", "limpopo river"],
+    "lat": -23.5000,
+    "lng": 31.5000,
+    "hint": "A major river in southern Africa forming the border between South Africa and Botswana/Zimbabwe",
+    "difficulty": "hard"
+  },
+  {
+    "id": 7,
+    "name": "Senegal",
+    "acceptedAnswers": ["senegal", "senegal river"],
+    "lat": 16.0500,
+    "lng": -16.4500,
+    "hint": "A West African river forming the border between Senegal and Mauritania",
+    "difficulty": "hard"
+  },
+  {
+    "id": 8,
+    "name": "Blue Nile",
+    "acceptedAnswers": ["blue nile", "blue nile river"],
+    "lat": 11.6000,
+    "lng": 37.4000,
+    "hint": "A major tributary of the Nile, originating from Lake Tana in Ethiopia",
+    "difficulty": "medium"
+  },
+  {
+    "id": 9,
+    "name": "White Nile",
+    "acceptedAnswers": ["white nile", "white nile river"],
+    "lat": 9.5000,
+    "lng": 31.6000,
+    "hint": "The primary stream of the Nile, stretching from Lake Victoria through South Sudan to Khartoum",
+    "difficulty": "medium"
+  },
+  {
+    "id": 10,
+    "name": "Volta",
+    "acceptedAnswers": ["volta", "volta river"],
+    "lat": 7.8000,
+    "lng": -1.5000,
+    "hint": "A major river in West Africa flowing through Ghana, dammed to create Lake Volta, one of the world's largest reservoirs",
+    "difficulty": "hard"
+  }
+]

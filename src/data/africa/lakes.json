@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "name": "Victoria",
+    "acceptedAnswers": ["victoria", "lake victoria"],
+    "lat": -1.2833,
+    "lng": 32.8500,
+    "hint": "Africa's largest lake and the world's second-largest freshwater lake, shared by Tanzania, Uganda, and Kenya",
+    "difficulty": "easy"
+  },
+  {
+    "id": 2,
+    "name": "Tanganyika",
+    "acceptedAnswers": ["tanganyika", "lake tanganyika"],
+    "lat": -6.0000,
+    "lng": 29.5000,
+    "hint": "The world's second-deepest and second-largest freshwater lake by volume, in the Great Rift Valley",
+    "difficulty": "medium"
+  },
+  {
+    "id": 3,
+    "name": "Malawi",
+    "acceptedAnswers": ["malawi", "lake malawi", "lake nyasa", "nyasa"],
+    "lat": -12.0000,
+    "lng": 34.5000,
+    "hint": "Africa's third-largest lake, also known as Lake Nyasa, famous for its extraordinary fish biodiversity",
+    "difficulty": "medium"
+  },
+  {
+    "id": 4,
+    "name": "Turkana",
+    "acceptedAnswers": ["turkana", "lake turkana", "lake rudolf"],
+    "lat": 3.5000,
+    "lng": 36.1000,
+    "hint": "The world's largest permanent desert lake, in the Great Rift Valley of Kenya, formerly called Lake Rudolf",
+    "difficulty": "hard"
+  },
+  {
+    "id": 5,
+    "name": "Chad",
+    "acceptedAnswers": ["chad", "lake chad"],
+    "lat": 13.0000,
+    "lng": 14.0000,
+    "hint": "A historically large but shrinking lake at the junction of four countries in the Sahel region of Africa",
+    "difficulty": "medium"
+  },
+  {
+    "id": 6,
+    "name": "Albert",
+    "acceptedAnswers": ["albert", "lake albert"],
+    "lat": 1.6700,
+    "lng": 30.9200,
+    "hint": "One of the African Great Lakes, on the border of Uganda and the Democratic Republic of the Congo",
+    "difficulty": "hard"
+  },
+  {
+    "id": 7,
+    "name": "Kivu",
+    "acceptedAnswers": ["kivu", "lake kivu"],
+    "lat": -2.0000,
+    "lng": 29.0000,
+    "hint": "One of the African Great Lakes on the border of DRC and Rwanda, known for dissolved gases in its depths",
+    "difficulty": "hard"
+  },
+  {
+    "id": 8,
+    "name": "Tana",
+    "acceptedAnswers": ["tana", "lake tana"],
+    "lat": 12.0000,
+    "lng": 37.2500,
+    "hint": "Ethiopia's largest lake and the source of the Blue Nile, located in the northwestern highlands",
+    "difficulty": "hard"
+  }
+]

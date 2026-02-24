@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "name": "Titicaca",
+    "acceptedAnswers": ["titicaca", "lake titicaca"],
+    "lat": -15.8402,
+    "lng": -69.3343,
+    "hint": "The highest navigable lake in the world, on the border of Peru and Bolivia in the Andes",
+    "difficulty": "easy"
+  },
+  {
+    "id": 2,
+    "name": "Maracaibo",
+    "acceptedAnswers": ["maracaibo", "lake maracaibo"],
+    "lat": 9.8000,
+    "lng": -71.5600,
+    "hint": "A large brackish tidal bay in Venezuela, one of the oldest lakes in the world, rich in oil deposits",
+    "difficulty": "medium"
+  },
+  {
+    "id": 3,
+    "name": "Poopo",
+    "acceptedAnswers": ["poopo", "lake poopo", "poopó"],
+    "lat": -18.5500,
+    "lng": -66.9500,
+    "hint": "A saline lake in the Bolivian Altiplano that has repeatedly dried up and refilled in recent years",
+    "difficulty": "hard"
+  },
+  {
+    "id": 4,
+    "name": "Buenos Aires/General Carrera",
+    "acceptedAnswers": ["buenos aires", "general carrera", "lake buenos aires", "lake general carrera", "lago buenos aires", "lago general carrera"],
+    "lat": -46.5000,
+    "lng": -71.5000,
+    "hint": "A deep glacial lake shared between Argentina and Chile in Patagonia, known by different names in each country",
+    "difficulty": "hard"
+  },
+  {
+    "id": 5,
+    "name": "Nahuel Huapi",
+    "acceptedAnswers": ["nahuel huapi", "lake nahuel huapi", "lago nahuel huapi"],
+    "lat": -41.0500,
+    "lng": -71.3500,
+    "hint": "A glacial lake in the Argentine Patagonian Andes, the centerpiece of Argentina's oldest national park",
+    "difficulty": "hard"
+  },
+  {
+    "id": 6,
+    "name": "Argentino",
+    "acceptedAnswers": ["argentino", "lake argentino", "lago argentino"],
+    "lat": -50.2000,
+    "lng": -72.6000,
+    "hint": "The largest freshwater lake in Argentina, in Patagonia, fed by glaciers including the famous Perito Moreno",
+    "difficulty": "hard"
+  },
+  {
+    "id": 7,
+    "name": "Mirim",
+    "acceptedAnswers": ["mirim", "lake mirim", "lagoa mirim", "laguna merin"],
+    "lat": -32.8000,
+    "lng": -53.0000,
+    "hint": "A large freshwater lake on the border between Brazil and Uruguay in southeastern South America",
+    "difficulty": "hard"
+  },
+  {
+    "id": 8,
+    "name": "Junin",
+    "acceptedAnswers": ["junin", "lake junin", "lago junin", "junín"],
+    "lat": -11.0200,
+    "lng": -76.1200,
+    "hint": "The second-largest lake in Peru, located in the central Andes at over 4,000 meters elevation",
+    "difficulty": "hard"
+  }
+]

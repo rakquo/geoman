@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "name": "Mont Blanc",
+    "acceptedAnswers": ["mont blanc", "monte bianco"],
+    "lat": 45.8326,
+    "lng": 6.8652,
+    "hint": "The highest mountain in the Alps, on the border of France and Italy",
+    "difficulty": "easy"
+  },
+  {
+    "id": 2,
+    "name": "Matterhorn",
+    "acceptedAnswers": ["matterhorn", "cervino", "monte cervino"],
+    "lat": 45.9763,
+    "lng": 7.6586,
+    "hint": "An iconic pyramid-shaped peak on the Swiss-Italian border in the Alps",
+    "difficulty": "medium"
+  },
+  {
+    "id": 3,
+    "name": "Elbrus",
+    "acceptedAnswers": ["elbrus", "mount elbrus", "mt elbrus"],
+    "lat": 43.3499,
+    "lng": 42.4453,
+    "hint": "The highest mountain in Europe, a dormant volcano in the Caucasus Mountains of Russia",
+    "difficulty": "medium"
+  },
+  {
+    "id": 4,
+    "name": "Grossglockner",
+    "acceptedAnswers": ["grossglockner", "gross glockner"],
+    "lat": 47.0742,
+    "lng": 12.6947,
+    "hint": "Austria's highest mountain, located in the Hohe Tauern range of the Alps",
+    "difficulty": "hard"
+  },
+  {
+    "id": 5,
+    "name": "Monte Rosa",
+    "acceptedAnswers": ["monte rosa", "dufourspitze"],
+    "lat": 45.9368,
+    "lng": 7.8667,
+    "hint": "The second-highest mountain in the Alps and Western Europe, on the Swiss-Italian border",
+    "difficulty": "hard"
+  },
+  {
+    "id": 6,
+    "name": "Ben Nevis",
+    "acceptedAnswers": ["ben nevis"],
+    "lat": 56.7969,
+    "lng": -5.0036,
+    "hint": "The highest mountain in the British Isles, located in the Scottish Highlands",
+    "difficulty": "medium"
+  },
+  {
+    "id": 7,
+    "name": "Olympus",
+    "acceptedAnswers": ["olympus", "mount olympus", "mt olympus"],
+    "lat": 40.0859,
+    "lng": 22.3583,
+    "hint": "The highest mountain in Greece, mythological home of the ancient Greek gods",
+    "difficulty": "medium"
+  },
+  {
+    "id": 8,
+    "name": "Etna",
+    "acceptedAnswers": ["etna", "mount etna", "mt etna"],
+    "lat": 37.7510,
+    "lng": 14.9934,
+    "hint": "Europe's most active volcano, located on the east coast of Sicily, Italy",
+    "difficulty": "easy"
+  },
+  {
+    "id": 9,
+    "name": "Zugspitze",
+    "acceptedAnswers": ["zugspitze"],
+    "lat": 47.4211,
+    "lng": 10.9853,
+    "hint": "The highest mountain in Germany, on the border with Austria in the Bavarian Alps",
+    "difficulty": "hard"
+  },
+  {
+    "id": 10,
+    "name": "Galdhopiggen",
+    "acceptedAnswers": ["galdhopiggen"],
+    "lat": 61.6365,
+    "lng": 8.3125,
+    "hint": "The highest mountain in Norway and Scandinavia, in the Jotunheimen mountain range",
+    "difficulty": "hard"
+  }
+]

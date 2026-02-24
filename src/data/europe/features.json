@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "name": "Scandinavian Mountains",
+    "acceptedAnswers": ["scandinavian mountains", "scandes", "scandinavian mountain range"],
+    "lat": 65.0000,
+    "lng": 14.0000,
+    "hint": "A mountain range running along the Scandinavian Peninsula through Norway and Sweden",
+    "difficulty": "medium"
+  },
+  {
+    "id": 2,
+    "name": "Alps",
+    "acceptedAnswers": ["alps", "the alps", "european alps"],
+    "lat": 46.5000,
+    "lng": 10.0000,
+    "hint": "The highest and most extensive mountain range in Europe, stretching across eight countries",
+    "difficulty": "easy"
+  },
+  {
+    "id": 3,
+    "name": "Black Forest",
+    "acceptedAnswers": ["black forest", "schwarzwald"],
+    "lat": 48.3000,
+    "lng": 8.1500,
+    "hint": "A large forested mountain range in southwestern Germany, known for its dense evergreen forests",
+    "difficulty": "medium"
+  },
+  {
+    "id": 4,
+    "name": "Carpathian Mountains",
+    "acceptedAnswers": ["carpathian mountains", "carpathians"],
+    "lat": 47.5000,
+    "lng": 25.0000,
+    "hint": "A mountain range forming an arc across Central and Eastern Europe through Romania, Slovakia, and Ukraine",
+    "difficulty": "medium"
+  },
+  {
+    "id": 5,
+    "name": "Great Hungarian Plain",
+    "acceptedAnswers": ["great hungarian plain", "hungarian plain", "alfold", "great alfold"],
+    "lat": 47.0000,
+    "lng": 20.0000,
+    "hint": "One of the largest flat plains in Europe, covering much of Hungary and parts of neighboring countries",
+    "difficulty": "hard"
+  },
+  {
+    "id": 6,
+    "name": "Iberian Meseta",
+    "acceptedAnswers": ["iberian meseta", "meseta", "meseta central"],
+    "lat": 39.5000,
+    "lng": -3.5000,
+    "hint": "A central plateau covering most of the interior of Spain and Portugal",
+    "difficulty": "hard"
+  },
+  {
+    "id": 7,
+    "name": "Scottish Highlands",
+    "acceptedAnswers": ["scottish highlands", "highlands", "the highlands"],
+    "lat": 57.0000,
+    "lng": -5.0000,
+    "hint": "A historic region of Scotland with rugged mountain terrain, lochs, and glens",
+    "difficulty": "medium"
+  },
+  {
+    "id": 8,
+    "name": "Finnish Lakeland",
+    "acceptedAnswers": ["finnish lakeland", "finnish lake district", "lakeland"],
+    "lat": 62.0000,
+    "lng": 28.0000,
+    "hint": "A region in central Finland with tens of thousands of lakes, the largest lake district in Europe",
+    "difficulty": "hard"
+  }
+]

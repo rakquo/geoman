@@ -1,0 +1,110 @@
+[
+  {
+    "id": 1,
+    "name": "London",
+    "acceptedAnswers": ["london"],
+    "lat": 51.5074,
+    "lng": -0.1278,
+    "hint": "The capital of the United Kingdom, situated on the River Thames",
+    "difficulty": "easy"
+  },
+  {
+    "id": 2,
+    "name": "Paris",
+    "acceptedAnswers": ["paris"],
+    "lat": 48.8566,
+    "lng": 2.3522,
+    "hint": "France's capital, known as the City of Light, home to the Eiffel Tower",
+    "difficulty": "easy"
+  },
+  {
+    "id": 3,
+    "name": "Berlin",
+    "acceptedAnswers": ["berlin"],
+    "lat": 52.5200,
+    "lng": 13.4050,
+    "hint": "The capital of Germany, once divided by a famous wall during the Cold War",
+    "difficulty": "easy"
+  },
+  {
+    "id": 4,
+    "name": "Rome",
+    "acceptedAnswers": ["rome", "roma"],
+    "lat": 41.9028,
+    "lng": 12.4964,
+    "hint": "Italy's capital, known as the Eternal City, center of the ancient Roman Empire",
+    "difficulty": "easy"
+  },
+  {
+    "id": 5,
+    "name": "Madrid",
+    "acceptedAnswers": ["madrid"],
+    "lat": 40.4168,
+    "lng": -3.7038,
+    "hint": "The capital and largest city of Spain, located in the center of the Iberian Peninsula",
+    "difficulty": "easy"
+  },
+  {
+    "id": 6,
+    "name": "Moscow",
+    "acceptedAnswers": ["moscow", "moskva"],
+    "lat": 55.7558,
+    "lng": 37.6173,
+    "hint": "Russia's capital and largest city, home to the Kremlin and Red Square",
+    "difficulty": "easy"
+  },
+  {
+    "id": 7,
+    "name": "Istanbul",
+    "acceptedAnswers": ["istanbul", "constantinople"],
+    "lat": 41.0082,
+    "lng": 28.9784,
+    "hint": "Turkey's largest city, straddling Europe and Asia across the Bosphorus strait",
+    "difficulty": "medium"
+  },
+  {
+    "id": 8,
+    "name": "Amsterdam",
+    "acceptedAnswers": ["amsterdam"],
+    "lat": 52.3676,
+    "lng": 4.9041,
+    "hint": "The capital of the Netherlands, famous for its canals, cycling culture, and museums",
+    "difficulty": "easy"
+  },
+  {
+    "id": 9,
+    "name": "Vienna",
+    "acceptedAnswers": ["vienna", "wien"],
+    "lat": 48.2082,
+    "lng": 16.3738,
+    "hint": "Austria's capital, a historic center of classical music and the former Habsburg Empire",
+    "difficulty": "medium"
+  },
+  {
+    "id": 10,
+    "name": "Prague",
+    "acceptedAnswers": ["prague", "praha"],
+    "lat": 50.0755,
+    "lng": 14.4378,
+    "hint": "The capital of the Czech Republic, known for its Old Town Square and astronomical clock",
+    "difficulty": "medium"
+  },
+  {
+    "id": 11,
+    "name": "Athens",
+    "acceptedAnswers": ["athens", "athina"],
+    "lat": 37.9838,
+    "lng": 23.7275,
+    "hint": "The capital of Greece, birthplace of democracy and home to the Parthenon",
+    "difficulty": "easy"
+  },
+  {
+    "id": 12,
+    "name": "Stockholm",
+    "acceptedAnswers": ["stockholm"],
+    "lat": 59.3293,
+    "lng": 18.0686,
+    "hint": "Sweden's capital, spread across 14 islands where Lake Malaren meets the Baltic Sea",
+    "difficulty": "medium"
+  }
+]
