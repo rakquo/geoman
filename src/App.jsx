@@ -12,7 +12,7 @@ export default function App() {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/continent/:continentId" element={<ContinentPage />} />
-          <Route path="/continent/:continentId/:category" element={<QuizPage />} />
+          <Route path="/continent/:continentId/:mode" element={<QuizPage />} />
         </Routes>
       </Layout>
     </QuizProvider>
