@@ -12,7 +12,8 @@ const modes = [
     icon: Building2,
     color: 'var(--color-political)',
     gradient: 'from-indigo-500 to-blue-600',
-    lightBg: 'bg-indigo-50',
+    lightBg: 'bg-indigo-50/70',
+    ring: 'ring-indigo-200',
   },
   {
     id: 'physical',
@@ -21,7 +22,8 @@ const modes = [
     icon: Mountain,
     color: 'var(--color-physical)',
     gradient: 'from-teal-500 to-emerald-600',
-    lightBg: 'bg-teal-50',
+    lightBg: 'bg-teal-50/70',
+    ring: 'ring-teal-200',
   },
 ]
 
@@ -74,9 +76,10 @@ export default function ContinentPage() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: i * 0.1, duration: 0.4 }}
               onClick={() => navigate(`/continent/${continentId}/${mode.id}`)}
-              className={`group relative overflow-hidden flex items-start gap-5 p-6 ${mode.lightBg} rounded-2xl border border-transparent hover:shadow-lg transition-all duration-300 cursor-pointer text-left`}
+              className={`group relative overflow-hidden flex items-start gap-5 p-6 ${mode.lightBg} backdrop-blur-sm rounded-2xl border border-white/40 hover:shadow-xl hover:ring-2 ${mode.ring} transition-all duration-300 cursor-pointer text-left`}
             >
-              <div className={`absolute top-0 right-0 w-32 h-32 rounded-full bg-gradient-to-br ${mode.gradient} opacity-10 -translate-y-12 translate-x-12 group-hover:scale-150 transition-transform duration-500`} />
+              <div className={`absolute top-0 right-0 w-32 h-32 rounded-full bg-gradient-to-br ${mode.gradient} opacity-[0.08] -translate-y-12 translate-x-12 group-hover:scale-[2] transition-transform duration-700`} />
+              <div className={`absolute bottom-0 left-0 w-24 h-24 rounded-full bg-gradient-to-br ${mode.gradient} opacity-[0.05] translate-y-10 -translate-x-10 group-hover:scale-[2] transition-transform duration-700`} />
               <div
                 className="w-14 h-14 rounded-xl flex items-center justify-center shrink-0 group-hover:scale-105 transition-transform"
                 style={{ backgroundColor: mode.color + '18' }}

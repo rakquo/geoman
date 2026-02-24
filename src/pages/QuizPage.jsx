@@ -1,5 +1,5 @@
 import { useParams, useNavigate } from 'react-router-dom'
-import { useState, useEffect, useRef, useCallback, memo } from 'react'
+import { useState, useEffect, useRef, useCallback, memo, useMemo } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import {
   ComposableMap,
@@ -18,14 +18,33 @@ const modeConfig = {
   physical: { categories: ['rivers', 'lakes', 'mountains', 'features'], label: 'Physical Map', color: 'var(--color-physical)' },
 }
 
-const geoStyle = {
-  default: { fill: 'var(--color-land)', stroke: 'var(--color-border-geo)', strokeWidth: 0.4, outline: 'none' },
-  hover: { fill: 'var(--color-land)', stroke: 'var(--color-border-geo)', strokeWidth: 0.4, outline: 'none' },
-  pressed: { fill: 'var(--color-land)', stroke: 'var(--color-border-geo)', strokeWidth: 0.4, outline: 'none' },
+/* Earthy/natural color palette for country fills */
+const countryColors = [
+  '#D4C4A8', '#C5D5C0', '#D5C8B8', '#B8C9D4', '#D1C2B4',
+  '#C8D4B4', '#DCCEB8', '#B4C8C0', '#D8C8BC', '#C0C8B8',
+  '#CCC4B4', '#B8D0C4', '#D0C8B0', '#C4CCC0', '#D4CCBC',
+  '#BCC8B4', '#D0C0B4', '#C0D0C8', '#D8D0C0', '#B4C4BC',
+  '#C8C0B4', '#D0D4C4', '#C4B8AC', '#B8C4B0', '#DCD4C4',
+]
+
+function getCountryColor(id) {
+  const num = parseInt(id, 10) || 0
+  return countryColors[((num * 7 + 13) % countryColors.length)]
 }
 
 const MemoGeo = memo(function MemoGeo({ geo }) {
-  return <Geography geography={geo} style={geoStyle} />
+  const id = geo.id || geo.properties?.id || '0'
+  const fill = getCountryColor(id)
+  return (
+    <Geography
+      geography={geo}
+      style={{
+        default: { fill, stroke: '#A8A298', strokeWidth: 0.5, outline: 'none' },
+        hover: { fill, stroke: '#A8A298', strokeWidth: 0.5, outline: 'none' },
+        pressed: { fill, stroke: '#A8A298', strokeWidth: 0.5, outline: 'none' },
+      }}
+    />
+  )
 })
 
 export default function QuizPage() {
@@ -188,8 +207,8 @@ export default function QuizPage() {
 
         {/* Score pill */}
         <motion.div
-          className="flex items-center gap-2 px-3 py-1.5 rounded-full text-sm font-medium"
-          style={{ backgroundColor: modeColor + '12', color: modeColor }}
+          className="flex items-center gap-2 px-3 py-1.5 rounded-full text-sm font-medium glass-card shadow-sm"
+          style={{ color: modeColor }}
           initial={{ opacity: 0, x: 10 }}
           animate={{ opacity: 1, x: 0 }}
         >
@@ -209,10 +228,10 @@ export default function QuizPage() {
       </motion.div>
 
       {/* Progress */}
-      <div className="h-1 bg-[var(--color-border)] rounded-full mb-5 overflow-hidden">
+      <div className="h-1.5 bg-white/60 rounded-full mb-5 overflow-hidden shadow-inner">
         <motion.div
           className="h-full rounded-full"
-          style={{ backgroundColor: modeColor }}
+          style={{ background: `linear-gradient(90deg, ${modeColor}, ${modeColor}dd)` }}
           animate={{ width: `${pct}%` }}
           transition={{ duration: 0.4 }}
         />
@@ -225,7 +244,13 @@ export default function QuizPage() {
       )}
 
       {/* Map container */}
-      <div className="relative w-full rounded-2xl overflow-hidden shadow-sm border border-[var(--color-border)]" style={{ backgroundColor: 'var(--color-water)' }}>
+      <motion.div
+        className="relative w-full rounded-2xl overflow-hidden shadow-lg border border-white/40"
+        style={{ backgroundColor: 'var(--color-water)' }}
+        initial={{ opacity: 0, y: 10 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5 }}
+      >
         <ComposableMap
           projection="geoMercator"
           projectionConfig={{ center: config.center, scale: config.scale }}
@@ -254,22 +279,47 @@ export default function QuizPage() {
                   onClick={() => handleMarkerClick(item)}
                   style={{ cursor: state ? 'default' : 'pointer' }}
                 >
+                  {/* Outer ring for unanswered */}
+                  {!state && !isActive && (
+                    <circle r={8} fill={modeColor} opacity={0.08} />
+                  )}
                   {/* Glow for active */}
                   {isActive && !state && (
-                    <circle r={14} fill={modeColor} opacity={0.15} className="marker-pulse" />
+                    <circle r={16} fill={modeColor} opacity={0.12} className="marker-pulse" />
                   )}
                   <circle
                     r={r}
                     fill={fill}
                     stroke="#fff"
-                    strokeWidth={1.5}
-                    style={{ transition: 'all 0.25s ease', filter: isActive ? 'drop-shadow(0 0 4px rgba(0,0,0,0.3))' : 'none' }}
+                    strokeWidth={2}
+                    style={{
+                      transition: 'all 0.25s ease',
+                      filter: isActive
+                        ? `drop-shadow(0 0 6px rgba(0,0,0,0.3))`
+                        : state
+                        ? 'none'
+                        : `drop-shadow(0 1px 3px rgba(0,0,0,0.2))`,
+                    }}
                   />
                   {state === 'correct' && (
                     <text textAnchor="middle" dominantBaseline="central" fill="#fff" fontSize={8} fontWeight={700} style={{ pointerEvents: 'none' }}>✓</text>
                   )}
                   {state === 'incorrect' && (
                     <text textAnchor="middle" dominantBaseline="central" fill="#fff" fontSize={8} fontWeight={700} style={{ pointerEvents: 'none' }}>✗</text>
+                  )}
+                  {/* Label for answered */}
+                  {state && (
+                    <text
+                      y={-12}
+                      textAnchor="middle"
+                      fill={state === 'correct' ? 'var(--color-correct)' : 'var(--color-incorrect)'}
+                      fontSize={7}
+                      fontWeight={600}
+                      fontFamily="var(--font-body)"
+                      style={{ pointerEvents: 'none', textShadow: '0 0 3px white, 0 0 3px white' }}
+                    >
+                      {quizItems.find(q => q._uid === item._uid)?.name}
+                    </text>
                   )}
                 </g>
               </Marker>
@@ -289,7 +339,7 @@ export default function QuizPage() {
               className="absolute bottom-4 left-1/2 -translate-x-1/2 w-80 max-w-[92%] z-10"
             >
               {lastResult && lastResult.uid === activeId ? (
-                <div className={`p-4 rounded-2xl shadow-xl backdrop-blur-sm border ${
+                <div className={`p-4 rounded-2xl shadow-xl backdrop-blur-md border ${
                   lastResult.correct
                     ? 'bg-[var(--color-correct-bg)]/95 border-[var(--color-correct)]/30'
                     : 'bg-[var(--color-incorrect-bg)]/95 border-[var(--color-incorrect)]/30'
@@ -323,7 +373,7 @@ export default function QuizPage() {
                   </div>
                 </div>
               ) : (
-                <form onSubmit={handleSubmitAnswer} className="bg-white/95 backdrop-blur-sm p-4 rounded-2xl shadow-xl border border-[var(--color-border)]">
+                <form onSubmit={handleSubmitAnswer} className="glass-card p-4 rounded-2xl shadow-xl">
                   <p className="text-[10px] uppercase tracking-widest text-[var(--color-text-muted)] font-semibold mb-2">{activeCategory}</p>
                   <div className="flex gap-2">
                     <input
@@ -333,12 +383,12 @@ export default function QuizPage() {
                       onChange={(e) => setInputValue(e.target.value)}
                       placeholder="Name this place..."
                       autoComplete="off"
-                      className="flex-1 px-3.5 py-2.5 bg-[var(--color-bg)] border border-[var(--color-border)] rounded-xl text-sm focus:border-[var(--color-accent)] focus:ring-2 focus:ring-[var(--color-accent)]/10 focus:outline-none transition-all font-[var(--font-body)]"
+                      className="flex-1 px-3.5 py-2.5 bg-white/80 border border-[var(--color-border)] rounded-xl text-sm focus:border-[var(--color-accent)] focus:ring-2 focus:ring-[var(--color-accent)]/10 focus:outline-none transition-all font-[var(--font-body)]"
                     />
                     <button
                       type="submit"
                       disabled={!inputValue.trim()}
-                      className="px-4 py-2.5 text-white text-sm font-semibold rounded-xl disabled:opacity-30 disabled:cursor-not-allowed transition-all cursor-pointer font-[var(--font-body)]"
+                      className="px-4 py-2.5 text-white text-sm font-semibold rounded-xl disabled:opacity-30 disabled:cursor-not-allowed transition-all cursor-pointer font-[var(--font-body)] shadow-md"
                       style={{ backgroundColor: modeColor }}
                     >
                       Go
@@ -356,7 +406,7 @@ export default function QuizPage() {
             </motion.div>
           )}
         </AnimatePresence>
-      </div>
+      </motion.div>
 
       {/* Completion */}
       <AnimatePresence>
@@ -374,7 +424,7 @@ export default function QuizPage() {
                 animate={{ scale: 1 }}
                 transition={{ type: 'spring', delay: 0.2 }}
                 className="inline-flex items-center justify-center w-20 h-20 rounded-full mb-3"
-                style={{ backgroundColor: modeColor + '12' }}
+                style={{ background: `linear-gradient(135deg, ${modeColor}18, ${modeColor}08)` }}
               >
                 {correctCount === totalCount ? (
                   <Sparkles className="w-9 h-9" style={{ color: modeColor }} />
@@ -403,8 +453,8 @@ export default function QuizPage() {
                     initial={{ opacity: 0, y: 5 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: i * 0.03 }}
-                    className={`flex items-center gap-2.5 px-3.5 py-2.5 rounded-xl text-sm ${
-                      state === 'correct' ? 'bg-[var(--color-correct-bg)]' : 'bg-[var(--color-incorrect-bg)]'
+                    className={`flex items-center gap-2.5 px-3.5 py-2.5 rounded-xl text-sm backdrop-blur-sm ${
+                      state === 'correct' ? 'bg-[var(--color-correct-bg)]/80' : 'bg-[var(--color-incorrect-bg)]/80'
                     }`}
                   >
                     {state === 'correct' ? (
@@ -425,13 +475,13 @@ export default function QuizPage() {
             <div className="flex gap-3">
               <button
                 onClick={handleReset}
-                className="flex-1 flex items-center justify-center gap-2 py-3.5 bg-white border border-[var(--color-border)] rounded-xl hover:border-[var(--color-accent)] hover:shadow-sm transition-all cursor-pointer text-sm font-semibold font-[var(--font-body)]"
+                className="flex-1 flex items-center justify-center gap-2 py-3.5 glass-card rounded-xl hover:shadow-md transition-all cursor-pointer text-sm font-semibold font-[var(--font-body)]"
               >
                 <RotateCcw className="w-4 h-4" /> Try Again
               </button>
               <button
                 onClick={() => navigate(`/continent/${continentId}`)}
-                className="flex-1 py-3.5 text-white rounded-xl hover:opacity-90 transition-all cursor-pointer text-sm font-semibold font-[var(--font-body)]"
+                className="flex-1 py-3.5 text-white rounded-xl hover:opacity-90 transition-all cursor-pointer text-sm font-semibold font-[var(--font-body)] shadow-md"
                 style={{ backgroundColor: modeColor }}
               >
                 Switch Mode

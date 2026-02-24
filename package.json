@@ -10,6 +10,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "cobe": "^0.6.5",
     "d3-geo": "^3.1.1",
     "framer-motion": "^12.34.3",
     "lucide-react": "^0.575.0",
