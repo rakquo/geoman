@@ -2,10 +2,10 @@
   {
     "id": 1,
     "name": "Cairo",
-    "acceptedAnswers": ["cairo", "al-qahirah"],
+    "acceptedAnswers": ["cairo", "al-qahira", "al qahira"],
     "lat": 30.0444,
     "lng": 31.2357,
-    "hint": "Egypt's capital, the largest city in Africa, located on the banks of the Nile",
+    "hint": "Capital of Egypt, largest city in Africa and the Arab world",
     "difficulty": "easy"
   },
   {
@@ -14,7 +14,7 @@
     "acceptedAnswers": ["lagos"],
     "lat": 6.5244,
     "lng": 3.3792,
-    "hint": "Nigeria's largest city and economic hub, a major port on the Atlantic coast of West Africa",
+    "hint": "Largest city in Nigeria and one of the fastest-growing in the world",
     "difficulty": "easy"
   },
   {
@@ -23,26 +23,26 @@
     "acceptedAnswers": ["nairobi"],
     "lat": -1.2921,
     "lng": 36.8219,
-    "hint": "Kenya's capital, a major East African hub with a national park within city limits",
-    "difficulty": "medium"
+    "hint": "Capital of Kenya, only capital city with a national park",
+    "difficulty": "easy"
   },
   {
     "id": 4,
+    "name": "Cape Town",
+    "acceptedAnswers": ["cape town", "kaapstad"],
+    "lat": -33.9249,
+    "lng": 18.4241,
+    "hint": "Legislative capital of South Africa, beneath Table Mountain",
+    "difficulty": "easy"
+  },
+  {
+    "id": 5,
     "name": "Johannesburg",
     "acceptedAnswers": ["johannesburg", "joburg", "jozi"],
     "lat": -26.2041,
     "lng": 28.0473,
-    "hint": "South Africa's largest city, built on gold mining, the economic powerhouse of southern Africa",
-    "difficulty": "medium"
-  },
-  {
-    "id": 5,
-    "name": "Casablanca",
-    "acceptedAnswers": ["casablanca", "dar el beida"],
-    "lat": 33.5731,
-    "lng": -7.5898,
-    "hint": "Morocco's largest city and chief port, located on the Atlantic coast of North Africa",
-    "difficulty": "medium"
+    "hint": "Largest city in South Africa, built on the gold mining industry",
+    "difficulty": "easy"
   },
   {
     "id": 6,
@@ -50,25 +50,25 @@
     "acceptedAnswers": ["addis ababa", "addis"],
     "lat": 9.0250,
     "lng": 38.7469,
-    "hint": "Ethiopia's capital and the diplomatic capital of Africa, headquarters of the African Union",
+    "hint": "Capital of Ethiopia and seat of the African Union",
     "difficulty": "medium"
   },
   {
     "id": 7,
+    "name": "Casablanca",
+    "acceptedAnswers": ["casablanca", "dar el beida"],
+    "lat": 33.5731,
+    "lng": -7.5898,
+    "hint": "Largest city in Morocco, major Atlantic port",
+    "difficulty": "easy"
+  },
+  {
+    "id": 8,
     "name": "Dar es Salaam",
     "acceptedAnswers": ["dar es salaam", "dar"],
     "lat": -6.7924,
     "lng": 39.2083,
-    "hint": "Tanzania's largest city and former capital, a major port on the Indian Ocean",
-    "difficulty": "hard"
-  },
-  {
-    "id": 8,
-    "name": "Accra",
-    "acceptedAnswers": ["accra"],
-    "lat": 5.6037,
-    "lng": -0.1870,
-    "hint": "The capital of Ghana, located on the Gulf of Guinea in West Africa",
+    "hint": "Largest city in Tanzania, former capital on the Indian Ocean coast",
     "difficulty": "medium"
   },
   {
@@ -77,34 +77,34 @@
     "acceptedAnswers": ["kinshasa"],
     "lat": -4.4419,
     "lng": 15.2663,
-    "hint": "The capital of the Democratic Republic of the Congo, the largest French-speaking city in the world",
-    "difficulty": "hard"
+    "hint": "Capital of the Democratic Republic of Congo, faces Brazzaville across the river",
+    "difficulty": "medium"
   },
   {
     "id": 10,
-    "name": "Luanda",
-    "acceptedAnswers": ["luanda"],
-    "lat": -8.8390,
-    "lng": 13.2894,
-    "hint": "The capital of Angola, a major port city on the Atlantic coast of southwestern Africa",
-    "difficulty": "hard"
+    "name": "Accra",
+    "acceptedAnswers": ["accra"],
+    "lat": 5.6037,
+    "lng": -0.1870,
+    "hint": "Capital of Ghana, located on the Gulf of Guinea coast",
+    "difficulty": "medium"
   },
   {
     "id": 11,
     "name": "Algiers",
-    "acceptedAnswers": ["algiers", "alger"],
+    "acceptedAnswers": ["algiers", "alger", "al-jazair"],
     "lat": 36.7538,
     "lng": 3.0588,
-    "hint": "The capital of Algeria, a white-washed city on the Mediterranean coast of North Africa",
+    "hint": "Capital of Algeria, the White City on the Mediterranean",
     "difficulty": "medium"
   },
   {
     "id": 12,
-    "name": "Cape Town",
-    "acceptedAnswers": ["cape town", "kaapstad"],
-    "lat": -33.9249,
-    "lng": 18.4241,
-    "hint": "South Africa's legislative capital, located at the foot of Table Mountain near the Cape of Good Hope",
-    "difficulty": "easy"
+    "name": "Khartoum",
+    "acceptedAnswers": ["khartoum", "khartum"],
+    "lat": 15.5007,
+    "lng": 32.5599,
+    "hint": "Capital of Sudan, where the Blue and White Nile converge",
+    "difficulty": "medium"
   }
 ]

@@ -3,82 +3,82 @@
     "id": 1,
     "name": "Danube",
     "acceptedAnswers": ["danube", "danube river", "donau"],
-    "lat": 45.3500,
-    "lng": 28.9700,
-    "hint": "Europe's second-longest river, flowing through 10 countries from Germany to the Black Sea",
+    "lat": 47.8000,
+    "lng": 18.5000,
+    "hint": "Second-longest European river, flows through four capitals",
     "difficulty": "easy"
   },
   {
     "id": 2,
     "name": "Rhine",
-    "acceptedAnswers": ["rhine", "rhine river", "rhein"],
-    "lat": 50.9400,
-    "lng": 6.9600,
-    "hint": "A major European river flowing from the Swiss Alps through Germany and the Netherlands to the North Sea",
+    "acceptedAnswers": ["rhine", "rhine river", "rhein", "rijn"],
+    "lat": 50.3600,
+    "lng": 7.6000,
+    "hint": "Major Western European river flowing from Swiss Alps to the North Sea",
     "difficulty": "easy"
   },
   {
     "id": 3,
-    "name": "Volga",
-    "acceptedAnswers": ["volga", "volga river"],
-    "lat": 48.7000,
-    "lng": 44.5000,
-    "hint": "The longest river in Europe, flowing through central Russia to the Caspian Sea",
-    "difficulty": "medium"
+    "name": "Thames",
+    "acceptedAnswers": ["thames", "thames river", "river thames"],
+    "lat": 51.5000,
+    "lng": -0.1000,
+    "hint": "River flowing through London, England",
+    "difficulty": "easy"
   },
   {
     "id": 4,
-    "name": "Thames",
-    "acceptedAnswers": ["thames", "thames river", "river thames"],
-    "lat": 51.5074,
-    "lng": -0.0760,
-    "hint": "A famous river flowing through London, England, to the North Sea",
+    "name": "Seine",
+    "acceptedAnswers": ["seine", "seine river", "river seine"],
+    "lat": 48.8600,
+    "lng": 2.3400,
+    "hint": "River flowing through the heart of Paris, France",
     "difficulty": "easy"
   },
   {
     "id": 5,
-    "name": "Seine",
-    "acceptedAnswers": ["seine", "seine river"],
-    "lat": 48.8600,
-    "lng": 2.3500,
-    "hint": "A major river flowing through Paris, France, famous for its scenic banks",
+    "name": "Volga",
+    "acceptedAnswers": ["volga", "volga river"],
+    "lat": 56.3269,
+    "lng": 44.0059,
+    "hint": "Longest river in Europe, flowing through central Russia to the Caspian Sea",
     "difficulty": "medium"
   },
   {
     "id": 6,
     "name": "Elbe",
-    "acceptedAnswers": ["elbe", "elbe river"],
-    "lat": 53.5300,
-    "lng": 9.9900,
-    "hint": "A major Central European river flowing from the Czech Republic through Germany to the North Sea",
-    "difficulty": "hard"
+    "acceptedAnswers": ["elbe", "elbe river", "labe"],
+    "lat": 53.5500,
+    "lng": 9.9800,
+    "hint": "Major Central European river flowing through Hamburg to the North Sea",
+    "difficulty": "medium"
   },
   {
     "id": 7,
-    "name": "Po",
-    "acceptedAnswers": ["po", "po river"],
-    "lat": 44.9500,
-    "lng": 11.4000,
-    "hint": "Italy's longest river, flowing eastward across the northern plains to the Adriatic Sea",
-    "difficulty": "hard"
+    "name": "Loire",
+    "acceptedAnswers": ["loire", "loire river"],
+    "lat": 47.2200,
+    "lng": 0.7000,
+    "hint": "Longest river in France, famous for its valley castles",
+    "difficulty": "medium"
   },
   {
     "id": 8,
-    "name": "Tagus",
-    "acceptedAnswers": ["tagus", "tagus river", "tejo", "tajo"],
-    "lat": 38.6900,
-    "lng": -9.2100,
-    "hint": "The longest river on the Iberian Peninsula, flowing through Spain and Portugal to Lisbon",
-    "difficulty": "hard"
+    "name": "Po",
+    "acceptedAnswers": ["po", "po river"],
+    "lat": 44.9500,
+    "lng": 11.6000,
+    "hint": "Longest river in Italy, flowing east across the northern plain",
+    "difficulty": "medium"
   },
   {
     "id": 9,
-    "name": "Loire",
-    "acceptedAnswers": ["loire", "loire river"],
-    "lat": 47.2700,
-    "lng": -1.5500,
-    "hint": "The longest river in France, famous for the chateaux along its valley",
-    "difficulty": "medium"
+    "name": "Tagus",
+    "acceptedAnswers": ["tagus", "tagus river", "tajo", "tejo"],
+    "lat": 38.7300,
+    "lng": -9.1400,
+    "hint": "Longest river on the Iberian Peninsula, flowing through Lisbon",
+    "difficulty": "hard"
   },
   {
     "id": 10,
@@ -86,7 +86,7 @@
     "acceptedAnswers": ["dnieper", "dnieper river", "dnipro"],
     "lat": 50.4500,
     "lng": 30.5200,
-    "hint": "A major river flowing through Russia, Belarus, and Ukraine, passing through Kyiv",
+    "hint": "Fourth-longest European river, flowing through Kyiv, Ukraine",
     "difficulty": "hard"
   }
 ]

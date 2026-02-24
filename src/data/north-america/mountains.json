@@ -2,37 +2,37 @@
   {
     "id": 1,
     "name": "Denali",
-    "acceptedAnswers": ["denali", "mount denali", "mt mckinley", "mount mckinley"],
+    "acceptedAnswers": ["denali", "mount denali", "mt denali", "mount mckinley", "mckinley"],
     "lat": 63.0695,
     "lng": -151.0074,
-    "hint": "The highest peak in North America at 6,190 meters, located in central Alaska",
-    "difficulty": "medium"
+    "hint": "Highest peak in North America, in Alaska, formerly called Mount McKinley",
+    "difficulty": "easy"
   },
   {
     "id": 2,
     "name": "Mount Logan",
     "acceptedAnswers": ["mount logan", "mt logan", "logan"],
-    "lat": 60.5672,
+    "lat": 60.5679,
     "lng": -140.4055,
-    "hint": "Canada's highest mountain and the second-highest peak in North America, in the Yukon",
-    "difficulty": "hard"
+    "hint": "Highest mountain in Canada, in the Yukon's Saint Elias Mountains",
+    "difficulty": "medium"
   },
   {
     "id": 3,
-    "name": "Pico de Orizaba",
-    "acceptedAnswers": ["pico de orizaba", "orizaba", "citlaltepetl"],
-    "lat": 19.0303,
-    "lng": -97.2684,
-    "hint": "Mexico's highest peak, a dormant volcano also known as Citlaltepetl, in eastern Mexico",
-    "difficulty": "hard"
-  },
-  {
-    "id": 4,
     "name": "Mount Rainier",
     "acceptedAnswers": ["mount rainier", "mt rainier", "rainier"],
     "lat": 46.8523,
     "lng": -121.7603,
-    "hint": "The highest mountain in Washington state, an active stratovolcano in the Cascade Range",
+    "hint": "Iconic volcanic peak near Seattle, Washington, covered in glaciers",
+    "difficulty": "medium"
+  },
+  {
+    "id": 4,
+    "name": "Pikes Peak",
+    "acceptedAnswers": ["pikes peak", "pike's peak"],
+    "lat": 38.8409,
+    "lng": -105.0423,
+    "hint": "Famous Colorado summit that inspired 'America the Beautiful'",
     "difficulty": "medium"
   },
   {
@@ -41,7 +41,7 @@
     "acceptedAnswers": ["mount whitney", "mt whitney", "whitney"],
     "lat": 36.5785,
     "lng": -118.2923,
-    "hint": "The highest peak in the contiguous United States, located in California's Sierra Nevada",
+    "hint": "Highest peak in the contiguous United States, in California's Sierra Nevada",
     "difficulty": "medium"
   },
   {
@@ -50,43 +50,43 @@
     "acceptedAnswers": ["mount elbert", "mt elbert", "elbert"],
     "lat": 39.1178,
     "lng": -106.4453,
-    "hint": "The highest peak in the Rocky Mountains and in Colorado, a popular hiking destination",
+    "hint": "Highest peak in the Rocky Mountains, in Colorado",
     "difficulty": "hard"
   },
   {
     "id": 7,
-    "name": "Mount Mitchell",
-    "acceptedAnswers": ["mount mitchell", "mt mitchell", "mitchell"],
-    "lat": 35.7648,
-    "lng": -82.2653,
-    "hint": "The highest peak east of the Mississippi River, located in North Carolina's Appalachian Mountains",
-    "difficulty": "hard"
+    "name": "Grand Teton",
+    "acceptedAnswers": ["grand teton", "mount grand teton"],
+    "lat": 43.7412,
+    "lng": -110.8024,
+    "hint": "Highest peak of the Teton Range in Wyoming",
+    "difficulty": "medium"
   },
   {
     "id": 8,
+    "name": "Mount Mitchell",
+    "acceptedAnswers": ["mount mitchell", "mt mitchell", "mitchell"],
+    "lat": 35.7648,
+    "lng": -82.2652,
+    "hint": "Highest peak east of the Mississippi River, in North Carolina",
+    "difficulty": "hard"
+  },
+  {
+    "id": 9,
     "name": "Mauna Kea",
     "acceptedAnswers": ["mauna kea"],
     "lat": 19.8207,
     "lng": -155.4680,
-    "hint": "A dormant volcano in Hawaii, the tallest mountain on Earth when measured from its oceanic base",
-    "difficulty": "medium"
-  },
-  {
-    "id": 9,
-    "name": "Grand Teton",
-    "acceptedAnswers": ["grand teton", "the grand teton"],
-    "lat": 43.7412,
-    "lng": -110.8024,
-    "hint": "The highest peak in the Teton Range of Wyoming, a dramatic granite peak in a famous national park",
+    "hint": "Tallest mountain from base to peak on Earth, a dormant volcano in Hawaii",
     "difficulty": "medium"
   },
   {
     "id": 10,
-    "name": "Mount Hood",
-    "acceptedAnswers": ["mount hood", "mt hood", "hood"],
-    "lat": 45.3735,
-    "lng": -121.6959,
-    "hint": "Oregon's highest peak, a potentially active stratovolcano in the Cascade Range near Portland",
-    "difficulty": "hard"
+    "name": "Mount St. Helens",
+    "acceptedAnswers": ["mount st helens", "mount st. helens", "mt st helens", "st helens"],
+    "lat": 46.1914,
+    "lng": -122.1956,
+    "hint": "Volcano in Washington state that erupted catastrophically in 1980",
+    "difficulty": "easy"
   }
 ]

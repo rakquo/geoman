@@ -5,7 +5,7 @@
     "acceptedAnswers": ["sydney"],
     "lat": -33.8688,
     "lng": 151.2093,
-    "hint": "Australia's largest city, famous for its harbor, Opera House, and Harbour Bridge",
+    "hint": "Australia's largest city, famous for its Opera House and Harbour Bridge",
     "difficulty": "easy"
   },
   {
@@ -14,26 +14,26 @@
     "acceptedAnswers": ["melbourne"],
     "lat": -37.8136,
     "lng": 144.9631,
-    "hint": "Australia's second-largest city, known for its culture, coffee, and street art in the state of Victoria",
+    "hint": "Australia's cultural capital, known for coffee, sports, and street art",
     "difficulty": "easy"
   },
   {
     "id": 3,
-    "name": "Auckland",
-    "acceptedAnswers": ["auckland"],
-    "lat": -36.8485,
-    "lng": 174.7633,
-    "hint": "New Zealand's largest city, built on an isthmus between two harbors, known as the City of Sails",
-    "difficulty": "easy"
-  },
-  {
-    "id": 4,
     "name": "Brisbane",
     "acceptedAnswers": ["brisbane"],
     "lat": -27.4698,
     "lng": 153.0251,
-    "hint": "The capital of Queensland, Australia, a subtropical city on the Brisbane River",
+    "hint": "Capital of Queensland, on Australia's subtropical east coast",
     "difficulty": "medium"
+  },
+  {
+    "id": 4,
+    "name": "Auckland",
+    "acceptedAnswers": ["auckland"],
+    "lat": -36.8485,
+    "lng": 174.7633,
+    "hint": "Largest city in New Zealand, built on an isthmus between two harbors",
+    "difficulty": "easy"
   },
   {
     "id": 5,
@@ -41,7 +41,7 @@
     "acceptedAnswers": ["perth"],
     "lat": -31.9505,
     "lng": 115.8605,
-    "hint": "The capital of Western Australia, one of the most isolated major cities in the world",
+    "hint": "Capital of Western Australia, one of the most isolated major cities in the world",
     "difficulty": "medium"
   },
   {
@@ -50,7 +50,7 @@
     "acceptedAnswers": ["wellington"],
     "lat": -41.2865,
     "lng": 174.7762,
-    "hint": "The capital of New Zealand, the southernmost capital of a sovereign state, known for its wind",
+    "hint": "Capital of New Zealand, the world's southernmost capital of a sovereign state",
     "difficulty": "medium"
   },
   {
@@ -59,26 +59,26 @@
     "acceptedAnswers": ["adelaide"],
     "lat": -34.9285,
     "lng": 138.6007,
-    "hint": "The capital of South Australia, known for its wine regions, festivals, and planned city layout",
+    "hint": "Capital of South Australia, known for wine regions and festivals",
     "difficulty": "medium"
   },
   {
     "id": 8,
-    "name": "Christchurch",
-    "acceptedAnswers": ["christchurch"],
-    "lat": -43.5321,
-    "lng": 172.6362,
-    "hint": "The largest city on New Zealand's South Island, known as the Garden City",
-    "difficulty": "medium"
-  },
-  {
-    "id": 9,
     "name": "Canberra",
     "acceptedAnswers": ["canberra"],
     "lat": -35.2809,
     "lng": 149.1300,
-    "hint": "The capital of Australia, a planned city located inland between Sydney and Melbourne",
+    "hint": "Capital of Australia, a planned city between Sydney and Melbourne",
     "difficulty": "medium"
+  },
+  {
+    "id": 9,
+    "name": "Port Moresby",
+    "acceptedAnswers": ["port moresby"],
+    "lat": -9.4438,
+    "lng": 147.1803,
+    "hint": "Capital of Papua New Guinea, on the southeastern coast",
+    "difficulty": "hard"
   },
   {
     "id": 10,
@@ -86,7 +86,25 @@
     "acceptedAnswers": ["suva"],
     "lat": -18.1416,
     "lng": 178.4419,
-    "hint": "The capital of Fiji and the largest city in the South Pacific island nations",
+    "hint": "Capital of Fiji, largest city in the South Pacific islands",
     "difficulty": "hard"
+  },
+  {
+    "id": 11,
+    "name": "Hobart",
+    "acceptedAnswers": ["hobart"],
+    "lat": -42.8821,
+    "lng": 147.3272,
+    "hint": "Capital of Tasmania, Australia's second-oldest city",
+    "difficulty": "hard"
+  },
+  {
+    "id": 12,
+    "name": "Darwin",
+    "acceptedAnswers": ["darwin"],
+    "lat": -12.4634,
+    "lng": 130.8456,
+    "hint": "Capital of Australia's Northern Territory, gateway to Kakadu",
+    "difficulty": "medium"
   }
 ]

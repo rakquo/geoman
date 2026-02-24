@@ -2,37 +2,37 @@
   {
     "id": 1,
     "name": "Sahara Desert",
-    "acceptedAnswers": ["sahara desert", "sahara"],
+    "acceptedAnswers": ["sahara", "sahara desert"],
     "lat": 23.4162,
-    "lng": 25.6628,
-    "hint": "The world's largest hot desert, spanning most of North Africa across 11 countries",
+    "lng": 8.0000,
+    "hint": "Largest hot desert in the world, spanning most of North Africa",
     "difficulty": "easy"
   },
   {
     "id": 2,
     "name": "Kalahari Desert",
-    "acceptedAnswers": ["kalahari desert", "kalahari"],
+    "acceptedAnswers": ["kalahari", "kalahari desert"],
     "lat": -23.5000,
     "lng": 22.0000,
-    "hint": "A large semi-arid savanna in southern Africa covering parts of Botswana, Namibia, and South Africa",
+    "hint": "Large semi-arid savanna in southern Africa, home to the San people",
     "difficulty": "medium"
   },
   {
     "id": 3,
     "name": "Congo Rainforest",
-    "acceptedAnswers": ["congo rainforest", "congo basin rainforest", "congo basin"],
+    "acceptedAnswers": ["congo rainforest", "congo basin rainforest", "congo jungle"],
     "lat": 0.5000,
     "lng": 22.0000,
-    "hint": "The world's second-largest tropical rainforest, in the Congo River Basin of Central Africa",
+    "hint": "Second-largest tropical rainforest in the world, in Central Africa",
     "difficulty": "medium"
   },
   {
     "id": 4,
     "name": "Serengeti",
-    "acceptedAnswers": ["serengeti", "serengeti plain", "serengeti plains"],
+    "acceptedAnswers": ["serengeti", "serengeti plains"],
     "lat": -2.3333,
     "lng": 34.8333,
-    "hint": "A vast ecosystem in East Africa famous for its annual migration of over a million wildebeest",
+    "hint": "Famous ecosystem in Tanzania known for the great wildebeest migration",
     "difficulty": "easy"
   },
   {
@@ -41,34 +41,52 @@
     "acceptedAnswers": ["great rift valley", "rift valley", "east african rift"],
     "lat": -1.0000,
     "lng": 36.0000,
-    "hint": "A continuous geographic trench running from Lebanon to Mozambique, most prominent in East Africa",
-    "difficulty": "medium"
+    "hint": "Massive geological trench running from Lebanon to Mozambique through East Africa",
+    "difficulty": "easy"
   },
   {
     "id": 6,
-    "name": "Ethiopian Highlands",
-    "acceptedAnswers": ["ethiopian highlands", "abyssinian highlands"],
-    "lat": 9.0000,
-    "lng": 39.0000,
-    "hint": "A rugged mass of mountains in Ethiopia, sometimes called the Roof of Africa, source of the Blue Nile",
-    "difficulty": "hard"
+    "name": "Namib Desert",
+    "acceptedAnswers": ["namib", "namib desert"],
+    "lat": -24.0000,
+    "lng": 15.5000,
+    "hint": "Oldest desert in the world, along the coast of Namibia with towering red dunes",
+    "difficulty": "medium"
   },
   {
     "id": 7,
-    "name": "Namib Desert",
-    "acceptedAnswers": ["namib desert", "namib"],
-    "lat": -24.0000,
-    "lng": 15.0000,
-    "hint": "A coastal desert in southern Africa, considered the oldest desert in the world, famous for its sand dunes",
-    "difficulty": "hard"
+    "name": "Sahel",
+    "acceptedAnswers": ["sahel"],
+    "lat": 14.0000,
+    "lng": 5.0000,
+    "hint": "Semi-arid transitional zone between the Sahara and the savanna to the south",
+    "difficulty": "medium"
   },
   {
     "id": 8,
+    "name": "Madagascar Rainforest",
+    "acceptedAnswers": ["madagascar rainforest", "madagascar forest", "madagascar"],
+    "lat": -18.7669,
+    "lng": 46.8691,
+    "hint": "Unique rainforest on the world's fourth-largest island, home to lemurs",
+    "difficulty": "medium"
+  },
+  {
+    "id": 9,
     "name": "Okavango Delta",
     "acceptedAnswers": ["okavango delta", "okavango"],
     "lat": -19.5000,
     "lng": 22.5000,
-    "hint": "A large inland delta in Botswana where the Okavango River empties into the Kalahari, a UNESCO World Heritage Site",
+    "hint": "Largest inland delta in the world, in Botswana, never reaches the ocean",
+    "difficulty": "medium"
+  },
+  {
+    "id": 10,
+    "name": "Ethiopian Highlands",
+    "acceptedAnswers": ["ethiopian highlands", "ethiopian plateau", "abyssinian highlands"],
+    "lat": 9.0000,
+    "lng": 38.5000,
+    "hint": "Rugged mountain mass in northeastern Africa, sometimes called the Roof of Africa",
     "difficulty": "hard"
   }
 ]

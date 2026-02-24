@@ -3,37 +3,37 @@
     "id": 1,
     "name": "Caspian Sea",
     "acceptedAnswers": ["caspian sea", "caspian"],
-    "lat": 41.9400,
-    "lng": 50.6700,
-    "hint": "The world's largest enclosed inland body of water, bordered by five countries",
+    "lat": 41.9500,
+    "lng": 50.6500,
+    "hint": "World's largest enclosed inland body of water, bordered by five countries",
     "difficulty": "easy"
   },
   {
     "id": 2,
-    "name": "Baikal",
-    "acceptedAnswers": ["baikal", "lake baikal"],
+    "name": "Lake Baikal",
+    "acceptedAnswers": ["baikal", "lake baikal", "baykal"],
     "lat": 53.5587,
     "lng": 108.1650,
-    "hint": "The world's deepest and oldest freshwater lake, located in Siberia, Russia",
-    "difficulty": "medium"
+    "hint": "Deepest and oldest freshwater lake in the world, located in Siberia",
+    "difficulty": "easy"
   },
   {
     "id": 3,
     "name": "Aral Sea",
     "acceptedAnswers": ["aral sea", "aral"],
-    "lat": 45.1000,
-    "lng": 59.6000,
-    "hint": "Once the fourth-largest lake in the world, this Central Asian lake has dramatically shrunk since the 1960s",
+    "lat": 45.0000,
+    "lng": 60.0000,
+    "hint": "Once the fourth-largest lake, now largely dried up in Central Asia",
     "difficulty": "medium"
   },
   {
     "id": 4,
-    "name": "Balkhash",
-    "acceptedAnswers": ["balkhash", "lake balkhash"],
-    "lat": 46.5400,
-    "lng": 74.8800,
-    "hint": "A large lake in southeastern Kazakhstan, unique for having both fresh and salt water halves",
-    "difficulty": "hard"
+    "name": "Dead Sea",
+    "acceptedAnswers": ["dead sea"],
+    "lat": 31.5000,
+    "lng": 35.5000,
+    "hint": "Hypersaline lake at the lowest point on Earth's surface",
+    "difficulty": "easy"
   },
   {
     "id": 5,
@@ -41,34 +41,52 @@
     "acceptedAnswers": ["tonle sap", "tonle sap lake"],
     "lat": 12.8333,
     "lng": 104.0833,
-    "hint": "Southeast Asia's largest freshwater lake, located in Cambodia, connected to the Mekong River",
+    "hint": "Largest freshwater lake in Southeast Asia, in Cambodia",
     "difficulty": "hard"
   },
   {
     "id": 6,
-    "name": "Dead Sea",
-    "acceptedAnswers": ["dead sea"],
-    "lat": 31.5000,
-    "lng": 35.5000,
-    "hint": "A salt lake bordered by Jordan and Israel, the lowest point on Earth's surface",
-    "difficulty": "easy"
+    "name": "Lake Balkhash",
+    "acceptedAnswers": ["balkhash", "lake balkhash"],
+    "lat": 46.5400,
+    "lng": 74.8800,
+    "hint": "One of Asia's largest lakes, half fresh and half salt water, in Kazakhstan",
+    "difficulty": "hard"
   },
   {
     "id": 7,
     "name": "Lake Urmia",
-    "acceptedAnswers": ["lake urmia", "urmia", "urmia lake"],
+    "acceptedAnswers": ["urmia", "lake urmia", "orumiyeh"],
     "lat": 37.7000,
-    "lng": 45.3000,
-    "hint": "A large saline lake in northwestern Iran, one of the largest saltwater lakes in the Middle East",
+    "lng": 45.3300,
+    "hint": "Shrinking salt lake in northwestern Iran, once the largest lake in the Middle East",
     "difficulty": "hard"
   },
   {
     "id": 8,
-    "name": "Qinghai Lake",
-    "acceptedAnswers": ["qinghai lake", "qinghai", "lake qinghai", "kokonor"],
-    "lat": 36.8833,
-    "lng": 100.1333,
-    "hint": "The largest lake in China, a saline lake on the Tibetan Plateau in Qinghai province",
+    "name": "Lake Toba",
+    "acceptedAnswers": ["toba", "lake toba"],
+    "lat": 2.6167,
+    "lng": 98.8333,
+    "hint": "Massive volcanic crater lake in Sumatra, Indonesia",
+    "difficulty": "hard"
+  },
+  {
+    "id": 9,
+    "name": "Dal Lake",
+    "acceptedAnswers": ["dal lake", "dal"],
+    "lat": 34.1100,
+    "lng": 74.8600,
+    "hint": "Famous houseboat lake in Srinagar, Kashmir",
+    "difficulty": "hard"
+  },
+  {
+    "id": 10,
+    "name": "Pangong Lake",
+    "acceptedAnswers": ["pangong", "pangong lake", "pangong tso"],
+    "lat": 33.7590,
+    "lng": 78.6600,
+    "hint": "High-altitude endorheic lake spanning India and China in the Himalayas",
     "difficulty": "hard"
   }
 ]

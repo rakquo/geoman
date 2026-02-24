@@ -1,21 +1,21 @@
 [
   {
     "id": 1,
-    "name": "Everest",
+    "name": "Mount Everest",
     "acceptedAnswers": ["everest", "mount everest", "mt everest", "sagarmatha", "chomolungma"],
     "lat": 27.9881,
     "lng": 86.9250,
-    "hint": "The highest mountain on Earth at 8,849 meters, on the border of Nepal and Tibet",
+    "hint": "Highest peak on Earth at 8,849 meters, on the Nepal-China border",
     "difficulty": "easy"
   },
   {
     "id": 2,
     "name": "K2",
-    "acceptedAnswers": ["k2", "mount k2", "chhogori", "godwin-austen"],
+    "acceptedAnswers": ["k2", "mount k2", "mt k2", "chhogori", "godwin-austen"],
     "lat": 35.8825,
     "lng": 76.5133,
-    "hint": "The second-highest mountain in the world, on the China-Pakistan border in the Karakoram range",
-    "difficulty": "medium"
+    "hint": "Second-highest mountain on Earth, on the Pakistan-China border",
+    "difficulty": "easy"
   },
   {
     "id": 3,
@@ -23,34 +23,34 @@
     "acceptedAnswers": ["kangchenjunga", "kanchenjunga", "mount kangchenjunga"],
     "lat": 27.7025,
     "lng": 88.1475,
-    "hint": "The third-highest mountain in the world, on the border of Nepal and Sikkim, India",
-    "difficulty": "hard"
+    "hint": "Third-highest mountain, on the Nepal-India border",
+    "difficulty": "medium"
   },
   {
     "id": 4,
-    "name": "Fuji",
-    "acceptedAnswers": ["fuji", "mount fuji", "mt fuji", "fujisan", "fujiyama"],
-    "lat": 35.3606,
-    "lng": 138.7274,
-    "hint": "Japan's highest and most iconic mountain, a symmetrical volcanic cone southwest of Tokyo",
-    "difficulty": "easy"
+    "name": "Lhotse",
+    "acceptedAnswers": ["lhotse", "mount lhotse"],
+    "lat": 27.9617,
+    "lng": 86.9350,
+    "hint": "Fourth-highest mountain, connected to Everest via the South Col",
+    "difficulty": "hard"
   },
   {
     "id": 5,
-    "name": "Elbrus",
-    "acceptedAnswers": ["elbrus", "mount elbrus", "mt elbrus"],
-    "lat": 43.3499,
-    "lng": 42.4453,
-    "hint": "The highest mountain in Europe and the Caucasus, a dormant volcano in southern Russia",
-    "difficulty": "medium"
+    "name": "Makalu",
+    "acceptedAnswers": ["makalu", "mount makalu"],
+    "lat": 27.8897,
+    "lng": 87.0889,
+    "hint": "Fifth-highest mountain on Earth, located in the Mahalangur Himalayas",
+    "difficulty": "hard"
   },
   {
     "id": 6,
     "name": "Annapurna",
     "acceptedAnswers": ["annapurna", "mount annapurna", "annapurna i"],
     "lat": 28.5955,
-    "lng": 83.8203,
-    "hint": "A massif in the Himalayas of north-central Nepal, one of the most dangerous peaks to climb",
+    "lng": 83.8202,
+    "hint": "One of the most dangerous eight-thousanders in Nepal, first 8000m peak climbed",
     "difficulty": "medium"
   },
   {
@@ -59,34 +59,34 @@
     "acceptedAnswers": ["nanga parbat", "mount nanga parbat"],
     "lat": 35.2375,
     "lng": 74.5892,
-    "hint": "The ninth-highest mountain in the world, known as the 'Killer Mountain', in Pakistan",
+    "hint": "Known as 'Killer Mountain' in Pakistan, ninth-highest peak in the world",
     "difficulty": "hard"
   },
   {
     "id": 8,
-    "name": "Makalu",
-    "acceptedAnswers": ["makalu", "mount makalu"],
-    "lat": 27.8897,
-    "lng": 87.0886,
-    "hint": "The fifth-highest mountain in the world, located on the border of Nepal and Tibet, near Everest",
-    "difficulty": "hard"
+    "name": "Mount Fuji",
+    "acceptedAnswers": ["fuji", "mount fuji", "mt fuji", "fujisan", "fuji-san"],
+    "lat": 35.3606,
+    "lng": 138.7274,
+    "hint": "Japan's highest peak and most iconic volcano",
+    "difficulty": "easy"
   },
   {
     "id": 9,
-    "name": "Cho Oyu",
-    "acceptedAnswers": ["cho oyu", "mount cho oyu"],
-    "lat": 28.0942,
-    "lng": 86.6608,
-    "hint": "The sixth-highest mountain in the world, on the Nepal-Tibet border, considered the easiest 8,000m peak",
-    "difficulty": "hard"
+    "name": "Mount Elbrus",
+    "acceptedAnswers": ["elbrus", "mount elbrus", "mt elbrus"],
+    "lat": 43.3499,
+    "lng": 42.4453,
+    "hint": "Highest peak in Europe (and the Caucasus), a dormant volcano in Russia",
+    "difficulty": "medium"
   },
   {
     "id": 10,
-    "name": "Kinabalu",
-    "acceptedAnswers": ["kinabalu", "mount kinabalu", "mt kinabalu"],
-    "lat": 6.0753,
-    "lng": 116.5584,
-    "hint": "The highest peak in Borneo and Malaysia, located in Sabah on the island of Borneo",
+    "name": "Mount Damavand",
+    "acceptedAnswers": ["damavand", "mount damavand", "mt damavand"],
+    "lat": 35.9515,
+    "lng": 52.1090,
+    "hint": "Highest volcano in Asia, located in Iran's Alborz range",
     "difficulty": "hard"
   }
 ]

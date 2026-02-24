@@ -5,7 +5,7 @@
     "acceptedAnswers": ["london"],
     "lat": 51.5074,
     "lng": -0.1278,
-    "hint": "The capital of the United Kingdom, situated on the River Thames",
+    "hint": "Capital of the United Kingdom, home to Big Ben and Buckingham Palace",
     "difficulty": "easy"
   },
   {
@@ -14,7 +14,7 @@
     "acceptedAnswers": ["paris"],
     "lat": 48.8566,
     "lng": 2.3522,
-    "hint": "France's capital, known as the City of Light, home to the Eiffel Tower",
+    "hint": "Capital of France, known as the City of Light",
     "difficulty": "easy"
   },
   {
@@ -23,7 +23,7 @@
     "acceptedAnswers": ["berlin"],
     "lat": 52.5200,
     "lng": 13.4050,
-    "hint": "The capital of Germany, once divided by a famous wall during the Cold War",
+    "hint": "Capital of Germany, once divided by a famous wall",
     "difficulty": "easy"
   },
   {
@@ -32,7 +32,7 @@
     "acceptedAnswers": ["rome", "roma"],
     "lat": 41.9028,
     "lng": 12.4964,
-    "hint": "Italy's capital, known as the Eternal City, center of the ancient Roman Empire",
+    "hint": "Capital of Italy, the Eternal City with ancient ruins",
     "difficulty": "easy"
   },
   {
@@ -41,70 +41,70 @@
     "acceptedAnswers": ["madrid"],
     "lat": 40.4168,
     "lng": -3.7038,
-    "hint": "The capital and largest city of Spain, located in the center of the Iberian Peninsula",
+    "hint": "Capital of Spain, located in the center of the Iberian Peninsula",
     "difficulty": "easy"
   },
   {
     "id": 6,
-    "name": "Moscow",
-    "acceptedAnswers": ["moscow", "moskva"],
-    "lat": 55.7558,
-    "lng": 37.6173,
-    "hint": "Russia's capital and largest city, home to the Kremlin and Red Square",
-    "difficulty": "easy"
-  },
-  {
-    "id": 7,
-    "name": "Istanbul",
-    "acceptedAnswers": ["istanbul", "constantinople"],
-    "lat": 41.0082,
-    "lng": 28.9784,
-    "hint": "Turkey's largest city, straddling Europe and Asia across the Bosphorus strait",
-    "difficulty": "medium"
-  },
-  {
-    "id": 8,
     "name": "Amsterdam",
     "acceptedAnswers": ["amsterdam"],
     "lat": 52.3676,
     "lng": 4.9041,
-    "hint": "The capital of the Netherlands, famous for its canals, cycling culture, and museums",
+    "hint": "Capital of the Netherlands, famous for its canals and tulips",
     "difficulty": "easy"
   },
   {
-    "id": 9,
+    "id": 7,
     "name": "Vienna",
     "acceptedAnswers": ["vienna", "wien"],
     "lat": 48.2082,
     "lng": 16.3738,
-    "hint": "Austria's capital, a historic center of classical music and the former Habsburg Empire",
+    "hint": "Capital of Austria, historic center of the Habsburg Empire",
     "difficulty": "medium"
   },
   {
-    "id": 10,
+    "id": 8,
     "name": "Prague",
     "acceptedAnswers": ["prague", "praha"],
     "lat": 50.0755,
     "lng": 14.4378,
-    "hint": "The capital of the Czech Republic, known for its Old Town Square and astronomical clock",
+    "hint": "Capital of the Czech Republic, known as the City of a Hundred Spires",
     "difficulty": "medium"
   },
   {
-    "id": 11,
-    "name": "Athens",
-    "acceptedAnswers": ["athens", "athina"],
-    "lat": 37.9838,
-    "lng": 23.7275,
-    "hint": "The capital of Greece, birthplace of democracy and home to the Parthenon",
-    "difficulty": "easy"
-  },
-  {
-    "id": 12,
+    "id": 9,
     "name": "Stockholm",
     "acceptedAnswers": ["stockholm"],
     "lat": 59.3293,
     "lng": 18.0686,
-    "hint": "Sweden's capital, spread across 14 islands where Lake Malaren meets the Baltic Sea",
+    "hint": "Capital of Sweden, spread across 14 islands",
+    "difficulty": "medium"
+  },
+  {
+    "id": 10,
+    "name": "Athens",
+    "acceptedAnswers": ["athens", "athina"],
+    "lat": 37.9838,
+    "lng": 23.7275,
+    "hint": "Capital of Greece, birthplace of democracy and the Acropolis",
+    "difficulty": "easy"
+  },
+  {
+    "id": 11,
+    "name": "Lisbon",
+    "acceptedAnswers": ["lisbon", "lisboa"],
+    "lat": 38.7223,
+    "lng": -9.1393,
+    "hint": "Capital of Portugal, built on seven hills along the Tagus River",
+    "difficulty": "medium"
+  },
+  {
+    "id": 12,
+    "name": "Warsaw",
+    "acceptedAnswers": ["warsaw", "warszawa"],
+    "lat": 52.2297,
+    "lng": 21.0122,
+    "hint": "Capital of Poland, rebuilt after extensive WWII destruction",
     "difficulty": "medium"
   }
 ]

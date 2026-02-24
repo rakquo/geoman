@@ -2,10 +2,10 @@
   {
     "id": 1,
     "name": "Sao Paulo",
-    "acceptedAnswers": ["sao paulo", "são paulo"],
+    "acceptedAnswers": ["sao paulo", "são paulo", "san pablo"],
     "lat": -23.5505,
     "lng": -46.6333,
-    "hint": "Brazil's largest city and the most populous city in South America, a major financial center",
+    "hint": "Largest city in South America and Brazil's financial hub",
     "difficulty": "easy"
   },
   {
@@ -14,7 +14,7 @@
     "acceptedAnswers": ["buenos aires"],
     "lat": -34.6037,
     "lng": -58.3816,
-    "hint": "The capital of Argentina, known for tango, European-style architecture, and vibrant culture",
+    "hint": "Capital of Argentina, known as the Paris of South America",
     "difficulty": "easy"
   },
   {
@@ -23,8 +23,8 @@
     "acceptedAnswers": ["lima"],
     "lat": -12.0464,
     "lng": -77.0428,
-    "hint": "The capital of Peru, a coastal desert city that was the center of the Spanish colonial empire in South America",
-    "difficulty": "medium"
+    "hint": "Capital of Peru, located on the Pacific coast in a desert",
+    "difficulty": "easy"
   },
   {
     "id": 4,
@@ -32,79 +32,79 @@
     "acceptedAnswers": ["bogota", "bogotá"],
     "lat": 4.7110,
     "lng": -74.0721,
-    "hint": "The capital of Colombia, one of the highest capital cities in the world at 2,640 meters elevation",
-    "difficulty": "medium"
-  },
-  {
-    "id": 5,
-    "name": "Rio de Janeiro",
-    "acceptedAnswers": ["rio de janeiro", "rio"],
-    "lat": -22.9068,
-    "lng": -43.1729,
-    "hint": "Brazil's second-largest city, famous for Christ the Redeemer, Copacabana beach, and Carnival",
+    "hint": "Capital of Colombia, one of the highest capital cities in the world",
     "difficulty": "easy"
   },
   {
-    "id": 6,
+    "id": 5,
     "name": "Santiago",
     "acceptedAnswers": ["santiago", "santiago de chile"],
     "lat": -33.4489,
     "lng": -70.6693,
-    "hint": "The capital of Chile, set in a valley surrounded by the snow-capped Andes and the Chilean Coastal Range",
-    "difficulty": "medium"
+    "hint": "Capital of Chile, nestled in a valley between the Andes and the coast",
+    "difficulty": "easy"
   },
   {
-    "id": 7,
+    "id": 6,
     "name": "Caracas",
     "acceptedAnswers": ["caracas"],
     "lat": 10.4806,
     "lng": -66.9036,
-    "hint": "The capital of Venezuela, located in a mountain valley near the Caribbean coast",
+    "hint": "Capital of Venezuela, located in a mountain valley near the Caribbean coast",
     "difficulty": "medium"
   },
   {
-    "id": 8,
+    "id": 7,
     "name": "Quito",
     "acceptedAnswers": ["quito"],
     "lat": -0.1807,
     "lng": -78.4678,
-    "hint": "The capital of Ecuador, the highest official capital city in the world, sitting near the equator",
+    "hint": "Capital of Ecuador, situated almost exactly on the equator at high altitude",
     "difficulty": "medium"
   },
   {
-    "id": 9,
+    "id": 8,
     "name": "Montevideo",
     "acceptedAnswers": ["montevideo"],
     "lat": -34.9011,
     "lng": -56.1645,
-    "hint": "The capital of Uruguay, located on the northern shore of the Rio de la Plata estuary",
-    "difficulty": "hard"
+    "hint": "Capital of Uruguay, on the northern shore of the Rio de la Plata",
+    "difficulty": "medium"
+  },
+  {
+    "id": 9,
+    "name": "La Paz",
+    "acceptedAnswers": ["la paz"],
+    "lat": -16.5000,
+    "lng": -68.1500,
+    "hint": "Administrative capital of Bolivia, highest capital city in the world",
+    "difficulty": "medium"
   },
   {
     "id": 10,
-    "name": "La Paz",
-    "acceptedAnswers": ["la paz"],
-    "lat": -16.4897,
-    "lng": -68.1193,
-    "hint": "Bolivia's seat of government, the highest administrative capital in the world at over 3,600 meters",
+    "name": "Brasilia",
+    "acceptedAnswers": ["brasilia", "brasília"],
+    "lat": -15.7975,
+    "lng": -47.8919,
+    "hint": "Purpose-built capital of Brazil, designed in the shape of an airplane",
     "difficulty": "medium"
   },
   {
     "id": 11,
-    "name": "Brasilia",
-    "acceptedAnswers": ["brasilia", "brasília"],
-    "lat": -15.8267,
-    "lng": -47.9218,
-    "hint": "Brazil's planned capital city, designed by Oscar Niemeyer, shaped like an airplane from above",
-    "difficulty": "medium"
-  },
-  {
-    "id": 12,
     "name": "Medellin",
     "acceptedAnswers": ["medellin", "medellín"],
     "lat": 6.2442,
     "lng": -75.5812,
-    "hint": "Colombia's second-largest city, known as the City of Eternal Spring for its pleasant climate",
-    "difficulty": "hard"
+    "hint": "Second-largest city in Colombia, known as the City of Eternal Spring",
+    "difficulty": "medium"
+  },
+  {
+    "id": 12,
+    "name": "Rio de Janeiro",
+    "acceptedAnswers": ["rio de janeiro", "rio"],
+    "lat": -22.9068,
+    "lng": -43.1729,
+    "hint": "Brazilian city famous for Christ the Redeemer statue and Copacabana Beach",
+    "difficulty": "easy"
   }
 ]

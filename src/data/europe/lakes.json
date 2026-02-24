@@ -1,74 +1,92 @@
 [
   {
     "id": 1,
-    "name": "Ladoga",
+    "name": "Lake Ladoga",
     "acceptedAnswers": ["ladoga", "lake ladoga"],
     "lat": 61.0000,
     "lng": 31.5000,
-    "hint": "The largest lake in Europe, located in northwestern Russia near St. Petersburg",
-    "difficulty": "hard"
+    "hint": "Largest lake in Europe, located in northwestern Russia near St. Petersburg",
+    "difficulty": "medium"
   },
   {
     "id": 2,
-    "name": "Onega",
-    "acceptedAnswers": ["onega", "lake onega"],
-    "lat": 61.5000,
-    "lng": 35.5000,
-    "hint": "The second-largest lake in Europe, located in northwestern Russia in Karelia",
-    "difficulty": "hard"
+    "name": "Lake Geneva",
+    "acceptedAnswers": ["lake geneva", "geneva", "lac leman", "lac léman"],
+    "lat": 46.4500,
+    "lng": 6.5000,
+    "hint": "Crescent-shaped lake on the Swiss-French border, home to the Jet d'Eau",
+    "difficulty": "easy"
   },
   {
     "id": 3,
-    "name": "Vanern",
-    "acceptedAnswers": ["vanern", "lake vanern", "vanern lake", "vanern"],
-    "lat": 58.9200,
-    "lng": 13.5000,
-    "hint": "The largest lake in Sweden and the third-largest in Europe",
-    "difficulty": "hard"
+    "name": "Lake Balaton",
+    "acceptedAnswers": ["balaton", "lake balaton"],
+    "lat": 46.8300,
+    "lng": 17.7200,
+    "hint": "Largest lake in Central Europe, known as the Hungarian Sea",
+    "difficulty": "medium"
   },
   {
     "id": 4,
-    "name": "Saimaa",
-    "acceptedAnswers": ["saimaa", "lake saimaa"],
-    "lat": 61.3500,
-    "lng": 28.1000,
-    "hint": "The largest lake in Finland, famous for the endangered Saimaa ringed seal",
-    "difficulty": "hard"
+    "name": "Lake Como",
+    "acceptedAnswers": ["como", "lake como", "lago di como"],
+    "lat": 46.0160,
+    "lng": 9.2572,
+    "hint": "Deep glacial lake in the Italian Alps, popular celebrity retreat",
+    "difficulty": "medium"
   },
   {
     "id": 5,
-    "name": "Lake Geneva",
-    "acceptedAnswers": ["lake geneva", "geneva", "lac leman", "lac de geneve"],
-    "lat": 46.4500,
-    "lng": 6.5000,
-    "hint": "A crescent-shaped lake on the border of Switzerland and France, one of Europe's largest Alpine lakes",
-    "difficulty": "medium"
+    "name": "Loch Ness",
+    "acceptedAnswers": ["loch ness", "ness"],
+    "lat": 57.3229,
+    "lng": -4.4244,
+    "hint": "Famous Scottish lake known for its legendary monster",
+    "difficulty": "easy"
   },
   {
     "id": 6,
     "name": "Lake Constance",
     "acceptedAnswers": ["lake constance", "constance", "bodensee"],
     "lat": 47.6300,
-    "lng": 9.3700,
-    "hint": "A lake on the Rhine at the northern foot of the Alps, bordering Germany, Austria, and Switzerland",
+    "lng": 9.3800,
+    "hint": "Lake bordered by Germany, Austria, and Switzerland",
     "difficulty": "medium"
   },
   {
     "id": 7,
-    "name": "Balaton",
-    "acceptedAnswers": ["balaton", "lake balaton"],
-    "lat": 46.8400,
-    "lng": 17.7200,
-    "hint": "The largest lake in Central Europe, known as the Hungarian Sea",
-    "difficulty": "medium"
+    "name": "Lake Vanern",
+    "acceptedAnswers": ["vanern", "lake vanern", "vänern", "lake vänern"],
+    "lat": 58.9200,
+    "lng": 13.5000,
+    "hint": "Largest lake in Sweden and the EU",
+    "difficulty": "hard"
   },
   {
     "id": 8,
-    "name": "Lago di Garda",
-    "acceptedAnswers": ["lago di garda", "lake garda", "garda"],
-    "lat": 45.6400,
+    "name": "Lake Saimaa",
+    "acceptedAnswers": ["saimaa", "lake saimaa"],
+    "lat": 61.2500,
+    "lng": 28.3000,
+    "hint": "Largest lake in Finland, home to the endangered Saimaa ringed seal",
+    "difficulty": "hard"
+  },
+  {
+    "id": 9,
+    "name": "Lake Garda",
+    "acceptedAnswers": ["garda", "lake garda", "lago di garda"],
+    "lat": 45.6500,
     "lng": 10.6600,
-    "hint": "The largest lake in Italy, located in the northern part of the country between Milan and Venice",
+    "hint": "Largest lake in Italy, located between Venice and Milan",
     "difficulty": "medium"
+  },
+  {
+    "id": 10,
+    "name": "Lake Ohrid",
+    "acceptedAnswers": ["ohrid", "lake ohrid"],
+    "lat": 41.0300,
+    "lng": 20.7200,
+    "hint": "One of the oldest lakes in the world, on the North Macedonia-Albania border",
+    "difficulty": "hard"
   }
 ]

@@ -5,25 +5,25 @@
     "acceptedAnswers": ["new york", "new york city", "nyc"],
     "lat": 40.7128,
     "lng": -74.0060,
-    "hint": "The most populous city in the United States, home to the Statue of Liberty and Times Square",
+    "hint": "The Big Apple, America's most populous city with iconic skyscrapers",
     "difficulty": "easy"
   },
   {
     "id": 2,
     "name": "Los Angeles",
-    "acceptedAnswers": ["los angeles", "la", "l.a."],
+    "acceptedAnswers": ["los angeles", "la"],
     "lat": 34.0522,
     "lng": -118.2437,
-    "hint": "The second-largest city in the US, known for Hollywood and the entertainment industry",
+    "hint": "City of Angels, home to Hollywood and the entertainment industry",
     "difficulty": "easy"
   },
   {
     "id": 3,
-    "name": "Mexico City",
-    "acceptedAnswers": ["mexico city", "ciudad de mexico", "cdmx"],
-    "lat": 19.4326,
-    "lng": -99.1332,
-    "hint": "The capital of Mexico, one of the most populous cities in the world, built on an ancient lake bed",
+    "name": "Chicago",
+    "acceptedAnswers": ["chicago"],
+    "lat": 41.8781,
+    "lng": -87.6298,
+    "hint": "The Windy City on Lake Michigan, known for deep-dish pizza",
     "difficulty": "easy"
   },
   {
@@ -32,79 +32,79 @@
     "acceptedAnswers": ["toronto"],
     "lat": 43.6532,
     "lng": -79.3832,
-    "hint": "Canada's largest city, located on the northwestern shore of Lake Ontario",
+    "hint": "Canada's largest city, home to the CN Tower on Lake Ontario",
     "difficulty": "easy"
   },
   {
     "id": 5,
-    "name": "Chicago",
-    "acceptedAnswers": ["chicago"],
-    "lat": 41.8781,
-    "lng": -87.6298,
-    "hint": "The third-largest city in the US, known as the Windy City, on the southwestern shore of Lake Michigan",
+    "name": "Mexico City",
+    "acceptedAnswers": ["mexico city", "ciudad de mexico", "cdmx"],
+    "lat": 19.4326,
+    "lng": -99.1332,
+    "hint": "Capital of Mexico, built on the ruins of the Aztec capital Tenochtitlan",
     "difficulty": "easy"
   },
   {
     "id": 6,
-    "name": "Houston",
-    "acceptedAnswers": ["houston"],
-    "lat": 29.7604,
-    "lng": -95.3698,
-    "hint": "The largest city in Texas and fourth-largest in the US, home to NASA's Mission Control",
-    "difficulty": "medium"
-  },
-  {
-    "id": 7,
-    "name": "Havana",
-    "acceptedAnswers": ["havana", "la habana"],
-    "lat": 23.1136,
-    "lng": -82.3666,
-    "hint": "The capital of Cuba, known for its colorful colonial architecture and classic American cars",
-    "difficulty": "medium"
-  },
-  {
-    "id": 8,
     "name": "Vancouver",
     "acceptedAnswers": ["vancouver"],
     "lat": 49.2827,
     "lng": -123.1207,
-    "hint": "A major city in western Canada, surrounded by mountains and the Pacific Ocean",
+    "hint": "Coastal city in British Columbia, surrounded by mountains and ocean",
+    "difficulty": "medium"
+  },
+  {
+    "id": 7,
+    "name": "Washington DC",
+    "acceptedAnswers": ["washington dc", "washington d.c.", "washington", "dc"],
+    "lat": 38.9072,
+    "lng": -77.0369,
+    "hint": "Capital of the United States, home to the White House and Capitol",
+    "difficulty": "easy"
+  },
+  {
+    "id": 8,
+    "name": "Houston",
+    "acceptedAnswers": ["houston"],
+    "lat": 29.7604,
+    "lng": -95.3698,
+    "hint": "Largest city in Texas, home to NASA's Mission Control",
     "difficulty": "medium"
   },
   {
     "id": 9,
-    "name": "Washington DC",
-    "acceptedAnswers": ["washington dc", "washington d.c.", "washington", "dc", "d.c."],
-    "lat": 38.9072,
-    "lng": -77.0369,
-    "hint": "The capital of the United States, home to the White House and the National Mall",
-    "difficulty": "easy"
+    "name": "Montreal",
+    "acceptedAnswers": ["montreal", "montréal"],
+    "lat": 45.5017,
+    "lng": -73.5673,
+    "hint": "Largest French-speaking city in North America, in Quebec",
+    "difficulty": "medium"
   },
   {
     "id": 10,
-    "name": "San Francisco",
-    "acceptedAnswers": ["san francisco", "sf"],
-    "lat": 37.7749,
-    "lng": -122.4194,
-    "hint": "A hilly city in California famous for the Golden Gate Bridge and cable cars",
+    "name": "Havana",
+    "acceptedAnswers": ["havana", "la habana"],
+    "lat": 23.1136,
+    "lng": -82.3666,
+    "hint": "Capital of Cuba, famous for classic cars and colonial architecture",
     "difficulty": "medium"
   },
   {
     "id": 11,
-    "name": "Montreal",
-    "acceptedAnswers": ["montreal"],
-    "lat": 45.5017,
-    "lng": -73.5673,
-    "hint": "The largest city in Quebec, Canada, a French-speaking metropolis on an island in the St. Lawrence River",
-    "difficulty": "medium"
+    "name": "San Francisco",
+    "acceptedAnswers": ["san francisco", "sf"],
+    "lat": 37.7749,
+    "lng": -122.4194,
+    "hint": "City by the Bay, known for the Golden Gate Bridge and cable cars",
+    "difficulty": "easy"
   },
   {
     "id": 12,
-    "name": "Guatemala City",
-    "acceptedAnswers": ["guatemala city", "ciudad de guatemala"],
-    "lat": 14.6349,
-    "lng": -90.5069,
-    "hint": "The capital and largest city of Guatemala, the most populous city in Central America",
-    "difficulty": "hard"
+    "name": "Miami",
+    "acceptedAnswers": ["miami"],
+    "lat": 25.7617,
+    "lng": -80.1918,
+    "hint": "Tropical city in southern Florida, gateway to Latin America",
+    "difficulty": "easy"
   }
 ]

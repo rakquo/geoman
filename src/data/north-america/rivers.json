@@ -5,16 +5,16 @@
     "acceptedAnswers": ["mississippi", "mississippi river"],
     "lat": 32.3547,
     "lng": -90.8779,
-    "hint": "The second-longest river in North America, flowing south through the central United States to the Gulf of Mexico",
+    "hint": "Largest river system in North America, flowing south to the Gulf of Mexico",
     "difficulty": "easy"
   },
   {
     "id": 2,
     "name": "Missouri",
     "acceptedAnswers": ["missouri", "missouri river"],
-    "lat": 41.2600,
-    "lng": -95.9400,
-    "hint": "The longest river in North America, a major tributary of the Mississippi, flowing from Montana",
+    "lat": 41.2565,
+    "lng": -95.9345,
+    "hint": "Longest river in North America, major tributary of the Mississippi",
     "difficulty": "medium"
   },
   {
@@ -23,70 +23,70 @@
     "acceptedAnswers": ["colorado", "colorado river"],
     "lat": 36.1000,
     "lng": -111.8500,
-    "hint": "A major river of the American Southwest, carving the Grand Canyon on its way to the Gulf of California",
-    "difficulty": "medium"
+    "hint": "River that carved the Grand Canyon, flows through the American Southwest",
+    "difficulty": "easy"
   },
   {
     "id": 4,
     "name": "Rio Grande",
-    "acceptedAnswers": ["rio grande", "rio grande river", "rio bravo"],
-    "lat": 29.7500,
-    "lng": -104.4000,
-    "hint": "A major river forming much of the US-Mexico border, known as Rio Bravo in Mexico",
-    "difficulty": "medium"
+    "acceptedAnswers": ["rio grande", "rio bravo", "rio bravo del norte"],
+    "lat": 29.7600,
+    "lng": -104.3900,
+    "hint": "River forming much of the US-Mexico border",
+    "difficulty": "easy"
   },
   {
     "id": 5,
     "name": "Columbia",
     "acceptedAnswers": ["columbia", "columbia river"],
-    "lat": 46.2500,
+    "lat": 46.2000,
     "lng": -119.2000,
-    "hint": "The largest river in the Pacific Northwest, flowing from British Columbia through Washington and Oregon",
-    "difficulty": "hard"
-  },
-  {
-    "id": 6,
-    "name": "St. Lawrence",
-    "acceptedAnswers": ["st. lawrence", "st lawrence", "saint lawrence", "st. lawrence river"],
-    "lat": 47.0000,
-    "lng": -70.0000,
-    "hint": "A major river connecting the Great Lakes to the Atlantic Ocean, flowing through Quebec, Canada",
+    "hint": "Largest river in the Pacific Northwest, major source of hydroelectric power",
     "difficulty": "medium"
   },
   {
-    "id": 7,
+    "id": 6,
     "name": "Yukon",
     "acceptedAnswers": ["yukon", "yukon river"],
     "lat": 63.0000,
     "lng": -150.0000,
-    "hint": "A major river flowing through Canada's Yukon Territory and Alaska to the Bering Sea",
-    "difficulty": "hard"
+    "hint": "Major river flowing through Canada and Alaska to the Bering Sea",
+    "difficulty": "medium"
+  },
+  {
+    "id": 7,
+    "name": "Ohio",
+    "acceptedAnswers": ["ohio", "ohio river"],
+    "lat": 38.6000,
+    "lng": -85.0000,
+    "hint": "Major tributary of the Mississippi, historically key to westward expansion",
+    "difficulty": "medium"
   },
   {
     "id": 8,
-    "name": "Ohio",
-    "acceptedAnswers": ["ohio", "ohio river"],
-    "lat": 38.7500,
-    "lng": -85.0000,
-    "hint": "A major tributary of the Mississippi, flowing along the borders of several eastern US states",
-    "difficulty": "hard"
+    "name": "St. Lawrence",
+    "acceptedAnswers": ["st lawrence", "st. lawrence", "saint lawrence", "st lawrence river"],
+    "lat": 47.0000,
+    "lng": -70.0000,
+    "hint": "River connecting the Great Lakes to the Atlantic Ocean through Quebec",
+    "difficulty": "medium"
   },
   {
     "id": 9,
-    "name": "Arkansas",
-    "acceptedAnswers": ["arkansas", "arkansas river"],
-    "lat": 35.3500,
-    "lng": -97.5000,
-    "hint": "A major tributary of the Mississippi, originating near Leadville, Colorado and flowing through Kansas and Oklahoma",
-    "difficulty": "hard"
-  },
-  {
-    "id": 10,
     "name": "Mackenzie",
     "acceptedAnswers": ["mackenzie", "mackenzie river"],
     "lat": 65.0000,
     "lng": -128.0000,
-    "hint": "Canada's longest river system, flowing north through the Northwest Territories to the Arctic Ocean",
+    "hint": "Longest river system in Canada, flowing north to the Arctic Ocean",
+    "difficulty": "hard"
+  },
+  {
+    "id": 10,
+    "name": "Arkansas",
+    "acceptedAnswers": ["arkansas", "arkansas river"],
+    "lat": 36.0000,
+    "lng": -98.0000,
+    "hint": "Major tributary of the Mississippi, flows through Kansas, Oklahoma, and Arkansas",
     "difficulty": "hard"
   }
 ]

@@ -1,74 +1,92 @@
 [
   {
     "id": 1,
-    "name": "Victoria",
+    "name": "Lake Victoria",
     "acceptedAnswers": ["victoria", "lake victoria"],
     "lat": -1.2833,
-    "lng": 32.8500,
-    "hint": "Africa's largest lake and the world's second-largest freshwater lake, shared by Tanzania, Uganda, and Kenya",
+    "lng": 32.8833,
+    "hint": "Largest lake in Africa, source of the White Nile, shared by three countries",
     "difficulty": "easy"
   },
   {
     "id": 2,
-    "name": "Tanganyika",
+    "name": "Lake Tanganyika",
     "acceptedAnswers": ["tanganyika", "lake tanganyika"],
     "lat": -6.0000,
     "lng": 29.5000,
-    "hint": "The world's second-deepest and second-largest freshwater lake by volume, in the Great Rift Valley",
+    "hint": "Longest freshwater lake in the world, second deepest after Baikal",
     "difficulty": "medium"
   },
   {
     "id": 3,
-    "name": "Malawi",
-    "acceptedAnswers": ["malawi", "lake malawi", "lake nyasa", "nyasa"],
+    "name": "Lake Malawi",
+    "acceptedAnswers": ["malawi", "lake malawi", "lake nyasa"],
     "lat": -12.0000,
     "lng": 34.5000,
-    "hint": "Africa's third-largest lake, also known as Lake Nyasa, famous for its extraordinary fish biodiversity",
+    "hint": "Third-largest lake in Africa, famous for its cichlid fish diversity",
     "difficulty": "medium"
   },
   {
     "id": 4,
-    "name": "Turkana",
-    "acceptedAnswers": ["turkana", "lake turkana", "lake rudolf"],
-    "lat": 3.5000,
-    "lng": 36.1000,
-    "hint": "The world's largest permanent desert lake, in the Great Rift Valley of Kenya, formerly called Lake Rudolf",
-    "difficulty": "hard"
-  },
-  {
-    "id": 5,
-    "name": "Chad",
+    "name": "Lake Chad",
     "acceptedAnswers": ["chad", "lake chad"],
     "lat": 13.0000,
     "lng": 14.0000,
-    "hint": "A historically large but shrinking lake at the junction of four countries in the Sahel region of Africa",
+    "hint": "Historically large lake that has shrunk dramatically, bordering four nations in the Sahel",
     "difficulty": "medium"
   },
   {
+    "id": 5,
+    "name": "Lake Turkana",
+    "acceptedAnswers": ["turkana", "lake turkana", "lake rudolf"],
+    "lat": 3.5000,
+    "lng": 36.0000,
+    "hint": "Largest permanent desert lake in the world, in northern Kenya",
+    "difficulty": "hard"
+  },
+  {
     "id": 6,
-    "name": "Albert",
+    "name": "Lake Albert",
     "acceptedAnswers": ["albert", "lake albert"],
     "lat": 1.6700,
     "lng": 30.9200,
-    "hint": "One of the African Great Lakes, on the border of Uganda and the Democratic Republic of the Congo",
+    "hint": "One of the African Great Lakes, on the Uganda-DRC border",
     "difficulty": "hard"
   },
   {
     "id": 7,
-    "name": "Kivu",
+    "name": "Lake Kivu",
     "acceptedAnswers": ["kivu", "lake kivu"],
     "lat": -2.0000,
     "lng": 29.0000,
-    "hint": "One of the African Great Lakes on the border of DRC and Rwanda, known for dissolved gases in its depths",
+    "hint": "One of the African Great Lakes, on the Rwanda-DRC border, contains dissolved methane",
     "difficulty": "hard"
   },
   {
     "id": 8,
-    "name": "Tana",
+    "name": "Lake Tana",
     "acceptedAnswers": ["tana", "lake tana"],
     "lat": 12.0000,
     "lng": 37.2500,
-    "hint": "Ethiopia's largest lake and the source of the Blue Nile, located in the northwestern highlands",
+    "hint": "Largest lake in Ethiopia, source of the Blue Nile",
+    "difficulty": "hard"
+  },
+  {
+    "id": 9,
+    "name": "Lake Bangweulu",
+    "acceptedAnswers": ["bangweulu", "lake bangweulu"],
+    "lat": -11.1000,
+    "lng": 29.5000,
+    "hint": "Large shallow lake and wetland system in northeastern Zambia",
+    "difficulty": "hard"
+  },
+  {
+    "id": 10,
+    "name": "Lake Mweru",
+    "acceptedAnswers": ["mweru", "lake mweru"],
+    "lat": -9.0000,
+    "lng": 28.7500,
+    "hint": "Lake on the border of Zambia and the Democratic Republic of Congo",
     "difficulty": "hard"
   }
 ]

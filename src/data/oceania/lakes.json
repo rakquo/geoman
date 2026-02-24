@@ -1,56 +1,92 @@
 [
   {
     "id": 1,
-    "name": "Eyre",
+    "name": "Lake Eyre",
     "acceptedAnswers": ["eyre", "lake eyre", "kati thanda"],
     "lat": -28.3700,
     "lng": 137.3700,
-    "hint": "Australia's largest lake, a usually dry salt flat in South Australia that rarely fills with water",
+    "hint": "Largest lake in Australia, usually a dry salt flat, lowest point on the continent",
     "difficulty": "medium"
   },
   {
     "id": 2,
-    "name": "Torrens",
-    "acceptedAnswers": ["torrens", "lake torrens"],
-    "lat": -31.8200,
-    "lng": 137.8700,
-    "hint": "A large salt lake in South Australia, usually dry, the second-largest lake in Australia",
-    "difficulty": "hard"
-  },
-  {
-    "id": 3,
-    "name": "Taupo",
+    "name": "Lake Taupo",
     "acceptedAnswers": ["taupo", "lake taupo"],
     "lat": -38.8000,
     "lng": 175.9000,
-    "hint": "New Zealand's largest lake, filling a caldera created by a massive volcanic eruption in the North Island",
+    "hint": "Largest lake in New Zealand, formed by a massive volcanic eruption",
     "difficulty": "medium"
   },
   {
+    "id": 3,
+    "name": "Lake Torrens",
+    "acceptedAnswers": ["torrens", "lake torrens"],
+    "lat": -31.3500,
+    "lng": 137.8500,
+    "hint": "Large salt lake in South Australia, usually dry",
+    "difficulty": "hard"
+  },
+  {
     "id": 4,
-    "name": "Gairdner",
+    "name": "Lake Gairdner",
     "acceptedAnswers": ["gairdner", "lake gairdner"],
     "lat": -31.6000,
     "lng": 136.0000,
-    "hint": "A large salt lake in South Australia, used for land speed record attempts due to its flat surface",
+    "hint": "Large salt lake in South Australia, used for land speed record attempts",
     "difficulty": "hard"
   },
   {
     "id": 5,
-    "name": "Frome",
-    "acceptedAnswers": ["frome", "lake frome"],
-    "lat": -30.6000,
-    "lng": 139.8000,
-    "hint": "A salt lake in South Australia, east of the Flinders Ranges, usually dry",
+    "name": "Lake Alexandrina",
+    "acceptedAnswers": ["alexandrina", "lake alexandrina"],
+    "lat": -35.4300,
+    "lng": 139.1300,
+    "hint": "Freshwater lake near the mouth of the Murray River in South Australia",
     "difficulty": "hard"
   },
   {
     "id": 6,
-    "name": "Te Anau",
+    "name": "Lake Argyle",
+    "acceptedAnswers": ["argyle", "lake argyle"],
+    "lat": -16.1100,
+    "lng": 128.7400,
+    "hint": "Largest artificial lake in Australia, in Western Australia's Kimberley region",
+    "difficulty": "hard"
+  },
+  {
+    "id": 7,
+    "name": "Lake Te Anau",
     "acceptedAnswers": ["te anau", "lake te anau"],
     "lat": -45.4200,
     "lng": 167.7500,
-    "hint": "The largest lake on New Zealand's South Island, gateway to Fiordland National Park and Milford Sound",
+    "hint": "Largest lake in the South Island of New Zealand, in Fiordland",
     "difficulty": "hard"
+  },
+  {
+    "id": 8,
+    "name": "Lake Waikaremoana",
+    "acceptedAnswers": ["waikaremoana", "lake waikaremoana"],
+    "lat": -38.7500,
+    "lng": 177.0800,
+    "hint": "Mountain lake in New Zealand's North Island, in Te Urewera",
+    "difficulty": "hard"
+  },
+  {
+    "id": 9,
+    "name": "Lake Rotorua",
+    "acceptedAnswers": ["rotorua", "lake rotorua"],
+    "lat": -38.0800,
+    "lng": 176.2700,
+    "hint": "Geothermal lake on New Zealand's North Island, in a volcanic zone",
+    "difficulty": "hard"
+  },
+  {
+    "id": 10,
+    "name": "Lake Hillier",
+    "acceptedAnswers": ["hillier", "lake hillier"],
+    "lat": -34.0944,
+    "lng": 123.2017,
+    "hint": "Distinctive pink-colored lake on an island off Western Australia",
+    "difficulty": "medium"
   }
 ]

@@ -5,7 +5,7 @@
     "acceptedAnswers": ["great barrier reef", "barrier reef"],
     "lat": -18.2871,
     "lng": 147.6992,
-    "hint": "The world's largest coral reef system, stretching over 2,300 km along the northeast coast of Australia",
+    "hint": "World's largest coral reef system, off the coast of Queensland, Australia",
     "difficulty": "easy"
   },
   {
@@ -14,61 +14,79 @@
     "acceptedAnswers": ["outback", "australian outback", "the outback"],
     "lat": -25.0000,
     "lng": 134.0000,
-    "hint": "The vast, remote, arid interior of Australia, sparsely populated and largely desert or semi-arid land",
+    "hint": "Vast remote interior of Australia, arid and sparsely populated",
     "difficulty": "easy"
   },
   {
     "id": 3,
-    "name": "Great Dividing Range",
-    "acceptedAnswers": ["great dividing range", "great divide"],
-    "lat": -30.0000,
-    "lng": 149.0000,
-    "hint": "Australia's most substantial mountain range, stretching along the entire eastern coast from Queensland to Victoria",
+    "name": "Tasmania Wilderness",
+    "acceptedAnswers": ["tasmania wilderness", "tasmanian wilderness", "tasmania"],
+    "lat": -42.5000,
+    "lng": 146.0000,
+    "hint": "UNESCO World Heritage temperate rainforest and wilderness on Australia's island state",
     "difficulty": "medium"
   },
   {
     "id": 4,
-    "name": "Nullarbor Plain",
-    "acceptedAnswers": ["nullarbor plain", "nullarbor"],
-    "lat": -31.5000,
-    "lng": 127.0000,
-    "hint": "A vast flat, almost treeless limestone plateau spanning the border of South and Western Australia",
-    "difficulty": "hard"
-  },
-  {
-    "id": 5,
-    "name": "Tasmania Wilderness",
-    "acceptedAnswers": ["tasmania wilderness", "tasmanian wilderness", "tasmanian wilderness world heritage area"],
-    "lat": -42.5000,
-    "lng": 146.0000,
-    "hint": "A UNESCO World Heritage area covering about 20% of Tasmania, one of the last temperate wilderness areas on Earth",
-    "difficulty": "hard"
-  },
-  {
-    "id": 6,
     "name": "Milford Sound",
     "acceptedAnswers": ["milford sound", "piopiotahi"],
-    "lat": -44.6714,
-    "lng": 167.9256,
-    "hint": "A dramatic fiord in New Zealand's Fiordland National Park, carved by glaciers and framed by steep cliffs",
-    "difficulty": "medium"
-  },
-  {
-    "id": 7,
-    "name": "Uluru",
-    "acceptedAnswers": ["uluru", "ayers rock", "uluru/ayers rock"],
-    "lat": -25.3444,
-    "lng": 131.0369,
-    "hint": "A massive sandstone monolith in central Australia, sacred to the Anangu Aboriginal people",
+    "lat": -44.6726,
+    "lng": 167.9264,
+    "hint": "Stunning fiord in New Zealand's Fiordland National Park",
     "difficulty": "easy"
   },
   {
-    "id": 8,
+    "id": 5,
     "name": "Kakadu",
     "acceptedAnswers": ["kakadu", "kakadu national park"],
     "lat": -13.0000,
     "lng": 132.5000,
-    "hint": "Australia's largest national park in the Northern Territory, with Aboriginal rock art dating back 20,000+ years",
+    "hint": "Large national park in Australia's Northern Territory with ancient rock art",
     "difficulty": "medium"
+  },
+  {
+    "id": 6,
+    "name": "Great Sandy Desert",
+    "acceptedAnswers": ["great sandy desert"],
+    "lat": -22.0000,
+    "lng": 125.0000,
+    "hint": "Second-largest desert in Australia, in Western Australia",
+    "difficulty": "hard"
+  },
+  {
+    "id": 7,
+    "name": "Gibson Desert",
+    "acceptedAnswers": ["gibson desert"],
+    "lat": -24.0000,
+    "lng": 125.5000,
+    "hint": "Central Australian desert between the Great Sandy and Great Victoria deserts",
+    "difficulty": "hard"
+  },
+  {
+    "id": 8,
+    "name": "Tongariro",
+    "acceptedAnswers": ["tongariro", "tongariro national park"],
+    "lat": -39.2000,
+    "lng": 175.6000,
+    "hint": "Volcanic national park in New Zealand, filming location for Mount Doom",
+    "difficulty": "medium"
+  },
+  {
+    "id": 9,
+    "name": "Daintree Rainforest",
+    "acceptedAnswers": ["daintree", "daintree rainforest"],
+    "lat": -16.2500,
+    "lng": 145.4200,
+    "hint": "Oldest tropical rainforest in the world, in Queensland, Australia",
+    "difficulty": "medium"
+  },
+  {
+    "id": 10,
+    "name": "Nullarbor Plain",
+    "acceptedAnswers": ["nullarbor", "nullarbor plain"],
+    "lat": -31.5000,
+    "lng": 127.0000,
+    "hint": "Vast flat treeless plain between South and Western Australia",
+    "difficulty": "hard"
   }
 ]

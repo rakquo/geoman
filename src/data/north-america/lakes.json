@@ -1,74 +1,92 @@
 [
   {
     "id": 1,
-    "name": "Superior",
+    "name": "Lake Superior",
     "acceptedAnswers": ["superior", "lake superior"],
     "lat": 47.7000,
     "lng": -87.5000,
-    "hint": "The largest of the Great Lakes and the largest freshwater lake by surface area in the world",
+    "hint": "Largest of the Great Lakes and the largest freshwater lake by surface area",
     "difficulty": "easy"
   },
   {
     "id": 2,
-    "name": "Michigan",
+    "name": "Lake Michigan",
     "acceptedAnswers": ["michigan", "lake michigan"],
     "lat": 43.6200,
     "lng": -87.1000,
-    "hint": "The only Great Lake entirely within the United States, bordered by Michigan, Wisconsin, Illinois, and Indiana",
-    "difficulty": "medium"
+    "hint": "Only Great Lake entirely within the United States, bordered by Chicago",
+    "difficulty": "easy"
   },
   {
     "id": 3,
-    "name": "Huron",
+    "name": "Lake Huron",
     "acceptedAnswers": ["huron", "lake huron"],
     "lat": 44.8000,
     "lng": -82.4000,
-    "hint": "The second-largest of the Great Lakes, bordered by Michigan and Ontario, Canada",
+    "hint": "Second-largest of the Great Lakes, between Michigan and Ontario",
     "difficulty": "medium"
   },
   {
     "id": 4,
-    "name": "Erie",
+    "name": "Lake Erie",
     "acceptedAnswers": ["erie", "lake erie"],
     "lat": 42.2000,
     "lng": -81.2000,
-    "hint": "The fourth-largest and shallowest of the Great Lakes, bordered by four US states and Ontario",
+    "hint": "Shallowest of the Great Lakes, connected to Niagara Falls",
     "difficulty": "medium"
   },
   {
     "id": 5,
-    "name": "Ontario",
+    "name": "Lake Ontario",
     "acceptedAnswers": ["ontario", "lake ontario"],
     "lat": 43.7000,
-    "lng": -77.9000,
-    "hint": "The smallest and easternmost of the Great Lakes, connected to the Atlantic via the St. Lawrence River",
+    "lng": -77.8000,
+    "hint": "Smallest of the Great Lakes, bordering Toronto",
     "difficulty": "medium"
   },
   {
     "id": 6,
-    "name": "Great Bear",
-    "acceptedAnswers": ["great bear", "great bear lake"],
-    "lat": 66.0000,
-    "lng": -121.0000,
-    "hint": "The largest lake entirely within Canada, located in the Northwest Territories on the Arctic Circle",
+    "name": "Great Bear Lake",
+    "acceptedAnswers": ["great bear lake", "great bear"],
+    "lat": 65.9000,
+    "lng": -121.3000,
+    "hint": "Largest lake entirely within Canada, in the Northwest Territories",
     "difficulty": "hard"
   },
   {
     "id": 7,
-    "name": "Great Slave",
-    "acceptedAnswers": ["great slave", "great slave lake"],
+    "name": "Great Slave Lake",
+    "acceptedAnswers": ["great slave lake", "great slave"],
     "lat": 61.7000,
     "lng": -114.0000,
-    "hint": "The deepest lake in North America, in Canada's Northwest Territories, source of the Mackenzie River",
+    "hint": "Deepest lake in North America, in Canada's Northwest Territories",
     "difficulty": "hard"
   },
   {
     "id": 8,
-    "name": "Winnipeg",
+    "name": "Lake Winnipeg",
     "acceptedAnswers": ["winnipeg", "lake winnipeg"],
     "lat": 52.1000,
     "lng": -97.2500,
-    "hint": "A large lake in Manitoba, Canada, a remnant of the prehistoric glacial Lake Agassiz",
+    "hint": "Large lake in Manitoba, Canada, remnant of glacial Lake Agassiz",
+    "difficulty": "hard"
+  },
+  {
+    "id": 9,
+    "name": "Lake Nicaragua",
+    "acceptedAnswers": ["nicaragua", "lake nicaragua", "cocibolca"],
+    "lat": 11.6000,
+    "lng": -85.4000,
+    "hint": "Largest lake in Central America, one of the few with freshwater sharks",
+    "difficulty": "hard"
+  },
+  {
+    "id": 10,
+    "name": "Lake Athabasca",
+    "acceptedAnswers": ["athabasca", "lake athabasca"],
+    "lat": 59.2000,
+    "lng": -109.5000,
+    "hint": "Large lake in Alberta and Saskatchewan, Canada, near the oil sands",
     "difficulty": "hard"
   }
 ]

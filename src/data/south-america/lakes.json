@@ -1,74 +1,92 @@
 [
   {
     "id": 1,
-    "name": "Titicaca",
-    "acceptedAnswers": ["titicaca", "lake titicaca"],
+    "name": "Lake Titicaca",
+    "acceptedAnswers": ["titicaca", "lake titicaca", "lago titicaca"],
     "lat": -15.8402,
     "lng": -69.3343,
-    "hint": "The highest navigable lake in the world, on the border of Peru and Bolivia in the Andes",
+    "hint": "Highest navigable lake in the world, on the Peru-Bolivia border",
     "difficulty": "easy"
   },
   {
     "id": 2,
-    "name": "Maracaibo",
-    "acceptedAnswers": ["maracaibo", "lake maracaibo"],
+    "name": "Lake Maracaibo",
+    "acceptedAnswers": ["maracaibo", "lake maracaibo", "lago de maracaibo"],
     "lat": 9.8000,
     "lng": -71.5600,
-    "hint": "A large brackish tidal bay in Venezuela, one of the oldest lakes in the world, rich in oil deposits",
+    "hint": "Large brackish tidal bay in Venezuela, one of the oldest lakes on Earth",
     "difficulty": "medium"
   },
   {
     "id": 3,
-    "name": "Poopo",
-    "acceptedAnswers": ["poopo", "lake poopo", "poopó"],
+    "name": "Lake Poopo",
+    "acceptedAnswers": ["poopo", "lake poopo", "lago poopó", "poopó"],
     "lat": -18.5500,
-    "lng": -66.9500,
-    "hint": "A saline lake in the Bolivian Altiplano that has repeatedly dried up and refilled in recent years",
+    "lng": -67.0800,
+    "hint": "Saline lake in the Bolivian Altiplano that has repeatedly dried up",
     "difficulty": "hard"
   },
   {
     "id": 4,
-    "name": "Buenos Aires/General Carrera",
-    "acceptedAnswers": ["buenos aires", "general carrera", "lake buenos aires", "lake general carrera", "lago buenos aires", "lago general carrera"],
-    "lat": -46.5000,
+    "name": "Buenos Aires Lake",
+    "acceptedAnswers": ["buenos aires lake", "lago buenos aires", "lake general carrera"],
+    "lat": -46.5500,
     "lng": -71.5000,
-    "hint": "A deep glacial lake shared between Argentina and Chile in Patagonia, known by different names in each country",
+    "hint": "Deep glacial lake shared by Argentina and Chile in Patagonia",
     "difficulty": "hard"
   },
   {
     "id": 5,
-    "name": "Nahuel Huapi",
-    "acceptedAnswers": ["nahuel huapi", "lake nahuel huapi", "lago nahuel huapi"],
-    "lat": -41.0500,
-    "lng": -71.3500,
-    "hint": "A glacial lake in the Argentine Patagonian Andes, the centerpiece of Argentina's oldest national park",
+    "name": "Lago Argentino",
+    "acceptedAnswers": ["lago argentino", "lake argentino", "argentino"],
+    "lat": -50.2000,
+    "lng": -72.5000,
+    "hint": "Largest freshwater lake in Argentina, in Patagonia near Perito Moreno Glacier",
     "difficulty": "hard"
   },
   {
     "id": 6,
-    "name": "Argentino",
-    "acceptedAnswers": ["argentino", "lake argentino", "lago argentino"],
-    "lat": -50.2000,
-    "lng": -72.6000,
-    "hint": "The largest freshwater lake in Argentina, in Patagonia, fed by glaciers including the famous Perito Moreno",
+    "name": "Nahuel Huapi",
+    "acceptedAnswers": ["nahuel huapi", "lake nahuel huapi", "lago nahuel huapi"],
+    "lat": -41.0000,
+    "lng": -71.5000,
+    "hint": "Glacial lake in the Argentine Lake District near Bariloche",
     "difficulty": "hard"
   },
   {
     "id": 7,
-    "name": "Mirim",
-    "acceptedAnswers": ["mirim", "lake mirim", "lagoa mirim", "laguna merin"],
-    "lat": -32.8000,
-    "lng": -53.0000,
-    "hint": "A large freshwater lake on the border between Brazil and Uruguay in southeastern South America",
+    "name": "General Carrera Lake",
+    "acceptedAnswers": ["general carrera", "general carrera lake", "lago general carrera"],
+    "lat": -46.5800,
+    "lng": -72.1000,
+    "hint": "Second-largest lake in South America, known for its marble caves",
     "difficulty": "hard"
   },
   {
     "id": 8,
-    "name": "Junin",
+    "name": "Lake Rogaguado",
+    "acceptedAnswers": ["rogaguado", "lake rogaguado", "lago rogaguado"],
+    "lat": -13.0000,
+    "lng": -65.9000,
+    "hint": "Shallow lake in the Bolivian Amazon lowlands",
+    "difficulty": "hard"
+  },
+  {
+    "id": 9,
+    "name": "Lake Junin",
     "acceptedAnswers": ["junin", "lake junin", "lago junin", "junín"],
     "lat": -11.0200,
     "lng": -76.1200,
-    "hint": "The second-largest lake in Peru, located in the central Andes at over 4,000 meters elevation",
+    "hint": "Second-largest lake in Peru, in the central Andes highlands",
+    "difficulty": "hard"
+  },
+  {
+    "id": 10,
+    "name": "Lago Sarmiento",
+    "acceptedAnswers": ["lago sarmiento", "sarmiento", "lake sarmiento"],
+    "lat": -51.0500,
+    "lng": -72.7500,
+    "hint": "Lake in Torres del Paine National Park, Chile, known for its blue color",
     "difficulty": "hard"
   }
 ]

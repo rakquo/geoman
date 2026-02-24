@@ -1,11 +1,11 @@
 [
   {
     "id": 1,
-    "name": "Kilimanjaro",
+    "name": "Mount Kilimanjaro",
     "acceptedAnswers": ["kilimanjaro", "mount kilimanjaro", "mt kilimanjaro"],
     "lat": -3.0674,
     "lng": 37.3556,
-    "hint": "Africa's highest peak, a free-standing volcanic mountain in Tanzania near the Kenyan border",
+    "hint": "Highest peak in Africa, a freestanding volcanic mountain in Tanzania",
     "difficulty": "easy"
   },
   {
@@ -14,16 +14,16 @@
     "acceptedAnswers": ["mount kenya", "mt kenya", "kenya"],
     "lat": -0.1521,
     "lng": 37.3084,
-    "hint": "Africa's second-highest mountain, an extinct volcano in central Kenya straddling the equator",
+    "hint": "Second-highest mountain in Africa, an extinct volcano in central Kenya",
     "difficulty": "medium"
   },
   {
     "id": 3,
     "name": "Ras Dashen",
-    "acceptedAnswers": ["ras dashen", "ras dejen", "mount ras dashen"],
+    "acceptedAnswers": ["ras dashen", "ras dejen"],
     "lat": 13.2400,
     "lng": 38.3700,
-    "hint": "The highest mountain in Ethiopia, located in the Simien Mountains of the northern highlands",
+    "hint": "Highest mountain in Ethiopia, in the Simien Mountains",
     "difficulty": "hard"
   },
   {
@@ -32,61 +32,61 @@
     "acceptedAnswers": ["mount stanley", "mt stanley", "stanley", "margherita peak"],
     "lat": 0.3858,
     "lng": 29.8717,
-    "hint": "The highest peak of the Rwenzori Mountains on the Uganda-DRC border, also called Margherita Peak",
+    "hint": "Highest peak of the Rwenzori Mountains, on the Uganda-DRC border",
     "difficulty": "hard"
   },
   {
     "id": 5,
     "name": "Mount Meru",
     "acceptedAnswers": ["mount meru", "mt meru", "meru"],
-    "lat": -3.2458,
-    "lng": 36.7525,
-    "hint": "Tanzania's second-highest mountain, an active volcano near Arusha, often used to acclimatize for Kilimanjaro",
+    "lat": -3.2500,
+    "lng": 36.7500,
+    "hint": "Second-highest mountain in Tanzania, near Arusha",
     "difficulty": "hard"
   },
   {
     "id": 6,
-    "name": "Toubkal",
-    "acceptedAnswers": ["toubkal", "mount toubkal", "jebel toubkal", "jbel toubkal"],
+    "name": "Mount Toubkal",
+    "acceptedAnswers": ["toubkal", "mount toubkal", "mt toubkal", "jebel toubkal"],
     "lat": 31.0597,
     "lng": -7.9147,
-    "hint": "The highest mountain in North Africa and the Atlas Mountains, located in Morocco",
+    "hint": "Highest peak in North Africa, in Morocco's Atlas Mountains",
     "difficulty": "hard"
   },
   {
     "id": 7,
     "name": "Mount Cameroon",
-    "acceptedAnswers": ["mount cameroon", "mt cameroon", "cameroon mountain", "fako"],
-    "lat": 4.2032,
-    "lng": 9.1703,
-    "hint": "The highest mountain in West Africa, an active volcano near the coast of Cameroon",
+    "acceptedAnswers": ["mount cameroon", "mt cameroon", "cameroon mountain"],
+    "lat": 4.2030,
+    "lng": 9.1700,
+    "hint": "Highest peak in West Africa, an active volcano near the coast",
     "difficulty": "hard"
   },
   {
     "id": 8,
-    "name": "Thabana Ntlenyana",
-    "acceptedAnswers": ["thabana ntlenyana", "drakensberg", "drakensberg mountains"],
-    "lat": -29.4667,
-    "lng": 29.2750,
-    "hint": "The highest point in the Drakensberg range and in southern Africa, located in Lesotho",
-    "difficulty": "hard"
+    "name": "Drakensberg",
+    "acceptedAnswers": ["drakensberg", "drakensberg mountains", "ukhahlamba"],
+    "lat": -29.2500,
+    "lng": 29.4500,
+    "hint": "Great escarpment mountain range in eastern South Africa",
+    "difficulty": "medium"
   },
   {
     "id": 9,
-    "name": "Mount Elgon",
-    "acceptedAnswers": ["mount elgon", "mt elgon", "elgon"],
-    "lat": 1.1167,
-    "lng": 34.5500,
-    "hint": "An extinct shield volcano on the border of Uganda and Kenya, with one of the world's largest calderas",
-    "difficulty": "hard"
+    "name": "Atlas Mountains",
+    "acceptedAnswers": ["atlas mountains", "atlas"],
+    "lat": 31.7000,
+    "lng": -6.0000,
+    "hint": "Mountain range stretching across Morocco, Algeria, and Tunisia",
+    "difficulty": "easy"
   },
   {
     "id": 10,
     "name": "Simien Mountains",
-    "acceptedAnswers": ["simien mountains", "simien", "simien mountain range"],
+    "acceptedAnswers": ["simien mountains", "simien", "semien mountains"],
     "lat": 13.2500,
-    "lng": 38.3000,
-    "hint": "A UNESCO World Heritage mountain range in northern Ethiopia, home to the endemic gelada baboon",
+    "lng": 38.2500,
+    "hint": "Dramatic mountain range in northern Ethiopia, home to the gelada baboon",
     "difficulty": "hard"
   }
 ]

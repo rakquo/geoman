@@ -2,28 +2,28 @@
   {
     "id": 1,
     "name": "Grand Canyon",
-    "acceptedAnswers": ["grand canyon", "the grand canyon"],
+    "acceptedAnswers": ["grand canyon"],
     "lat": 36.1069,
     "lng": -112.1129,
-    "hint": "A steep-sided gorge carved by the Colorado River in Arizona, one of the most iconic natural landmarks in the US",
+    "hint": "Immense gorge carved by the Colorado River in Arizona",
     "difficulty": "easy"
   },
   {
     "id": 2,
     "name": "Great Plains",
-    "acceptedAnswers": ["great plains", "the great plains"],
+    "acceptedAnswers": ["great plains"],
     "lat": 41.0000,
     "lng": -100.0000,
-    "hint": "A vast expanse of flat grassland stretching from Canada to Texas in central North America",
-    "difficulty": "medium"
+    "hint": "Vast expanse of flat grassland across the central United States and Canada",
+    "difficulty": "easy"
   },
   {
     "id": 3,
     "name": "Rocky Mountains",
     "acceptedAnswers": ["rocky mountains", "rockies", "the rockies"],
-    "lat": 43.0000,
+    "lat": 44.0000,
     "lng": -110.0000,
-    "hint": "A major mountain range stretching over 4,800 km from British Columbia to New Mexico",
+    "hint": "Major mountain range stretching from Canada to New Mexico",
     "difficulty": "easy"
   },
   {
@@ -32,34 +32,34 @@
     "acceptedAnswers": ["appalachian mountains", "appalachians", "the appalachians"],
     "lat": 37.0000,
     "lng": -81.0000,
-    "hint": "An ancient mountain system in eastern North America stretching from Alabama to Newfoundland",
-    "difficulty": "medium"
+    "hint": "Ancient eastern mountain range stretching from Alabama to Newfoundland",
+    "difficulty": "easy"
   },
   {
     "id": 5,
-    "name": "Death Valley",
-    "acceptedAnswers": ["death valley"],
-    "lat": 36.5323,
-    "lng": -116.9325,
-    "hint": "The hottest place on Earth and the lowest point in North America, in the Mojave Desert of California",
-    "difficulty": "medium"
-  },
-  {
-    "id": 6,
     "name": "Everglades",
     "acceptedAnswers": ["everglades", "the everglades", "florida everglades"],
     "lat": 25.7500,
     "lng": -80.9000,
-    "hint": "A tropical wetland ecosystem in southern Florida, known as the River of Grass",
+    "hint": "Tropical wetland ecosystem in southern Florida, river of grass",
+    "difficulty": "medium"
+  },
+  {
+    "id": 6,
+    "name": "Mojave Desert",
+    "acceptedAnswers": ["mojave desert", "mojave"],
+    "lat": 35.0000,
+    "lng": -116.0000,
+    "hint": "Arid desert in southeastern California, home to Joshua trees",
     "difficulty": "medium"
   },
   {
     "id": 7,
     "name": "Great Basin",
-    "acceptedAnswers": ["great basin", "the great basin"],
+    "acceptedAnswers": ["great basin"],
     "lat": 40.0000,
     "lng": -117.0000,
-    "hint": "A large endorheic watershed in the western US where rivers do not drain to the ocean, mostly in Nevada",
+    "hint": "Largest area of contiguous endorheic watersheds in North America",
     "difficulty": "hard"
   },
   {
@@ -68,7 +68,25 @@
     "acceptedAnswers": ["canadian shield", "laurentian plateau"],
     "lat": 55.0000,
     "lng": -80.0000,
-    "hint": "A large area of exposed Precambrian rock forming the geological core of North America, covering much of central Canada",
-    "difficulty": "hard"
+    "hint": "Large area of exposed Precambrian rock covering much of eastern Canada",
+    "difficulty": "medium"
+  },
+  {
+    "id": 9,
+    "name": "Death Valley",
+    "acceptedAnswers": ["death valley"],
+    "lat": 36.5323,
+    "lng": -116.9325,
+    "hint": "Hottest place on Earth, lowest point in North America, in California",
+    "difficulty": "easy"
+  },
+  {
+    "id": 10,
+    "name": "Niagara Falls",
+    "acceptedAnswers": ["niagara falls", "niagara"],
+    "lat": 43.0962,
+    "lng": -79.0377,
+    "hint": "Famous waterfalls on the US-Canada border between Lakes Erie and Ontario",
+    "difficulty": "easy"
   }
 ]

@@ -2,37 +2,37 @@
   {
     "id": 1,
     "name": "Aconcagua",
-    "acceptedAnswers": ["aconcagua", "mount aconcagua"],
+    "acceptedAnswers": ["aconcagua", "mount aconcagua", "cerro aconcagua"],
     "lat": -32.6532,
     "lng": -70.0109,
-    "hint": "The highest mountain in South America and the Western Hemisphere, located in the Argentine Andes",
-    "difficulty": "medium"
+    "hint": "Highest peak in the Americas and the Southern Hemisphere, in Argentina",
+    "difficulty": "easy"
   },
   {
     "id": 2,
     "name": "Ojos del Salado",
     "acceptedAnswers": ["ojos del salado"],
-    "lat": -27.1092,
+    "lat": -27.1094,
     "lng": -68.5414,
-    "hint": "The highest volcano in the world and second-highest peak in South America, on the Argentina-Chile border",
+    "hint": "Highest volcano in the world, on the Argentina-Chile border",
     "difficulty": "hard"
   },
   {
     "id": 3,
     "name": "Monte Pissis",
     "acceptedAnswers": ["monte pissis", "pissis"],
-    "lat": -27.7544,
-    "lng": -68.7989,
-    "hint": "The third-highest mountain in the Western Hemisphere, an extinct volcano in northwestern Argentina",
+    "lat": -27.7536,
+    "lng": -68.7992,
+    "hint": "Third-highest peak in the Western Hemisphere, an extinct volcano in Argentina",
     "difficulty": "hard"
   },
   {
     "id": 4,
     "name": "Huascaran",
-    "acceptedAnswers": ["huascaran", "huascarán", "mount huascaran"],
+    "acceptedAnswers": ["huascaran", "huascarán", "nevado huascaran"],
     "lat": -9.1222,
     "lng": -77.6042,
-    "hint": "The highest mountain in Peru and the tropics, in the Cordillera Blanca of the Andes",
+    "hint": "Highest mountain in Peru, in the Cordillera Blanca",
     "difficulty": "hard"
   },
   {
@@ -41,52 +41,52 @@
     "acceptedAnswers": ["chimborazo", "mount chimborazo"],
     "lat": -1.4692,
     "lng": -78.8175,
-    "hint": "The highest mountain in Ecuador, whose summit is the farthest point from Earth's center due to the equatorial bulge",
-    "difficulty": "hard"
+    "hint": "Highest peak in Ecuador, farthest point from Earth's center due to equatorial bulge",
+    "difficulty": "medium"
   },
   {
     "id": 6,
     "name": "Cotopaxi",
-    "acceptedAnswers": ["cotopaxi", "mount cotopaxi"],
+    "acceptedAnswers": ["cotopaxi", "mount cotopaxi", "volcán cotopaxi"],
     "lat": -0.6836,
-    "lng": -78.4378,
-    "hint": "One of the highest active volcanoes in the world, a symmetrical cone near Quito, Ecuador",
+    "lng": -78.4375,
+    "hint": "One of the highest active volcanoes in the world, in Ecuador",
     "difficulty": "medium"
   },
   {
     "id": 7,
     "name": "Illimani",
-    "acceptedAnswers": ["illimani", "mount illimani"],
-    "lat": -16.6528,
-    "lng": -67.7786,
-    "hint": "The highest peak in the Cordillera Real of Bolivia, towering over the city of La Paz",
+    "acceptedAnswers": ["illimani", "nevado illimani"],
+    "lat": -16.6253,
+    "lng": -67.7733,
+    "hint": "Highest peak near La Paz, Bolivia, dominant feature of the city skyline",
     "difficulty": "hard"
   },
   {
     "id": 8,
-    "name": "Roraima",
-    "acceptedAnswers": ["roraima", "mount roraima", "monte roraima"],
-    "lat": 5.1433,
-    "lng": -60.7625,
-    "hint": "A flat-topped table mountain (tepui) at the junction of Venezuela, Brazil, and Guyana, inspiration for The Lost World",
+    "name": "Pico Bolivar",
+    "acceptedAnswers": ["pico bolivar", "pico bolívar"],
+    "lat": 8.5333,
+    "lng": -71.0500,
+    "hint": "Highest mountain in Venezuela, in the Sierra Nevada de Merida",
     "difficulty": "hard"
   },
   {
     "id": 9,
-    "name": "Fitz Roy",
-    "acceptedAnswers": ["fitz roy", "monte fitz roy", "mount fitz roy", "cerro fitz roy", "cerro chalten"],
-    "lat": -49.2714,
-    "lng": -73.0428,
-    "hint": "An iconic granite peak in Patagonia on the Argentina-Chile border, famous for its dramatic spire shape",
-    "difficulty": "hard"
+    "name": "Mount Roraima",
+    "acceptedAnswers": ["roraima", "mount roraima", "monte roraima"],
+    "lat": 5.1431,
+    "lng": -60.7625,
+    "hint": "Famous tabletop mountain at the junction of Venezuela, Brazil, and Guyana",
+    "difficulty": "medium"
   },
   {
     "id": 10,
-    "name": "Alpamayo",
-    "acceptedAnswers": ["alpamayo", "mount alpamayo"],
-    "lat": -8.8783,
-    "lng": -77.6536,
-    "hint": "A pyramidal peak in Peru's Cordillera Blanca, once voted the most beautiful mountain in the world",
-    "difficulty": "hard"
+    "name": "Fitz Roy",
+    "acceptedAnswers": ["fitz roy", "monte fitz roy", "cerro fitz roy", "cerro chalten"],
+    "lat": -49.2714,
+    "lng": -73.0428,
+    "hint": "Iconic jagged peak in Patagonia, on the Argentina-Chile border",
+    "difficulty": "medium"
   }
 ]
