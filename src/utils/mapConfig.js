@@ -1,3 +1,7 @@
+import topology from 'world-atlas/countries-110m.json'
+
+export { topology }
+
 export const projectionConfig = {
   asia: { center: [85, 30], scale: 350 },
   europe: { center: [15, 52], scale: 600 },
@@ -10,5 +14,3 @@ export const projectionConfig = {
 export function getProjectionConfig(continentId) {
   return projectionConfig[continentId] || { center: [0, 20], scale: 150 }
 }
-
-export const MAP_URL = 'https://cdn.jsdelivr.net/npm/world-atlas@2/countries-110m.json'
