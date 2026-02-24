@@ -106,5 +106,77 @@
     "lng": -43.1729,
     "hint": "Brazilian city famous for Christ the Redeemer statue and Copacabana Beach",
     "difficulty": "easy"
+  },
+  {
+    "id": 13,
+    "name": "Guayaquil",
+    "acceptedAnswers": ["guayaquil"],
+    "lat": -2.1710,
+    "lng": -79.9224,
+    "hint": "Ecuador's largest city, a major Pacific port and gateway to the Galapagos Islands",
+    "difficulty": "hard"
+  },
+  {
+    "id": 14,
+    "name": "Cali",
+    "acceptedAnswers": ["cali", "santiago de cali"],
+    "lat": 3.4516,
+    "lng": -76.5320,
+    "hint": "Colombia's third-largest city, known as the world capital of salsa dancing",
+    "difficulty": "hard"
+  },
+  {
+    "id": 15,
+    "name": "Cordoba",
+    "acceptedAnswers": ["cordoba", "córdoba"],
+    "lat": -31.4201,
+    "lng": -64.1888,
+    "hint": "Argentina's second-largest city, a university town at the foothills of the Sierras",
+    "difficulty": "hard"
+  },
+  {
+    "id": 16,
+    "name": "Recife",
+    "acceptedAnswers": ["recife"],
+    "lat": -8.0476,
+    "lng": -34.8770,
+    "hint": "Major coastal city in northeastern Brazil, called the Venice of Brazil for its waterways",
+    "difficulty": "hard"
+  },
+  {
+    "id": 17,
+    "name": "Salvador",
+    "acceptedAnswers": ["salvador", "salvador da bahia"],
+    "lat": -12.9714,
+    "lng": -38.5124,
+    "hint": "Historic city in northeastern Brazil, the first capital of colonial Brazil",
+    "difficulty": "hard"
+  },
+  {
+    "id": 18,
+    "name": "Fortaleza",
+    "acceptedAnswers": ["fortaleza"],
+    "lat": -3.7172,
+    "lng": -38.5433,
+    "hint": "Coastal city in northeastern Brazil, known for beautiful beaches and seafood",
+    "difficulty": "hard"
+  },
+  {
+    "id": 19,
+    "name": "Belo Horizonte",
+    "acceptedAnswers": ["belo horizonte", "bh"],
+    "lat": -19.9167,
+    "lng": -43.9345,
+    "hint": "Brazil's third-largest metro area, a planned city surrounded by mountains in Minas Gerais",
+    "difficulty": "hard"
+  },
+  {
+    "id": 20,
+    "name": "Asuncion",
+    "acceptedAnswers": ["asuncion", "asunción"],
+    "lat": -25.2637,
+    "lng": -57.5759,
+    "hint": "Capital of Paraguay, one of the oldest cities in South America on the Paraguay River",
+    "difficulty": "medium"
   }
 ]

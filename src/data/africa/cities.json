@@ -106,5 +106,77 @@
     "lng": 32.5599,
     "hint": "Capital of Sudan, where the Blue and White Nile converge",
     "difficulty": "medium"
+  },
+  {
+    "id": 13,
+    "name": "Luanda",
+    "acceptedAnswers": ["luanda", "loanda"],
+    "lat": -8.8390,
+    "lng": 13.2894,
+    "hint": "Capital of Angola, a major port city on the Atlantic coast",
+    "difficulty": "hard"
+  },
+  {
+    "id": 14,
+    "name": "Kampala",
+    "acceptedAnswers": ["kampala"],
+    "lat": 0.3476,
+    "lng": 32.5825,
+    "hint": "Capital of Uganda, built on seven hills near Lake Victoria",
+    "difficulty": "medium"
+  },
+  {
+    "id": 15,
+    "name": "Abidjan",
+    "acceptedAnswers": ["abidjan"],
+    "lat": 5.3600,
+    "lng": -4.0083,
+    "hint": "Economic capital of Ivory Coast, largest city in the country",
+    "difficulty": "hard"
+  },
+  {
+    "id": 16,
+    "name": "Maputo",
+    "acceptedAnswers": ["maputo", "lourenco marques"],
+    "lat": -25.9692,
+    "lng": 32.5732,
+    "hint": "Capital of Mozambique, a port city on the Indian Ocean",
+    "difficulty": "hard"
+  },
+  {
+    "id": 17,
+    "name": "Tunis",
+    "acceptedAnswers": ["tunis"],
+    "lat": 36.8065,
+    "lng": 10.1815,
+    "hint": "Capital of Tunisia, located near the ruins of ancient Carthage",
+    "difficulty": "medium"
+  },
+  {
+    "id": 18,
+    "name": "Lusaka",
+    "acceptedAnswers": ["lusaka"],
+    "lat": -15.3875,
+    "lng": 28.3228,
+    "hint": "Capital of Zambia, located on a plateau in the southern part of the country",
+    "difficulty": "hard"
+  },
+  {
+    "id": 19,
+    "name": "Bamako",
+    "acceptedAnswers": ["bamako"],
+    "lat": 12.6392,
+    "lng": -8.0029,
+    "hint": "Capital of Mali, situated on the banks of the Niger River",
+    "difficulty": "hard"
+  },
+  {
+    "id": 20,
+    "name": "Mogadishu",
+    "acceptedAnswers": ["mogadishu", "mogadiscio", "muqdisho", "hamar"],
+    "lat": 2.0469,
+    "lng": 45.3182,
+    "hint": "Capital of Somalia, an ancient port city on the Indian Ocean coast",
+    "difficulty": "hard"
   }
 ]
