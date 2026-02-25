@@ -1,333 +1,386 @@
+import { useState, useEffect, useRef, useCallback, useMemo } from 'react'
 import { useParams, useNavigate } from 'react-router-dom'
-import { useState, useEffect, useRef, useCallback, memo, useMemo } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
+import { MapContainer, TileLayer, CircleMarker, Tooltip, useMap } from 'react-leaflet'
 import {
-  ComposableMap,
-  Geographies,
-  Geography,
-  Marker,
-} from 'react-simple-maps'
-import { CheckCircle, XCircle, RotateCcw, ArrowLeft, Trophy, Sparkles } from 'lucide-react'
+  Building2, Mountain, Waves, Droplets, Landmark,
+  Map as MapIcon, Satellite, TreePine, Tag, Tags,
+  ArrowLeft, CheckCircle, XCircle, RotateCcw, Trophy, Sparkles,
+} from 'lucide-react'
 import { continents } from '../data/continents'
-import { getProjectionConfig, topology } from '../utils/mapConfig'
 import { checkAnswer } from '../utils/scoring'
 import { useQuizContext } from '../context/QuizContext'
+import 'leaflet/dist/leaflet.css'
 
-const modeConfig = {
-  political: { categories: ['cities'], label: 'Political Map', color: 'var(--color-political)' },
-  physical: { categories: ['rivers', 'lakes', 'mountains', 'features'], label: 'Physical Map', color: 'var(--color-physical)' },
+/* ── Tile layer configs (all free, no API key) ── */
+const TILES = {
+  clean: {
+    url: 'https://{s}.basemaps.cartocdn.com/rastertiles/voyager_nolabels/{z}/{x}/{y}{r}.png',
+    attr: '&copy; <a href="https://www.openstreetmap.org/copyright">OSM</a> &copy; <a href="https://carto.com/">CARTO</a>',
+  },
+  cleanLabels: {
+    url: 'https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png',
+    attr: '&copy; <a href="https://www.openstreetmap.org/copyright">OSM</a> &copy; <a href="https://carto.com/">CARTO</a>',
+  },
+  terrain: {
+    url: 'https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png',
+    attr: '&copy; <a href="https://opentopomap.org">OpenTopoMap</a> &copy; <a href="https://www.openstreetmap.org/copyright">OSM</a>',
+  },
+  satellite: {
+    url: 'https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}',
+    attr: '&copy; <a href="https://www.esri.com/">Esri</a>',
+  },
 }
 
-/* Earthy/natural color palette for country fills */
-const countryColors = [
-  '#D4C4A8', '#C5D5C0', '#D5C8B8', '#B8C9D4', '#D1C2B4',
-  '#C8D4B4', '#DCCEB8', '#B4C8C0', '#D8C8BC', '#C0C8B8',
-  '#CCC4B4', '#B8D0C4', '#D0C8B0', '#C4CCC0', '#D4CCBC',
-  '#BCC8B4', '#D0C0B4', '#C0D0C8', '#D8D0C0', '#B4C4BC',
-  '#C8C0B4', '#D0D4C4', '#C4B8AC', '#B8C4B0', '#DCD4C4',
+/* ── Category definitions ── */
+const CATEGORIES = [
+  { id: 'cities', label: 'Cities', icon: Building2, color: '#4F46E5' },
+  { id: 'mountains', label: 'Mountains', icon: Mountain, color: '#7C3AED' },
+  { id: 'rivers', label: 'Rivers', icon: Waves, color: '#0EA5E9' },
+  { id: 'lakes', label: 'Lakes', icon: Droplets, color: '#06B6D4' },
+  { id: 'features', label: 'Features', icon: Landmark, color: '#D97706' },
 ]
 
-function getCountryColor(id) {
-  const num = parseInt(id, 10) || 0
-  return countryColors[((num * 7 + 13) % countryColors.length)]
+/* ── Continent map centers and zoom ── */
+const VIEW = {
+  asia:            { center: [30, 85],   zoom: 3 },
+  europe:          { center: [52, 15],   zoom: 4 },
+  africa:          { center: [5, 20],    zoom: 3 },
+  'north-america': { center: [45, -100], zoom: 3 },
+  'south-america': { center: [-15, -58], zoom: 3 },
+  oceania:         { center: [-25, 140], zoom: 4 },
 }
 
-const MemoGeo = memo(function MemoGeo({ geo }) {
-  const id = geo.id || geo.properties?.id || '0'
-  const fill = getCountryColor(id)
-  return (
-    <Geography
-      geography={geo}
-      style={{
-        default: { fill, stroke: '#A8A298', strokeWidth: 0.5, outline: 'none' },
-        hover: { fill, stroke: '#A8A298', strokeWidth: 0.5, outline: 'none' },
-        pressed: { fill, stroke: '#A8A298', strokeWidth: 0.5, outline: 'none' },
-      }}
-    />
-  )
-})
+/* ── Map style button defs ── */
+const MAP_STYLES = [
+  { id: 'clean', label: 'Clean', icon: MapIcon },
+  { id: 'terrain', label: 'Terrain', icon: TreePine },
+  { id: 'satellite', label: 'Satellite', icon: Satellite },
+]
 
+/* Helper: Invalidate map size after mount */
+function MapReady() {
+  const map = useMap()
+  useEffect(() => {
+    const t = setTimeout(() => map.invalidateSize(), 200)
+    return () => clearTimeout(t)
+  }, [map])
+  return null
+}
+
+/* ═══════════════════════════════════════════════════ */
 export default function QuizPage() {
-  const { continentId, mode } = useParams()
+  const { continentId } = useParams()
   const navigate = useNavigate()
   const continent = continents[continentId]
-  const config = getProjectionConfig(continentId)
+  const view = VIEW[continentId] || { center: [20, 0], zoom: 2 }
   const { dispatch } = useQuizContext()
 
-  const [quizItems, setQuizItems] = useState([])
-  const [loading, setLoading] = useState(true)
+  /* ── state ── */
+  const [selectedCats, setSelectedCats] = useState(['cities'])
+  const [catData, setCatData] = useState({})
+  const [loadingCats, setLoadingCats] = useState({})
+  const [mapStyle, setMapStyle] = useState('clean')
+  const [showLabels, setShowLabels] = useState(false)
   const [itemStates, setItemStates] = useState({})
   const [activeId, setActiveId] = useState(null)
-  const [activeCategory, setActiveCategory] = useState(null)
   const [inputValue, setInputValue] = useState('')
   const [lastResult, setLastResult] = useState(null)
   const inputRef = useRef(null)
   const timeoutRef = useRef(null)
 
+  /* ── load category data on toggle ── */
   useEffect(() => {
-    async function load() {
-      const modeConf = modeConfig[mode]
-      if (!modeConf) { setLoading(false); return }
-      const allItems = []
-      for (const cat of modeConf.categories) {
-        try {
-          const data = await import(`../data/${continentId}/${cat}.json`)
-          const items = (data.default || data).map((item) => ({
-            ...item,
-            category: cat,
-            _uid: `${cat}-${item.id}`,
-          }))
-          allItems.push(...items)
-        } catch { /* skip */ }
-      }
-      setQuizItems(allItems)
-      setLoading(false)
-    }
-    load()
-  }, [continentId, mode])
+    selectedCats.forEach(async (cat) => {
+      if (catData[cat] || loadingCats[cat]) return
+      setLoadingCats(prev => ({ ...prev, [cat]: true }))
+      try {
+        const mod = await import(`../data/${continentId}/${cat}.json`)
+        const items = (mod.default || mod).map(item => ({
+          ...item,
+          category: cat,
+          _uid: `${cat}-${item.id}`,
+        }))
+        setCatData(prev => ({ ...prev, [cat]: items }))
+      } catch { /* no data for this combo */ }
+      setLoadingCats(prev => ({ ...prev, [cat]: false }))
+    })
+  }, [selectedCats, continentId, catData, loadingCats])
 
+  /* ── focus input ── */
   useEffect(() => {
-    if (activeId !== null && inputRef.current) {
-      setTimeout(() => inputRef.current?.focus(), 50)
+    if (activeId && inputRef.current) {
+      setTimeout(() => inputRef.current?.focus(), 80)
     }
   }, [activeId])
 
-  // Cleanup timeout on unmount
   useEffect(() => () => clearTimeout(timeoutRef.current), [])
+
+  const toggleCat = useCallback((id) => {
+    setSelectedCats(prev =>
+      prev.includes(id) ? prev.filter(c => c !== id) : [...prev, id]
+    )
+  }, [])
+
+  const visibleItems = useMemo(() =>
+    selectedCats.flatMap(cat => catData[cat] || []),
+    [selectedCats, catData],
+  )
 
   const handleMarkerClick = useCallback((item) => {
     if (itemStates[item._uid]) return
     clearTimeout(timeoutRef.current)
     setActiveId(item._uid)
-    setActiveCategory(item.category)
     setInputValue('')
     setLastResult(null)
   }, [itemStates])
 
-  const handleSubmitAnswer = useCallback((e) => {
+  const handleSubmit = useCallback((e) => {
     e.preventDefault()
     if (!activeId) return
-    const item = quizItems.find((q) => q._uid === activeId)
+    const item = visibleItems.find(q => q._uid === activeId)
     if (!item || itemStates[item._uid]) return
-
-    const isCorrect = checkAnswer(inputValue, item.acceptedAnswers)
-    setItemStates((prev) => ({ ...prev, [item._uid]: isCorrect ? 'correct' : 'incorrect' }))
-    setLastResult({ uid: item._uid, correct: isCorrect, correctName: item.name, userAnswer: inputValue })
-
+    const ok = checkAnswer(inputValue, item.acceptedAnswers)
+    setItemStates(prev => ({ ...prev, [item._uid]: ok ? 'correct' : 'incorrect' }))
+    setLastResult({ uid: item._uid, correct: ok, name: item.name, answer: inputValue })
     timeoutRef.current = setTimeout(() => {
       setActiveId(null)
-      setActiveCategory(null)
       setInputValue('')
       setLastResult(null)
     }, 1800)
-  }, [activeId, inputValue, quizItems, itemStates])
+  }, [activeId, inputValue, visibleItems, itemStates])
 
   const handleSkip = useCallback(() => {
     if (!activeId) return
-    const item = quizItems.find((q) => q._uid === activeId)
+    const item = visibleItems.find(q => q._uid === activeId)
     if (!item) return
-    setItemStates((prev) => ({ ...prev, [item._uid]: 'incorrect' }))
-    setLastResult({ uid: item._uid, correct: false, correctName: item.name, userAnswer: '' })
+    setItemStates(prev => ({ ...prev, [item._uid]: 'incorrect' }))
+    setLastResult({ uid: item._uid, correct: false, name: item.name, answer: '' })
     timeoutRef.current = setTimeout(() => {
       setActiveId(null)
-      setActiveCategory(null)
       setInputValue('')
       setLastResult(null)
     }, 1800)
-  }, [activeId, quizItems])
+  }, [activeId, visibleItems])
 
   const handleReset = useCallback(() => {
     clearTimeout(timeoutRef.current)
     setItemStates({})
     setActiveId(null)
-    setActiveCategory(null)
     setInputValue('')
     setLastResult(null)
   }, [])
 
-  const answeredCount = Object.keys(itemStates).length
-  const correctCount = Object.values(itemStates).filter((s) => s === 'correct').length
-  const totalCount = quizItems.length
-  const isComplete = answeredCount === totalCount && totalCount > 0
-  const pct = totalCount > 0 ? Math.round((answeredCount / totalCount) * 100) : 0
+  const answered = visibleItems.filter(i => itemStates[i._uid]).length
+  const correct  = visibleItems.filter(i => itemStates[i._uid] === 'correct').length
+  const total    = visibleItems.length
+  const done     = answered === total && total > 0
+  const pct      = total > 0 ? Math.round((answered / total) * 100) : 0
+  const activeItem = visibleItems.find(q => q._uid === activeId)
 
   useEffect(() => {
-    if (isComplete) {
+    if (done) {
       dispatch({
         type: 'RECORD_SCORE',
-        payload: { continentId, category: mode, correct: correctCount, total: totalCount },
+        payload: { continentId, category: selectedCats.join('+'), correct, total },
       })
     }
-  }, [isComplete])
+  }, [done]) // eslint-disable-line
 
-  if (!continent || !modeConfig[mode]) {
+  const tileKey = mapStyle === 'clean' && showLabels ? 'cleanLabels' : mapStyle
+  const tile = TILES[tileKey] || TILES.clean
+
+  if (!continent) {
     return (
       <div className="text-center py-20">
-        <h2 className="text-2xl mb-4">Not found</h2>
+        <h2 className="text-2xl mb-4">Continent not found</h2>
         <button onClick={() => navigate('/')} className="text-[var(--color-accent)] underline cursor-pointer bg-transparent border-none font-[var(--font-body)]">Go Home</button>
       </div>
     )
   }
 
-  if (loading) {
-    return (
-      <div className="flex flex-col items-center justify-center py-32 gap-4">
-        <div className="w-10 h-10 border-3 border-[var(--color-accent)] border-t-transparent rounded-full animate-spin" />
-        <p className="text-[var(--color-text-muted)] text-sm">Loading map data...</p>
-      </div>
-    )
-  }
-
-  if (quizItems.length === 0) {
-    return (
-      <div className="text-center py-20">
-        <h2 className="text-2xl mb-2">Coming Soon</h2>
-        <p className="text-[var(--color-text-muted)] mb-4">No data yet.</p>
-        <button onClick={() => navigate(-1)} className="text-[var(--color-accent)] underline cursor-pointer bg-transparent border-none font-[var(--font-body)]">Go Back</button>
-      </div>
-    )
-  }
-
-  const modeColor = modeConfig[mode].color
-  const activeItem = quizItems.find((q) => q._uid === activeId)
-
   return (
     <div className="max-w-5xl mx-auto pb-8">
-      {/* Top bar */}
+      {/* ── Header ── */}
       <div className="flex items-center justify-between mb-5">
         <motion.button
-          onClick={() => navigate(`/continent/${continentId}`)}
+          onClick={() => navigate('/')}
           className="flex items-center gap-1.5 text-sm text-[var(--color-text-muted)] hover:text-[var(--color-text)] transition-colors cursor-pointer bg-transparent border-none p-0 font-[var(--font-body)]"
           initial={{ opacity: 0, x: -10 }}
           animate={{ opacity: 1, x: 0 }}
         >
           <ArrowLeft className="w-4 h-4" />
-          {continent.name}
+          All continents
         </motion.button>
-
-        {/* Score pill */}
         <motion.div
-          className="flex items-center gap-2 px-3 py-1.5 rounded-full text-sm font-medium glass-card shadow-sm"
-          style={{ color: modeColor }}
+          className="flex items-center gap-2 px-3 py-1.5 rounded-full text-sm font-medium glass-card shadow-sm text-[var(--color-accent)]"
           initial={{ opacity: 0, x: 10 }}
           animate={{ opacity: 1, x: 0 }}
         >
-          <span>{correctCount}</span>
-          <span className="opacity-50">/</span>
-          <span className="opacity-50">{totalCount}</span>
+          <span>{correct}</span>
+          <span className="opacity-40">/</span>
+          <span className="opacity-40">{total}</span>
         </motion.div>
       </div>
 
-      {/* Title row */}
-      <motion.div className="mb-4" initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
-        <h1 className="text-2xl sm:text-3xl">
-          {continent.name}
-          <span className="text-[var(--color-text-muted)]"> — </span>
-          <span style={{ color: modeColor }}>{modeConfig[mode].label}</span>
-        </h1>
-      </motion.div>
+      {/* ── Title ── */}
+      <motion.h1
+        className="text-3xl sm:text-4xl text-center mb-6"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+      >
+        {continent.name}
+      </motion.h1>
 
-      {/* Progress */}
-      <div className="h-1.5 bg-white/60 rounded-full mb-5 overflow-hidden shadow-inner">
-        <motion.div
-          className="h-full rounded-full"
-          style={{ background: `linear-gradient(90deg, ${modeColor}, ${modeColor}dd)` }}
-          animate={{ width: `${pct}%` }}
-          transition={{ duration: 0.4 }}
-        />
-      </div>
-
-      {!isComplete && (
-        <p className="text-sm text-[var(--color-text-muted)] mb-4">
-          Click any dot on the map to identify it — {totalCount - answeredCount} remaining
-        </p>
-      )}
-
-      {/* Map container */}
+      {/* ── Category toggles ── */}
       <motion.div
-        className="relative w-full rounded-2xl overflow-hidden shadow-lg border border-white/40"
-        style={{ backgroundColor: 'var(--color-water)' }}
+        className="flex flex-wrap justify-center gap-2 mb-4"
         initial={{ opacity: 0, y: 10 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5 }}
+        transition={{ delay: 0.1 }}
       >
-        <ComposableMap
-          projection="geoMercator"
-          projectionConfig={{ center: config.center, scale: config.scale }}
-          width={900}
-          height={560}
-          style={{ width: '100%', height: 'auto', display: 'block' }}
-        >
-          <Geographies geography={topology}>
-            {({ geographies }) =>
-              geographies.map((geo) => <MemoGeo key={geo.rsmKey} geo={geo} />)
-            }
-          </Geographies>
+        {CATEGORIES.map(cat => {
+          const Icon = cat.icon
+          const active = selectedCats.includes(cat.id)
+          const isLoading = loadingCats[cat.id] && !catData[cat.id]
+          return (
+            <button
+              key={cat.id}
+              onClick={() => toggleCat(cat.id)}
+              className={`flex items-center gap-1.5 px-3.5 py-2 rounded-xl text-sm font-medium transition-all cursor-pointer border font-[var(--font-body)] ${
+                active
+                  ? 'text-white shadow-md'
+                  : 'bg-white/60 text-[var(--color-text-muted)] border-[var(--color-border)] hover:bg-white/80'
+              }`}
+              style={active ? { backgroundColor: cat.color, borderColor: cat.color } : {}}
+            >
+              <Icon className="w-3.5 h-3.5" />
+              {cat.label}
+              {isLoading && <span className="w-3 h-3 border-2 border-current border-t-transparent rounded-full animate-spin" />}
+            </button>
+          )
+        })}
+      </motion.div>
 
-          {quizItems.map((item) => {
-            const state = itemStates[item._uid]
-            const isActive = activeId === item._uid
-            let fill = modeColor
-            let r = 5
-            if (state === 'correct') { fill = 'var(--color-correct)'; r = 6 }
-            else if (state === 'incorrect') { fill = 'var(--color-incorrect)'; r = 6 }
-            if (isActive) r = 8
-
+      {/* ── Map controls ── */}
+      <motion.div
+        className="flex flex-wrap items-center justify-center gap-2 mb-5"
+        initial={{ opacity: 0, y: 10 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 0.15 }}
+      >
+        <div className="flex bg-white/60 rounded-lg p-0.5 border border-[var(--color-border)]">
+          {MAP_STYLES.map(s => {
+            const Icon = s.icon
             return (
-              <Marker key={item._uid} coordinates={[item.lng, item.lat]}>
-                <g
-                  onClick={() => handleMarkerClick(item)}
-                  style={{ cursor: state ? 'default' : 'pointer' }}
-                >
-                  {/* Outer ring for unanswered */}
-                  {!state && !isActive && (
-                    <circle r={8} fill={modeColor} opacity={0.08} />
-                  )}
-                  {/* Glow for active */}
-                  {isActive && !state && (
-                    <circle r={16} fill={modeColor} opacity={0.12} className="marker-pulse" />
-                  )}
-                  <circle
-                    r={r}
-                    fill={fill}
-                    stroke="#fff"
-                    strokeWidth={2}
-                    style={{
-                      transition: 'all 0.25s ease',
-                      filter: isActive
-                        ? `drop-shadow(0 0 6px rgba(0,0,0,0.3))`
-                        : state
-                        ? 'none'
-                        : `drop-shadow(0 1px 3px rgba(0,0,0,0.2))`,
-                    }}
-                  />
-                  {state === 'correct' && (
-                    <text textAnchor="middle" dominantBaseline="central" fill="#fff" fontSize={8} fontWeight={700} style={{ pointerEvents: 'none' }}>✓</text>
-                  )}
-                  {state === 'incorrect' && (
-                    <text textAnchor="middle" dominantBaseline="central" fill="#fff" fontSize={8} fontWeight={700} style={{ pointerEvents: 'none' }}>✗</text>
-                  )}
-                  {/* Label for answered */}
-                  {state && (
-                    <text
-                      y={-12}
-                      textAnchor="middle"
-                      fill={state === 'correct' ? 'var(--color-correct)' : 'var(--color-incorrect)'}
-                      fontSize={7}
-                      fontWeight={600}
-                      fontFamily="var(--font-body)"
-                      style={{ pointerEvents: 'none', textShadow: '0 0 3px white, 0 0 3px white' }}
-                    >
-                      {quizItems.find(q => q._uid === item._uid)?.name}
-                    </text>
-                  )}
-                </g>
-              </Marker>
+              <button
+                key={s.id}
+                onClick={() => setMapStyle(s.id)}
+                className={`flex items-center gap-1 px-2.5 py-1.5 rounded-md text-xs font-medium transition-all cursor-pointer border-none font-[var(--font-body)] ${
+                  mapStyle === s.id
+                    ? 'bg-white text-[var(--color-text)] shadow-sm'
+                    : 'text-[var(--color-text-muted)] hover:text-[var(--color-text)]'
+                }`}
+              >
+                <Icon className="w-3 h-3" />
+                {s.label}
+              </button>
             )
           })}
-        </ComposableMap>
+        </div>
+        <button
+          onClick={() => setShowLabels(v => !v)}
+          className={`flex items-center gap-1 px-2.5 py-1.5 rounded-lg text-xs font-medium transition-all cursor-pointer border font-[var(--font-body)] ${
+            showLabels
+              ? 'bg-[var(--color-accent)] text-white border-[var(--color-accent)] shadow-sm'
+              : 'bg-white/60 text-[var(--color-text-muted)] border-[var(--color-border)] hover:bg-white/80'
+          }`}
+        >
+          {showLabels ? <Tag className="w-3 h-3" /> : <Tags className="w-3 h-3" />}
+          Labels {showLabels ? 'ON' : 'OFF'}
+        </button>
+      </motion.div>
 
-        {/* Answer popup */}
+      {/* ── Progress ── */}
+      {total > 0 && (
+        <div className="mb-4">
+          <div className="flex justify-between text-xs text-[var(--color-text-muted)] mb-1.5 px-0.5">
+            <span>{answered} of {total} answered</span>
+            <span>{pct}%</span>
+          </div>
+          <div className="h-1.5 bg-white/60 rounded-full overflow-hidden shadow-inner">
+            <motion.div
+              className="h-full rounded-full bg-gradient-to-r from-[var(--color-accent)] to-purple-500"
+              animate={{ width: `${pct}%` }}
+              transition={{ duration: 0.4 }}
+            />
+          </div>
+        </div>
+      )}
+      {total === 0 && selectedCats.length > 0 && (
+        <p className="text-center text-sm text-[var(--color-text-muted)] mb-4">Loading quiz data...</p>
+      )}
+      {selectedCats.length === 0 && (
+        <p className="text-center text-sm text-[var(--color-text-muted)] mb-4">Select at least one category above to start</p>
+      )}
+
+      {/* ── MAP ── */}
+      <motion.div
+        className="relative w-full rounded-2xl overflow-hidden shadow-lg border border-white/30"
+        style={{ height: 'clamp(400px, 60vh, 600px)' }}
+        initial={{ opacity: 0, y: 10 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, delay: 0.2 }}
+      >
+        <MapContainer
+          key={continentId}
+          center={view.center}
+          zoom={view.zoom}
+          minZoom={2}
+          maxZoom={14}
+          scrollWheelZoom={true}
+          style={{ height: '100%', width: '100%', background: '#B8D4E8' }}
+          zoomControl={true}
+        >
+          <MapReady />
+          <TileLayer key={tileKey} url={tile.url} attribution={tile.attr} />
+
+          {visibleItems.map(item => {
+            const st = itemStates[item._uid]
+            const isActive = activeId === item._uid
+            const catConf = CATEGORIES.find(c => c.id === item.category)
+            let fillColor = catConf?.color || '#4F46E5'
+            let radius = 7
+            let fillOpacity = 0.9
+            if (st === 'correct')   { fillColor = '#16A34A'; radius = 8 }
+            if (st === 'incorrect') { fillColor = '#DC2626'; radius = 8 }
+            if (isActive)           { radius = 10; fillOpacity = 1 }
+
+            return (
+              <CircleMarker
+                key={item._uid}
+                center={[item.lat, item.lng]}
+                radius={radius}
+                pathOptions={{ fillColor, color: '#fff', weight: 2, fillOpacity, opacity: 1 }}
+                eventHandlers={{ click: () => handleMarkerClick(item) }}
+              >
+                {st && (
+                  <Tooltip permanent direction="top" offset={[0, -10]} className="quiz-tooltip">
+                    <span style={{
+                      color: st === 'correct' ? '#16A34A' : '#DC2626',
+                      fontWeight: 600,
+                      fontSize: '11px',
+                    }}>
+                      {item.name}
+                    </span>
+                  </Tooltip>
+                )}
+              </CircleMarker>
+            )
+          })}
+        </MapContainer>
+
+        {/* ── Answer popup ── */}
         <AnimatePresence>
           {activeId !== null && activeItem && (
             <motion.div
@@ -336,13 +389,13 @@ export default function QuizPage() {
               animate={{ opacity: 1, y: 0, scale: 1 }}
               exit={{ opacity: 0, y: 8, scale: 0.97 }}
               transition={{ duration: 0.2 }}
-              className="absolute bottom-4 left-1/2 -translate-x-1/2 w-80 max-w-[92%] z-10"
+              className="absolute bottom-4 left-1/2 -translate-x-1/2 w-80 max-w-[92%] z-[1000]"
             >
               {lastResult && lastResult.uid === activeId ? (
-                <div className={`p-4 rounded-2xl shadow-xl backdrop-blur-md border ${
+                <div className={`p-4 rounded-2xl shadow-xl border ${
                   lastResult.correct
-                    ? 'bg-[var(--color-correct-bg)]/95 border-[var(--color-correct)]/30'
-                    : 'bg-[var(--color-incorrect-bg)]/95 border-[var(--color-incorrect)]/30'
+                    ? 'bg-[var(--color-correct-bg)] border-[var(--color-correct)]/30'
+                    : 'bg-[var(--color-incorrect-bg)] border-[var(--color-incorrect)]/30'
                 }`}>
                   <div className="flex items-center gap-2.5">
                     {lastResult.correct ? (
@@ -352,7 +405,7 @@ export default function QuizPage() {
                         </div>
                         <div>
                           <p className="font-semibold text-[var(--color-correct)] text-sm">Correct!</p>
-                          <p className="text-xs text-[var(--color-correct)]/70">{lastResult.correctName}</p>
+                          <p className="text-xs text-[var(--color-correct)]/70">{lastResult.name}</p>
                         </div>
                       </>
                     ) : (
@@ -362,10 +415,10 @@ export default function QuizPage() {
                         </div>
                         <div>
                           <p className="font-semibold text-[var(--color-incorrect)] text-sm">
-                            {lastResult.userAnswer ? 'Not quite' : 'Skipped'}
+                            {lastResult.answer ? 'Not quite' : 'Skipped'}
                           </p>
                           <p className="text-xs text-[var(--color-incorrect)]/70">
-                            It's <strong>{lastResult.correctName}</strong>
+                            It's <strong>{lastResult.name}</strong>
                           </p>
                         </div>
                       </>
@@ -373,23 +426,24 @@ export default function QuizPage() {
                   </div>
                 </div>
               ) : (
-                <form onSubmit={handleSubmitAnswer} className="glass-card p-4 rounded-2xl shadow-xl">
-                  <p className="text-[10px] uppercase tracking-widest text-[var(--color-text-muted)] font-semibold mb-2">{activeCategory}</p>
+                <form onSubmit={handleSubmit} className="glass-card p-4 rounded-2xl shadow-xl">
+                  <p className="text-[10px] uppercase tracking-widest text-[var(--color-text-muted)] font-semibold mb-2">
+                    {activeItem.category} — {activeItem.hint || 'Name this place'}
+                  </p>
                   <div className="flex gap-2">
                     <input
                       ref={inputRef}
                       type="text"
                       value={inputValue}
                       onChange={(e) => setInputValue(e.target.value)}
-                      placeholder="Name this place..."
+                      placeholder="Your answer..."
                       autoComplete="off"
                       className="flex-1 px-3.5 py-2.5 bg-white/80 border border-[var(--color-border)] rounded-xl text-sm focus:border-[var(--color-accent)] focus:ring-2 focus:ring-[var(--color-accent)]/10 focus:outline-none transition-all font-[var(--font-body)]"
                     />
                     <button
                       type="submit"
                       disabled={!inputValue.trim()}
-                      className="px-4 py-2.5 text-white text-sm font-semibold rounded-xl disabled:opacity-30 disabled:cursor-not-allowed transition-all cursor-pointer font-[var(--font-body)] shadow-md"
-                      style={{ backgroundColor: modeColor }}
+                      className="px-4 py-2.5 bg-[var(--color-accent)] text-white text-sm font-semibold rounded-xl disabled:opacity-30 disabled:cursor-not-allowed transition-all cursor-pointer font-[var(--font-body)] shadow-md hover:bg-[var(--color-accent-hover)]"
                     >
                       Go
                     </button>
@@ -408,61 +462,58 @@ export default function QuizPage() {
         </AnimatePresence>
       </motion.div>
 
-      {/* Completion */}
+      {/* ── Completion ── */}
       <AnimatePresence>
-        {isComplete && (
+        {done && (
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
             className="mt-8"
           >
-            {/* Score hero */}
             <div className="text-center mb-6">
               <motion.div
                 initial={{ scale: 0 }}
                 animate={{ scale: 1 }}
                 transition={{ type: 'spring', delay: 0.2 }}
-                className="inline-flex items-center justify-center w-20 h-20 rounded-full mb-3"
-                style={{ background: `linear-gradient(135deg, ${modeColor}18, ${modeColor}08)` }}
+                className="inline-flex items-center justify-center w-20 h-20 rounded-full mb-3 bg-[var(--color-accent-light)]"
               >
-                {correctCount === totalCount ? (
-                  <Sparkles className="w-9 h-9" style={{ color: modeColor }} />
+                {correct === total ? (
+                  <Sparkles className="w-9 h-9 text-[var(--color-accent)]" />
                 ) : (
-                  <Trophy className="w-9 h-9" style={{ color: modeColor }} />
+                  <Trophy className="w-9 h-9 text-[var(--color-accent)]" />
                 )}
               </motion.div>
               <h2 className="text-3xl font-[var(--font-display)]">
-                {correctCount} <span className="text-[var(--color-text-muted)]">/ {totalCount}</span>
+                {correct} <span className="text-[var(--color-text-muted)]">/ {total}</span>
               </h2>
               <p className="text-[var(--color-text-muted)] mt-1">
-                {correctCount === totalCount ? 'Perfect score! You\'re a geography genius!' :
-                 correctCount >= totalCount * 0.8 ? 'Excellent work!' :
-                 correctCount >= totalCount * 0.5 ? 'Good effort — keep at it!' :
+                {correct === total ? 'Perfect score! Geography genius!' :
+                 correct >= total * 0.8 ? 'Excellent work!' :
+                 correct >= total * 0.5 ? 'Good effort — keep at it!' :
                  'Room for improvement — try again!'}
               </p>
             </div>
 
-            {/* Answer grid */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 mb-6">
-              {quizItems.map((item, i) => {
-                const state = itemStates[item._uid]
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 mb-6 max-w-2xl mx-auto">
+              {visibleItems.map((item, i) => {
+                const st = itemStates[item._uid]
                 return (
                   <motion.div
                     key={item._uid}
                     initial={{ opacity: 0, y: 5 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: i * 0.03 }}
-                    className={`flex items-center gap-2.5 px-3.5 py-2.5 rounded-xl text-sm backdrop-blur-sm ${
-                      state === 'correct' ? 'bg-[var(--color-correct-bg)]/80' : 'bg-[var(--color-incorrect-bg)]/80'
+                    className={`flex items-center gap-2.5 px-3.5 py-2.5 rounded-xl text-sm ${
+                      st === 'correct' ? 'bg-[var(--color-correct-bg)]' : 'bg-[var(--color-incorrect-bg)]'
                     }`}
                   >
-                    {state === 'correct' ? (
+                    {st === 'correct' ? (
                       <CheckCircle className="w-4 h-4 text-[var(--color-correct)] shrink-0" />
                     ) : (
                       <XCircle className="w-4 h-4 text-[var(--color-incorrect)] shrink-0" />
                     )}
-                    <span className={`font-medium truncate ${state === 'correct' ? 'text-[var(--color-correct)]' : 'text-[var(--color-incorrect)]'}`}>
+                    <span className={`font-medium truncate ${st === 'correct' ? 'text-[var(--color-correct)]' : 'text-[var(--color-incorrect)]'}`}>
                       {item.name}
                     </span>
                     <span className="text-[10px] text-[var(--color-text-muted)] ml-auto capitalize shrink-0">{item.category}</span>
@@ -471,20 +522,18 @@ export default function QuizPage() {
               })}
             </div>
 
-            {/* Actions */}
-            <div className="flex gap-3">
+            <div className="flex gap-3 justify-center">
               <button
                 onClick={handleReset}
-                className="flex-1 flex items-center justify-center gap-2 py-3.5 glass-card rounded-xl hover:shadow-md transition-all cursor-pointer text-sm font-semibold font-[var(--font-body)]"
+                className="flex items-center justify-center gap-2 px-6 py-3.5 glass-card rounded-xl hover:shadow-md transition-all cursor-pointer text-sm font-semibold font-[var(--font-body)]"
               >
                 <RotateCcw className="w-4 h-4" /> Try Again
               </button>
               <button
-                onClick={() => navigate(`/continent/${continentId}`)}
-                className="flex-1 py-3.5 text-white rounded-xl hover:opacity-90 transition-all cursor-pointer text-sm font-semibold font-[var(--font-body)] shadow-md"
-                style={{ backgroundColor: modeColor }}
+                onClick={() => navigate('/')}
+                className="px-6 py-3.5 bg-[var(--color-accent)] text-white rounded-xl hover:bg-[var(--color-accent-hover)] transition-all cursor-pointer text-sm font-semibold font-[var(--font-body)] shadow-md"
               >
-                Switch Mode
+                Pick Another
               </button>
             </div>
           </motion.div>

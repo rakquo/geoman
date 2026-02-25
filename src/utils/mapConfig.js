@@ -1,16 +1,13 @@
-import topology from 'world-atlas/countries-50m.json'
-
-export { topology }
-
-export const projectionConfig = {
-  asia: { center: [85, 30], scale: 400 },
-  europe: { center: [15, 54], scale: 700 },
-  africa: { center: [20, 2], scale: 400 },
-  'north-america': { center: [-100, 45], scale: 350 },
-  'south-america': { center: [-58, -18], scale: 400 },
-  oceania: { center: [145, -28], scale: 500 },
+// Leaflet view configs per continent (center: [lat, lng], zoom: number)
+export const viewConfig = {
+  asia:            { center: [30, 85],   zoom: 3 },
+  europe:          { center: [52, 15],   zoom: 4 },
+  africa:          { center: [5, 20],    zoom: 3 },
+  'north-america': { center: [45, -100], zoom: 3 },
+  'south-america': { center: [-15, -58], zoom: 3 },
+  oceania:         { center: [-25, 140], zoom: 4 },
 }
 
-export function getProjectionConfig(continentId) {
-  return projectionConfig[continentId] || { center: [0, 20], scale: 150 }
+export function getViewConfig(continentId) {
+  return viewConfig[continentId] || { center: [20, 0], zoom: 2 }
 }
