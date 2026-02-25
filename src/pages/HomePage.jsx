@@ -19,10 +19,10 @@ export default function HomePage() {
   const { state } = useQuizContext()
 
   return (
-    <div className="max-w-4xl mx-auto">
+    <div className="flex flex-col items-center">
       {/* Hero with Globe */}
       <motion.div
-        className="text-center mb-6 sm:mb-10"
+        className="text-center mb-6 sm:mb-10 w-full"
         initial={{ opacity: 0, y: -15 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
@@ -34,23 +34,23 @@ export default function HomePage() {
         <h1 className="text-4xl sm:text-5xl lg:text-6xl mb-4 leading-tight">
           How well do you<br />know the world?
         </h1>
-        <p className="text-lg text-[var(--color-text-muted)] max-w-lg mx-auto mb-6">
-          Pick a continent. Choose political or physical. Click markers on the map and name what you see.
+        <p className="text-lg text-[var(--color-text-muted)] max-w-lg mx-auto">
+          Pick a continent. Toggle categories. Click markers and name what you see.
         </p>
       </motion.div>
 
       {/* 3D Globe */}
       <motion.div
-        className="flex justify-center mb-10 sm:mb-14"
+        className="mb-10 sm:mb-14"
         initial={{ opacity: 0, scale: 0.8 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.8, delay: 0.2 }}
       >
-        <Globe size={380} />
+        <Globe size={360} />
       </motion.div>
 
       {/* Continent grid */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 w-full max-w-4xl">
         {continentList.map((item, i) => {
           const continent = continents[item.id]
           const hasScore = Object.keys(state.scores).some(k => k.startsWith(item.id))
@@ -63,7 +63,6 @@ export default function HomePage() {
               onClick={() => navigate(`/continent/${item.id}`)}
               className={`group relative overflow-hidden rounded-2xl ${item.bg} backdrop-blur-sm border border-white/40 hover:shadow-xl hover:shadow-indigo-500/5 hover:ring-2 ${item.ring} transition-all duration-300 cursor-pointer text-left p-5`}
             >
-              {/* Gradient accent blob */}
               <div className={`absolute top-0 right-0 w-28 h-28 rounded-full bg-gradient-to-br ${item.gradient} opacity-[0.08] -translate-y-10 translate-x-10 group-hover:scale-[2] transition-transform duration-700`} />
               <div className={`absolute bottom-0 left-0 w-20 h-20 rounded-full bg-gradient-to-br ${item.gradient} opacity-[0.05] translate-y-8 -translate-x-8 group-hover:scale-[2] transition-transform duration-700`} />
               <div className="relative">
@@ -85,7 +84,7 @@ export default function HomePage() {
 
       {/* Footer hint */}
       <motion.div
-        className="mt-10 flex items-center justify-center gap-5 text-xs text-[var(--color-text-muted)]"
+        className="mt-10 flex flex-wrap items-center justify-center gap-4 text-xs text-[var(--color-text-muted)]"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 0.7 }}
