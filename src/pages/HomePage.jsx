@@ -1,17 +1,17 @@
 import { useNavigate } from 'react-router-dom'
 import { motion } from 'framer-motion'
-import { MapPin, Mountain, Waves, ChevronRight } from 'lucide-react'
+import { ChevronRight } from 'lucide-react'
 import { continents } from '../data/continents'
 import { useQuizContext } from '../context/QuizContext'
 import Globe from '../components/Globe'
 
-const continentList = [
-  { id: 'asia', gradient: 'from-amber-500 to-orange-600', bg: 'bg-amber-50/70', text: 'text-amber-700', ring: 'ring-amber-200', description: 'Himalayas, Gobi, 48 countries' },
-  { id: 'europe', gradient: 'from-blue-500 to-indigo-600', bg: 'bg-blue-50/70', text: 'text-blue-700', ring: 'ring-blue-200', description: 'Alps, Mediterranean, 44 countries' },
-  { id: 'africa', gradient: 'from-emerald-500 to-teal-600', bg: 'bg-emerald-50/70', text: 'text-emerald-700', ring: 'ring-emerald-200', description: 'Sahara, Nile, 54 countries' },
-  { id: 'north-america', gradient: 'from-red-500 to-rose-600', bg: 'bg-red-50/70', text: 'text-red-700', ring: 'ring-red-200', description: 'Rockies, Great Lakes, 23 countries' },
-  { id: 'south-america', gradient: 'from-violet-500 to-purple-600', bg: 'bg-violet-50/70', text: 'text-violet-700', ring: 'ring-violet-200', description: 'Amazon, Andes, 12 countries' },
-  { id: 'oceania', gradient: 'from-cyan-500 to-sky-600', bg: 'bg-cyan-50/70', text: 'text-cyan-700', ring: 'ring-cyan-200', description: 'Great Barrier Reef, 14 countries' },
+const CONTINENTS = [
+  { id: 'asia',          color: '#D4956B', desc: '48 countries · Himalayas · Gobi Desert' },
+  { id: 'europe',        color: '#6B93D4', desc: '44 countries · Alps · Mediterranean Sea' },
+  { id: 'africa',        color: '#D4B96B', desc: '54 countries · Sahara · River Nile' },
+  { id: 'north-america', color: '#D47B6B', desc: '23 countries · Rocky Mountains · Great Lakes' },
+  { id: 'south-america', color: '#82D46B', desc: '12 countries · Amazon · Andes' },
+  { id: 'oceania',       color: '#6BD4C4', desc: '14 countries · Great Barrier Reef · Outback' },
 ]
 
 export default function HomePage() {
@@ -19,82 +19,107 @@ export default function HomePage() {
   const { state } = useQuizContext()
 
   return (
-    <div className="flex flex-col items-center">
-      {/* Hero with Globe */}
+    <div className="w-full max-w-[1400px] mx-auto px-6 sm:px-10 py-8 sm:py-14">
+      {/* ── Hero ── */}
+      <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-16 mb-16 lg:mb-20">
+        {/* Text */}
+        <motion.div
+          className="flex-1 text-center lg:text-left"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+        >
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full glass text-[var(--color-accent)] text-[11px] font-semibold tracking-[0.15em] uppercase mb-6">
+            <span className="w-1.5 h-1.5 rounded-full bg-[var(--color-accent)] animate-[pulse-dot_2s_ease-in-out_infinite]" />
+            Interactive Geography Quiz
+          </div>
+          <h1 className="text-5xl sm:text-6xl lg:text-7xl leading-[1.1] mb-5 tracking-tight">
+            How well do<br />you know the<br />
+            <span className="italic text-[var(--color-accent)]">world</span>?
+          </h1>
+          <p className="text-lg text-[var(--color-text-muted)] max-w-md mx-auto lg:mx-0 font-light leading-relaxed">
+            Pick a continent. Toggle categories. Click markers on the map and name what you see.
+          </p>
+        </motion.div>
+
+        {/* Globe */}
+        <motion.div
+          className="flex-shrink-0"
+          initial={{ opacity: 0, scale: 0.85 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.8, delay: 0.15 }}
+        >
+          <Globe size={420} />
+        </motion.div>
+      </div>
+
+      {/* ── Section label ── */}
       <motion.div
-        className="text-center mb-6 sm:mb-10 w-full"
-        initial={{ opacity: 0, y: -15 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5 }}
+        className="flex items-center gap-4 mb-8"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 0.3 }}
       >
-        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-gradient-to-r from-indigo-100 to-purple-100 text-[var(--color-accent)] text-xs font-semibold mb-4 tracking-wide uppercase shadow-sm">
-          <span className="w-1.5 h-1.5 rounded-full bg-[var(--color-accent)] animate-[pulse-marker_2s_ease-in-out_infinite]" />
-          Interactive Geography Quiz
-        </div>
-        <h1 className="text-4xl sm:text-5xl lg:text-6xl mb-4 leading-tight">
-          How well do you<br />know the world?
-        </h1>
-        <p className="text-lg text-[var(--color-text-muted)] max-w-lg mx-auto">
-          Pick a continent. Toggle categories. Click markers and name what you see.
-        </p>
+        <div className="h-px flex-1 bg-[var(--color-border)]" />
+        <span className="text-[11px] font-semibold tracking-[0.2em] uppercase text-[var(--color-text-muted)]">Choose a continent</span>
+        <div className="h-px flex-1 bg-[var(--color-border)]" />
       </motion.div>
 
-      {/* 3D Globe */}
-      <motion.div
-        className="mb-10 sm:mb-14"
-        initial={{ opacity: 0, scale: 0.8 }}
-        animate={{ opacity: 1, scale: 1 }}
-        transition={{ duration: 0.8, delay: 0.2 }}
-      >
-        <Globe size={360} />
-      </motion.div>
-
-      {/* Continent grid */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 w-full max-w-4xl">
-        {continentList.map((item, i) => {
+      {/* ── Continent grid ── */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5">
+        {CONTINENTS.map((item, i) => {
           const continent = continents[item.id]
           const hasScore = Object.keys(state.scores).some(k => k.startsWith(item.id))
           return (
             <motion.button
               key={item.id}
-              initial={{ opacity: 0, y: 20 }}
+              initial={{ opacity: 0, y: 24 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.3 + i * 0.06, duration: 0.4 }}
+              transition={{ delay: 0.35 + i * 0.07, duration: 0.45 }}
               onClick={() => navigate(`/continent/${item.id}`)}
-              className={`group relative overflow-hidden rounded-2xl ${item.bg} backdrop-blur-sm border border-white/40 hover:shadow-xl hover:shadow-indigo-500/5 hover:ring-2 ${item.ring} transition-all duration-300 cursor-pointer text-left p-5`}
+              className="group relative overflow-hidden rounded-2xl glass text-left cursor-pointer transition-all duration-300 hover:border-[var(--color-accent)]/20 hover:shadow-xl hover:shadow-[var(--color-accent)]/5"
+              style={{ minHeight: '160px' }}
             >
-              <div className={`absolute top-0 right-0 w-28 h-28 rounded-full bg-gradient-to-br ${item.gradient} opacity-[0.08] -translate-y-10 translate-x-10 group-hover:scale-[2] transition-transform duration-700`} />
-              <div className={`absolute bottom-0 left-0 w-20 h-20 rounded-full bg-gradient-to-br ${item.gradient} opacity-[0.05] translate-y-8 -translate-x-8 group-hover:scale-[2] transition-transform duration-700`} />
-              <div className="relative">
-                <h2 className={`text-xl font-[var(--font-display)] ${item.text} mb-1`}>
+              {/* Background accent gradient */}
+              <div
+                className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+                style={{ background: `linear-gradient(135deg, ${item.color}08, ${item.color}03)` }}
+              />
+              {/* Corner accent */}
+              <div
+                className="absolute -top-12 -right-12 w-32 h-32 rounded-full opacity-[0.07] group-hover:opacity-[0.14] group-hover:scale-150 transition-all duration-700"
+                style={{ background: `radial-gradient(circle, ${item.color}, transparent 70%)` }}
+              />
+
+              <div className="relative p-6 sm:p-7 flex flex-col h-full">
+                {/* Continent color bar */}
+                <div
+                  className="w-8 h-1 rounded-full mb-5 transition-all duration-300 group-hover:w-12"
+                  style={{ backgroundColor: item.color }}
+                />
+                <h2 className="text-2xl sm:text-3xl font-[var(--font-display)] mb-2 tracking-wide">
                   {continent.name}
                 </h2>
-                <p className="text-xs text-[var(--color-text-muted)] mb-3">
-                  {item.description}
+                <p className="text-[13px] text-[var(--color-text-muted)] mb-4 font-light leading-relaxed">
+                  {item.desc}
                 </p>
-                <div className={`inline-flex items-center gap-1 text-xs font-medium ${item.text} opacity-70 group-hover:opacity-100 transition-opacity`}>
-                  {hasScore ? 'Continue' : 'Start quiz'}
-                  <ChevronRight className="w-3 h-3 group-hover:translate-x-0.5 transition-transform" />
+                <div className="mt-auto flex items-center gap-2">
+                  <span
+                    className="text-[13px] font-medium transition-colors"
+                    style={{ color: item.color }}
+                  >
+                    {hasScore ? 'Continue' : 'Start quiz'}
+                  </span>
+                  <ChevronRight
+                    className="w-4 h-4 group-hover:translate-x-1 transition-transform"
+                    style={{ color: item.color }}
+                  />
                 </div>
               </div>
             </motion.button>
           )
         })}
       </div>
-
-      {/* Footer hint */}
-      <motion.div
-        className="mt-10 flex flex-wrap items-center justify-center gap-4 text-xs text-[var(--color-text-muted)]"
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 0.7 }}
-      >
-        <span className="flex items-center gap-1"><MapPin className="w-3.5 h-3.5" /> Cities & Capitals</span>
-        <span className="w-1 h-1 rounded-full bg-[var(--color-border)]" />
-        <span className="flex items-center gap-1"><Mountain className="w-3.5 h-3.5" /> Mountains & Peaks</span>
-        <span className="w-1 h-1 rounded-full bg-[var(--color-border)]" />
-        <span className="flex items-center gap-1"><Waves className="w-3.5 h-3.5" /> Rivers & Lakes</span>
-      </motion.div>
     </div>
   )
 }

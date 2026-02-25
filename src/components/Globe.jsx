@@ -1,7 +1,7 @@
 import { useRef, useEffect } from 'react'
 import createGlobe from 'cobe'
 
-export default function Globe({ size = 360, className = '' }) {
+export default function Globe({ size = 400, className = '' }) {
   const canvasRef = useRef(null)
   const pointerDown = useRef(false)
   const pointerX = useRef(0)
@@ -11,21 +11,20 @@ export default function Globe({ size = 360, className = '' }) {
 
   useEffect(() => {
     if (!canvasRef.current) return
-    let animFrame
 
     const globe = createGlobe(canvasRef.current, {
       devicePixelRatio: Math.min(window.devicePixelRatio, 2),
       width: size * 2,
       height: size * 2,
       phi: 0,
-      theta: 0.2,
-      dark: 0,
-      diffuse: 1.4,
+      theta: 0.15,
+      dark: 1,
+      diffuse: 3,
       mapSamples: 24000,
-      mapBrightness: 8,
-      baseColor: [0.95, 0.93, 0.88],
-      markerColor: [0.31, 0.27, 0.9],
-      glowColor: [0.92, 0.9, 0.87],
+      mapBrightness: 6,
+      baseColor: [0.15, 0.18, 0.22],
+      markerColor: [0.8, 0.58, 0.42],
+      glowColor: [0.08, 0.1, 0.14],
       markers: [
         { location: [48.8566, 2.3522], size: 0.04 },
         { location: [40.7128, -74.006], size: 0.04 },
@@ -40,13 +39,10 @@ export default function Globe({ size = 360, className = '' }) {
       ],
       onRender: (state) => {
         if (!pointerDown.current) {
-          // Apply friction to drag velocity, then blend into auto-rotation
-          velocityRef.current *= 0.95
-          if (Math.abs(velocityRef.current) < 0.0001) {
-            velocityRef.current = 0
-          }
+          velocityRef.current *= 0.94
+          if (Math.abs(velocityRef.current) < 0.0001) velocityRef.current = 0
           phiRef.current += 0.003 + velocityRef.current
-          dragOffset.current *= 0.95 // smoothly return drag offset to 0
+          dragOffset.current *= 0.92
         }
         state.phi = phiRef.current + dragOffset.current
         state.width = size * 2
@@ -57,47 +53,45 @@ export default function Globe({ size = 360, className = '' }) {
     return () => globe.destroy()
   }, [size])
 
-  const handlePointerDown = (e) => {
+  const onDown = (e) => {
     pointerDown.current = true
-    pointerX.current = e.clientX || (e.touches && e.touches[0]?.clientX) || 0
+    pointerX.current = e.clientX || e.touches?.[0]?.clientX || 0
     velocityRef.current = 0
     if (canvasRef.current) canvasRef.current.style.cursor = 'grabbing'
   }
-
-  const handlePointerMove = (e) => {
+  const onMove = (e) => {
     if (!pointerDown.current) return
-    const x = e.clientX || (e.touches && e.touches[0]?.clientX) || 0
+    const x = e.clientX || e.touches?.[0]?.clientX || 0
     const dx = x - pointerX.current
     pointerX.current = x
     dragOffset.current += dx / 150
     velocityRef.current = dx / 150
   }
-
-  const handlePointerUp = () => {
+  const onUp = () => {
     pointerDown.current = false
-    // velocity persists — friction in onRender handles deceleration
     if (canvasRef.current) canvasRef.current.style.cursor = 'grab'
   }
 
   return (
     <div className={`relative ${className}`} style={{ width: size, height: size, maxWidth: '100%', aspectRatio: '1' }}>
+      {/* Warm glow behind globe */}
       <div
         className="absolute inset-0 rounded-full"
         style={{
-          background: 'radial-gradient(circle, rgba(79,70,229,0.12) 0%, rgba(79,70,229,0.04) 40%, transparent 70%)',
-          transform: 'scale(1.35)',
+          background: 'radial-gradient(circle, var(--color-accent-glow) 0%, transparent 65%)',
+          transform: 'scale(1.4)',
         }}
       />
       <canvas
         ref={canvasRef}
         style={{ width: size, height: size, maxWidth: '100%', cursor: 'grab', contain: 'layout paint size' }}
-        onPointerDown={handlePointerDown}
-        onPointerUp={handlePointerUp}
-        onPointerOut={handlePointerUp}
-        onPointerMove={handlePointerMove}
-        onTouchStart={handlePointerDown}
-        onTouchMove={handlePointerMove}
-        onTouchEnd={handlePointerUp}
+        onPointerDown={onDown}
+        onPointerUp={onUp}
+        onPointerOut={onUp}
+        onPointerMove={onMove}
+        onTouchStart={onDown}
+        onTouchMove={onMove}
+        onTouchEnd={onUp}
       />
     </div>
   )
