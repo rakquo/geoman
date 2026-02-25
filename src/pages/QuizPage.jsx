@@ -10,38 +10,17 @@ import {
 import { continents } from '../data/continents'
 import { checkAnswer } from '../utils/scoring'
 import { useQuizContext } from '../context/QuizContext'
+import { useTheme } from '../context/ThemeContext'
+import Button from '../components/Button'
 import 'leaflet/dist/leaflet.css'
-
-/* ── Tile configs ── */
-const TILES = {
-  clean: {
-    url: 'https://{s}.basemaps.cartocdn.com/dark_nolabels/{z}/{x}/{y}{r}.png',
-    attr: '&copy; <a href="https://www.openstreetmap.org/copyright">OSM</a> &copy; <a href="https://carto.com/">CARTO</a>',
-  },
-  cleanLabels: {
-    url: 'https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png',
-    attr: '&copy; <a href="https://www.openstreetmap.org/copyright">OSM</a> &copy; <a href="https://carto.com/">CARTO</a>',
-  },
-  terrain: {
-    url: 'https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png',
-    attr: '&copy; <a href="https://opentopomap.org">OpenTopoMap</a>',
-  },
-  satellite: {
-    url: 'https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}',
-    attr: '&copy; Esri',
-  },
-}
-
-/* Labels-only overlay for satellite mode */
-const LABEL_OVERLAY = 'https://{s}.basemaps.cartocdn.com/dark_only_labels/{z}/{x}/{y}{r}.png'
 
 /* ── Categories ── */
 const CATEGORIES = [
-  { id: 'cities',    label: 'Cities',    icon: Building2, color: '#C8956C' },
-  { id: 'mountains', label: 'Mountains', icon: Mountain,  color: '#A78BFA' },
-  { id: 'rivers',    label: 'Rivers',    icon: Waves,     color: '#38BDF8' },
-  { id: 'lakes',     label: 'Lakes',     icon: Droplets,  color: '#22D3EE' },
-  { id: 'features',  label: 'Features',  icon: Landmark,  color: '#FBBF24' },
+  { id: 'cities',    label: 'Cities',    icon: Building2, color: '#4A8AB8' },
+  { id: 'mountains', label: 'Mountains', icon: Mountain,  color: '#8B6CE0' },
+  { id: 'rivers',    label: 'Rivers',    icon: Waves,     color: '#2BA0D8' },
+  { id: 'lakes',     label: 'Lakes',     icon: Droplets,  color: '#18B8C8' },
+  { id: 'features',  label: 'Features',  icon: Landmark,  color: '#D89018' },
 ]
 
 /* ── Continent views ── */
@@ -60,6 +39,8 @@ const MAP_STYLES = [
   { id: 'satellite', label: 'Satellite', icon: Satellite },
 ]
 
+const ATTR = '&copy; <a href="https://www.openstreetmap.org/copyright">OSM</a> &copy; <a href="https://carto.com/">CARTO</a>'
+
 function MapReady() {
   const map = useMap()
   useEffect(() => {
@@ -69,13 +50,14 @@ function MapReady() {
   return null
 }
 
-/* ══════════════════════════════════════════════════════ */
+/* ══════════════════════════════════════════════════ */
 export default function QuizPage() {
   const { continentId } = useParams()
   const navigate = useNavigate()
   const continent = continents[continentId]
   const view = VIEW[continentId] || { center: [20, 0], zoom: 2 }
   const { dispatch } = useQuizContext()
+  const { isDark } = useTheme()
 
   const [selectedCats, setSelectedCats] = useState(['cities'])
   const [catData, setCatData] = useState({})
@@ -89,7 +71,35 @@ export default function QuizPage() {
   const inputRef = useRef(null)
   const timeoutRef = useRef(null)
 
-  /* load data */
+  /* Tile URLs depend on dark/light theme */
+  const tiles = useMemo(() => ({
+    clean: {
+      url: isDark
+        ? 'https://{s}.basemaps.cartocdn.com/dark_nolabels/{z}/{x}/{y}{r}.png'
+        : 'https://{s}.basemaps.cartocdn.com/rastertiles/voyager_nolabels/{z}/{x}/{y}{r}.png',
+      attr: ATTR,
+    },
+    cleanLabels: {
+      url: isDark
+        ? 'https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png'
+        : 'https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png',
+      attr: ATTR,
+    },
+    terrain: {
+      url: 'https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png',
+      attr: '&copy; <a href="https://opentopomap.org">OpenTopoMap</a>',
+    },
+    satellite: {
+      url: 'https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}',
+      attr: '&copy; Esri',
+    },
+  }), [isDark])
+
+  const labelOverlayUrl = isDark
+    ? 'https://{s}.basemaps.cartocdn.com/dark_only_labels/{z}/{x}/{y}{r}.png'
+    : 'https://{s}.basemaps.cartocdn.com/light_only_labels/{z}/{x}/{y}{r}.png'
+
+  /* Load category data */
   useEffect(() => {
     selectedCats.forEach(async (cat) => {
       if (catData[cat] || loadingCats[cat]) return
@@ -106,7 +116,6 @@ export default function QuizPage() {
   useEffect(() => {
     if (activeId && inputRef.current) setTimeout(() => inputRef.current?.focus(), 80)
   }, [activeId])
-
   useEffect(() => () => clearTimeout(timeoutRef.current), [])
 
   const toggleCat = useCallback(id => {
@@ -121,9 +130,7 @@ export default function QuizPage() {
   const handleMarkerClick = useCallback(item => {
     if (itemStates[item._uid]) return
     clearTimeout(timeoutRef.current)
-    setActiveId(item._uid)
-    setInputValue('')
-    setLastResult(null)
+    setActiveId(item._uid); setInputValue(''); setLastResult(null)
   }, [itemStates])
 
   const handleSubmit = useCallback(e => {
@@ -162,139 +169,133 @@ export default function QuizPage() {
     if (done) dispatch({ type: 'RECORD_SCORE', payload: { continentId, category: selectedCats.join('+'), correct, total } })
   }, [done]) // eslint-disable-line
 
-  /* Tile layer logic */
   const tileKey = mapStyle === 'clean' && showLabels ? 'cleanLabels' : mapStyle
-  const tile = TILES[tileKey] || TILES.clean
-  /* Labels overlay: for satellite when labels ON */
+  const tile = tiles[tileKey] || tiles.clean
   const showOverlay = showLabels && mapStyle === 'satellite'
-  /* Terrain always has built-in labels */
   const labelsBuiltIn = mapStyle === 'terrain'
 
   if (!continent) {
     return (
       <div className="text-center py-20">
         <h2 className="text-3xl mb-4">Continent not found</h2>
-        <button onClick={() => navigate('/')} className="text-[var(--color-accent)] underline cursor-pointer bg-transparent border-none font-[var(--font-body)]">Go Home</button>
+        <Button variant="ghost" onClick={() => navigate('/')}>Go Home</Button>
       </div>
     )
   }
 
   return (
-    <div className="w-full max-w-[1400px] mx-auto px-6 sm:px-10 py-6 sm:py-8">
-      {/* ── Header row ── */}
-      <div className="flex items-center justify-between mb-6">
-        <motion.button
-          onClick={() => navigate('/')}
-          className="flex items-center gap-2 text-sm text-[var(--color-text-muted)] hover:text-[var(--color-text)] transition-colors cursor-pointer bg-transparent border-none p-0 font-[var(--font-body)]"
-          initial={{ opacity: 0, x: -10 }}
-          animate={{ opacity: 1, x: 0 }}
-        >
+    <div className="w-full max-w-[1200px] mx-auto px-5 sm:px-8 py-6 sm:py-10">
+      {/* ── Header ── */}
+      <div className="flex items-center justify-between mb-8">
+        <Button variant="ghost" size="sm" onClick={() => navigate('/')}>
           <ArrowLeft className="w-4 h-4" />
           <span className="hidden sm:inline">All continents</span>
-        </motion.button>
+        </Button>
 
         <motion.h1
-          className="text-3xl sm:text-4xl lg:text-5xl tracking-wide"
+          className="text-3xl sm:text-4xl"
+          style={{ fontFamily: 'var(--font-display)', color: 'var(--text)' }}
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
         >
           {continent.name}
         </motion.h1>
 
-        <motion.div
-          className="flex items-center gap-2 px-3.5 py-1.5 rounded-full glass text-[var(--color-accent)] text-sm font-medium"
-          initial={{ opacity: 0, x: 10 }}
-          animate={{ opacity: 1, x: 0 }}
+        <div
+          className="flex items-center gap-2 px-3.5 py-2 rounded-xl text-sm font-semibold"
+          style={{ background: 'var(--accent-light)', color: 'var(--accent)' }}
         >
-          {correct}<span className="opacity-30">/</span><span className="opacity-30">{total}</span>
-        </motion.div>
+          {correct}<span className="opacity-40 mx-0.5">/</span><span className="opacity-40">{total}</span>
+        </div>
       </div>
 
-      {/* ── Controls: Categories ── */}
+      {/* ── Categories ── */}
       <motion.div
-        className="mb-4"
+        className="mb-6"
         initial={{ opacity: 0, y: 8 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.1 }}
+        transition={{ delay: 0.08 }}
       >
-        <p className="text-[11px] font-semibold tracking-[0.15em] uppercase text-[var(--color-text-muted)] mb-2.5">Categories</p>
-        <div className="flex flex-wrap gap-2">
+        <p className="text-[11px] font-bold tracking-[0.12em] uppercase mb-3" style={{ color: 'var(--text-muted)' }}>
+          Categories
+        </p>
+        <div className="flex flex-wrap gap-3">
           {CATEGORIES.map(cat => {
             const Icon = cat.icon
             const active = selectedCats.includes(cat.id)
             const loading = loadingCats[cat.id] && !catData[cat.id]
             return (
-              <button
+              <Button
                 key={cat.id}
+                size="md"
+                active={active}
                 onClick={() => toggleCat(cat.id)}
-                className={`flex items-center gap-2 px-4 py-2.5 rounded-xl text-[13px] font-medium transition-all cursor-pointer border font-[var(--font-body)] ${
-                  active
-                    ? 'text-white shadow-lg'
-                    : 'glass text-[var(--color-text-muted)] hover:text-[var(--color-text)] hover:border-[var(--color-accent)]/30'
-                }`}
-                style={active ? { backgroundColor: cat.color, borderColor: cat.color, boxShadow: `0 4px 16px ${cat.color}30` } : {}}
+                style={active ? { background: cat.color, borderColor: cat.color } : {}}
               >
                 <Icon className="w-4 h-4" />
                 {cat.label}
                 {loading && <span className="w-3 h-3 border-2 border-current border-t-transparent rounded-full animate-spin" />}
-              </button>
+              </Button>
             )
           })}
         </div>
       </motion.div>
 
-      {/* ── Controls: Map style + Labels ── */}
+      {/* ── Map controls row ── */}
       <motion.div
-        className="flex flex-wrap items-center gap-3 mb-5"
+        className="flex flex-wrap items-center gap-4 mb-6"
         initial={{ opacity: 0, y: 8 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.15 }}
+        transition={{ delay: 0.12 }}
       >
-        <p className="text-[11px] font-semibold tracking-[0.15em] uppercase text-[var(--color-text-muted)] mr-1">Map</p>
-        <div className="flex glass rounded-xl p-1">
-          {MAP_STYLES.map(s => {
-            const Icon = s.icon
-            return (
-              <button
-                key={s.id}
-                onClick={() => setMapStyle(s.id)}
-                className={`flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-[12px] font-medium transition-all cursor-pointer border-none font-[var(--font-body)] ${
-                  mapStyle === s.id
-                    ? 'bg-[var(--color-surface-active)] text-[var(--color-text)] shadow-sm'
-                    : 'text-[var(--color-text-muted)] hover:text-[var(--color-text)]'
-                }`}
-              >
-                <Icon className="w-3.5 h-3.5" />
-                {s.label}
-              </button>
-            )
-          })}
+        {/* Map style */}
+        <div className="flex items-center gap-2">
+          <p className="text-[11px] font-bold tracking-[0.12em] uppercase mr-1" style={{ color: 'var(--text-muted)' }}>Map</p>
+          <div className="flex rounded-xl p-1 border" style={{ background: 'var(--surface)', borderColor: 'var(--border)' }}>
+            {MAP_STYLES.map(s => {
+              const Icon = s.icon
+              const active = mapStyle === s.id
+              return (
+                <button
+                  key={s.id}
+                  onClick={() => setMapStyle(s.id)}
+                  className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-[12px] font-semibold transition-all cursor-pointer border-none"
+                  style={{
+                    fontFamily: 'var(--font-body)',
+                    background: active ? 'var(--accent)' : 'transparent',
+                    color: active ? '#fff' : 'var(--text-muted)',
+                  }}
+                >
+                  <Icon className="w-3.5 h-3.5" />
+                  <span className="hidden sm:inline">{s.label}</span>
+                </button>
+              )
+            })}
+          </div>
         </div>
 
-        <div className="w-px h-5 bg-[var(--color-border)]" />
+        {/* Divider */}
+        <div className="w-px h-6 hidden sm:block" style={{ background: 'var(--border)' }} />
 
-        <button
-          onClick={() => setShowLabels(v => !v)}
-          disabled={labelsBuiltIn}
-          className={`flex items-center gap-1.5 px-3 py-2 rounded-xl text-[12px] font-medium transition-all cursor-pointer border font-[var(--font-body)] ${
-            labelsBuiltIn
-              ? 'glass text-[var(--color-text-muted)]/50 cursor-default opacity-50'
-              : showLabels
-              ? 'bg-[var(--color-accent)] text-white border-[var(--color-accent)] shadow-md shadow-[var(--color-accent-glow)]'
-              : 'glass text-[var(--color-text-muted)] hover:text-[var(--color-text)] hover:border-[var(--color-accent)]/30'
-          }`}
+        {/* Labels toggle */}
+        <Button
+          size="sm"
+          active={showLabels && !labelsBuiltIn}
+          onClick={() => !labelsBuiltIn && setShowLabels(v => !v)}
+          className={labelsBuiltIn ? 'opacity-50 pointer-events-none' : ''}
         >
           {showLabels ? <Tag className="w-3.5 h-3.5" /> : <Tags className="w-3.5 h-3.5" />}
           {labelsBuiltIn ? 'Labels built-in' : showLabels ? 'Labels ON' : 'Labels OFF'}
-        </button>
+        </Button>
 
-        {/* Progress pill */}
+        {/* Progress */}
         {total > 0 && (
-          <div className="ml-auto flex items-center gap-3">
-            <span className="text-[12px] text-[var(--color-text-muted)]">{answered}/{total}</span>
-            <div className="w-32 h-1.5 bg-[var(--color-surface)] rounded-full overflow-hidden">
+          <div className="flex items-center gap-3 ml-auto">
+            <span className="text-[12px] font-medium" style={{ color: 'var(--text-muted)' }}>{answered}/{total}</span>
+            <div className="w-24 sm:w-36 h-2 rounded-full overflow-hidden" style={{ background: 'var(--border)' }}>
               <motion.div
-                className="h-full rounded-full bg-[var(--color-accent)]"
+                className="h-full rounded-full"
+                style={{ background: 'var(--accent)' }}
                 animate={{ width: `${pct}%` }}
                 transition={{ duration: 0.4 }}
               />
@@ -304,42 +305,40 @@ export default function QuizPage() {
       </motion.div>
 
       {selectedCats.length === 0 && (
-        <p className="text-center text-sm text-[var(--color-text-muted)] py-8">Select at least one category above to start</p>
+        <p className="text-center text-sm py-10" style={{ color: 'var(--text-muted)' }}>Select at least one category above to start</p>
       )}
 
       {/* ── MAP ── */}
       <motion.div
-        className="relative w-full rounded-2xl overflow-hidden border border-[var(--color-border)]"
-        style={{ height: 'clamp(420px, 65vh, 700px)' }}
+        className="relative w-full rounded-2xl overflow-hidden shadow-elevated"
+        style={{ height: 'clamp(380px, 62vh, 660px)', border: '1px solid var(--border)' }}
         initial={{ opacity: 0, y: 12 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5, delay: 0.2 }}
+        transition={{ duration: 0.5, delay: 0.15 }}
       >
         <MapContainer
-          key={continentId}
+          key={`${continentId}-${isDark}`}
           center={view.center}
           zoom={view.zoom}
           minZoom={2}
           maxZoom={14}
           scrollWheelZoom={true}
-          style={{ height: '100%', width: '100%', background: '#0B0F14' }}
+          style={{ height: '100%', width: '100%', background: 'var(--map-bg)' }}
           zoomControl={true}
         >
           <MapReady />
           <TileLayer key={tileKey} url={tile.url} attribution={tile.attr} />
-          {showOverlay && (
-            <TileLayer url={LABEL_OVERLAY} attribution="" pane="overlayPane" />
-          )}
+          {showOverlay && <TileLayer url={labelOverlayUrl} attribution="" pane="overlayPane" />}
 
           {visibleItems.map(item => {
             const st = itemStates[item._uid]
             const isActive = activeId === item._uid
             const catConf = CATEGORIES.find(c => c.id === item.category)
-            let fillColor = catConf?.color || '#C8956C'
+            let fillColor = catConf?.color || '#4A8AB8'
             let radius = 7
             let fillOpacity = 0.85
-            if (st === 'correct')   { fillColor = 'var(--color-correct)'; radius = 8 }
-            if (st === 'incorrect') { fillColor = 'var(--color-incorrect)'; radius = 8 }
+            if (st === 'correct')   { fillColor = 'var(--correct)'; radius = 8 }
+            if (st === 'incorrect') { fillColor = 'var(--incorrect)'; radius = 8 }
             if (isActive)           { radius = 11; fillOpacity = 1 }
 
             return (
@@ -349,18 +348,17 @@ export default function QuizPage() {
                 radius={radius}
                 pathOptions={{
                   fillColor,
-                  color: isActive ? '#fff' : 'rgba(255,255,255,0.4)',
+                  color: isActive ? '#fff' : 'rgba(255,255,255,0.6)',
                   weight: isActive ? 2.5 : 1.5,
                   fillOpacity,
-                  opacity: 1,
                 }}
                 eventHandlers={{ click: () => handleMarkerClick(item) }}
               >
                 {st && (
                   <Tooltip permanent direction="top" offset={[0, -10]} className="quiz-tooltip">
                     <span style={{
-                      color: st === 'correct' ? 'var(--color-correct)' : 'var(--color-incorrect)',
-                      fontWeight: 600,
+                      color: st === 'correct' ? 'var(--correct)' : 'var(--incorrect)',
+                      fontWeight: 700,
                       fontSize: '11px',
                     }}>
                       {item.name}
@@ -381,45 +379,43 @@ export default function QuizPage() {
               animate={{ opacity: 1, y: 0, scale: 1 }}
               exit={{ opacity: 0, y: 10, scale: 0.96 }}
               transition={{ duration: 0.2 }}
-              className="absolute bottom-5 left-1/2 -translate-x-1/2 w-[340px] max-w-[92%] z-[1000]"
+              className="absolute bottom-4 left-1/2 -translate-x-1/2 w-[360px] max-w-[92%] z-[1000]"
             >
               {lastResult && lastResult.uid === activeId ? (
-                <div className={`p-4 rounded-2xl shadow-2xl border ${
-                  lastResult.correct
-                    ? 'bg-[var(--color-correct-bg)] border-[var(--color-correct)]/20'
-                    : 'bg-[var(--color-incorrect-bg)] border-[var(--color-incorrect)]/20'
-                }`} style={{ backdropFilter: 'blur(20px)' }}>
+                <div
+                  className="p-4 rounded-2xl shadow-elevated border"
+                  style={{
+                    background: lastResult.correct ? 'var(--correct-bg)' : 'var(--incorrect-bg)',
+                    borderColor: lastResult.correct ? 'var(--correct)' : 'var(--incorrect)',
+                    backdropFilter: 'blur(20px)',
+                  }}
+                >
                   <div className="flex items-center gap-3">
-                    {lastResult.correct ? (
-                      <>
-                        <div className="w-9 h-9 rounded-full bg-[var(--color-correct)] flex items-center justify-center shrink-0">
-                          <CheckCircle className="w-5 h-5 text-[var(--color-bg)]" />
-                        </div>
-                        <div>
-                          <p className="font-semibold text-[var(--color-correct)] text-sm">Correct!</p>
-                          <p className="text-xs text-[var(--color-correct)]/60">{lastResult.name}</p>
-                        </div>
-                      </>
-                    ) : (
-                      <>
-                        <div className="w-9 h-9 rounded-full bg-[var(--color-incorrect)] flex items-center justify-center shrink-0">
-                          <XCircle className="w-5 h-5 text-[var(--color-bg)]" />
-                        </div>
-                        <div>
-                          <p className="font-semibold text-[var(--color-incorrect)] text-sm">
-                            {lastResult.answer ? 'Not quite' : 'Skipped'}
-                          </p>
-                          <p className="text-xs text-[var(--color-incorrect)]/60">
-                            It was <strong>{lastResult.name}</strong>
-                          </p>
-                        </div>
-                      </>
-                    )}
+                    <div
+                      className="w-9 h-9 rounded-full flex items-center justify-center shrink-0"
+                      style={{ background: lastResult.correct ? 'var(--correct)' : 'var(--incorrect)' }}
+                    >
+                      {lastResult.correct
+                        ? <CheckCircle className="w-5 h-5 text-white" />
+                        : <XCircle className="w-5 h-5 text-white" />
+                      }
+                    </div>
+                    <div>
+                      <p className="font-bold text-sm" style={{ color: lastResult.correct ? 'var(--correct)' : 'var(--incorrect)' }}>
+                        {lastResult.correct ? 'Correct!' : lastResult.answer ? 'Not quite' : 'Skipped'}
+                      </p>
+                      <p className="text-xs opacity-70" style={{ color: lastResult.correct ? 'var(--correct)' : 'var(--incorrect)' }}>
+                        {lastResult.correct ? lastResult.name : <>It was <strong>{lastResult.name}</strong></>}
+                      </p>
+                    </div>
                   </div>
                 </div>
               ) : (
-                <div className="glass-light p-4 rounded-2xl shadow-2xl">
-                  <p className="text-[10px] uppercase tracking-[0.15em] text-[var(--color-text-muted)] font-semibold mb-2.5">
+                <div
+                  className="p-4 rounded-2xl shadow-elevated border"
+                  style={{ background: 'var(--surface)', borderColor: 'var(--border)', backdropFilter: 'blur(20px)' }}
+                >
+                  <p className="text-[10px] font-bold uppercase tracking-[0.12em] mb-2.5" style={{ color: 'var(--text-muted)' }}>
                     {activeItem.category} — {activeItem.hint || 'Name this place'}
                   </p>
                   <form onSubmit={handleSubmit} className="flex gap-2">
@@ -430,20 +426,27 @@ export default function QuizPage() {
                       onChange={e => setInputValue(e.target.value)}
                       placeholder="Your answer..."
                       autoComplete="off"
-                      className="flex-1 px-3.5 py-2.5 bg-[var(--color-bg)]/60 border border-[var(--color-border)] rounded-xl text-sm text-[var(--color-text)] placeholder-[var(--color-text-muted)] focus:border-[var(--color-accent)] focus:ring-1 focus:ring-[var(--color-accent)]/30 focus:outline-none transition-all font-[var(--font-body)]"
+                      className="flex-1 h-10 px-3.5 rounded-xl text-sm transition-all outline-none"
+                      style={{
+                        fontFamily: 'var(--font-body)',
+                        background: 'var(--bg)',
+                        border: '1px solid var(--border)',
+                        color: 'var(--text)',
+                      }}
+                      onFocus={e => { e.target.style.borderColor = 'var(--accent)' }}
+                      onBlur={e => { e.target.style.borderColor = 'var(--border)' }}
                     />
-                    <button
-                      type="submit"
-                      disabled={!inputValue.trim()}
-                      className="px-4 py-2.5 bg-[var(--color-accent)] text-white text-sm font-semibold rounded-xl disabled:opacity-30 disabled:cursor-not-allowed transition-all cursor-pointer font-[var(--font-body)] shadow-md shadow-[var(--color-accent-glow)] hover:bg-[var(--color-accent-hover)]"
-                    >
+                    <Button variant="primary" size="md" disabled={!inputValue.trim()}>
                       Go
-                    </button>
+                    </Button>
                   </form>
                   <button
                     type="button"
                     onClick={handleSkip}
-                    className="mt-2.5 text-[11px] text-[var(--color-text-muted)] hover:text-[var(--color-incorrect)] transition-colors cursor-pointer bg-transparent border-none p-0 font-[var(--font-body)]"
+                    className="mt-2.5 text-[11px] transition-colors cursor-pointer bg-transparent border-none p-0"
+                    style={{ fontFamily: 'var(--font-body)', color: 'var(--text-muted)' }}
+                    onMouseEnter={e => { e.target.style.color = 'var(--incorrect)' }}
+                    onMouseLeave={e => { e.target.style.color = 'var(--text-muted)' }}
                   >
                     Skip — I don't know
                   </button>
@@ -469,17 +472,17 @@ export default function QuizPage() {
                 animate={{ scale: 1 }}
                 transition={{ type: 'spring', delay: 0.2 }}
                 className="inline-flex items-center justify-center w-20 h-20 rounded-full mb-4"
-                style={{ background: 'var(--color-accent-light)' }}
+                style={{ background: 'var(--accent-light)' }}
               >
                 {correct === total
-                  ? <Sparkles className="w-9 h-9 text-[var(--color-accent)]" />
-                  : <Trophy className="w-9 h-9 text-[var(--color-accent)]" />
+                  ? <Sparkles className="w-9 h-9" style={{ color: 'var(--accent)' }} />
+                  : <Trophy className="w-9 h-9" style={{ color: 'var(--accent)' }} />
                 }
               </motion.div>
-              <h2 className="text-4xl font-[var(--font-display)] tracking-wide">
-                {correct} <span className="text-[var(--color-text-muted)]">/ {total}</span>
+              <h2 className="text-4xl" style={{ fontFamily: 'var(--font-display)' }}>
+                {correct} <span style={{ color: 'var(--text-muted)' }}>/ {total}</span>
               </h2>
-              <p className="text-[var(--color-text-muted)] mt-2 font-light">
+              <p className="mt-2" style={{ color: 'var(--text-secondary)' }}>
                 {correct === total ? 'Perfect score! Geography genius!' :
                  correct >= total * 0.8 ? 'Excellent work!' :
                  correct >= total * 0.5 ? 'Good effort — keep at it!' :
@@ -487,7 +490,7 @@ export default function QuizPage() {
               </p>
             </div>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2 mb-8 max-w-4xl mx-auto">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2.5 mb-8 max-w-4xl mx-auto">
               {visibleItems.map((item, i) => {
                 const st = itemStates[item._uid]
                 return (
@@ -496,36 +499,29 @@ export default function QuizPage() {
                     initial={{ opacity: 0, y: 4 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: i * 0.02 }}
-                    className={`flex items-center gap-2.5 px-3.5 py-2.5 rounded-xl text-sm ${
-                      st === 'correct' ? 'bg-[var(--color-correct-bg)]' : 'bg-[var(--color-incorrect-bg)]'
-                    }`}
+                    className="flex items-center gap-2.5 px-4 py-3 rounded-xl text-sm"
+                    style={{ background: st === 'correct' ? 'var(--correct-bg)' : 'var(--incorrect-bg)' }}
                   >
                     {st === 'correct'
-                      ? <CheckCircle className="w-4 h-4 text-[var(--color-correct)] shrink-0" />
-                      : <XCircle className="w-4 h-4 text-[var(--color-incorrect)] shrink-0" />
+                      ? <CheckCircle className="w-4 h-4 shrink-0" style={{ color: 'var(--correct)' }} />
+                      : <XCircle className="w-4 h-4 shrink-0" style={{ color: 'var(--incorrect)' }} />
                     }
-                    <span className={`font-medium truncate ${st === 'correct' ? 'text-[var(--color-correct)]' : 'text-[var(--color-incorrect)]'}`}>
+                    <span className="font-semibold truncate" style={{ color: st === 'correct' ? 'var(--correct)' : 'var(--incorrect)' }}>
                       {item.name}
                     </span>
-                    <span className="text-[10px] text-[var(--color-text-muted)] ml-auto capitalize shrink-0">{item.category}</span>
+                    <span className="text-[10px] ml-auto capitalize shrink-0" style={{ color: 'var(--text-muted)' }}>{item.category}</span>
                   </motion.div>
                 )
               })}
             </div>
 
             <div className="flex gap-4 justify-center">
-              <button
-                onClick={handleReset}
-                className="flex items-center justify-center gap-2 px-7 py-3.5 glass rounded-xl hover:border-[var(--color-accent)]/30 transition-all cursor-pointer text-sm font-semibold font-[var(--font-body)] text-[var(--color-text)]"
-              >
+              <Button size="lg" onClick={handleReset}>
                 <RotateCcw className="w-4 h-4" /> Try Again
-              </button>
-              <button
-                onClick={() => navigate('/')}
-                className="px-7 py-3.5 bg-[var(--color-accent)] text-white rounded-xl hover:bg-[var(--color-accent-hover)] transition-all cursor-pointer text-sm font-semibold font-[var(--font-body)] shadow-lg shadow-[var(--color-accent-glow)]"
-              >
+              </Button>
+              <Button variant="primary" size="lg" onClick={() => navigate('/')}>
                 Pick Another
-              </button>
+              </Button>
             </div>
           </motion.div>
         )}

@@ -1,5 +1,6 @@
 import { useRef, useEffect } from 'react'
 import createGlobe from 'cobe'
+import { useTheme } from '../context/ThemeContext'
 
 export default function Globe({ size = 400, className = '' }) {
   const canvasRef = useRef(null)
@@ -8,6 +9,7 @@ export default function Globe({ size = 400, className = '' }) {
   const dragOffset = useRef(0)
   const phiRef = useRef(0)
   const velocityRef = useRef(0)
+  const { isDark } = useTheme()
 
   useEffect(() => {
     if (!canvasRef.current) return
@@ -18,13 +20,13 @@ export default function Globe({ size = 400, className = '' }) {
       height: size * 2,
       phi: 0,
       theta: 0.15,
-      dark: 1,
-      diffuse: 3,
+      dark: isDark ? 1 : 0,
+      diffuse: isDark ? 3 : 1.5,
       mapSamples: 24000,
-      mapBrightness: 6,
-      baseColor: [0.15, 0.18, 0.22],
-      markerColor: [0.8, 0.58, 0.42],
-      glowColor: [0.08, 0.1, 0.14],
+      mapBrightness: isDark ? 6 : 8,
+      baseColor: isDark ? [0.15, 0.18, 0.22] : [0.93, 0.95, 0.98],
+      markerColor: isDark ? [0.8, 0.58, 0.42] : [0.29, 0.54, 0.72],
+      glowColor: isDark ? [0.08, 0.1, 0.14] : [0.93, 0.95, 0.98],
       markers: [
         { location: [48.8566, 2.3522], size: 0.04 },
         { location: [40.7128, -74.006], size: 0.04 },
@@ -51,7 +53,7 @@ export default function Globe({ size = 400, className = '' }) {
     })
 
     return () => globe.destroy()
-  }, [size])
+  }, [size, isDark])
 
   const onDown = (e) => {
     pointerDown.current = true
@@ -74,12 +76,11 @@ export default function Globe({ size = 400, className = '' }) {
 
   return (
     <div className={`relative ${className}`} style={{ width: size, height: size, maxWidth: '100%', aspectRatio: '1' }}>
-      {/* Warm glow behind globe */}
       <div
         className="absolute inset-0 rounded-full"
         style={{
-          background: 'radial-gradient(circle, var(--color-accent-glow) 0%, transparent 65%)',
-          transform: 'scale(1.4)',
+          background: `radial-gradient(circle, var(--accent-light) 0%, transparent 60%)`,
+          transform: 'scale(1.5)',
         }}
       />
       <canvas
