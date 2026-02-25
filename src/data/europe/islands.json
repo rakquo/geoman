@@ -1,0 +1,137 @@
+[
+  {
+    "id": 1,
+    "name": "Great Britain",
+    "acceptedAnswers": ["great britain", "britain"],
+    "lat": 54.0000,
+    "lng": -2.0000,
+    "hint": "Largest island in Europe, home to England, Scotland, and Wales",
+    "difficulty": "easy"
+  },
+  {
+    "id": 2,
+    "name": "Iceland",
+    "acceptedAnswers": ["iceland", "ísland"],
+    "lat": 64.9631,
+    "lng": -19.0208,
+    "hint": "Land of fire and ice in the North Atlantic, famous for geysers and volcanoes",
+    "difficulty": "easy"
+  },
+  {
+    "id": 3,
+    "name": "Ireland",
+    "acceptedAnswers": ["ireland", "éire"],
+    "lat": 53.4129,
+    "lng": -8.2439,
+    "hint": "The Emerald Isle, second-largest island in the British Isles",
+    "difficulty": "easy"
+  },
+  {
+    "id": 4,
+    "name": "Sicily",
+    "acceptedAnswers": ["sicily", "sicilia"],
+    "lat": 37.6000,
+    "lng": 14.0154,
+    "hint": "Largest island in the Mediterranean Sea, home to Mount Etna",
+    "difficulty": "easy"
+  },
+  {
+    "id": 5,
+    "name": "Sardinia",
+    "acceptedAnswers": ["sardinia", "sardegna"],
+    "lat": 40.1209,
+    "lng": 9.0129,
+    "hint": "Second-largest Mediterranean island, known for pristine beaches and Bronze Age ruins",
+    "difficulty": "medium"
+  },
+  {
+    "id": 6,
+    "name": "Crete",
+    "acceptedAnswers": ["crete", "kriti"],
+    "lat": 35.2401,
+    "lng": 24.8093,
+    "hint": "Largest Greek island, birthplace of the ancient Minoan civilization",
+    "difficulty": "easy"
+  },
+  {
+    "id": 7,
+    "name": "Corsica",
+    "acceptedAnswers": ["corsica", "corse"],
+    "lat": 42.0396,
+    "lng": 9.0129,
+    "hint": "French island in the Mediterranean, birthplace of Napoleon Bonaparte",
+    "difficulty": "medium"
+  },
+  {
+    "id": 8,
+    "name": "Mallorca",
+    "acceptedAnswers": ["mallorca", "majorca"],
+    "lat": 39.6953,
+    "lng": 3.0176,
+    "hint": "Largest of Spain's Balearic Islands, a hugely popular Mediterranean holiday destination",
+    "difficulty": "easy"
+  },
+  {
+    "id": 9,
+    "name": "Svalbard",
+    "acceptedAnswers": ["svalbard", "spitsbergen"],
+    "lat": 78.2232,
+    "lng": 15.6267,
+    "hint": "Remote Norwegian Arctic archipelago where polar bears outnumber people",
+    "difficulty": "medium"
+  },
+  {
+    "id": 10,
+    "name": "Faroe Islands",
+    "acceptedAnswers": ["faroe islands", "faroes", "føroyar"],
+    "lat": 62.0000,
+    "lng": -6.7833,
+    "hint": "Danish autonomous territory in the North Atlantic, known for dramatic sea cliffs",
+    "difficulty": "medium"
+  },
+  {
+    "id": 11,
+    "name": "Santorini",
+    "acceptedAnswers": ["santorini", "thera", "thira"],
+    "lat": 36.3932,
+    "lng": 25.4615,
+    "hint": "Iconic Greek volcanic island with white-washed buildings and spectacular caldera views",
+    "difficulty": "easy"
+  },
+  {
+    "id": 12,
+    "name": "Malta",
+    "acceptedAnswers": ["malta"],
+    "lat": 35.8989,
+    "lng": 14.5146,
+    "hint": "Small island nation south of Sicily with megalithic temples older than the pyramids",
+    "difficulty": "easy"
+  },
+  {
+    "id": 13,
+    "name": "Gotland",
+    "acceptedAnswers": ["gotland"],
+    "lat": 57.5000,
+    "lng": 18.5500,
+    "hint": "Sweden's largest island in the Baltic Sea, rich in Viking and medieval history",
+    "difficulty": "hard"
+  },
+  {
+    "id": 14,
+    "name": "Lofoten Islands",
+    "acceptedAnswers": ["lofoten", "lofoten islands"],
+    "lat": 68.2000,
+    "lng": 14.5000,
+    "hint": "Dramatic Norwegian Arctic archipelago known for fishing villages and northern lights",
+    "difficulty": "medium"
+  },
+  {
+    "id": 15,
+    "name": "Tenerife",
+    "acceptedAnswers": ["tenerife"],
+    "lat": 28.2916,
+    "lng": -16.6291,
+    "hint": "Largest Canary Island, home to Spain's highest peak, Mount Teide",
+    "difficulty": "medium"
+  }
+]

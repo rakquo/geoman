@@ -88,5 +88,95 @@
     "lng": 150.3100,
     "hint": "Mountain range west of Sydney, known for eucalyptus haze and the Three Sisters",
     "difficulty": "easy"
+  },
+  {
+    "id": 11,
+    "name": "Mount Aspiring",
+    "acceptedAnswers": ["mount aspiring", "mt aspiring", "tititea"],
+    "lat": -44.3844,
+    "lng": 168.7281,
+    "hint": "New Zealand's 'Matterhorn of the South', a pyramidal peak in the Southern Alps",
+    "difficulty": "hard"
+  },
+  {
+    "id": 12,
+    "name": "Mount Ossa",
+    "acceptedAnswers": ["mount ossa", "mt ossa", "ossa"],
+    "lat": -41.8747,
+    "lng": 146.0347,
+    "hint": "Highest mountain in Tasmania, near Cradle Mountain in the central highlands",
+    "difficulty": "hard"
+  },
+  {
+    "id": 13,
+    "name": "Kata Tjuta",
+    "acceptedAnswers": ["kata tjuta", "the olgas", "olgas"],
+    "lat": -25.3052,
+    "lng": 130.7340,
+    "hint": "Group of 36 domed rock formations near Uluru, also sacred to Aboriginal people",
+    "difficulty": "medium"
+  },
+  {
+    "id": 14,
+    "name": "Mount Tongariro",
+    "acceptedAnswers": ["mount tongariro", "mt tongariro", "tongariro"],
+    "lat": -39.1378,
+    "lng": 175.6425,
+    "hint": "Active volcano in New Zealand, home to the famous Tongariro Alpine Crossing",
+    "difficulty": "medium"
+  },
+  {
+    "id": 15,
+    "name": "Puncak Jaya",
+    "acceptedAnswers": ["puncak jaya", "carstensz pyramid", "jaya peak"],
+    "lat": -4.0833,
+    "lng": 137.1833,
+    "hint": "Highest peak in Oceania and on any island, in Papua's Sudirman Range",
+    "difficulty": "hard"
+  },
+  {
+    "id": 16,
+    "name": "Mount Ngauruhoe",
+    "acceptedAnswers": ["mount ngauruhoe", "mt ngauruhoe", "ngauruhoe"],
+    "lat": -39.1570,
+    "lng": 175.6320,
+    "hint": "Symmetrical cone volcano in New Zealand, famously used as Mount Doom in Lord of the Rings",
+    "difficulty": "medium"
+  },
+  {
+    "id": 17,
+    "name": "Mount Hagen",
+    "acceptedAnswers": ["mount hagen", "mt hagen"],
+    "lat": -5.8600,
+    "lng": 144.0500,
+    "hint": "Extinct volcano in the Papua New Guinea Highlands, near the city of the same name",
+    "difficulty": "hard"
+  },
+  {
+    "id": 18,
+    "name": "Glasshhouse Mountains",
+    "acceptedAnswers": ["glasshouse mountains", "glass house mountains"],
+    "lat": -26.8900,
+    "lng": 152.9500,
+    "hint": "Group of volcanic plugs in southeast Queensland, named by Captain Cook",
+    "difficulty": "medium"
+  },
+  {
+    "id": 19,
+    "name": "Mount Meharry",
+    "acceptedAnswers": ["mount meharry", "mt meharry", "meharry"],
+    "lat": -23.2300,
+    "lng": 118.5900,
+    "hint": "Highest peak in Western Australia, in the Hamersley Range of the Pilbara",
+    "difficulty": "hard"
+  },
+  {
+    "id": 20,
+    "name": "Mount Warning",
+    "acceptedAnswers": ["mount warning", "mt warning", "wollumbin"],
+    "lat": -28.3978,
+    "lng": 153.2700,
+    "hint": "Volcanic remnant in northern NSW, first place on the Australian mainland to see sunrise",
+    "difficulty": "medium"
   }
 ]

@@ -88,5 +88,95 @@
     "lng": 95.5000,
     "hint": "Most important river of Myanmar, flowing south through the country's heartland",
     "difficulty": "hard"
+  },
+  {
+    "id": 11,
+    "name": "Lena",
+    "acceptedAnswers": ["lena", "lena river"],
+    "lat": 62.5000,
+    "lng": 129.5000,
+    "hint": "One of the longest rivers in the world, flowing through eastern Siberia to the Arctic",
+    "difficulty": "hard"
+  },
+  {
+    "id": 12,
+    "name": "Yenisei",
+    "acceptedAnswers": ["yenisei", "yenisei river", "yenisey"],
+    "lat": 58.0000,
+    "lng": 92.5000,
+    "hint": "Largest river flowing into the Arctic Ocean, runs through central Siberia",
+    "difficulty": "hard"
+  },
+  {
+    "id": 13,
+    "name": "Amur",
+    "acceptedAnswers": ["amur", "amur river", "heilong jiang", "heilongjiang"],
+    "lat": 50.0000,
+    "lng": 135.0000,
+    "hint": "Major river forming the border between Russia and China in the Far East",
+    "difficulty": "medium"
+  },
+  {
+    "id": 14,
+    "name": "Salween",
+    "acceptedAnswers": ["salween", "salween river", "thanlwin", "nu jiang"],
+    "lat": 17.0000,
+    "lng": 97.5000,
+    "hint": "One of the longest free-flowing rivers in Southeast Asia, from Tibet to Myanmar",
+    "difficulty": "hard"
+  },
+  {
+    "id": 15,
+    "name": "Jordan River",
+    "acceptedAnswers": ["jordan", "jordan river", "river jordan"],
+    "lat": 31.7600,
+    "lng": 35.5500,
+    "hint": "Biblically significant river flowing into the Dead Sea, a holy baptism site",
+    "difficulty": "easy"
+  },
+  {
+    "id": 16,
+    "name": "Amu Darya",
+    "acceptedAnswers": ["amu darya", "amu darya river", "oxus"],
+    "lat": 39.0000,
+    "lng": 63.0000,
+    "hint": "Major Central Asian river, the ancient Oxus, flowing into the Aral Sea basin",
+    "difficulty": "hard"
+  },
+  {
+    "id": 17,
+    "name": "Syr Darya",
+    "acceptedAnswers": ["syr darya", "syr darya river", "jaxartes"],
+    "lat": 41.5000,
+    "lng": 67.0000,
+    "hint": "Central Asian river known in antiquity as the Jaxartes, flows through Kazakhstan",
+    "difficulty": "hard"
+  },
+  {
+    "id": 18,
+    "name": "Pearl River",
+    "acceptedAnswers": ["pearl river", "zhu jiang", "zhujiang"],
+    "lat": 22.7700,
+    "lng": 113.3000,
+    "hint": "Third-longest river in China, flowing through Guangzhou to the South China Sea",
+    "difficulty": "medium"
+  },
+  {
+    "id": 19,
+    "name": "Chao Phraya",
+    "acceptedAnswers": ["chao phraya", "chao phraya river"],
+    "lat": 14.0000,
+    "lng": 100.5000,
+    "hint": "Major river of Thailand flowing through Bangkok to the Gulf of Thailand",
+    "difficulty": "medium"
+  },
+  {
+    "id": 20,
+    "name": "Godavari",
+    "acceptedAnswers": ["godavari", "godavari river"],
+    "lat": 17.0000,
+    "lng": 81.5000,
+    "hint": "Second-longest river in India, often called the Ganges of the South",
+    "difficulty": "hard"
   }
 ]

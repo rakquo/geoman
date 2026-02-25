@@ -88,5 +88,95 @@
     "lng": -61.0000,
     "hint": "Largest blackwater river in the world, major left tributary of the Amazon",
     "difficulty": "hard"
+  },
+  {
+    "id": 11,
+    "name": "Madeira River",
+    "acceptedAnswers": ["madeira", "madeira river", "rio madeira"],
+    "lat": -5.0000,
+    "lng": -60.0000,
+    "hint": "Largest tributary of the Amazon by volume, flowing from Bolivia through Brazil",
+    "difficulty": "hard"
+  },
+  {
+    "id": 12,
+    "name": "Rio de la Plata",
+    "acceptedAnswers": ["rio de la plata", "river plate", "plata"],
+    "lat": -35.0000,
+    "lng": -56.0000,
+    "hint": "Widest river estuary in the world, between Argentina and Uruguay",
+    "difficulty": "medium"
+  },
+  {
+    "id": 13,
+    "name": "Cauca River",
+    "acceptedAnswers": ["cauca", "cauca river", "rio cauca"],
+    "lat": 5.5000,
+    "lng": -75.5000,
+    "hint": "Second most important river in Colombia, running parallel to the Magdalena between two Andean ranges",
+    "difficulty": "hard"
+  },
+  {
+    "id": 14,
+    "name": "Xingu River",
+    "acceptedAnswers": ["xingu", "xingu river", "rio xingu"],
+    "lat": -5.0000,
+    "lng": -52.5000,
+    "hint": "Major Amazon tributary in Brazil, home to indigenous peoples and the Belo Monte dam",
+    "difficulty": "hard"
+  },
+  {
+    "id": 15,
+    "name": "Tapajos River",
+    "acceptedAnswers": ["tapajos", "tapajós", "tapajos river", "rio tapajos"],
+    "lat": -4.5000,
+    "lng": -56.0000,
+    "hint": "Clearwater Amazon tributary in Brazil known for its turquoise waters and sandy beaches",
+    "difficulty": "hard"
+  },
+  {
+    "id": 16,
+    "name": "Essequibo River",
+    "acceptedAnswers": ["essequibo", "essequibo river"],
+    "lat": 5.0000,
+    "lng": -58.5000,
+    "hint": "Longest river in Guyana, flowing north through dense rainforest to the Atlantic",
+    "difficulty": "hard"
+  },
+  {
+    "id": 17,
+    "name": "Bio-Bio River",
+    "acceptedAnswers": ["bio-bio", "bio bio", "biobio", "río biobío"],
+    "lat": -37.0000,
+    "lng": -72.5000,
+    "hint": "Major river in central-south Chile, historically the frontier of Mapuche territory",
+    "difficulty": "hard"
+  },
+  {
+    "id": 18,
+    "name": "Pilcomayo River",
+    "acceptedAnswers": ["pilcomayo", "pilcomayo river", "rio pilcomayo"],
+    "lat": -22.0000,
+    "lng": -62.0000,
+    "hint": "River forming part of the Argentina-Paraguay border, tributary of the Paraguay River",
+    "difficulty": "hard"
+  },
+  {
+    "id": 19,
+    "name": "Ucayali River",
+    "acceptedAnswers": ["ucayali", "ucayali river", "rio ucayali"],
+    "lat": -8.0000,
+    "lng": -74.5000,
+    "hint": "Major headwater of the Amazon in Peru, considered by some as the true Amazon source",
+    "difficulty": "hard"
+  },
+  {
+    "id": 20,
+    "name": "Maroni River",
+    "acceptedAnswers": ["maroni", "maroni river", "marowijne"],
+    "lat": 4.0000,
+    "lng": -54.5000,
+    "hint": "River forming the border between French Guiana and Suriname, flowing to the Atlantic",
+    "difficulty": "hard"
   }
 ]

@@ -88,5 +88,95 @@
     "lng": 78.6600,
     "hint": "High-altitude endorheic lake spanning India and China in the Himalayas",
     "difficulty": "hard"
+  },
+  {
+    "id": 11,
+    "name": "Lake Issyk-Kul",
+    "acceptedAnswers": ["issyk-kul", "issyk kul", "lake issyk-kul", "ysyk-kol"],
+    "lat": 42.4500,
+    "lng": 77.2500,
+    "hint": "Second-largest alpine lake in the world, in the mountains of Kyrgyzstan",
+    "difficulty": "hard"
+  },
+  {
+    "id": 12,
+    "name": "Lake Biwa",
+    "acceptedAnswers": ["biwa", "lake biwa", "biwako"],
+    "lat": 35.2500,
+    "lng": 136.1000,
+    "hint": "Largest freshwater lake in Japan, near the ancient capital of Kyoto",
+    "difficulty": "medium"
+  },
+  {
+    "id": 13,
+    "name": "Lake Van",
+    "acceptedAnswers": ["van", "lake van"],
+    "lat": 38.6300,
+    "lng": 43.3500,
+    "hint": "Largest lake in Turkey, a soda lake in the eastern Anatolian highlands",
+    "difficulty": "hard"
+  },
+  {
+    "id": 14,
+    "name": "Lake Inle",
+    "acceptedAnswers": ["inle", "lake inle", "inle lake"],
+    "lat": 20.5833,
+    "lng": 96.9167,
+    "hint": "Famous lake in Myanmar known for its leg-rowing fishermen and floating gardens",
+    "difficulty": "hard"
+  },
+  {
+    "id": 15,
+    "name": "Qinghai Lake",
+    "acceptedAnswers": ["qinghai lake", "qinghai", "koko nor"],
+    "lat": 36.8833,
+    "lng": 100.1333,
+    "hint": "Largest lake in China, a saltwater lake on the Tibetan Plateau",
+    "difficulty": "hard"
+  },
+  {
+    "id": 16,
+    "name": "Lake Songkhla",
+    "acceptedAnswers": ["songkhla", "lake songkhla", "songkhla lake"],
+    "lat": 7.3000,
+    "lng": 100.4000,
+    "hint": "Largest natural lake in Thailand, a lagoon in the southern peninsula",
+    "difficulty": "hard"
+  },
+  {
+    "id": 17,
+    "name": "Sea of Galilee",
+    "acceptedAnswers": ["sea of galilee", "lake tiberias", "kinneret", "galilee"],
+    "lat": 32.8300,
+    "lng": 35.5800,
+    "hint": "Freshwater lake in Israel of immense biblical significance, fed by the Jordan River",
+    "difficulty": "easy"
+  },
+  {
+    "id": 18,
+    "name": "Poyang Lake",
+    "acceptedAnswers": ["poyang", "poyang lake"],
+    "lat": 29.1000,
+    "lng": 116.2700,
+    "hint": "Largest freshwater lake in China, in Jiangxi province along the Yangtze",
+    "difficulty": "hard"
+  },
+  {
+    "id": 19,
+    "name": "Lake Khanka",
+    "acceptedAnswers": ["khanka", "lake khanka", "xingkai"],
+    "lat": 45.0000,
+    "lng": 132.4000,
+    "hint": "Largest lake in the Russian Far East, shared with China at the Manchurian border",
+    "difficulty": "hard"
+  },
+  {
+    "id": 20,
+    "name": "Chilika Lake",
+    "acceptedAnswers": ["chilika", "chilika lake"],
+    "lat": 19.7200,
+    "lng": 85.3200,
+    "hint": "Largest coastal lagoon in India, a Ramsar wetland in Odisha famous for birdwatching",
+    "difficulty": "hard"
   }
 ]

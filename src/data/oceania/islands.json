@@ -1,0 +1,137 @@
+[
+  {
+    "id": 1,
+    "name": "Tasmania",
+    "acceptedAnswers": ["tasmania"],
+    "lat": -42.0409,
+    "lng": 146.8087,
+    "hint": "Australia's island state, separated from the mainland by Bass Strait",
+    "difficulty": "easy"
+  },
+  {
+    "id": 2,
+    "name": "New Guinea",
+    "acceptedAnswers": ["new guinea", "papua"],
+    "lat": -5.0000,
+    "lng": 141.0000,
+    "hint": "Second-largest island in the world, divided between Papua New Guinea and Indonesia",
+    "difficulty": "easy"
+  },
+  {
+    "id": 3,
+    "name": "North Island",
+    "acceptedAnswers": ["north island", "te ika-a-maui", "te ika a maui"],
+    "lat": -38.0000,
+    "lng": 176.0000,
+    "hint": "One of New Zealand's two main islands, home to Auckland and Wellington",
+    "difficulty": "easy"
+  },
+  {
+    "id": 4,
+    "name": "South Island",
+    "acceptedAnswers": ["south island", "te waipounamu"],
+    "lat": -44.0000,
+    "lng": 170.0000,
+    "hint": "Larger of New Zealand's two main islands, home to the Southern Alps and Fiordland",
+    "difficulty": "easy"
+  },
+  {
+    "id": 5,
+    "name": "Bougainville",
+    "acceptedAnswers": ["bougainville", "bougainville island"],
+    "lat": -6.2300,
+    "lng": 155.2300,
+    "hint": "Largest island in the autonomous region of Papua New Guinea, in the Solomon Sea",
+    "difficulty": "hard"
+  },
+  {
+    "id": 6,
+    "name": "Viti Levu",
+    "acceptedAnswers": ["viti levu"],
+    "lat": -17.8000,
+    "lng": 178.0000,
+    "hint": "Largest island of Fiji, where the capital Suva and tourism hub Nadi are located",
+    "difficulty": "hard"
+  },
+  {
+    "id": 7,
+    "name": "New Caledonia",
+    "acceptedAnswers": ["new caledonia", "grande terre"],
+    "lat": -21.5000,
+    "lng": 165.5000,
+    "hint": "French territory in the southwest Pacific, known for its vast lagoon and nickel mining",
+    "difficulty": "medium"
+  },
+  {
+    "id": 8,
+    "name": "Tahiti",
+    "acceptedAnswers": ["tahiti"],
+    "lat": -17.6509,
+    "lng": -149.4260,
+    "hint": "Largest island in French Polynesia, famous for black pearls and overwater bungalows",
+    "difficulty": "easy"
+  },
+  {
+    "id": 9,
+    "name": "Guadalcanal",
+    "acceptedAnswers": ["guadalcanal"],
+    "lat": -9.5778,
+    "lng": 160.1456,
+    "hint": "Largest island of the Solomon Islands, site of a pivotal World War II battle",
+    "difficulty": "medium"
+  },
+  {
+    "id": 10,
+    "name": "Kangaroo Island",
+    "acceptedAnswers": ["kangaroo island"],
+    "lat": -35.7751,
+    "lng": 137.2142,
+    "hint": "Third-largest island in Australia, off the coast of South Australia, a wildlife sanctuary",
+    "difficulty": "medium"
+  },
+  {
+    "id": 11,
+    "name": "Fiji Islands",
+    "acceptedAnswers": ["fiji", "fiji islands"],
+    "lat": -17.7134,
+    "lng": 178.0650,
+    "hint": "Archipelago of over 330 islands in the South Pacific, famous for coral reefs and clear lagoons",
+    "difficulty": "easy"
+  },
+  {
+    "id": 12,
+    "name": "Samoa",
+    "acceptedAnswers": ["samoa", "samoan islands", "upolu"],
+    "lat": -13.7590,
+    "lng": -172.1046,
+    "hint": "Polynesian island nation known as the 'Cradle of Polynesia', home of Robert Louis Stevenson",
+    "difficulty": "medium"
+  },
+  {
+    "id": 13,
+    "name": "Tonga",
+    "acceptedAnswers": ["tonga", "tongan islands", "tongatapu"],
+    "lat": -21.1790,
+    "lng": -175.1982,
+    "hint": "Polynesian kingdom of 169 islands, the last monarchy in the Pacific",
+    "difficulty": "medium"
+  },
+  {
+    "id": 14,
+    "name": "Fraser Island",
+    "acceptedAnswers": ["fraser island", "kgari"],
+    "lat": -25.2500,
+    "lng": 153.1500,
+    "hint": "World's largest sand island, off the Queensland coast, with freshwater lakes and dingo populations",
+    "difficulty": "medium"
+  },
+  {
+    "id": 15,
+    "name": "Stewart Island",
+    "acceptedAnswers": ["stewart island", "rakiura"],
+    "lat": -46.9973,
+    "lng": 167.8378,
+    "hint": "New Zealand's third-largest island, south of the South Island, great for spotting kiwi birds in the wild",
+    "difficulty": "hard"
+  }
+]

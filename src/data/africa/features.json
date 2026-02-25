@@ -88,5 +88,95 @@
     "lng": 38.5000,
     "hint": "Rugged mountain mass in northeastern Africa, sometimes called the Roof of Africa",
     "difficulty": "hard"
+  },
+  {
+    "id": 11,
+    "name": "Cape of Good Hope",
+    "acceptedAnswers": ["cape of good hope", "good hope"],
+    "lat": -34.3568,
+    "lng": 18.4740,
+    "hint": "Rocky headland in South Africa near the continent's southern tip, feared by early sailors",
+    "difficulty": "easy"
+  },
+  {
+    "id": 12,
+    "name": "Strait of Gibraltar",
+    "acceptedAnswers": ["strait of gibraltar", "gibraltar strait"],
+    "lat": 35.9667,
+    "lng": -5.5000,
+    "hint": "Narrow waterway separating Africa from Europe, only 14 km wide at its narrowest",
+    "difficulty": "easy"
+  },
+  {
+    "id": 13,
+    "name": "Suez Canal",
+    "acceptedAnswers": ["suez canal", "suez"],
+    "lat": 30.4550,
+    "lng": 32.3500,
+    "hint": "Artificial waterway in Egypt connecting the Mediterranean to the Red Sea",
+    "difficulty": "easy"
+  },
+  {
+    "id": 14,
+    "name": "Nile Delta",
+    "acceptedAnswers": ["nile delta"],
+    "lat": 31.0000,
+    "lng": 31.0000,
+    "hint": "Fertile fan-shaped river delta in Egypt where the Nile meets the Mediterranean",
+    "difficulty": "medium"
+  },
+  {
+    "id": 15,
+    "name": "Victoria Falls",
+    "acceptedAnswers": ["victoria falls", "mosi-oa-tunya"],
+    "lat": -17.9243,
+    "lng": 25.8572,
+    "hint": "Spectacular waterfall on the Zambezi, locals call it 'The Smoke That Thunders'",
+    "difficulty": "easy"
+  },
+  {
+    "id": 16,
+    "name": "Horn of Africa",
+    "acceptedAnswers": ["horn of africa"],
+    "lat": 8.0000,
+    "lng": 48.0000,
+    "hint": "Peninsula in East Africa shaped like a rhinoceros horn, includes Somalia and Djibouti",
+    "difficulty": "medium"
+  },
+  {
+    "id": 17,
+    "name": "Mozambique Channel",
+    "acceptedAnswers": ["mozambique channel"],
+    "lat": -17.0000,
+    "lng": 42.0000,
+    "hint": "Arm of the Indian Ocean between Madagascar and mainland southeastern Africa",
+    "difficulty": "hard"
+  },
+  {
+    "id": 18,
+    "name": "Gulf of Guinea",
+    "acceptedAnswers": ["gulf of guinea"],
+    "lat": 3.0000,
+    "lng": 2.0000,
+    "hint": "Large gulf of the Atlantic Ocean along the west coast of Africa near the equator",
+    "difficulty": "medium"
+  },
+  {
+    "id": 19,
+    "name": "Danakil Depression",
+    "acceptedAnswers": ["danakil depression", "danakil", "afar depression"],
+    "lat": 14.2417,
+    "lng": 40.3000,
+    "hint": "One of the hottest and lowest places on Earth, in Ethiopia with colorful acid pools",
+    "difficulty": "hard"
+  },
+  {
+    "id": 20,
+    "name": "Fish River Canyon",
+    "acceptedAnswers": ["fish river canyon"],
+    "lat": -27.6000,
+    "lng": 17.5833,
+    "hint": "Second-largest canyon in the world after the Grand Canyon, in southern Namibia",
+    "difficulty": "hard"
   }
 ]

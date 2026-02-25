@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "name": "Atacama Desert",
+    "acceptedAnswers": ["atacama", "atacama desert", "desierto de atacama"],
+    "lat": -24.5000,
+    "lng": -69.2500,
+    "hint": "Driest non-polar desert on Earth, in northern Chile with world-class observatories",
+    "difficulty": "easy"
+  },
+  {
+    "id": 2,
+    "name": "Patagonian Desert",
+    "acceptedAnswers": ["patagonian desert", "patagonian steppe"],
+    "lat": -45.0000,
+    "lng": -69.0000,
+    "hint": "Largest desert in South America, a cold wind-swept steppe in southern Argentina",
+    "difficulty": "medium"
+  },
+  {
+    "id": 3,
+    "name": "Sechura Desert",
+    "acceptedAnswers": ["sechura desert", "sechura"],
+    "lat": -5.7500,
+    "lng": -80.5000,
+    "hint": "Coastal desert in northwestern Peru, one of the driest spots in South America",
+    "difficulty": "hard"
+  },
+  {
+    "id": 4,
+    "name": "Monte Desert",
+    "acceptedAnswers": ["monte desert", "monte"],
+    "lat": -34.0000,
+    "lng": -67.5000,
+    "hint": "Arid scrubland in central-western Argentina between the Andes and the Pampas",
+    "difficulty": "hard"
+  },
+  {
+    "id": 5,
+    "name": "Guajira Desert",
+    "acceptedAnswers": ["guajira desert", "la guajira"],
+    "lat": 12.0000,
+    "lng": -72.0000,
+    "hint": "Arid peninsula in northern Colombia and Venezuela, home to the Wayuu indigenous people",
+    "difficulty": "hard"
+  },
+  {
+    "id": 6,
+    "name": "Salar de Atacama",
+    "acceptedAnswers": ["salar de atacama"],
+    "lat": -23.5000,
+    "lng": -68.2500,
+    "hint": "Largest salt flat in Chile, surrounded by volcanoes and home to flamingo-filled lagoons",
+    "difficulty": "medium"
+  },
+  {
+    "id": 7,
+    "name": "Nazca Desert",
+    "acceptedAnswers": ["nazca desert", "nazca"],
+    "lat": -14.7000,
+    "lng": -75.1000,
+    "hint": "Peruvian desert plateau famous for its mysterious ancient geoglyphs visible from the air",
+    "difficulty": "medium"
+  },
+  {
+    "id": 8,
+    "name": "Tatacoa Desert",
+    "acceptedAnswers": ["tatacoa desert", "tatacoa", "desierto de la tatacoa"],
+    "lat": 3.2333,
+    "lng": -75.1667,
+    "hint": "Red and grey badlands in Colombia's Huila department, popular for stargazing",
+    "difficulty": "hard"
+  },
+  {
+    "id": 9,
+    "name": "Siloli Desert",
+    "acceptedAnswers": ["siloli desert", "siloli"],
+    "lat": -22.0000,
+    "lng": -68.0000,
+    "hint": "High-altitude desert in Bolivia's altiplano known for the famous Stone Tree rock formation",
+    "difficulty": "hard"
+  },
+  {
+    "id": 10,
+    "name": "Medanos de Coro",
+    "acceptedAnswers": ["medanos de coro", "médanos de coro"],
+    "lat": 11.5000,
+    "lng": -69.7500,
+    "hint": "National park of shifting sand dunes in Venezuela's Falcon state near the Caribbean",
+    "difficulty": "hard"
+  }
+]

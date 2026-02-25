@@ -88,5 +88,95 @@
     "lng": 7.2700,
     "hint": "Southern European coastline famous for its climate, stretching from Spain to Greece",
     "difficulty": "easy"
+  },
+  {
+    "id": 11,
+    "name": "Strait of Gibraltar",
+    "acceptedAnswers": ["strait of gibraltar", "gibraltar strait", "straits of gibraltar"],
+    "lat": 35.9667,
+    "lng": -5.5833,
+    "hint": "Narrow passage connecting the Atlantic Ocean to the Mediterranean Sea",
+    "difficulty": "easy"
+  },
+  {
+    "id": 12,
+    "name": "English Channel",
+    "acceptedAnswers": ["english channel", "the channel", "la manche"],
+    "lat": 50.2000,
+    "lng": -1.0000,
+    "hint": "Body of water separating England from France, crossed by the Channel Tunnel",
+    "difficulty": "easy"
+  },
+  {
+    "id": 13,
+    "name": "Pyrenees",
+    "acceptedAnswers": ["pyrenees", "the pyrenees", "pirineos", "pyrénées"],
+    "lat": 42.6500,
+    "lng": 1.0000,
+    "hint": "Mountain range forming the natural border between France and Spain",
+    "difficulty": "medium"
+  },
+  {
+    "id": 14,
+    "name": "Dolomites",
+    "acceptedAnswers": ["dolomites", "the dolomites", "dolomiti"],
+    "lat": 46.4100,
+    "lng": 11.8400,
+    "hint": "Stunning pale limestone mountain range in northeastern Italy, a UNESCO World Heritage Site",
+    "difficulty": "medium"
+  },
+  {
+    "id": 15,
+    "name": "Balkan Peninsula",
+    "acceptedAnswers": ["balkan peninsula", "balkans", "the balkans"],
+    "lat": 42.0000,
+    "lng": 22.0000,
+    "hint": "Southeastern European peninsula home to diverse nations from Greece to Slovenia",
+    "difficulty": "medium"
+  },
+  {
+    "id": 16,
+    "name": "Scandinavian Peninsula",
+    "acceptedAnswers": ["scandinavian peninsula", "scandinavia"],
+    "lat": 63.0000,
+    "lng": 16.0000,
+    "hint": "Largest peninsula in Europe, comprising Norway, Sweden, and part of Finland",
+    "difficulty": "easy"
+  },
+  {
+    "id": 17,
+    "name": "Strait of Messina",
+    "acceptedAnswers": ["strait of messina", "messina strait", "stretto di messina"],
+    "lat": 38.2300,
+    "lng": 15.6300,
+    "hint": "Narrow strait separating Sicily from mainland Italy, linked to Scylla and Charybdis myth",
+    "difficulty": "hard"
+  },
+  {
+    "id": 18,
+    "name": "Amalfi Coast",
+    "acceptedAnswers": ["amalfi coast", "costiera amalfitana", "amalfi"],
+    "lat": 40.6340,
+    "lng": 14.6027,
+    "hint": "Spectacular stretch of Italian coastline south of Naples, a UNESCO World Heritage Site",
+    "difficulty": "medium"
+  },
+  {
+    "id": 19,
+    "name": "White Cliffs of Dover",
+    "acceptedAnswers": ["white cliffs of dover", "cliffs of dover", "dover cliffs"],
+    "lat": 51.1295,
+    "lng": 1.3340,
+    "hint": "Iconic chalk cliffs on England's southeastern coast facing France across the Channel",
+    "difficulty": "medium"
+  },
+  {
+    "id": 20,
+    "name": "Danube Gorge",
+    "acceptedAnswers": ["danube gorge", "iron gates", "iron gate gorge", "djerdap"],
+    "lat": 44.6700,
+    "lng": 22.3000,
+    "hint": "Dramatic gorge where the Danube cuts through the Carpathians between Serbia and Romania",
+    "difficulty": "hard"
   }
 ]

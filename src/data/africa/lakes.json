@@ -88,5 +88,95 @@
     "lng": 28.7500,
     "hint": "Lake on the border of Zambia and the Democratic Republic of Congo",
     "difficulty": "hard"
+  },
+  {
+    "id": 11,
+    "name": "Lake Volta",
+    "acceptedAnswers": ["volta", "lake volta"],
+    "lat": 7.5000,
+    "lng": -0.2500,
+    "hint": "One of the largest man-made lakes in the world by surface area, in Ghana",
+    "difficulty": "medium"
+  },
+  {
+    "id": 12,
+    "name": "Lake Kariba",
+    "acceptedAnswers": ["kariba", "lake kariba"],
+    "lat": -16.9333,
+    "lng": 28.0000,
+    "hint": "Largest man-made lake by volume, on the Zambia-Zimbabwe border behind a massive dam",
+    "difficulty": "medium"
+  },
+  {
+    "id": 13,
+    "name": "Lake Nasser",
+    "acceptedAnswers": ["nasser", "lake nasser"],
+    "lat": 23.0000,
+    "lng": 32.8333,
+    "hint": "Massive reservoir behind the Aswan High Dam in southern Egypt",
+    "difficulty": "medium"
+  },
+  {
+    "id": 14,
+    "name": "Lake Edward",
+    "acceptedAnswers": ["edward", "lake edward"],
+    "lat": -0.3333,
+    "lng": 29.5833,
+    "hint": "One of the African Great Lakes, shared by Uganda and DRC in the Rift Valley",
+    "difficulty": "hard"
+  },
+  {
+    "id": 15,
+    "name": "Lake Natron",
+    "acceptedAnswers": ["natron", "lake natron"],
+    "lat": -2.4167,
+    "lng": 36.0000,
+    "hint": "Extremely alkaline red lake in Tanzania, major breeding ground for flamingos",
+    "difficulty": "medium"
+  },
+  {
+    "id": 16,
+    "name": "Lake Nakuru",
+    "acceptedAnswers": ["nakuru", "lake nakuru"],
+    "lat": -0.3500,
+    "lng": 36.1000,
+    "hint": "Shallow soda lake in Kenya's Rift Valley famous for enormous flocks of flamingos",
+    "difficulty": "medium"
+  },
+  {
+    "id": 17,
+    "name": "Lake Assal",
+    "acceptedAnswers": ["assal", "lake assal"],
+    "lat": 11.5500,
+    "lng": 42.4167,
+    "hint": "Lowest point in Africa and the most saline lake in the world, in Djibouti",
+    "difficulty": "hard"
+  },
+  {
+    "id": 18,
+    "name": "Lake Cabora Bassa",
+    "acceptedAnswers": ["cabora bassa", "lake cabora bassa", "cahora bassa"],
+    "lat": -15.6000,
+    "lng": 32.7000,
+    "hint": "Large reservoir on the Zambezi River in Mozambique, created by a major dam",
+    "difficulty": "hard"
+  },
+  {
+    "id": 19,
+    "name": "Lake Kyoga",
+    "acceptedAnswers": ["kyoga", "lake kyoga"],
+    "lat": 1.5000,
+    "lng": 33.0000,
+    "hint": "Shallow lake in central Uganda, through which the Victoria Nile flows",
+    "difficulty": "hard"
+  },
+  {
+    "id": 20,
+    "name": "Lake Bosumtwi",
+    "acceptedAnswers": ["bosumtwi", "lake bosumtwi"],
+    "lat": 6.5042,
+    "lng": -1.4125,
+    "hint": "Natural lake in Ghana formed by an ancient meteorite impact crater",
+    "difficulty": "hard"
   }
 ]

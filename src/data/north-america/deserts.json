@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "name": "Sonoran Desert",
+    "acceptedAnswers": ["sonoran desert", "sonoran"],
+    "lat": 32.0000,
+    "lng": -112.0000,
+    "hint": "Hot desert spanning Arizona and Mexico, home to the iconic saguaro cactus",
+    "difficulty": "easy"
+  },
+  {
+    "id": 2,
+    "name": "Mojave Desert",
+    "acceptedAnswers": ["mojave desert", "mojave"],
+    "lat": 35.0000,
+    "lng": -116.0000,
+    "hint": "California desert home to Joshua trees and Death Valley, the hottest place on Earth",
+    "difficulty": "easy"
+  },
+  {
+    "id": 3,
+    "name": "Chihuahuan Desert",
+    "acceptedAnswers": ["chihuahuan desert", "chihuahuan"],
+    "lat": 30.0000,
+    "lng": -106.0000,
+    "hint": "Largest desert in North America, spanning Texas, New Mexico, and northern Mexico",
+    "difficulty": "medium"
+  },
+  {
+    "id": 4,
+    "name": "Great Basin Desert",
+    "acceptedAnswers": ["great basin desert", "great basin"],
+    "lat": 40.0000,
+    "lng": -117.0000,
+    "hint": "Largest cold desert in North America, covering most of Nevada and parts of Utah",
+    "difficulty": "medium"
+  },
+  {
+    "id": 5,
+    "name": "Colorado Plateau",
+    "acceptedAnswers": ["colorado plateau"],
+    "lat": 37.0000,
+    "lng": -110.5000,
+    "hint": "Semi-arid high desert plateau with dramatic mesas, arches, and canyons in the Four Corners region",
+    "difficulty": "medium"
+  },
+  {
+    "id": 6,
+    "name": "Painted Desert",
+    "acceptedAnswers": ["painted desert"],
+    "lat": 35.0700,
+    "lng": -109.7800,
+    "hint": "Colorful badlands in northeastern Arizona with layers of red, orange, and purple rock",
+    "difficulty": "medium"
+  },
+  {
+    "id": 7,
+    "name": "Black Rock Desert",
+    "acceptedAnswers": ["black rock desert", "black rock"],
+    "lat": 40.8000,
+    "lng": -118.9000,
+    "hint": "Nevada playa desert famous as the site of Burning Man and land speed records",
+    "difficulty": "hard"
+  },
+  {
+    "id": 8,
+    "name": "Arctic Desert",
+    "acceptedAnswers": ["arctic desert", "arctic"],
+    "lat": 75.0000,
+    "lng": -100.0000,
+    "hint": "Cold polar desert covering Canada's northernmost islands with extremely low precipitation",
+    "difficulty": "medium"
+  },
+  {
+    "id": 9,
+    "name": "Altar Desert",
+    "acceptedAnswers": ["altar desert", "gran desierto de altar"],
+    "lat": 32.0000,
+    "lng": -114.0000,
+    "hint": "Part of the Sonoran Desert in northwestern Mexico with North America's largest sand dunes",
+    "difficulty": "hard"
+  },
+  {
+    "id": 10,
+    "name": "Red Desert",
+    "acceptedAnswers": ["red desert"],
+    "lat": 42.0000,
+    "lng": -108.5000,
+    "hint": "High desert in south-central Wyoming, largest unfenced area in the contiguous US",
+    "difficulty": "hard"
+  }
+]

@@ -88,5 +88,50 @@
     "lng": 144.9700,
     "hint": "River flowing through Melbourne, Victoria",
     "difficulty": "medium"
+  },
+  {
+    "id": 11,
+    "name": "Swan",
+    "acceptedAnswers": ["swan", "swan river"],
+    "lat": -31.9600,
+    "lng": 115.8600,
+    "hint": "River flowing through Perth, Western Australia, famous for its black swans",
+    "difficulty": "medium"
+  },
+  {
+    "id": 12,
+    "name": "Whanganui",
+    "acceptedAnswers": ["whanganui", "whanganui river", "wanganui river"],
+    "lat": -39.2400,
+    "lng": 175.0500,
+    "hint": "Longest navigable river in New Zealand, granted legal personhood in 2017",
+    "difficulty": "hard"
+  },
+  {
+    "id": 13,
+    "name": "Fitzroy",
+    "acceptedAnswers": ["fitzroy", "fitzroy river"],
+    "lat": -23.3800,
+    "lng": 150.5100,
+    "hint": "Major river in central Queensland, flows through Rockhampton to the Coral Sea",
+    "difficulty": "hard"
+  },
+  {
+    "id": 14,
+    "name": "Derwent",
+    "acceptedAnswers": ["derwent", "derwent river"],
+    "lat": -42.8700,
+    "lng": 147.3300,
+    "hint": "River flowing through Hobart in Tasmania, spanned by the Tasman Bridge",
+    "difficulty": "hard"
+  },
+  {
+    "id": 15,
+    "name": "Brisbane River",
+    "acceptedAnswers": ["brisbane river", "brisbane"],
+    "lat": -27.4700,
+    "lng": 153.0300,
+    "hint": "Winding river through Queensland's capital city, prone to major flooding",
+    "difficulty": "easy"
   }
 ]

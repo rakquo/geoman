@@ -88,5 +88,50 @@
     "lng": 123.2017,
     "hint": "Distinctive pink-colored lake on an island off Western Australia",
     "difficulty": "medium"
+  },
+  {
+    "id": 11,
+    "name": "Lake Wakatipu",
+    "acceptedAnswers": ["wakatipu", "lake wakatipu"],
+    "lat": -45.0300,
+    "lng": 168.5000,
+    "hint": "Long Z-shaped lake in Otago, New Zealand, at the foot of Queenstown",
+    "difficulty": "medium"
+  },
+  {
+    "id": 12,
+    "name": "Lake Burley Griffin",
+    "acceptedAnswers": ["burley griffin", "lake burley griffin"],
+    "lat": -35.2900,
+    "lng": 149.1200,
+    "hint": "Artificial lake at the heart of Canberra, Australia's capital, named after the city's architect",
+    "difficulty": "medium"
+  },
+  {
+    "id": 13,
+    "name": "Lake Wanaka",
+    "acceptedAnswers": ["wanaka", "lake wanaka"],
+    "lat": -44.6950,
+    "lng": 169.1400,
+    "hint": "Glacial lake in the Otago region of New Zealand, famous for its lone willow tree",
+    "difficulty": "medium"
+  },
+  {
+    "id": 14,
+    "name": "Lake Disappointment",
+    "acceptedAnswers": ["disappointment", "lake disappointment"],
+    "lat": -23.5000,
+    "lng": 122.8000,
+    "hint": "Dry salt lake in Western Australia named by an explorer who was hoping for fresh water",
+    "difficulty": "hard"
+  },
+  {
+    "id": 15,
+    "name": "Lake Mackay",
+    "acceptedAnswers": ["mackay", "lake mackay", "wilkinkarra"],
+    "lat": -22.4000,
+    "lng": 128.8000,
+    "hint": "Largest lake in the Northern Territory of Australia, an ephemeral salt lake",
+    "difficulty": "hard"
   }
 ]

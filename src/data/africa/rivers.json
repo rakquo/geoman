@@ -88,5 +88,95 @@
     "lng": -1.5000,
     "hint": "Major river in Ghana, dammed to form one of the world's largest reservoirs",
     "difficulty": "hard"
+  },
+  {
+    "id": 11,
+    "name": "Okavango River",
+    "acceptedAnswers": ["okavango river", "okavango", "cubango"],
+    "lat": -18.2500,
+    "lng": 21.7500,
+    "hint": "One of few major rivers that never reach the sea, ending in a delta in Botswana",
+    "difficulty": "medium"
+  },
+  {
+    "id": 12,
+    "name": "Gambia River",
+    "acceptedAnswers": ["gambia river", "gambia"],
+    "lat": 13.5000,
+    "lng": -15.5000,
+    "hint": "Major West African river that gives The Gambia its name and shape",
+    "difficulty": "hard"
+  },
+  {
+    "id": 13,
+    "name": "Kasai River",
+    "acceptedAnswers": ["kasai river", "kasai"],
+    "lat": -3.3333,
+    "lng": 16.5000,
+    "hint": "Major tributary of the Congo River, flowing through Angola and DRC",
+    "difficulty": "hard"
+  },
+  {
+    "id": 14,
+    "name": "Ubangi River",
+    "acceptedAnswers": ["ubangi river", "ubangi", "oubangui"],
+    "lat": 0.5000,
+    "lng": 18.5000,
+    "hint": "Largest right-bank tributary of the Congo, forms part of the DRC-Congo border",
+    "difficulty": "hard"
+  },
+  {
+    "id": 15,
+    "name": "Jubba River",
+    "acceptedAnswers": ["jubba river", "jubba", "juba river"],
+    "lat": 2.0000,
+    "lng": 43.0000,
+    "hint": "Major river in southern Somalia, flowing into the Indian Ocean near Kismayo",
+    "difficulty": "hard"
+  },
+  {
+    "id": 16,
+    "name": "Tana River",
+    "acceptedAnswers": ["tana river", "tana"],
+    "lat": -2.5000,
+    "lng": 40.0000,
+    "hint": "Longest river in Kenya, flowing east from the highlands to the Indian Ocean",
+    "difficulty": "hard"
+  },
+  {
+    "id": 17,
+    "name": "Rufiji River",
+    "acceptedAnswers": ["rufiji river", "rufiji"],
+    "lat": -7.8000,
+    "lng": 39.3000,
+    "hint": "Largest river in Tanzania, creating a vast mangrove delta on the Indian Ocean",
+    "difficulty": "hard"
+  },
+  {
+    "id": 18,
+    "name": "Benue River",
+    "acceptedAnswers": ["benue river", "benue"],
+    "lat": 8.5000,
+    "lng": 8.5000,
+    "hint": "Major tributary of the Niger River in Nigeria, meeting it at Lokoja",
+    "difficulty": "hard"
+  },
+  {
+    "id": 19,
+    "name": "Shire River",
+    "acceptedAnswers": ["shire river", "shire"],
+    "lat": -15.5000,
+    "lng": 35.2000,
+    "hint": "Only outlet of Lake Malawi, flowing south through Malawi to the Zambezi",
+    "difficulty": "hard"
+  },
+  {
+    "id": 20,
+    "name": "Atbara River",
+    "acceptedAnswers": ["atbara river", "atbara"],
+    "lat": 17.7000,
+    "lng": 33.9667,
+    "hint": "Last major tributary of the Nile before it reaches the Mediterranean, in Sudan",
+    "difficulty": "hard"
   }
 ]

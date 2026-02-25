@@ -88,5 +88,95 @@
     "lng": 127.0000,
     "hint": "Vast flat treeless plain between South and Western Australia",
     "difficulty": "hard"
+  },
+  {
+    "id": 11,
+    "name": "Twelve Apostles",
+    "acceptedAnswers": ["twelve apostles", "the twelve apostles", "12 apostles"],
+    "lat": -38.6659,
+    "lng": 143.1048,
+    "hint": "Limestone stacks along Victoria's Great Ocean Road, slowly eroding into the sea",
+    "difficulty": "easy"
+  },
+  {
+    "id": 12,
+    "name": "Pinnacles Desert",
+    "acceptedAnswers": ["pinnacles desert", "the pinnacles", "pinnacles"],
+    "lat": -30.5983,
+    "lng": 115.1600,
+    "hint": "Thousands of limestone pillars rising from the sand in Nambung National Park, Western Australia",
+    "difficulty": "medium"
+  },
+  {
+    "id": 13,
+    "name": "Franz Josef Glacier",
+    "acceptedAnswers": ["franz josef glacier", "franz josef"],
+    "lat": -43.4833,
+    "lng": 170.1833,
+    "hint": "One of the most accessible glaciers in the world, on New Zealand's West Coast",
+    "difficulty": "medium"
+  },
+  {
+    "id": 14,
+    "name": "Bungle Bungle Range",
+    "acceptedAnswers": ["bungle bungle", "bungle bungle range", "purnululu"],
+    "lat": -17.4500,
+    "lng": 128.3800,
+    "hint": "Beehive-striped sandstone domes in Purnululu National Park, Western Australia",
+    "difficulty": "hard"
+  },
+  {
+    "id": 15,
+    "name": "Bay of Islands",
+    "acceptedAnswers": ["bay of islands"],
+    "lat": -35.2200,
+    "lng": 174.1000,
+    "hint": "Stunning bay in northern New Zealand with 144 islands, where the Treaty of Waitangi was signed",
+    "difficulty": "medium"
+  },
+  {
+    "id": 16,
+    "name": "Shark Bay",
+    "acceptedAnswers": ["shark bay"],
+    "lat": -25.5000,
+    "lng": 113.5000,
+    "hint": "UNESCO World Heritage site in Western Australia, home to ancient stromatolites and dugongs",
+    "difficulty": "hard"
+  },
+  {
+    "id": 17,
+    "name": "Kimberley",
+    "acceptedAnswers": ["kimberley", "the kimberley", "kimberley region"],
+    "lat": -15.7700,
+    "lng": 125.2000,
+    "hint": "Remote rugged region in northwestern Australia, with gorges, waterfalls, and ancient landscapes",
+    "difficulty": "medium"
+  },
+  {
+    "id": 18,
+    "name": "Great Dividing Range",
+    "acceptedAnswers": ["great dividing range"],
+    "lat": -30.0000,
+    "lng": 149.0000,
+    "hint": "Australia's most substantial mountain range, running 3,500 km along the east coast",
+    "difficulty": "easy"
+  },
+  {
+    "id": 19,
+    "name": "Waitomo Caves",
+    "acceptedAnswers": ["waitomo caves", "waitomo", "waitomo glowworm caves"],
+    "lat": -38.2607,
+    "lng": 175.1068,
+    "hint": "Famous New Zealand caves illuminated by thousands of bioluminescent glowworms",
+    "difficulty": "medium"
+  },
+  {
+    "id": 20,
+    "name": "Whitsunday Islands",
+    "acceptedAnswers": ["whitsunday islands", "whitsundays", "the whitsundays"],
+    "lat": -20.2300,
+    "lng": 148.9400,
+    "hint": "Group of 74 tropical islands off the Queensland coast, known for Whitehaven Beach",
+    "difficulty": "easy"
   }
 ]

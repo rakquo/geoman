@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "name": "Great Victoria Desert",
+    "acceptedAnswers": ["great victoria desert", "great victoria"],
+    "lat": -29.0000,
+    "lng": 129.0000,
+    "hint": "Largest desert in Australia, spanning Western Australia and South Australia",
+    "difficulty": "medium"
+  },
+  {
+    "id": 2,
+    "name": "Great Sandy Desert",
+    "acceptedAnswers": ["great sandy desert", "great sandy"],
+    "lat": -22.0000,
+    "lng": 125.0000,
+    "hint": "Second-largest desert in Australia, home to vast red sand dune fields in Western Australia",
+    "difficulty": "medium"
+  },
+  {
+    "id": 3,
+    "name": "Tanami Desert",
+    "acceptedAnswers": ["tanami desert", "tanami"],
+    "lat": -20.0000,
+    "lng": 130.0000,
+    "hint": "Remote desert in the Northern Territory, one of Australia's most isolated regions",
+    "difficulty": "hard"
+  },
+  {
+    "id": 4,
+    "name": "Simpson Desert",
+    "acceptedAnswers": ["simpson desert", "simpson"],
+    "lat": -25.0000,
+    "lng": 137.0000,
+    "hint": "Desert famous for its long parallel sand dunes, the longest in the world, in central Australia",
+    "difficulty": "medium"
+  },
+  {
+    "id": 5,
+    "name": "Gibson Desert",
+    "acceptedAnswers": ["gibson desert", "gibson"],
+    "lat": -24.0000,
+    "lng": 125.5000,
+    "hint": "Central Australian desert named after explorer Alfred Gibson who perished crossing it",
+    "difficulty": "hard"
+  },
+  {
+    "id": 6,
+    "name": "Strzelecki Desert",
+    "acceptedAnswers": ["strzelecki desert", "strzelecki"],
+    "lat": -29.5000,
+    "lng": 140.5000,
+    "hint": "Desert in northeastern South Australia, named after Polish explorer Pawel Strzelecki",
+    "difficulty": "hard"
+  },
+  {
+    "id": 7,
+    "name": "Tirari Desert",
+    "acceptedAnswers": ["tirari desert", "tirari"],
+    "lat": -28.5000,
+    "lng": 138.0000,
+    "hint": "Small desert in South Australia near Lake Eyre, with some of the hottest temperatures recorded",
+    "difficulty": "hard"
+  },
+  {
+    "id": 8,
+    "name": "Little Sandy Desert",
+    "acceptedAnswers": ["little sandy desert", "little sandy"],
+    "lat": -24.5000,
+    "lng": 121.5000,
+    "hint": "Arid region in Western Australia adjacent to the Great Sandy Desert, with spinifex grasslands",
+    "difficulty": "hard"
+  }
+]

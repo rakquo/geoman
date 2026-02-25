@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "name": "Tabernas Desert",
+    "acceptedAnswers": ["tabernas", "tabernas desert", "desierto de tabernas"],
+    "lat": 37.0500,
+    "lng": -2.3833,
+    "hint": "Europe's only true semi-arid desert, in southeastern Spain, used as a film set for westerns",
+    "difficulty": "hard"
+  },
+  {
+    "id": 2,
+    "name": "Bardenas Reales",
+    "acceptedAnswers": ["bardenas reales", "bardenas"],
+    "lat": 42.2000,
+    "lng": -1.5500,
+    "hint": "Striking badlands and semi-desert in Navarre, Spain, a UNESCO Biosphere Reserve",
+    "difficulty": "hard"
+  },
+  {
+    "id": 3,
+    "name": "Oleshky Sands",
+    "acceptedAnswers": ["oleshky sands", "oleshky desert", "oleshkivski pisky"],
+    "lat": 46.6000,
+    "lng": 33.0500,
+    "hint": "Largest sand area in Europe, in southern Ukraine near the Dnieper River delta",
+    "difficulty": "hard"
+  },
+  {
+    "id": 4,
+    "name": "Ryn Desert",
+    "acceptedAnswers": ["ryn desert", "ryn peski", "ryn sands"],
+    "lat": 47.5000,
+    "lng": 51.5000,
+    "hint": "Sandy desert in western Kazakhstan extending into the European steppe near the Caspian",
+    "difficulty": "hard"
+  },
+  {
+    "id": 5,
+    "name": "Błędów Desert",
+    "acceptedAnswers": ["bledow desert", "błędów desert", "pustynia bledowska"],
+    "lat": 50.3500,
+    "lng": 19.5300,
+    "hint": "Largest accumulation of loose sand in Central Europe, in southern Poland",
+    "difficulty": "hard"
+  },
+  {
+    "id": 6,
+    "name": "Monegros",
+    "acceptedAnswers": ["monegros", "los monegros"],
+    "lat": 41.6000,
+    "lng": -0.3000,
+    "hint": "Semi-arid steppe region in Aragon, Spain, one of the driest areas in Europe",
+    "difficulty": "hard"
+  },
+  {
+    "id": 7,
+    "name": "Highlands of Iceland",
+    "acceptedAnswers": ["highlands of iceland", "icelandic highlands", "iceland desert"],
+    "lat": 64.8000,
+    "lng": -18.5000,
+    "hint": "Vast volcanic desert interior of Iceland, largely uninhabited lava and ash fields",
+    "difficulty": "medium"
+  },
+  {
+    "id": 8,
+    "name": "Cabo de Gata",
+    "acceptedAnswers": ["cabo de gata", "cabo de gata desert"],
+    "lat": 36.7700,
+    "lng": -2.1900,
+    "hint": "Arid coastal natural park in Almeria, Spain, the driest region of continental Europe",
+    "difficulty": "hard"
+  },
+  {
+    "id": 9,
+    "name": "Deliblato Sands",
+    "acceptedAnswers": ["deliblato sands", "deliblatska pescara", "deliblato"],
+    "lat": 44.8700,
+    "lng": 21.1500,
+    "hint": "Large sandy terrain in Serbia's Vojvodina region, the largest European sand dune area in the Balkans",
+    "difficulty": "hard"
+  },
+  {
+    "id": 10,
+    "name": "Piscinas Dunes",
+    "acceptedAnswers": ["piscinas dunes", "piscinas", "piscinas desert"],
+    "lat": 39.5200,
+    "lng": 8.4500,
+    "hint": "Sahara-like sand dunes on Sardinia's southwestern coast, called Europe's little desert",
+    "difficulty": "hard"
+  }
+]

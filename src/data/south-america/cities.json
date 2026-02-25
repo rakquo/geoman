@@ -178,5 +178,275 @@
     "lng": -57.5759,
     "hint": "Capital of Paraguay, one of the oldest cities in South America on the Paraguay River",
     "difficulty": "medium"
+  },
+  {
+    "id": 21,
+    "name": "Sucre",
+    "acceptedAnswers": ["sucre"],
+    "lat": -19.0196,
+    "lng": -65.2619,
+    "hint": "Constitutional capital of Bolivia, known as the White City for its colonial buildings",
+    "difficulty": "hard"
+  },
+  {
+    "id": 22,
+    "name": "Cusco",
+    "acceptedAnswers": ["cusco", "cuzco"],
+    "lat": -13.5319,
+    "lng": -71.9675,
+    "hint": "Former capital of the Inca Empire in Peru, gateway to Machu Picchu",
+    "difficulty": "easy"
+  },
+  {
+    "id": 23,
+    "name": "Cartagena",
+    "acceptedAnswers": ["cartagena", "cartagena de indias"],
+    "lat": 10.3910,
+    "lng": -75.5364,
+    "hint": "Walled colonial city on Colombia's Caribbean coast, a UNESCO World Heritage Site",
+    "difficulty": "medium"
+  },
+  {
+    "id": 24,
+    "name": "Barranquilla",
+    "acceptedAnswers": ["barranquilla"],
+    "lat": 10.9685,
+    "lng": -74.7813,
+    "hint": "Colombia's fourth-largest city, famous for its Carnival second only to Rio's",
+    "difficulty": "hard"
+  },
+  {
+    "id": 25,
+    "name": "Maracaibo",
+    "acceptedAnswers": ["maracaibo"],
+    "lat": 10.6544,
+    "lng": -71.6295,
+    "hint": "Second-largest city in Venezuela, on the shores of oil-rich Lake Maracaibo",
+    "difficulty": "hard"
+  },
+  {
+    "id": 26,
+    "name": "Manaus",
+    "acceptedAnswers": ["manaus"],
+    "lat": -3.1190,
+    "lng": -60.0217,
+    "hint": "Largest city in the Amazon, where the dark Rio Negro meets the sandy Amazon River",
+    "difficulty": "medium"
+  },
+  {
+    "id": 27,
+    "name": "Porto Alegre",
+    "acceptedAnswers": ["porto alegre"],
+    "lat": -30.0346,
+    "lng": -51.2177,
+    "hint": "Capital of Brazil's southernmost state, gateway to gaucho culture and European heritage",
+    "difficulty": "hard"
+  },
+  {
+    "id": 28,
+    "name": "Curitiba",
+    "acceptedAnswers": ["curitiba"],
+    "lat": -25.4284,
+    "lng": -49.2733,
+    "hint": "Brazilian city famous for its innovative urban planning and bus rapid transit system",
+    "difficulty": "hard"
+  },
+  {
+    "id": 29,
+    "name": "Valparaiso",
+    "acceptedAnswers": ["valparaiso", "valparaíso"],
+    "lat": -33.0472,
+    "lng": -71.6127,
+    "hint": "Colorful Chilean port city built on steep hillsides, a UNESCO World Heritage Site",
+    "difficulty": "medium"
+  },
+  {
+    "id": 30,
+    "name": "Concepcion",
+    "acceptedAnswers": ["concepcion", "concepción"],
+    "lat": -36.8201,
+    "lng": -73.0444,
+    "hint": "Chile's second-largest metro area, a university city near the Pacific coast",
+    "difficulty": "hard"
+  },
+  {
+    "id": 31,
+    "name": "Georgetown",
+    "acceptedAnswers": ["georgetown"],
+    "lat": 6.8013,
+    "lng": -58.1553,
+    "hint": "Capital of Guyana, the only English-speaking country in South America",
+    "difficulty": "hard"
+  },
+  {
+    "id": 32,
+    "name": "Paramaribo",
+    "acceptedAnswers": ["paramaribo"],
+    "lat": 5.8520,
+    "lng": -55.2038,
+    "hint": "Capital of Suriname, a UNESCO-listed city with Dutch colonial architecture on the Suriname River",
+    "difficulty": "hard"
+  },
+  {
+    "id": 33,
+    "name": "Mendoza",
+    "acceptedAnswers": ["mendoza"],
+    "lat": -32.8895,
+    "lng": -68.8458,
+    "hint": "Argentine city at the base of the Andes, capital of the country's wine country",
+    "difficulty": "medium"
+  },
+  {
+    "id": 34,
+    "name": "Santa Cruz de la Sierra",
+    "acceptedAnswers": ["santa cruz", "santa cruz de la sierra"],
+    "lat": -17.7833,
+    "lng": -63.1821,
+    "hint": "Bolivia's largest city and economic powerhouse, in the tropical lowlands",
+    "difficulty": "hard"
+  },
+  {
+    "id": 35,
+    "name": "Arequipa",
+    "acceptedAnswers": ["arequipa"],
+    "lat": -16.4090,
+    "lng": -71.5375,
+    "hint": "Peru's White City built from volcanic sillar stone, near the Colca Canyon",
+    "difficulty": "hard"
+  },
+  {
+    "id": 36,
+    "name": "Rosario",
+    "acceptedAnswers": ["rosario"],
+    "lat": -32.9468,
+    "lng": -60.6393,
+    "hint": "Argentina's third-largest city on the Parana River, birthplace of Che Guevara and Messi",
+    "difficulty": "hard"
+  },
+  {
+    "id": 37,
+    "name": "Belem",
+    "acceptedAnswers": ["belem", "belém"],
+    "lat": -1.4558,
+    "lng": -48.5024,
+    "hint": "Brazilian city at the mouth of the Amazon, gateway to the river and its rainforest",
+    "difficulty": "hard"
+  },
+  {
+    "id": 38,
+    "name": "Iquitos",
+    "acceptedAnswers": ["iquitos"],
+    "lat": -3.7491,
+    "lng": -73.2538,
+    "hint": "Largest city in the world unreachable by road, deep in the Peruvian Amazon",
+    "difficulty": "hard"
+  },
+  {
+    "id": 39,
+    "name": "Punta Arenas",
+    "acceptedAnswers": ["punta arenas"],
+    "lat": -53.1638,
+    "lng": -70.9171,
+    "hint": "Southernmost major city in Chile, on the Strait of Magellan facing Tierra del Fuego",
+    "difficulty": "hard"
+  },
+  {
+    "id": 40,
+    "name": "Ushuaia",
+    "acceptedAnswers": ["ushuaia"],
+    "lat": -54.8019,
+    "lng": -68.3030,
+    "hint": "World's southernmost city in Argentina, known as the End of the World",
+    "difficulty": "medium"
+  },
+  {
+    "id": 41,
+    "name": "Cayenne",
+    "acceptedAnswers": ["cayenne"],
+    "lat": 4.9372,
+    "lng": -52.3260,
+    "hint": "Capital of French Guiana, near Europe's spaceport at Kourou",
+    "difficulty": "hard"
+  },
+  {
+    "id": 42,
+    "name": "Trujillo",
+    "acceptedAnswers": ["trujillo"],
+    "lat": -8.1091,
+    "lng": -79.0215,
+    "hint": "Peru's third-largest city, near ancient Moche and Chimu archaeological sites",
+    "difficulty": "hard"
+  },
+  {
+    "id": 43,
+    "name": "Mar del Plata",
+    "acceptedAnswers": ["mar del plata"],
+    "lat": -38.0055,
+    "lng": -57.5426,
+    "hint": "Argentina's most popular beach resort city on the Atlantic coast",
+    "difficulty": "hard"
+  },
+  {
+    "id": 44,
+    "name": "Florianopolis",
+    "acceptedAnswers": ["florianopolis", "florianópolis", "floripa"],
+    "lat": -27.5954,
+    "lng": -48.5480,
+    "hint": "Island capital of Santa Catarina in Brazil, famous for its 42 beaches",
+    "difficulty": "hard"
+  },
+  {
+    "id": 45,
+    "name": "Potosi",
+    "acceptedAnswers": ["potosi", "potosí"],
+    "lat": -19.5836,
+    "lng": -65.7531,
+    "hint": "Historic Bolivian silver mining city, once the richest in the Americas at 4000m altitude",
+    "difficulty": "hard"
+  },
+  {
+    "id": 46,
+    "name": "Bariloche",
+    "acceptedAnswers": ["bariloche", "san carlos de bariloche"],
+    "lat": -41.1335,
+    "lng": -71.3103,
+    "hint": "Argentine Patagonian city known for skiing, chocolate, and a stunning lake district",
+    "difficulty": "medium"
+  },
+  {
+    "id": 47,
+    "name": "Natal",
+    "acceptedAnswers": ["natal"],
+    "lat": -5.7945,
+    "lng": -35.2110,
+    "hint": "Northeastern Brazilian city on the closest point of the Americas to Africa",
+    "difficulty": "hard"
+  },
+  {
+    "id": 48,
+    "name": "Valencia",
+    "acceptedAnswers": ["valencia"],
+    "lat": 10.1620,
+    "lng": -68.0077,
+    "hint": "Venezuela's third-largest city and industrial center in the Carabobo state",
+    "difficulty": "hard"
+  },
+  {
+    "id": 49,
+    "name": "Maceio",
+    "acceptedAnswers": ["maceio", "maceió"],
+    "lat": -9.6658,
+    "lng": -35.7353,
+    "hint": "Capital of Alagoas in northeastern Brazil with crystal-clear turquoise beaches",
+    "difficulty": "hard"
+  },
+  {
+    "id": 50,
+    "name": "Campinas",
+    "acceptedAnswers": ["campinas"],
+    "lat": -22.9099,
+    "lng": -47.0626,
+    "hint": "Major Brazilian tech and university hub in Sao Paulo state, Silicon Valley of Brazil",
+    "difficulty": "hard"
   }
 ]
