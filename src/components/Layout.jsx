@@ -1,5 +1,5 @@
 import { useState, useRef, useEffect } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 import { Globe, Trophy, Palette, X, Check } from 'lucide-react'
 import { useQuizContext } from '../context/QuizContext'
 import { useTheme, THEMES } from '../context/ThemeContext'
@@ -9,6 +9,10 @@ export default function Layout({ children }) {
   const { theme, setTheme }   = useTheme()
   const [showPicker, setShowPicker] = useState(false)
   const pickerRef = useRef(null)
+  const { pathname } = useLocation()
+
+  /* Scroll to top on route change */
+  useEffect(() => { window.scrollTo(0, 0) }, [pathname])
 
   /* Close picker when clicking outside */
   useEffect(() => {
