@@ -2,8 +2,8 @@
 
 /* ─── Font family tokens ─── */
 @theme {
-  --font-display: 'Nunito', system-ui, sans-serif;
-  --font-body: 'Outfit', system-ui, sans-serif;
+  --font-display: 'Instrument Serif', Georgia, serif;
+  --font-body: 'DM Sans', system-ui, sans-serif;
 }
 
 /* ─── THEMES (CSS custom properties — safe outside layers) ─── */

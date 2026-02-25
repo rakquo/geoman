@@ -88,5 +88,140 @@
     "lng": 38.2500,
     "hint": "Dramatic mountain range in northern Ethiopia, home to the gelada baboon",
     "difficulty": "hard"
+  },
+  {
+    "id": 11,
+    "name": "Mount Elgon",
+    "acceptedAnswers": ["mount elgon", "mt elgon", "elgon"],
+    "lat": 1.1167,
+    "lng": 34.5500,
+    "hint": "Extinct shield volcano on the Kenya-Uganda border with the largest caldera in Africa",
+    "difficulty": "hard"
+  },
+  {
+    "id": 12,
+    "name": "Mount Nyiragongo",
+    "acceptedAnswers": ["nyiragongo", "mount nyiragongo", "mt nyiragongo"],
+    "lat": -1.5200,
+    "lng": 29.2500,
+    "hint": "Active volcano in DRC famous for its persistent lava lake in the crater",
+    "difficulty": "hard"
+  },
+  {
+    "id": 13,
+    "name": "Rwenzori Mountains",
+    "acceptedAnswers": ["rwenzori", "rwenzori mountains", "mountains of the moon"],
+    "lat": 0.3833,
+    "lng": 29.9000,
+    "hint": "Legendary 'Mountains of the Moon' on the Uganda-DRC border, often shrouded in mist",
+    "difficulty": "medium"
+  },
+  {
+    "id": 14,
+    "name": "Table Mountain",
+    "acceptedAnswers": ["table mountain"],
+    "lat": -33.9625,
+    "lng": 18.4039,
+    "hint": "Iconic flat-topped mountain overlooking Cape Town, one of the New7Wonders of Nature",
+    "difficulty": "easy"
+  },
+  {
+    "id": 15,
+    "name": "Mount Karisimbi",
+    "acceptedAnswers": ["karisimbi", "mount karisimbi", "mt karisimbi"],
+    "lat": -1.5072,
+    "lng": 29.4472,
+    "hint": "Highest of the eight Virunga volcanoes, on the Rwanda-DRC border",
+    "difficulty": "hard"
+  },
+  {
+    "id": 16,
+    "name": "Emi Koussi",
+    "acceptedAnswers": ["emi koussi"],
+    "lat": 19.7975,
+    "lng": 18.5544,
+    "hint": "Highest peak in the Sahara, a volcanic summit in Chad's Tibesti Mountains",
+    "difficulty": "hard"
+  },
+  {
+    "id": 17,
+    "name": "Thabana Ntlenyana",
+    "acceptedAnswers": ["thabana ntlenyana"],
+    "lat": -29.4667,
+    "lng": 29.2667,
+    "hint": "Highest peak in southern Africa, located in Lesotho's Maluti Mountains",
+    "difficulty": "hard"
+  },
+  {
+    "id": 18,
+    "name": "Mount Mulanje",
+    "acceptedAnswers": ["mount mulanje", "mt mulanje", "mulanje massif"],
+    "lat": -15.9500,
+    "lng": 35.6500,
+    "hint": "Highest peak in Malawi, a dramatic granite inselberg rising from the plains",
+    "difficulty": "hard"
+  },
+  {
+    "id": 19,
+    "name": "Hoggar Mountains",
+    "acceptedAnswers": ["hoggar mountains", "hoggar", "ahaggar mountains", "ahaggar"],
+    "lat": 23.2833,
+    "lng": 5.5333,
+    "hint": "Highland region in the central Sahara of southern Algeria with volcanic peaks",
+    "difficulty": "hard"
+  },
+  {
+    "id": 20,
+    "name": "Virunga Mountains",
+    "acceptedAnswers": ["virunga mountains", "virunga"],
+    "lat": -1.4833,
+    "lng": 29.4333,
+    "hint": "Chain of volcanoes in East Africa, famous as the home of mountain gorillas",
+    "difficulty": "medium"
+  },
+  {
+    "id": 21,
+    "name": "Tibesti Mountains",
+    "acceptedAnswers": ["tibesti mountains", "tibesti"],
+    "lat": 20.8000,
+    "lng": 17.7000,
+    "hint": "Remote mountain range in northern Chad, highest mountains in the Sahara region",
+    "difficulty": "hard"
+  },
+  {
+    "id": 22,
+    "name": "Mount Ol Doinyo Lengai",
+    "acceptedAnswers": ["ol doinyo lengai", "mount ol doinyo lengai", "lengai"],
+    "lat": -2.7642,
+    "lng": 35.9028,
+    "hint": "Only active volcano producing natrocarbonatite lava, sacred to the Maasai in Tanzania",
+    "difficulty": "hard"
+  },
+  {
+    "id": 23,
+    "name": "Air Mountains",
+    "acceptedAnswers": ["air mountains", "air massif", "air"],
+    "lat": 18.5000,
+    "lng": 8.5000,
+    "hint": "Mountain range rising from the Sahara in northern Niger, a UNESCO World Heritage Site",
+    "difficulty": "hard"
+  },
+  {
+    "id": 24,
+    "name": "Mount Binga",
+    "acceptedAnswers": ["mount binga", "mt binga", "binga"],
+    "lat": -19.8000,
+    "lng": 33.4833,
+    "hint": "Highest mountain in Mozambique, located on the border with Zimbabwe",
+    "difficulty": "hard"
+  },
+  {
+    "id": 25,
+    "name": "Bale Mountains",
+    "acceptedAnswers": ["bale mountains", "bale"],
+    "lat": 6.8833,
+    "lng": 39.9167,
+    "hint": "Mountain range in southeastern Ethiopia, home to the Ethiopian wolf",
+    "difficulty": "hard"
   }
 ]

@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "name": "Sahara Desert",
+    "acceptedAnswers": ["sahara", "sahara desert"],
+    "lat": 23.0000,
+    "lng": 12.0000,
+    "hint": "Largest hot desert on Earth, covering most of North Africa across eleven countries",
+    "difficulty": "easy"
+  },
+  {
+    "id": 2,
+    "name": "Kalahari Desert",
+    "acceptedAnswers": ["kalahari", "kalahari desert"],
+    "lat": -23.5000,
+    "lng": 22.0000,
+    "hint": "Large semi-arid sandy savanna spanning Botswana, Namibia, and South Africa",
+    "difficulty": "easy"
+  },
+  {
+    "id": 3,
+    "name": "Namib Desert",
+    "acceptedAnswers": ["namib", "namib desert"],
+    "lat": -24.0000,
+    "lng": 15.5000,
+    "hint": "Considered the oldest desert in the world, famous for Sossusvlei's red sand dunes",
+    "difficulty": "medium"
+  },
+  {
+    "id": 4,
+    "name": "Karoo",
+    "acceptedAnswers": ["karoo", "great karoo", "karoo desert"],
+    "lat": -32.0000,
+    "lng": 22.0000,
+    "hint": "Semi-desert region in South Africa known for its fossil-rich geology and vast open spaces",
+    "difficulty": "hard"
+  },
+  {
+    "id": 5,
+    "name": "Danakil Desert",
+    "acceptedAnswers": ["danakil", "danakil desert"],
+    "lat": 14.2417,
+    "lng": 40.3000,
+    "hint": "One of the hottest places on Earth, in Ethiopia with lava lakes and salt flats",
+    "difficulty": "hard"
+  },
+  {
+    "id": 6,
+    "name": "Libyan Desert",
+    "acceptedAnswers": ["libyan desert"],
+    "lat": 25.0000,
+    "lng": 25.0000,
+    "hint": "Part of the Sahara spanning Libya, Egypt, and Sudan with vast sand seas",
+    "difficulty": "medium"
+  },
+  {
+    "id": 7,
+    "name": "Chalbi Desert",
+    "acceptedAnswers": ["chalbi", "chalbi desert"],
+    "lat": 2.8000,
+    "lng": 37.5000,
+    "hint": "Small but harsh desert in northern Kenya near Lake Turkana",
+    "difficulty": "hard"
+  },
+  {
+    "id": 8,
+    "name": "Tenere Desert",
+    "acceptedAnswers": ["tenere", "tenere desert", "ténéré"],
+    "lat": 20.0000,
+    "lng": 10.0000,
+    "hint": "Vast sand sea in the south-central Sahara in Niger, once home to a famous lone tree",
+    "difficulty": "hard"
+  },
+  {
+    "id": 9,
+    "name": "Nubian Desert",
+    "acceptedAnswers": ["nubian desert", "nubian"],
+    "lat": 20.5000,
+    "lng": 33.5000,
+    "hint": "Eastern section of the Sahara in northeastern Sudan between the Nile and the Red Sea",
+    "difficulty": "hard"
+  },
+  {
+    "id": 10,
+    "name": "Grand Erg Oriental",
+    "acceptedAnswers": ["grand erg oriental", "eastern great erg"],
+    "lat": 33.5000,
+    "lng": 7.0000,
+    "hint": "Massive sand dune field in the northern Sahara spanning Algeria and Tunisia",
+    "difficulty": "hard"
+  }
+]

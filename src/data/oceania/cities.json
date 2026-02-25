@@ -178,5 +178,185 @@
     "lng": 177.9500,
     "hint": "Fiji's tourism hub on the western coast of Viti Levu, home to the international airport",
     "difficulty": "hard"
+  },
+  {
+    "id": 21,
+    "name": "Apia",
+    "acceptedAnswers": ["apia"],
+    "lat": -13.8333,
+    "lng": -171.7500,
+    "hint": "Capital of Samoa, on the north coast of Upolu island",
+    "difficulty": "hard"
+  },
+  {
+    "id": 22,
+    "name": "Nuku'alofa",
+    "acceptedAnswers": ["nukualofa", "nuku'alofa"],
+    "lat": -21.2114,
+    "lng": -175.1998,
+    "hint": "Capital of Tonga, located on the island of Tongatapu",
+    "difficulty": "hard"
+  },
+  {
+    "id": 23,
+    "name": "Honiara",
+    "acceptedAnswers": ["honiara"],
+    "lat": -9.4456,
+    "lng": 159.9729,
+    "hint": "Capital of the Solomon Islands, on the island of Guadalcanal",
+    "difficulty": "hard"
+  },
+  {
+    "id": 24,
+    "name": "Port Vila",
+    "acceptedAnswers": ["port vila", "vila"],
+    "lat": -17.7334,
+    "lng": 168.3273,
+    "hint": "Capital of Vanuatu, a popular cruise ship destination in the South Pacific",
+    "difficulty": "hard"
+  },
+  {
+    "id": 25,
+    "name": "Noumea",
+    "acceptedAnswers": ["noumea", "nouméa"],
+    "lat": -22.2763,
+    "lng": 166.4572,
+    "hint": "Capital of New Caledonia, a French territory with a stunning lagoon",
+    "difficulty": "hard"
+  },
+  {
+    "id": 26,
+    "name": "Papeete",
+    "acceptedAnswers": ["papeete"],
+    "lat": -17.5516,
+    "lng": -149.5585,
+    "hint": "Capital of French Polynesia, on the island of Tahiti",
+    "difficulty": "hard"
+  },
+  {
+    "id": 27,
+    "name": "Wollongong",
+    "acceptedAnswers": ["wollongong"],
+    "lat": -34.4278,
+    "lng": 150.8931,
+    "hint": "Coastal city south of Sydney, between the Illawarra escarpment and the sea",
+    "difficulty": "medium"
+  },
+  {
+    "id": 28,
+    "name": "Newcastle",
+    "acceptedAnswers": ["newcastle", "newcastle australia"],
+    "lat": -32.9283,
+    "lng": 151.7817,
+    "hint": "Major port city north of Sydney, at the mouth of the Hunter River",
+    "difficulty": "medium"
+  },
+  {
+    "id": 29,
+    "name": "Geelong",
+    "acceptedAnswers": ["geelong"],
+    "lat": -38.1499,
+    "lng": 144.3617,
+    "hint": "Victoria's second-largest city, on Corio Bay southwest of Melbourne",
+    "difficulty": "medium"
+  },
+  {
+    "id": 30,
+    "name": "Tauranga",
+    "acceptedAnswers": ["tauranga"],
+    "lat": -37.6878,
+    "lng": 176.1651,
+    "hint": "Fastest-growing city in New Zealand, on the Bay of Plenty",
+    "difficulty": "hard"
+  },
+  {
+    "id": 31,
+    "name": "Napier",
+    "acceptedAnswers": ["napier"],
+    "lat": -39.4928,
+    "lng": 176.9120,
+    "hint": "New Zealand city famous for its Art Deco architecture, rebuilt after a 1931 earthquake",
+    "difficulty": "hard"
+  },
+  {
+    "id": 32,
+    "name": "Majuro",
+    "acceptedAnswers": ["majuro"],
+    "lat": 7.0897,
+    "lng": 171.3803,
+    "hint": "Capital of the Marshall Islands, a coral atoll in the central Pacific",
+    "difficulty": "hard"
+  },
+  {
+    "id": 33,
+    "name": "Tarawa",
+    "acceptedAnswers": ["tarawa", "south tarawa"],
+    "lat": 1.4518,
+    "lng": 173.0146,
+    "hint": "Capital of Kiribati, a narrow atoll straddling the equator",
+    "difficulty": "hard"
+  },
+  {
+    "id": 34,
+    "name": "Funafuti",
+    "acceptedAnswers": ["funafuti"],
+    "lat": -8.5211,
+    "lng": 179.1983,
+    "hint": "Capital of Tuvalu, one of the smallest and most remote capitals in the world",
+    "difficulty": "hard"
+  },
+  {
+    "id": 35,
+    "name": "Launceston",
+    "acceptedAnswers": ["launceston"],
+    "lat": -41.4332,
+    "lng": 147.1441,
+    "hint": "Second-largest city in Tasmania, at the junction of three rivers",
+    "difficulty": "hard"
+  },
+  {
+    "id": 36,
+    "name": "Toowoomba",
+    "acceptedAnswers": ["toowoomba"],
+    "lat": -27.5598,
+    "lng": 151.9507,
+    "hint": "Queensland's Garden City, perched on the edge of the Great Dividing Range",
+    "difficulty": "hard"
+  },
+  {
+    "id": 37,
+    "name": "Alice Springs",
+    "acceptedAnswers": ["alice springs", "alice"],
+    "lat": -23.6980,
+    "lng": 133.8807,
+    "hint": "Outback town near the center of Australia, gateway to Uluru",
+    "difficulty": "medium"
+  },
+  {
+    "id": 38,
+    "name": "Queenstown",
+    "acceptedAnswers": ["queenstown", "queenstown nz"],
+    "lat": -45.0312,
+    "lng": 168.6626,
+    "hint": "New Zealand's adventure capital on Lake Wakatipu, surrounded by the Remarkables",
+    "difficulty": "easy"
+  },
+  {
+    "id": 39,
+    "name": "Rotorua",
+    "acceptedAnswers": ["rotorua"],
+    "lat": -38.1368,
+    "lng": 176.2497,
+    "hint": "New Zealand city famous for geothermal activity, geysers, and Maori culture",
+    "difficulty": "medium"
+  },
+  {
+    "id": 40,
+    "name": "Hagåtña",
+    "acceptedAnswers": ["hagatna", "hagåtña", "hagatña"],
+    "lat": 13.4757,
+    "lng": 144.7489,
+    "hint": "Capital of Guam, the largest city on the US territory in the western Pacific",
+    "difficulty": "hard"
   }
 ]

@@ -88,5 +88,95 @@
     "lng": -109.5000,
     "hint": "Large lake in Alberta and Saskatchewan, Canada, near the oil sands",
     "difficulty": "hard"
+  },
+  {
+    "id": 11,
+    "name": "Crater Lake",
+    "acceptedAnswers": ["crater lake"],
+    "lat": 42.9446,
+    "lng": -122.1090,
+    "hint": "Deepest lake in the US, formed in a volcanic caldera in Oregon",
+    "difficulty": "medium"
+  },
+  {
+    "id": 12,
+    "name": "Lake Tahoe",
+    "acceptedAnswers": ["tahoe", "lake tahoe"],
+    "lat": 39.0968,
+    "lng": -120.0324,
+    "hint": "Stunning alpine lake on the California-Nevada border, famous for its crystal clarity",
+    "difficulty": "easy"
+  },
+  {
+    "id": 13,
+    "name": "Lake Okeechobee",
+    "acceptedAnswers": ["okeechobee", "lake okeechobee"],
+    "lat": 26.9500,
+    "lng": -80.8000,
+    "hint": "Largest freshwater lake in Florida, feeds water into the Everglades",
+    "difficulty": "hard"
+  },
+  {
+    "id": 14,
+    "name": "Great Salt Lake",
+    "acceptedAnswers": ["great salt lake"],
+    "lat": 41.1000,
+    "lng": -112.5000,
+    "hint": "Largest saltwater lake in the Western Hemisphere, in Utah",
+    "difficulty": "medium"
+  },
+  {
+    "id": 15,
+    "name": "Lake Chapala",
+    "acceptedAnswers": ["chapala", "lake chapala"],
+    "lat": 20.2500,
+    "lng": -103.0000,
+    "hint": "Largest freshwater lake in Mexico, near Guadalajara in Jalisco",
+    "difficulty": "hard"
+  },
+  {
+    "id": 16,
+    "name": "Lake of the Woods",
+    "acceptedAnswers": ["lake of the woods"],
+    "lat": 49.2000,
+    "lng": -94.7500,
+    "hint": "Lake straddling the US-Canada border with over 14,000 islands",
+    "difficulty": "hard"
+  },
+  {
+    "id": 17,
+    "name": "Lake Mead",
+    "acceptedAnswers": ["lake mead", "mead"],
+    "lat": 36.1500,
+    "lng": -114.4000,
+    "hint": "Largest reservoir in the US by capacity, formed by Hoover Dam on the Colorado River",
+    "difficulty": "medium"
+  },
+  {
+    "id": 18,
+    "name": "Lake Powell",
+    "acceptedAnswers": ["lake powell", "powell"],
+    "lat": 37.0700,
+    "lng": -111.2400,
+    "hint": "Scenic reservoir on the Colorado River in Utah and Arizona with red rock canyons",
+    "difficulty": "medium"
+  },
+  {
+    "id": 19,
+    "name": "Lake Managua",
+    "acceptedAnswers": ["lake managua", "managua", "xolotlan"],
+    "lat": 12.3500,
+    "lng": -86.3500,
+    "hint": "Second-largest lake in Nicaragua, right next to the capital city",
+    "difficulty": "hard"
+  },
+  {
+    "id": 20,
+    "name": "Lake Champlain",
+    "acceptedAnswers": ["lake champlain", "champlain"],
+    "lat": 44.5333,
+    "lng": -73.3333,
+    "hint": "Natural freshwater lake between New York and Vermont, site of key Revolutionary War battles",
+    "difficulty": "medium"
   }
 ]

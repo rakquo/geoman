@@ -88,5 +88,95 @@
     "lng": 30.5200,
     "hint": "Fourth-longest European river, flowing through Kyiv, Ukraine",
     "difficulty": "hard"
+  },
+  {
+    "id": 11,
+    "name": "Rhone",
+    "acceptedAnswers": ["rhone", "rhône", "rhone river"],
+    "lat": 43.8000,
+    "lng": 4.6400,
+    "hint": "Major French river flowing from the Swiss Alps through Lyon to the Mediterranean",
+    "difficulty": "medium"
+  },
+  {
+    "id": 12,
+    "name": "Vistula",
+    "acceptedAnswers": ["vistula", "vistula river", "wisła", "wisla"],
+    "lat": 52.2300,
+    "lng": 21.0000,
+    "hint": "Longest river in Poland, flowing through Warsaw and Krakow to the Baltic Sea",
+    "difficulty": "hard"
+  },
+  {
+    "id": 13,
+    "name": "Don",
+    "acceptedAnswers": ["don", "don river"],
+    "lat": 47.2000,
+    "lng": 39.7000,
+    "hint": "Major Russian river flowing into the Sea of Azov, featured in Sholokhov's novels",
+    "difficulty": "hard"
+  },
+  {
+    "id": 14,
+    "name": "Douro",
+    "acceptedAnswers": ["douro", "duero", "douro river"],
+    "lat": 41.1400,
+    "lng": -8.6300,
+    "hint": "River flowing through Porto, famous for port wine vineyards along its terraced valley",
+    "difficulty": "medium"
+  },
+  {
+    "id": 15,
+    "name": "Tiber",
+    "acceptedAnswers": ["tiber", "tiber river", "tevere"],
+    "lat": 41.9000,
+    "lng": 12.4700,
+    "hint": "River flowing through Rome, upon whose banks the ancient city was founded",
+    "difficulty": "medium"
+  },
+  {
+    "id": 16,
+    "name": "Oder",
+    "acceptedAnswers": ["oder", "oder river", "odra"],
+    "lat": 52.7500,
+    "lng": 14.5500,
+    "hint": "River forming much of the border between Germany and Poland",
+    "difficulty": "hard"
+  },
+  {
+    "id": 17,
+    "name": "Guadalquivir",
+    "acceptedAnswers": ["guadalquivir", "guadalquivir river"],
+    "lat": 37.3800,
+    "lng": -6.0000,
+    "hint": "Major river of southern Spain flowing through Cordoba and Seville to the Atlantic",
+    "difficulty": "hard"
+  },
+  {
+    "id": 18,
+    "name": "Shannon",
+    "acceptedAnswers": ["shannon", "shannon river", "river shannon"],
+    "lat": 52.6700,
+    "lng": -8.6300,
+    "hint": "Longest river in Ireland and the British Isles, flowing into the Atlantic Ocean",
+    "difficulty": "medium"
+  },
+  {
+    "id": 19,
+    "name": "Arno",
+    "acceptedAnswers": ["arno", "arno river"],
+    "lat": 43.7700,
+    "lng": 11.2500,
+    "hint": "Tuscan river flowing through Florence, crossed by the famous Ponte Vecchio bridge",
+    "difficulty": "medium"
+  },
+  {
+    "id": 20,
+    "name": "Danube Delta",
+    "acceptedAnswers": ["danube delta", "delta dunarii"],
+    "lat": 45.0000,
+    "lng": 29.5000,
+    "hint": "Europe's best-preserved river delta in Romania, a UNESCO biosphere reserve for wildlife",
+    "difficulty": "hard"
   }
 ]

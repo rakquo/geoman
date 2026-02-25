@@ -88,5 +88,140 @@
     "lng": 52.1090,
     "hint": "Highest volcano in Asia, located in Iran's Alborz range",
     "difficulty": "hard"
+  },
+  {
+    "id": 11,
+    "name": "Cho Oyu",
+    "acceptedAnswers": ["cho oyu", "mount cho oyu"],
+    "lat": 28.0942,
+    "lng": 86.6608,
+    "hint": "Sixth-highest mountain in the world, considered the easiest 8000m peak to climb",
+    "difficulty": "hard"
+  },
+  {
+    "id": 12,
+    "name": "Dhaulagiri",
+    "acceptedAnswers": ["dhaulagiri", "mount dhaulagiri", "dhaulagiri i"],
+    "lat": 28.6967,
+    "lng": 83.4875,
+    "hint": "Seventh-highest mountain in the world, its name means 'White Mountain' in Sanskrit",
+    "difficulty": "hard"
+  },
+  {
+    "id": 13,
+    "name": "Manaslu",
+    "acceptedAnswers": ["manaslu", "mount manaslu"],
+    "lat": 28.5497,
+    "lng": 84.5597,
+    "hint": "Eighth-highest mountain, located in the Nepalese Himalayas' Mansiri Himal range",
+    "difficulty": "hard"
+  },
+  {
+    "id": 14,
+    "name": "Mount Kinabalu",
+    "acceptedAnswers": ["kinabalu", "mount kinabalu", "mt kinabalu"],
+    "lat": 6.0753,
+    "lng": 116.5584,
+    "hint": "Highest peak in Borneo, a UNESCO World Heritage Site in Malaysian Sabah",
+    "difficulty": "medium"
+  },
+  {
+    "id": 15,
+    "name": "Mount Ararat",
+    "acceptedAnswers": ["ararat", "mount ararat", "mt ararat", "agri dagi"],
+    "lat": 39.7019,
+    "lng": 44.2983,
+    "hint": "Snow-capped peak in eastern Turkey, legendary resting place of Noah's Ark",
+    "difficulty": "medium"
+  },
+  {
+    "id": 16,
+    "name": "Mount Pinatubo",
+    "acceptedAnswers": ["pinatubo", "mount pinatubo", "mt pinatubo"],
+    "lat": 15.1429,
+    "lng": 120.3496,
+    "hint": "Philippine volcano whose 1991 eruption was one of the largest in the 20th century",
+    "difficulty": "medium"
+  },
+  {
+    "id": 17,
+    "name": "Mount Krakatoa",
+    "acceptedAnswers": ["krakatoa", "krakatau", "mount krakatoa", "anak krakatau"],
+    "lat": -6.1021,
+    "lng": 105.4230,
+    "hint": "Infamous Indonesian volcano between Java and Sumatra, erupted catastrophically in 1883",
+    "difficulty": "medium"
+  },
+  {
+    "id": 18,
+    "name": "Mount Bromo",
+    "acceptedAnswers": ["bromo", "mount bromo", "mt bromo"],
+    "lat": -7.9425,
+    "lng": 112.9530,
+    "hint": "Active volcano in East Java, Indonesia, surrounded by a vast sea of sand",
+    "difficulty": "medium"
+  },
+  {
+    "id": 19,
+    "name": "Gasherbrum I",
+    "acceptedAnswers": ["gasherbrum i", "gasherbrum 1", "hidden peak", "gasherbrum"],
+    "lat": 35.7244,
+    "lng": 76.6961,
+    "hint": "Eleventh-highest mountain, also called Hidden Peak, in the Karakoram range",
+    "difficulty": "hard"
+  },
+  {
+    "id": 20,
+    "name": "Mount Kazbek",
+    "acceptedAnswers": ["kazbek", "mount kazbek", "mt kazbek", "kazbegi", "mkinvartsveri"],
+    "lat": 42.6861,
+    "lng": 44.5145,
+    "hint": "Dormant stratovolcano in the Caucasus, steeped in Georgian and Greek mythology",
+    "difficulty": "hard"
+  },
+  {
+    "id": 21,
+    "name": "Tirich Mir",
+    "acceptedAnswers": ["tirich mir", "mount tirich mir"],
+    "lat": 36.2522,
+    "lng": 71.8308,
+    "hint": "Highest peak of the Hindu Kush range, located in Pakistan's Chitral district",
+    "difficulty": "hard"
+  },
+  {
+    "id": 22,
+    "name": "Puncak Jaya",
+    "acceptedAnswers": ["puncak jaya", "carstensz pyramid", "mount carstensz"],
+    "lat": -4.0833,
+    "lng": 137.1833,
+    "hint": "Highest peak on the island of New Guinea, in Indonesia's Papua province",
+    "difficulty": "hard"
+  },
+  {
+    "id": 23,
+    "name": "Mount Hallasan",
+    "acceptedAnswers": ["hallasan", "mount hallasan", "mt hallasan", "halla-san"],
+    "lat": 33.3617,
+    "lng": 126.5292,
+    "hint": "Highest peak in South Korea, a shield volcano on Jeju Island",
+    "difficulty": "medium"
+  },
+  {
+    "id": 24,
+    "name": "Mount Aso",
+    "acceptedAnswers": ["aso", "mount aso", "mt aso", "aso-san"],
+    "lat": 32.8842,
+    "lng": 131.1040,
+    "hint": "Active volcano in Kyushu, Japan, with one of the world's largest calderas",
+    "difficulty": "medium"
+  },
+  {
+    "id": 25,
+    "name": "Broad Peak",
+    "acceptedAnswers": ["broad peak", "mount broad peak"],
+    "lat": 35.8117,
+    "lng": 76.5653,
+    "hint": "Twelfth-highest mountain in the world, in the Karakoram range of Pakistan",
+    "difficulty": "hard"
   }
 ]

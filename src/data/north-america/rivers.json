@@ -88,5 +88,95 @@
     "lng": -98.0000,
     "hint": "Major tributary of the Mississippi, flows through Kansas, Oklahoma, and Arkansas",
     "difficulty": "hard"
+  },
+  {
+    "id": 11,
+    "name": "Snake River",
+    "acceptedAnswers": ["snake river", "snake"],
+    "lat": 43.6000,
+    "lng": -115.0000,
+    "hint": "Major tributary of the Columbia, carving Hells Canyon, the deepest gorge in North America",
+    "difficulty": "medium"
+  },
+  {
+    "id": 12,
+    "name": "Tennessee River",
+    "acceptedAnswers": ["tennessee river", "tennessee"],
+    "lat": 35.0000,
+    "lng": -86.5000,
+    "hint": "Major Ohio River tributary, key to the TVA dam system in the southeastern US",
+    "difficulty": "hard"
+  },
+  {
+    "id": 13,
+    "name": "Platte River",
+    "acceptedAnswers": ["platte river", "platte"],
+    "lat": 41.0000,
+    "lng": -100.5000,
+    "hint": "Wide shallow river in Nebraska, historic route of the Oregon Trail migration",
+    "difficulty": "hard"
+  },
+  {
+    "id": 14,
+    "name": "Fraser River",
+    "acceptedAnswers": ["fraser river", "fraser"],
+    "lat": 49.1833,
+    "lng": -122.8500,
+    "hint": "Longest river in British Columbia, famous for its massive Pacific salmon runs",
+    "difficulty": "hard"
+  },
+  {
+    "id": 15,
+    "name": "Red River",
+    "acceptedAnswers": ["red river", "red river of the south"],
+    "lat": 33.7500,
+    "lng": -95.0000,
+    "hint": "River forming the Texas-Oklahoma border, tributary of the Mississippi",
+    "difficulty": "hard"
+  },
+  {
+    "id": 16,
+    "name": "Nelson River",
+    "acceptedAnswers": ["nelson river", "nelson"],
+    "lat": 56.5000,
+    "lng": -94.0000,
+    "hint": "Manitoba river draining Lake Winnipeg to Hudson Bay, major hydroelectric source",
+    "difficulty": "hard"
+  },
+  {
+    "id": 17,
+    "name": "Churchill River",
+    "acceptedAnswers": ["churchill river", "churchill"],
+    "lat": 56.8000,
+    "lng": -96.0000,
+    "hint": "Important river in Manitoba and Saskatchewan flowing to Hudson Bay",
+    "difficulty": "hard"
+  },
+  {
+    "id": 18,
+    "name": "Sacramento River",
+    "acceptedAnswers": ["sacramento river", "sacramento"],
+    "lat": 38.5833,
+    "lng": -121.5000,
+    "hint": "Longest river in California, flowing through the Central Valley to San Francisco Bay",
+    "difficulty": "hard"
+  },
+  {
+    "id": 19,
+    "name": "Usumacinta River",
+    "acceptedAnswers": ["usumacinta", "usumacinta river"],
+    "lat": 16.5000,
+    "lng": -90.5000,
+    "hint": "Largest river in Central America, forming the Guatemala-Mexico border through ancient Mayan lands",
+    "difficulty": "hard"
+  },
+  {
+    "id": 20,
+    "name": "Potomac River",
+    "acceptedAnswers": ["potomac river", "potomac"],
+    "lat": 38.8800,
+    "lng": -77.0400,
+    "hint": "River flowing through Washington DC, George Washington's home Mount Vernon sits on its banks",
+    "difficulty": "medium"
   }
 ]

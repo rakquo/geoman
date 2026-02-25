@@ -178,5 +178,275 @@
     "lng": 45.3182,
     "hint": "Capital of Somalia, an ancient port city on the Indian Ocean coast",
     "difficulty": "hard"
+  },
+  {
+    "id": 21,
+    "name": "Dakar",
+    "acceptedAnswers": ["dakar"],
+    "lat": 14.7167,
+    "lng": -17.4677,
+    "hint": "Capital of Senegal, westernmost major city on the African mainland",
+    "difficulty": "medium"
+  },
+  {
+    "id": 22,
+    "name": "Kigali",
+    "acceptedAnswers": ["kigali"],
+    "lat": -1.9403,
+    "lng": 29.8739,
+    "hint": "Capital of Rwanda, one of Africa's cleanest and most modern cities",
+    "difficulty": "medium"
+  },
+  {
+    "id": 23,
+    "name": "Harare",
+    "acceptedAnswers": ["harare", "salisbury"],
+    "lat": -17.8252,
+    "lng": 31.0335,
+    "hint": "Capital of Zimbabwe, formerly known as Salisbury during colonial era",
+    "difficulty": "medium"
+  },
+  {
+    "id": 24,
+    "name": "Douala",
+    "acceptedAnswers": ["douala"],
+    "lat": 4.0511,
+    "lng": 9.7679,
+    "hint": "Largest city and economic hub of Cameroon, a major port on the Atlantic",
+    "difficulty": "hard"
+  },
+  {
+    "id": 25,
+    "name": "Ouagadougou",
+    "acceptedAnswers": ["ouagadougou", "ouaga"],
+    "lat": 12.3714,
+    "lng": -1.5197,
+    "hint": "Capital of Burkina Faso, hosts Africa's largest film festival FESPACO",
+    "difficulty": "hard"
+  },
+  {
+    "id": 26,
+    "name": "Niamey",
+    "acceptedAnswers": ["niamey"],
+    "lat": 13.5127,
+    "lng": 2.1128,
+    "hint": "Capital of Niger, located on the banks of the Niger River",
+    "difficulty": "hard"
+  },
+  {
+    "id": 27,
+    "name": "Marrakech",
+    "acceptedAnswers": ["marrakech", "marrakesh"],
+    "lat": 31.6295,
+    "lng": -7.9811,
+    "hint": "Famous Moroccan city known for its vibrant souks and Jemaa el-Fnaa square",
+    "difficulty": "easy"
+  },
+  {
+    "id": 28,
+    "name": "Zanzibar City",
+    "acceptedAnswers": ["zanzibar", "zanzibar city", "stone town"],
+    "lat": -6.1659,
+    "lng": 39.2026,
+    "hint": "Historic port city on the spice island off Tanzania's coast",
+    "difficulty": "medium"
+  },
+  {
+    "id": 29,
+    "name": "Mombasa",
+    "acceptedAnswers": ["mombasa"],
+    "lat": -4.0435,
+    "lng": 39.6682,
+    "hint": "Second-largest city in Kenya, a major Indian Ocean port with ancient roots",
+    "difficulty": "medium"
+  },
+  {
+    "id": 30,
+    "name": "Asmara",
+    "acceptedAnswers": ["asmara", "asmera"],
+    "lat": 15.3229,
+    "lng": 38.9251,
+    "hint": "Capital of Eritrea, UNESCO-listed for its Art Deco Italian colonial architecture",
+    "difficulty": "hard"
+  },
+  {
+    "id": 31,
+    "name": "Windhoek",
+    "acceptedAnswers": ["windhoek"],
+    "lat": -22.5609,
+    "lng": 17.0658,
+    "hint": "Capital of Namibia, situated at about 1700 meters elevation in a highland basin",
+    "difficulty": "hard"
+  },
+  {
+    "id": 32,
+    "name": "Gaborone",
+    "acceptedAnswers": ["gaborone"],
+    "lat": -24.6282,
+    "lng": 25.9231,
+    "hint": "Capital of Botswana, one of the fastest-growing cities in southern Africa",
+    "difficulty": "hard"
+  },
+  {
+    "id": 33,
+    "name": "Antananarivo",
+    "acceptedAnswers": ["antananarivo", "tana"],
+    "lat": -18.8792,
+    "lng": 47.5079,
+    "hint": "Capital of Madagascar, a hilltop city known as the City of a Thousand",
+    "difficulty": "hard"
+  },
+  {
+    "id": 34,
+    "name": "Durban",
+    "acceptedAnswers": ["durban", "ethekwini"],
+    "lat": -29.8587,
+    "lng": 31.0218,
+    "hint": "Major port city on South Africa's east coast with large Indian population",
+    "difficulty": "medium"
+  },
+  {
+    "id": 35,
+    "name": "Pretoria",
+    "acceptedAnswers": ["pretoria", "tshwane"],
+    "lat": -25.7479,
+    "lng": 28.2293,
+    "hint": "Administrative capital of South Africa, known as the Jacaranda City",
+    "difficulty": "medium"
+  },
+  {
+    "id": 36,
+    "name": "Rabat",
+    "acceptedAnswers": ["rabat"],
+    "lat": 34.0209,
+    "lng": -6.8416,
+    "hint": "Capital of Morocco, a coastal city on the Atlantic at the Bou Regreg river mouth",
+    "difficulty": "medium"
+  },
+  {
+    "id": 37,
+    "name": "Brazzaville",
+    "acceptedAnswers": ["brazzaville"],
+    "lat": -4.2634,
+    "lng": 15.2429,
+    "hint": "Capital of the Republic of Congo, directly across the river from Kinshasa",
+    "difficulty": "hard"
+  },
+  {
+    "id": 38,
+    "name": "Tripoli",
+    "acceptedAnswers": ["tripoli", "tarabulus"],
+    "lat": 32.9022,
+    "lng": 13.1800,
+    "hint": "Capital of Libya, a Mediterranean port city with ancient Roman ruins nearby",
+    "difficulty": "medium"
+  },
+  {
+    "id": 39,
+    "name": "Abuja",
+    "acceptedAnswers": ["abuja"],
+    "lat": 9.0579,
+    "lng": 7.4951,
+    "hint": "Purpose-built capital of Nigeria since 1991, located in the center of the country",
+    "difficulty": "medium"
+  },
+  {
+    "id": 40,
+    "name": "Freetown",
+    "acceptedAnswers": ["freetown"],
+    "lat": 8.4657,
+    "lng": -13.2317,
+    "hint": "Capital of Sierra Leone, founded as a home for freed slaves in 1792",
+    "difficulty": "hard"
+  },
+  {
+    "id": 41,
+    "name": "Conakry",
+    "acceptedAnswers": ["conakry", "konakri"],
+    "lat": 9.6412,
+    "lng": -13.5784,
+    "hint": "Capital of Guinea, a port city built on Tombo Island and the Kaloum Peninsula",
+    "difficulty": "hard"
+  },
+  {
+    "id": 42,
+    "name": "Lome",
+    "acceptedAnswers": ["lome", "lomé"],
+    "lat": 6.1725,
+    "lng": 1.2314,
+    "hint": "Capital of Togo, a coastal city right on the border with Ghana",
+    "difficulty": "hard"
+  },
+  {
+    "id": 43,
+    "name": "Libreville",
+    "acceptedAnswers": ["libreville"],
+    "lat": 0.4162,
+    "lng": 9.4673,
+    "hint": "Capital of Gabon, a port city on the west coast straddling the equator",
+    "difficulty": "hard"
+  },
+  {
+    "id": 44,
+    "name": "Bujumbura",
+    "acceptedAnswers": ["bujumbura"],
+    "lat": -3.3614,
+    "lng": 29.3599,
+    "hint": "Former capital and largest city of Burundi, on the shore of Lake Tanganyika",
+    "difficulty": "hard"
+  },
+  {
+    "id": 45,
+    "name": "Fez",
+    "acceptedAnswers": ["fez", "fes"],
+    "lat": 34.0331,
+    "lng": -5.0003,
+    "hint": "Ancient Moroccan city home to the world's oldest continuously operating university",
+    "difficulty": "medium"
+  },
+  {
+    "id": 46,
+    "name": "Alexandria",
+    "acceptedAnswers": ["alexandria", "al iskandariya"],
+    "lat": 31.2001,
+    "lng": 29.9187,
+    "hint": "Egypt's second city, founded by Alexander the Great on the Mediterranean coast",
+    "difficulty": "easy"
+  },
+  {
+    "id": 47,
+    "name": "Dodoma",
+    "acceptedAnswers": ["dodoma"],
+    "lat": -6.1630,
+    "lng": 35.7516,
+    "hint": "Official capital of Tanzania since 1974, located in the center of the country",
+    "difficulty": "hard"
+  },
+  {
+    "id": 48,
+    "name": "Yamoussoukro",
+    "acceptedAnswers": ["yamoussoukro"],
+    "lat": 6.8276,
+    "lng": -5.2893,
+    "hint": "Political capital of Ivory Coast, home to the world's largest basilica",
+    "difficulty": "hard"
+  },
+  {
+    "id": 49,
+    "name": "Djibouti",
+    "acceptedAnswers": ["djibouti", "djibouti city"],
+    "lat": 11.5721,
+    "lng": 43.1456,
+    "hint": "Capital city that shares its name with its country, on the Horn of Africa",
+    "difficulty": "hard"
+  },
+  {
+    "id": 50,
+    "name": "Nouakchott",
+    "acceptedAnswers": ["nouakchott"],
+    "lat": 18.0735,
+    "lng": -15.9582,
+    "hint": "Capital of Mauritania, one of the largest cities in the Sahara region",
+    "difficulty": "hard"
   }
 ]

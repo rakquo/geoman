@@ -1,0 +1,902 @@
+[
+  {
+    "id": 1,
+    "question": "What is the capital of Australia?",
+    "answer": "Canberra",
+    "acceptedAnswers": ["canberra"],
+    "options": ["Sydney", "Melbourne", "Canberra", "Brisbane"],
+    "category": "capitals",
+    "difficulty": "medium"
+  },
+  {
+    "id": 2,
+    "question": "Which is the longest river in the world?",
+    "answer": "Nile",
+    "acceptedAnswers": ["nile", "river nile"],
+    "options": ["Amazon", "Nile", "Mississippi", "Yangtze"],
+    "category": "records",
+    "difficulty": "easy"
+  },
+  {
+    "id": 3,
+    "question": "What is the smallest country in the world by area?",
+    "answer": "Vatican City",
+    "acceptedAnswers": ["vatican city", "vatican"],
+    "options": ["Monaco", "San Marino", "Vatican City", "Liechtenstein"],
+    "category": "records",
+    "difficulty": "easy"
+  },
+  {
+    "id": 4,
+    "question": "Which country has the most natural lakes?",
+    "answer": "Canada",
+    "acceptedAnswers": ["canada"],
+    "options": ["Finland", "Canada", "Sweden", "Russia"],
+    "category": "nature",
+    "difficulty": "hard"
+  },
+  {
+    "id": 5,
+    "question": "In which city would you find the Colosseum?",
+    "answer": "Rome",
+    "acceptedAnswers": ["rome"],
+    "options": ["Athens", "Rome", "Istanbul", "Cairo"],
+    "category": "landmarks",
+    "difficulty": "easy"
+  },
+  {
+    "id": 6,
+    "question": "What is the capital of Mongolia?",
+    "answer": "Ulaanbaatar",
+    "acceptedAnswers": ["ulaanbaatar", "ulan bator"],
+    "options": ["Ulaanbaatar", "Astana", "Bishkek", "Tashkent"],
+    "category": "capitals",
+    "difficulty": "hard"
+  },
+  {
+    "id": 7,
+    "question": "Which desert is the largest hot desert in the world?",
+    "answer": "Sahara",
+    "acceptedAnswers": ["sahara", "sahara desert"],
+    "options": ["Gobi", "Sahara", "Arabian", "Kalahari"],
+    "category": "nature",
+    "difficulty": "easy"
+  },
+  {
+    "id": 8,
+    "question": "Which country is known as the Land of the Rising Sun?",
+    "answer": "Japan",
+    "acceptedAnswers": ["japan"],
+    "options": ["China", "South Korea", "Japan", "Thailand"],
+    "category": "culture",
+    "difficulty": "easy"
+  },
+  {
+    "id": 9,
+    "question": "What is the deepest lake in the world?",
+    "answer": "Lake Baikal",
+    "acceptedAnswers": ["lake baikal", "baikal"],
+    "options": ["Lake Baikal", "Lake Tanganyika", "Caspian Sea", "Lake Superior"],
+    "category": "records",
+    "difficulty": "medium"
+  },
+  {
+    "id": 10,
+    "question": "Through how many countries does the Danube River flow?",
+    "answer": "10",
+    "acceptedAnswers": ["10", "ten"],
+    "options": ["6", "8", "10", "12"],
+    "category": "nature",
+    "difficulty": "hard"
+  },
+  {
+    "id": 11,
+    "question": "What is the capital of Brazil?",
+    "answer": "Brasília",
+    "acceptedAnswers": ["brasilia", "brasília"],
+    "options": ["Rio de Janeiro", "São Paulo", "Brasília", "Salvador"],
+    "category": "capitals",
+    "difficulty": "medium"
+  },
+  {
+    "id": 12,
+    "question": "Which mountain is the tallest in Africa?",
+    "answer": "Mount Kilimanjaro",
+    "acceptedAnswers": ["kilimanjaro", "mount kilimanjaro", "mt kilimanjaro"],
+    "options": ["Mount Kenya", "Mount Kilimanjaro", "Mount Elgon", "Ras Dashen"],
+    "category": "nature",
+    "difficulty": "easy"
+  },
+  {
+    "id": 13,
+    "question": "Which strait separates Europe from Asia?",
+    "answer": "Bosphorus",
+    "acceptedAnswers": ["bosphorus", "bosporus", "strait of bosphorus"],
+    "options": ["Strait of Gibraltar", "Bosphorus", "Dardanelles", "Strait of Hormuz"],
+    "category": "nature",
+    "difficulty": "medium"
+  },
+  {
+    "id": 14,
+    "question": "What is the most populous city in the world?",
+    "answer": "Tokyo",
+    "acceptedAnswers": ["tokyo"],
+    "options": ["Shanghai", "Delhi", "Tokyo", "São Paulo"],
+    "category": "records",
+    "difficulty": "medium"
+  },
+  {
+    "id": 15,
+    "question": "Which country has the most time zones?",
+    "answer": "France",
+    "acceptedAnswers": ["france"],
+    "options": ["Russia", "United States", "France", "China"],
+    "category": "records",
+    "difficulty": "hard"
+  },
+  {
+    "id": 16,
+    "question": "What is the capital of New Zealand?",
+    "answer": "Wellington",
+    "acceptedAnswers": ["wellington"],
+    "options": ["Auckland", "Wellington", "Christchurch", "Hamilton"],
+    "category": "capitals",
+    "difficulty": "medium"
+  },
+  {
+    "id": 17,
+    "question": "Which African country was formerly known as Abyssinia?",
+    "answer": "Ethiopia",
+    "acceptedAnswers": ["ethiopia"],
+    "options": ["Ethiopia", "Somalia", "Eritrea", "Sudan"],
+    "category": "culture",
+    "difficulty": "hard"
+  },
+  {
+    "id": 18,
+    "question": "In which country is the ancient city of Petra?",
+    "answer": "Jordan",
+    "acceptedAnswers": ["jordan"],
+    "options": ["Egypt", "Jordan", "Lebanon", "Syria"],
+    "category": "landmarks",
+    "difficulty": "medium"
+  },
+  {
+    "id": 19,
+    "question": "What is the largest island in the world?",
+    "answer": "Greenland",
+    "acceptedAnswers": ["greenland"],
+    "options": ["Greenland", "New Guinea", "Borneo", "Madagascar"],
+    "category": "records",
+    "difficulty": "easy"
+  },
+  {
+    "id": 20,
+    "question": "Which two continents does the Suez Canal connect?",
+    "answer": "Africa and Asia",
+    "acceptedAnswers": ["africa and asia", "asia and africa"],
+    "options": ["Europe and Asia", "Africa and Asia", "Europe and Africa", "Asia and North America"],
+    "category": "landmarks",
+    "difficulty": "medium"
+  },
+  {
+    "id": 21,
+    "question": "What is the capital of South Korea?",
+    "answer": "Seoul",
+    "acceptedAnswers": ["seoul"],
+    "options": ["Seoul", "Busan", "Pyongyang", "Incheon"],
+    "category": "capitals",
+    "difficulty": "easy"
+  },
+  {
+    "id": 22,
+    "question": "Which country is home to Machu Picchu?",
+    "answer": "Peru",
+    "acceptedAnswers": ["peru"],
+    "options": ["Bolivia", "Peru", "Ecuador", "Colombia"],
+    "category": "landmarks",
+    "difficulty": "easy"
+  },
+  {
+    "id": 23,
+    "question": "What is the driest continent on Earth?",
+    "answer": "Antarctica",
+    "acceptedAnswers": ["antarctica"],
+    "options": ["Africa", "Australia", "Antarctica", "Asia"],
+    "category": "records",
+    "difficulty": "hard"
+  },
+  {
+    "id": 24,
+    "question": "Which river runs through Paris?",
+    "answer": "Seine",
+    "acceptedAnswers": ["seine", "river seine"],
+    "options": ["Rhine", "Seine", "Loire", "Thames"],
+    "category": "nature",
+    "difficulty": "easy"
+  },
+  {
+    "id": 25,
+    "question": "What is the capital of Turkey?",
+    "answer": "Ankara",
+    "acceptedAnswers": ["ankara"],
+    "options": ["Istanbul", "Ankara", "Izmir", "Antalya"],
+    "category": "capitals",
+    "difficulty": "medium"
+  },
+  {
+    "id": 26,
+    "question": "How many countries are in Africa?",
+    "answer": "54",
+    "acceptedAnswers": ["54", "fifty-four", "fifty four"],
+    "options": ["48", "52", "54", "56"],
+    "category": "borders",
+    "difficulty": "medium"
+  },
+  {
+    "id": 27,
+    "question": "Which country has the longest coastline in the world?",
+    "answer": "Canada",
+    "acceptedAnswers": ["canada"],
+    "options": ["Indonesia", "Russia", "Canada", "Australia"],
+    "category": "records",
+    "difficulty": "medium"
+  },
+  {
+    "id": 28,
+    "question": "In which country would you find Angkor Wat?",
+    "answer": "Cambodia",
+    "acceptedAnswers": ["cambodia"],
+    "options": ["Thailand", "Vietnam", "Cambodia", "Myanmar"],
+    "category": "landmarks",
+    "difficulty": "medium"
+  },
+  {
+    "id": 29,
+    "question": "What is the highest waterfall in the world?",
+    "answer": "Angel Falls",
+    "acceptedAnswers": ["angel falls"],
+    "options": ["Niagara Falls", "Victoria Falls", "Angel Falls", "Iguazu Falls"],
+    "category": "records",
+    "difficulty": "medium"
+  },
+  {
+    "id": 30,
+    "question": "Which country is the only one to span both Europe and Asia?",
+    "answer": "Turkey",
+    "acceptedAnswers": ["turkey", "türkiye"],
+    "options": ["Russia", "Turkey", "Georgia", "Kazakhstan"],
+    "category": "borders",
+    "difficulty": "medium"
+  },
+  {
+    "id": 31,
+    "question": "What is the capital of Canada?",
+    "answer": "Ottawa",
+    "acceptedAnswers": ["ottawa"],
+    "options": ["Toronto", "Vancouver", "Ottawa", "Montreal"],
+    "category": "capitals",
+    "difficulty": "easy"
+  },
+  {
+    "id": 32,
+    "question": "Which ocean is the largest?",
+    "answer": "Pacific Ocean",
+    "acceptedAnswers": ["pacific", "pacific ocean"],
+    "options": ["Atlantic Ocean", "Indian Ocean", "Pacific Ocean", "Arctic Ocean"],
+    "category": "records",
+    "difficulty": "easy"
+  },
+  {
+    "id": 33,
+    "question": "In which country is Mount Everest located?",
+    "answer": "Nepal",
+    "acceptedAnswers": ["nepal", "nepal and china", "nepal/china"],
+    "options": ["India", "Nepal", "Bhutan", "Tibet"],
+    "category": "nature",
+    "difficulty": "easy"
+  },
+  {
+    "id": 34,
+    "question": "What is the capital of Egypt?",
+    "answer": "Cairo",
+    "acceptedAnswers": ["cairo"],
+    "options": ["Alexandria", "Cairo", "Luxor", "Giza"],
+    "category": "capitals",
+    "difficulty": "easy"
+  },
+  {
+    "id": 35,
+    "question": "Which country has the most volcanoes?",
+    "answer": "Indonesia",
+    "acceptedAnswers": ["indonesia"],
+    "options": ["Japan", "Philippines", "Indonesia", "Iceland"],
+    "category": "records",
+    "difficulty": "medium"
+  },
+  {
+    "id": 36,
+    "question": "What is the largest country in South America by area?",
+    "answer": "Brazil",
+    "acceptedAnswers": ["brazil"],
+    "options": ["Argentina", "Brazil", "Colombia", "Peru"],
+    "category": "records",
+    "difficulty": "easy"
+  },
+  {
+    "id": 37,
+    "question": "Which European capital is built on 14 islands?",
+    "answer": "Stockholm",
+    "acceptedAnswers": ["stockholm"],
+    "options": ["Venice", "Amsterdam", "Stockholm", "Copenhagen"],
+    "category": "landmarks",
+    "difficulty": "hard"
+  },
+  {
+    "id": 38,
+    "question": "What is the only country that borders both the Atlantic and Indian Oceans?",
+    "answer": "South Africa",
+    "acceptedAnswers": ["south africa"],
+    "options": ["Mozambique", "Madagascar", "South Africa", "Tanzania"],
+    "category": "borders",
+    "difficulty": "hard"
+  },
+  {
+    "id": 39,
+    "question": "Which river is the longest in Europe?",
+    "answer": "Volga",
+    "acceptedAnswers": ["volga", "river volga"],
+    "options": ["Danube", "Rhine", "Volga", "Thames"],
+    "category": "nature",
+    "difficulty": "medium"
+  },
+  {
+    "id": 40,
+    "question": "What is the capital of Kenya?",
+    "answer": "Nairobi",
+    "acceptedAnswers": ["nairobi"],
+    "options": ["Mombasa", "Nairobi", "Kampala", "Dar es Salaam"],
+    "category": "capitals",
+    "difficulty": "medium"
+  },
+  {
+    "id": 41,
+    "question": "In which country is the Great Barrier Reef?",
+    "answer": "Australia",
+    "acceptedAnswers": ["australia"],
+    "options": ["Indonesia", "Australia", "Fiji", "New Zealand"],
+    "category": "landmarks",
+    "difficulty": "easy"
+  },
+  {
+    "id": 42,
+    "question": "Which landlocked country is the largest in the world?",
+    "answer": "Kazakhstan",
+    "acceptedAnswers": ["kazakhstan"],
+    "options": ["Mongolia", "Kazakhstan", "Chad", "Bolivia"],
+    "category": "records",
+    "difficulty": "hard"
+  },
+  {
+    "id": 43,
+    "question": "What sea lies between Europe and Africa?",
+    "answer": "Mediterranean Sea",
+    "acceptedAnswers": ["mediterranean", "mediterranean sea"],
+    "options": ["Red Sea", "Mediterranean Sea", "Black Sea", "Adriatic Sea"],
+    "category": "nature",
+    "difficulty": "easy"
+  },
+  {
+    "id": 44,
+    "question": "What is the capital of Thailand?",
+    "answer": "Bangkok",
+    "acceptedAnswers": ["bangkok"],
+    "options": ["Bangkok", "Chiang Mai", "Phuket", "Pattaya"],
+    "category": "capitals",
+    "difficulty": "easy"
+  },
+  {
+    "id": 45,
+    "question": "Which country is home to the Amazon Rainforest's largest portion?",
+    "answer": "Brazil",
+    "acceptedAnswers": ["brazil"],
+    "options": ["Peru", "Colombia", "Brazil", "Venezuela"],
+    "category": "nature",
+    "difficulty": "easy"
+  },
+  {
+    "id": 46,
+    "question": "Which European city is known as the 'Eternal City'?",
+    "answer": "Rome",
+    "acceptedAnswers": ["rome"],
+    "options": ["Athens", "Rome", "Paris", "London"],
+    "category": "culture",
+    "difficulty": "easy"
+  },
+  {
+    "id": 47,
+    "question": "What is the highest peak in North America?",
+    "answer": "Denali",
+    "acceptedAnswers": ["denali", "mount denali", "mount mckinley"],
+    "options": ["Mount Logan", "Denali", "Mount Whitney", "Mount Rainier"],
+    "category": "nature",
+    "difficulty": "medium"
+  },
+  {
+    "id": 48,
+    "question": "Which country has the most UNESCO World Heritage Sites?",
+    "answer": "Italy",
+    "acceptedAnswers": ["italy"],
+    "options": ["China", "Italy", "Spain", "France"],
+    "category": "culture",
+    "difficulty": "hard"
+  },
+  {
+    "id": 49,
+    "question": "What is the capital of Vietnam?",
+    "answer": "Hanoi",
+    "acceptedAnswers": ["hanoi"],
+    "options": ["Ho Chi Minh City", "Hanoi", "Da Nang", "Hue"],
+    "category": "capitals",
+    "difficulty": "medium"
+  },
+  {
+    "id": 50,
+    "question": "Which country is shaped like a boot?",
+    "answer": "Italy",
+    "acceptedAnswers": ["italy"],
+    "options": ["Greece", "Italy", "Portugal", "Croatia"],
+    "category": "culture",
+    "difficulty": "easy"
+  },
+  {
+    "id": 51,
+    "question": "What is the capital of Iceland?",
+    "answer": "Reykjavik",
+    "acceptedAnswers": ["reykjavik", "reykjavík"],
+    "options": ["Reykjavik", "Oslo", "Helsinki", "Akureyri"],
+    "category": "capitals",
+    "difficulty": "medium"
+  },
+  {
+    "id": 52,
+    "question": "Which country's flag features a Union Jack and the Southern Cross constellation?",
+    "answer": "Australia",
+    "acceptedAnswers": ["australia"],
+    "options": ["New Zealand", "Australia", "Fiji", "Tuvalu"],
+    "category": "flags",
+    "difficulty": "easy"
+  },
+  {
+    "id": 53,
+    "question": "Which country's flag is the only national flag that is not rectangular?",
+    "answer": "Nepal",
+    "acceptedAnswers": ["nepal"],
+    "options": ["Bhutan", "Nepal", "Switzerland", "Vatican City"],
+    "category": "flags",
+    "difficulty": "medium"
+  },
+  {
+    "id": 54,
+    "question": "Which country has a red circle on a white background as its flag?",
+    "answer": "Japan",
+    "acceptedAnswers": ["japan"],
+    "options": ["South Korea", "Japan", "Bangladesh", "Laos"],
+    "category": "flags",
+    "difficulty": "easy"
+  },
+  {
+    "id": 55,
+    "question": "Which country's flag features a maple leaf?",
+    "answer": "Canada",
+    "acceptedAnswers": ["canada"],
+    "options": ["Canada", "Lebanon", "Ireland", "Denmark"],
+    "category": "flags",
+    "difficulty": "easy"
+  },
+  {
+    "id": 56,
+    "question": "Which country has the only flag featuring a building (the Angkor Wat temple)?",
+    "answer": "Cambodia",
+    "acceptedAnswers": ["cambodia"],
+    "options": ["Cambodia", "Thailand", "Vietnam", "Myanmar"],
+    "category": "flags",
+    "difficulty": "medium"
+  },
+  {
+    "id": 57,
+    "question": "Which country's flag has a green cedar tree on a white stripe between two red stripes?",
+    "answer": "Lebanon",
+    "acceptedAnswers": ["lebanon"],
+    "options": ["Iran", "Lebanon", "Morocco", "Iraq"],
+    "category": "flags",
+    "difficulty": "medium"
+  },
+  {
+    "id": 58,
+    "question": "Which country's flag features a thunder dragon?",
+    "answer": "Bhutan",
+    "acceptedAnswers": ["bhutan"],
+    "options": ["China", "Bhutan", "Mongolia", "Sri Lanka"],
+    "category": "flags",
+    "difficulty": "medium"
+  },
+  {
+    "id": 59,
+    "question": "Which African country's flag features an AK-47 rifle?",
+    "answer": "Mozambique",
+    "acceptedAnswers": ["mozambique"],
+    "options": ["Angola", "Mozambique", "Zimbabwe", "Ethiopia"],
+    "category": "flags",
+    "difficulty": "hard"
+  },
+  {
+    "id": 60,
+    "question": "Which country's flag features the Sun of May?",
+    "answer": "Argentina",
+    "acceptedAnswers": ["argentina"],
+    "options": ["Argentina", "Uruguay", "Brazil", "Chile"],
+    "category": "flags",
+    "difficulty": "medium"
+  },
+  {
+    "id": 61,
+    "question": "How many countries does Brazil border?",
+    "answer": "10",
+    "acceptedAnswers": ["10", "ten"],
+    "options": ["7", "8", "10", "12"],
+    "category": "borders",
+    "difficulty": "hard"
+  },
+  {
+    "id": 62,
+    "question": "Which two countries share the longest international border?",
+    "answer": "Canada and United States",
+    "acceptedAnswers": ["canada and united states", "canada and usa", "us and canada"],
+    "options": ["Russia and China", "Canada and United States", "Argentina and Chile", "India and China"],
+    "category": "borders",
+    "difficulty": "medium"
+  },
+  {
+    "id": 63,
+    "question": "How many countries are in South America?",
+    "answer": "12",
+    "acceptedAnswers": ["12", "twelve"],
+    "options": ["10", "12", "14", "15"],
+    "category": "borders",
+    "difficulty": "medium"
+  },
+  {
+    "id": 64,
+    "question": "Which European country is bordered by the most other countries (9 neighbors)?",
+    "answer": "Germany",
+    "acceptedAnswers": ["germany"],
+    "options": ["France", "Germany", "Russia", "Austria"],
+    "category": "borders",
+    "difficulty": "hard"
+  },
+  {
+    "id": 65,
+    "question": "Which country borders the most other countries in the world (14 neighbors)?",
+    "answer": "China",
+    "acceptedAnswers": ["china"],
+    "options": ["Russia", "China", "Brazil", "India"],
+    "category": "borders",
+    "difficulty": "hard"
+  },
+  {
+    "id": 66,
+    "question": "In which city is the Eiffel Tower?",
+    "answer": "Paris",
+    "acceptedAnswers": ["paris"],
+    "options": ["London", "Paris", "Berlin", "Madrid"],
+    "category": "landmarks",
+    "difficulty": "easy"
+  },
+  {
+    "id": 67,
+    "question": "Where is the Taj Mahal located?",
+    "answer": "Agra",
+    "acceptedAnswers": ["agra", "agra india"],
+    "options": ["Delhi", "Mumbai", "Agra", "Jaipur"],
+    "category": "landmarks",
+    "difficulty": "medium"
+  },
+  {
+    "id": 68,
+    "question": "In which city is the Sagrada Familia?",
+    "answer": "Barcelona",
+    "acceptedAnswers": ["barcelona"],
+    "options": ["Madrid", "Barcelona", "Seville", "Valencia"],
+    "category": "landmarks",
+    "difficulty": "medium"
+  },
+  {
+    "id": 69,
+    "question": "Where is the Forbidden City?",
+    "answer": "Beijing",
+    "acceptedAnswers": ["beijing", "peking"],
+    "options": ["Shanghai", "Beijing", "Tokyo", "Seoul"],
+    "category": "landmarks",
+    "difficulty": "medium"
+  },
+  {
+    "id": 70,
+    "question": "In which country would you find the traditional dance called the Haka?",
+    "answer": "New Zealand",
+    "acceptedAnswers": ["new zealand"],
+    "options": ["Australia", "New Zealand", "Fiji", "Samoa"],
+    "category": "culture",
+    "difficulty": "easy"
+  },
+  {
+    "id": 71,
+    "question": "Which country is famous for its fjords?",
+    "answer": "Norway",
+    "acceptedAnswers": ["norway"],
+    "options": ["Sweden", "Denmark", "Norway", "Finland"],
+    "category": "culture",
+    "difficulty": "easy"
+  },
+  {
+    "id": 72,
+    "question": "Which country is the largest producer of coffee in the world?",
+    "answer": "Brazil",
+    "acceptedAnswers": ["brazil"],
+    "options": ["Colombia", "Vietnam", "Brazil", "Ethiopia"],
+    "category": "culture",
+    "difficulty": "medium"
+  },
+  {
+    "id": 73,
+    "question": "The ancient Silk Road connected China to which part of the world?",
+    "answer": "Europe",
+    "acceptedAnswers": ["europe", "the mediterranean", "roman empire"],
+    "options": ["Africa", "Europe", "Americas", "Australia"],
+    "category": "culture",
+    "difficulty": "medium"
+  },
+  {
+    "id": 74,
+    "question": "Which country is home to the ancient city of Carthage?",
+    "answer": "Tunisia",
+    "acceptedAnswers": ["tunisia"],
+    "options": ["Libya", "Tunisia", "Algeria", "Morocco"],
+    "category": "culture",
+    "difficulty": "hard"
+  },
+  {
+    "id": 75,
+    "question": "What language is spoken in Brazil?",
+    "answer": "Portuguese",
+    "acceptedAnswers": ["portuguese"],
+    "options": ["Spanish", "Portuguese", "French", "English"],
+    "category": "culture",
+    "difficulty": "easy"
+  },
+  {
+    "id": 76,
+    "question": "What is the longest mountain range in the world?",
+    "answer": "Andes",
+    "acceptedAnswers": ["andes", "the andes"],
+    "options": ["Himalayas", "Rocky Mountains", "Andes", "Alps"],
+    "category": "nature",
+    "difficulty": "medium"
+  },
+  {
+    "id": 77,
+    "question": "On which river are the Victoria Falls?",
+    "answer": "Zambezi",
+    "acceptedAnswers": ["zambezi", "zambezi river"],
+    "options": ["Nile", "Congo", "Zambezi", "Niger"],
+    "category": "nature",
+    "difficulty": "medium"
+  },
+  {
+    "id": 78,
+    "question": "What is the world's largest tropical rainforest?",
+    "answer": "Amazon Rainforest",
+    "acceptedAnswers": ["amazon rainforest", "amazon", "the amazon"],
+    "options": ["Congo Rainforest", "Daintree Rainforest", "Amazon Rainforest", "Borneo Rainforest"],
+    "category": "nature",
+    "difficulty": "easy"
+  },
+  {
+    "id": 79,
+    "question": "What is the name of the large desert in Mongolia and China?",
+    "answer": "Gobi",
+    "acceptedAnswers": ["gobi", "gobi desert"],
+    "options": ["Taklamakan", "Gobi", "Karakum", "Thar"],
+    "category": "nature",
+    "difficulty": "medium"
+  },
+  {
+    "id": 80,
+    "question": "What river flows through Cairo?",
+    "answer": "Nile",
+    "acceptedAnswers": ["nile", "the nile", "nile river"],
+    "options": ["Nile", "Tigris", "Euphrates", "Jordan"],
+    "category": "nature",
+    "difficulty": "easy"
+  },
+  {
+    "id": 81,
+    "question": "What is the capital of Nigeria?",
+    "answer": "Abuja",
+    "acceptedAnswers": ["abuja"],
+    "options": ["Lagos", "Abuja", "Kano", "Port Harcourt"],
+    "category": "capitals",
+    "difficulty": "hard"
+  },
+  {
+    "id": 82,
+    "question": "What is the capital of Myanmar?",
+    "answer": "Naypyidaw",
+    "acceptedAnswers": ["naypyidaw", "nay pyi taw"],
+    "options": ["Yangon", "Mandalay", "Naypyidaw", "Bago"],
+    "category": "capitals",
+    "difficulty": "hard"
+  },
+  {
+    "id": 83,
+    "question": "What is the capital of Peru?",
+    "answer": "Lima",
+    "acceptedAnswers": ["lima"],
+    "options": ["Lima", "Cusco", "Arequipa", "Bogota"],
+    "category": "capitals",
+    "difficulty": "medium"
+  },
+  {
+    "id": 84,
+    "question": "What is the capital of Fiji?",
+    "answer": "Suva",
+    "acceptedAnswers": ["suva"],
+    "options": ["Nadi", "Suva", "Lautoka", "Labasa"],
+    "category": "capitals",
+    "difficulty": "hard"
+  },
+  {
+    "id": 85,
+    "question": "Which island country is located off the southeastern coast of Africa?",
+    "answer": "Madagascar",
+    "acceptedAnswers": ["madagascar"],
+    "options": ["Mauritius", "Madagascar", "Comoros", "Seychelles"],
+    "category": "countries",
+    "difficulty": "medium"
+  },
+  {
+    "id": 86,
+    "question": "Which country is the Galapagos Islands part of?",
+    "answer": "Ecuador",
+    "acceptedAnswers": ["ecuador"],
+    "options": ["Colombia", "Ecuador", "Peru", "Chile"],
+    "category": "countries",
+    "difficulty": "medium"
+  },
+  {
+    "id": 87,
+    "question": "In which country is Transylvania?",
+    "answer": "Romania",
+    "acceptedAnswers": ["romania"],
+    "options": ["Hungary", "Romania", "Bulgaria", "Moldova"],
+    "category": "countries",
+    "difficulty": "medium"
+  },
+  {
+    "id": 88,
+    "question": "Which country has the city of Timbuktu?",
+    "answer": "Mali",
+    "acceptedAnswers": ["mali"],
+    "options": ["Niger", "Mali", "Senegal", "Burkina Faso"],
+    "category": "countries",
+    "difficulty": "hard"
+  },
+  {
+    "id": 89,
+    "question": "What is the largest lake in Africa?",
+    "answer": "Lake Victoria",
+    "acceptedAnswers": ["lake victoria", "victoria"],
+    "options": ["Lake Tanganyika", "Lake Victoria", "Lake Malawi", "Lake Chad"],
+    "category": "records",
+    "difficulty": "medium"
+  },
+  {
+    "id": 90,
+    "question": "What is the largest country in the world by area?",
+    "answer": "Russia",
+    "acceptedAnswers": ["russia"],
+    "options": ["Canada", "China", "United States", "Russia"],
+    "category": "records",
+    "difficulty": "easy"
+  },
+  {
+    "id": 91,
+    "question": "What is the deepest point in the ocean?",
+    "answer": "Mariana Trench",
+    "acceptedAnswers": ["mariana trench", "challenger deep"],
+    "options": ["Mariana Trench", "Tonga Trench", "Java Trench", "Puerto Rico Trench"],
+    "category": "records",
+    "difficulty": "medium"
+  },
+  {
+    "id": 92,
+    "question": "What is the largest island in the Mediterranean Sea?",
+    "answer": "Sicily",
+    "acceptedAnswers": ["sicily"],
+    "options": ["Sardinia", "Sicily", "Crete", "Cyprus"],
+    "category": "records",
+    "difficulty": "medium"
+  },
+  {
+    "id": 93,
+    "question": "Which continent has the most countries?",
+    "answer": "Africa",
+    "acceptedAnswers": ["africa"],
+    "options": ["Asia", "Europe", "Africa", "South America"],
+    "category": "borders",
+    "difficulty": "medium"
+  },
+  {
+    "id": 94,
+    "question": "Which strait separates Europe from Africa?",
+    "answer": "Strait of Gibraltar",
+    "acceptedAnswers": ["strait of gibraltar", "gibraltar"],
+    "options": ["Strait of Gibraltar", "Bosphorus", "Strait of Hormuz", "Strait of Malacca"],
+    "category": "nature",
+    "difficulty": "medium"
+  },
+  {
+    "id": 95,
+    "question": "Which country is known as the 'Land of Fire and Ice'?",
+    "answer": "Iceland",
+    "acceptedAnswers": ["iceland"],
+    "options": ["Iceland", "Norway", "Greenland", "Finland"],
+    "category": "culture",
+    "difficulty": "medium"
+  },
+  {
+    "id": 96,
+    "question": "In which country is the world's oldest known university, the University of al-Qarawiyyin?",
+    "answer": "Morocco",
+    "acceptedAnswers": ["morocco"],
+    "options": ["Egypt", "Morocco", "Iraq", "Italy"],
+    "category": "culture",
+    "difficulty": "hard"
+  },
+  {
+    "id": 97,
+    "question": "What is the name of the sea between Italy and the Balkans?",
+    "answer": "Adriatic Sea",
+    "acceptedAnswers": ["adriatic sea", "adriatic", "the adriatic"],
+    "options": ["Adriatic Sea", "Aegean Sea", "Tyrrhenian Sea", "Ionian Sea"],
+    "category": "nature",
+    "difficulty": "medium"
+  },
+  {
+    "id": 98,
+    "question": "Which Scandinavian country has a blue cross on a white background as its flag?",
+    "answer": "Finland",
+    "acceptedAnswers": ["finland"],
+    "options": ["Sweden", "Finland", "Norway", "Denmark"],
+    "category": "flags",
+    "difficulty": "medium"
+  },
+  {
+    "id": 99,
+    "question": "Which African country's flag features a black star on a gold, green, and red background?",
+    "answer": "Ghana",
+    "acceptedAnswers": ["ghana"],
+    "options": ["Ghana", "Senegal", "Cameroon", "Guinea"],
+    "category": "flags",
+    "difficulty": "hard"
+  },
+  {
+    "id": 100,
+    "question": "Which river flows through London?",
+    "answer": "Thames",
+    "acceptedAnswers": ["thames", "river thames", "the thames"],
+    "options": ["Seine", "Thames", "Danube", "Rhine"],
+    "category": "nature",
+    "difficulty": "easy"
+  }
+]

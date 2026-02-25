@@ -13,8 +13,8 @@ const ThemeContext = createContext()
 
 export function ThemeProvider({ children }) {
   const [theme, setTheme] = useState(() => {
-    try { return localStorage.getItem('geoquiz-theme') || 'summer' }
-    catch { return 'summer' }
+    try { return localStorage.getItem('geoquiz-theme') || 'grape' }
+    catch { return 'grape' }
   })
 
   useEffect(() => {

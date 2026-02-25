@@ -88,5 +88,140 @@
     "lng": -73.0428,
     "hint": "Iconic jagged peak in Patagonia, on the Argentina-Chile border",
     "difficulty": "medium"
+  },
+  {
+    "id": 11,
+    "name": "Cerro Torre",
+    "acceptedAnswers": ["cerro torre", "torre"],
+    "lat": -49.2928,
+    "lng": -73.1081,
+    "hint": "Famously difficult needle-like granite peak in Patagonia, near Fitz Roy",
+    "difficulty": "hard"
+  },
+  {
+    "id": 12,
+    "name": "Nevado Sajama",
+    "acceptedAnswers": ["sajama", "nevado sajama"],
+    "lat": -18.1050,
+    "lng": -68.8800,
+    "hint": "Highest peak in Bolivia, an extinct stratovolcano on the Chilean border",
+    "difficulty": "hard"
+  },
+  {
+    "id": 13,
+    "name": "Nevado del Ruiz",
+    "acceptedAnswers": ["nevado del ruiz", "ruiz"],
+    "lat": 4.8950,
+    "lng": -75.3217,
+    "hint": "Active volcano in Colombia whose 1985 eruption tragically buried the town of Armero",
+    "difficulty": "hard"
+  },
+  {
+    "id": 14,
+    "name": "Osorno Volcano",
+    "acceptedAnswers": ["osorno", "volcan osorno", "volcán osorno"],
+    "lat": -41.1000,
+    "lng": -72.1533,
+    "hint": "Perfectly cone-shaped stratovolcano in Chile's Lake District, nicknamed 'the Fuji of South America'",
+    "difficulty": "medium"
+  },
+  {
+    "id": 15,
+    "name": "Pico da Neblina",
+    "acceptedAnswers": ["pico da neblina", "neblina"],
+    "lat": 0.7833,
+    "lng": -66.0000,
+    "hint": "Highest mountain in Brazil, near the Venezuelan border, often shrouded in mist",
+    "difficulty": "hard"
+  },
+  {
+    "id": 16,
+    "name": "Torres del Paine",
+    "acceptedAnswers": ["torres del paine"],
+    "lat": -50.9423,
+    "lng": -73.4068,
+    "hint": "Stunning granite towers in Chile's most famous national park in Patagonia",
+    "difficulty": "medium"
+  },
+  {
+    "id": 17,
+    "name": "Tupungato",
+    "acceptedAnswers": ["tupungato", "cerro tupungato"],
+    "lat": -33.3536,
+    "lng": -69.7703,
+    "hint": "Stratovolcano on the Argentina-Chile border, one of the highest in the Andes",
+    "difficulty": "hard"
+  },
+  {
+    "id": 18,
+    "name": "Nevado Mismi",
+    "acceptedAnswers": ["nevado mismi", "mismi"],
+    "lat": -15.5167,
+    "lng": -71.8833,
+    "hint": "Peruvian peak identified as the ultimate source of the Amazon River",
+    "difficulty": "hard"
+  },
+  {
+    "id": 19,
+    "name": "Cordillera Blanca",
+    "acceptedAnswers": ["cordillera blanca"],
+    "lat": -9.0000,
+    "lng": -77.5000,
+    "hint": "World's highest tropical mountain range in Peru, with over 50 peaks above 5700m",
+    "difficulty": "medium"
+  },
+  {
+    "id": 20,
+    "name": "Misti Volcano",
+    "acceptedAnswers": ["misti", "el misti", "volcan misti"],
+    "lat": -16.2942,
+    "lng": -71.4097,
+    "hint": "Symmetrical active volcano towering over the Peruvian city of Arequipa",
+    "difficulty": "hard"
+  },
+  {
+    "id": 21,
+    "name": "Yerupaja",
+    "acceptedAnswers": ["yerupaja", "yerupajá"],
+    "lat": -10.2667,
+    "lng": -76.9000,
+    "hint": "Second-highest mountain in Peru, in the remote Cordillera Huayhuash",
+    "difficulty": "hard"
+  },
+  {
+    "id": 22,
+    "name": "Villarrica Volcano",
+    "acceptedAnswers": ["villarrica", "volcan villarrica", "volcán villarrica"],
+    "lat": -39.4208,
+    "lng": -71.9397,
+    "hint": "One of Chile's most active volcanoes, popular for climbing with a lava lake at its summit",
+    "difficulty": "medium"
+  },
+  {
+    "id": 23,
+    "name": "Nevado Huila",
+    "acceptedAnswers": ["nevado del huila", "nevado huila"],
+    "lat": 2.9275,
+    "lng": -76.0306,
+    "hint": "Highest active volcano in Colombia, a stratovolcano in the Central Cordillera",
+    "difficulty": "hard"
+  },
+  {
+    "id": 24,
+    "name": "Auyan-tepui",
+    "acceptedAnswers": ["auyan-tepui", "auyantepui", "auyan tepui"],
+    "lat": 5.9500,
+    "lng": -62.5333,
+    "hint": "Massive tabletop mountain in Venezuela from which Angel Falls plunges 979 meters",
+    "difficulty": "hard"
+  },
+  {
+    "id": 25,
+    "name": "Llullaillaco",
+    "acceptedAnswers": ["llullaillaco", "volcán llullaillaco"],
+    "lat": -24.7197,
+    "lng": -68.5369,
+    "hint": "One of the highest historically active volcanoes, with Inca mummies found near its summit",
+    "difficulty": "hard"
   }
 ]

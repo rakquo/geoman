@@ -1,0 +1,137 @@
+[
+  {
+    "id": 1,
+    "name": "Greenland",
+    "acceptedAnswers": ["greenland", "kalaallit nunaat"],
+    "lat": 71.7069,
+    "lng": -42.6043,
+    "hint": "World's largest island, an autonomous territory of Denmark covered in ice",
+    "difficulty": "easy"
+  },
+  {
+    "id": 2,
+    "name": "Cuba",
+    "acceptedAnswers": ["cuba"],
+    "lat": 21.5218,
+    "lng": -77.7812,
+    "hint": "Largest island in the Caribbean, famous for cigars, salsa music, and classic cars",
+    "difficulty": "easy"
+  },
+  {
+    "id": 3,
+    "name": "Hispaniola",
+    "acceptedAnswers": ["hispaniola"],
+    "lat": 19.0000,
+    "lng": -71.0000,
+    "hint": "Second-largest Caribbean island, shared by Haiti and the Dominican Republic",
+    "difficulty": "medium"
+  },
+  {
+    "id": 4,
+    "name": "Jamaica",
+    "acceptedAnswers": ["jamaica"],
+    "lat": 18.1096,
+    "lng": -77.2975,
+    "hint": "Caribbean island birthplace of reggae music, jerk cuisine, and Blue Mountain coffee",
+    "difficulty": "easy"
+  },
+  {
+    "id": 5,
+    "name": "Puerto Rico",
+    "acceptedAnswers": ["puerto rico"],
+    "lat": 18.2208,
+    "lng": -66.5901,
+    "hint": "US territory in the Caribbean with bioluminescent bays and a rainforest",
+    "difficulty": "easy"
+  },
+  {
+    "id": 6,
+    "name": "Baffin Island",
+    "acceptedAnswers": ["baffin island", "baffin"],
+    "lat": 68.0000,
+    "lng": -70.0000,
+    "hint": "Largest island in Canada and fifth-largest in the world, in the Arctic Archipelago",
+    "difficulty": "medium"
+  },
+  {
+    "id": 7,
+    "name": "Vancouver Island",
+    "acceptedAnswers": ["vancouver island"],
+    "lat": 49.6500,
+    "lng": -125.4500,
+    "hint": "Largest island on the Pacific coast of North America, in British Columbia",
+    "difficulty": "medium"
+  },
+  {
+    "id": 8,
+    "name": "Newfoundland",
+    "acceptedAnswers": ["newfoundland"],
+    "lat": 48.5000,
+    "lng": -56.0000,
+    "hint": "Large island off eastern Canada, where Vikings first landed in North America",
+    "difficulty": "medium"
+  },
+  {
+    "id": 9,
+    "name": "Hawaii (Big Island)",
+    "acceptedAnswers": ["hawaii", "big island", "hawaii island"],
+    "lat": 19.5964,
+    "lng": -155.4928,
+    "hint": "Largest and youngest Hawaiian island, still growing from active volcanic eruptions",
+    "difficulty": "easy"
+  },
+  {
+    "id": 10,
+    "name": "Bermuda",
+    "acceptedAnswers": ["bermuda"],
+    "lat": 32.3078,
+    "lng": -64.7505,
+    "hint": "British territory in the Atlantic famous for pink sand beaches and the Bermuda Triangle",
+    "difficulty": "medium"
+  },
+  {
+    "id": 11,
+    "name": "Trinidad",
+    "acceptedAnswers": ["trinidad"],
+    "lat": 10.4500,
+    "lng": -61.2500,
+    "hint": "Larger island of Trinidad and Tobago, known for Carnival and calypso music",
+    "difficulty": "medium"
+  },
+  {
+    "id": 12,
+    "name": "Ellesmere Island",
+    "acceptedAnswers": ["ellesmere island", "ellesmere"],
+    "lat": 80.0000,
+    "lng": -80.0000,
+    "hint": "Canada's northernmost island and third-largest, with glaciers and Arctic wildlife",
+    "difficulty": "hard"
+  },
+  {
+    "id": 13,
+    "name": "Long Island",
+    "acceptedAnswers": ["long island"],
+    "lat": 40.7891,
+    "lng": -73.1350,
+    "hint": "Island east of Manhattan in New York, home to suburbs, beaches, and wine country",
+    "difficulty": "medium"
+  },
+  {
+    "id": 14,
+    "name": "Cozumel",
+    "acceptedAnswers": ["cozumel"],
+    "lat": 20.4318,
+    "lng": -86.9223,
+    "hint": "Mexican Caribbean island off the Yucatan, world-renowned for its coral reef diving",
+    "difficulty": "medium"
+  },
+  {
+    "id": 15,
+    "name": "Kodiak Island",
+    "acceptedAnswers": ["kodiak island", "kodiak"],
+    "lat": 57.7900,
+    "lng": -152.4072,
+    "hint": "Large Alaskan island famous for its enormous brown bears, the Kodiak bears",
+    "difficulty": "hard"
+  }
+]

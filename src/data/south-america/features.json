@@ -88,5 +88,95 @@
     "lng": -68.0000,
     "hint": "High plateau in the Andes, second-highest after the Tibetan Plateau",
     "difficulty": "hard"
+  },
+  {
+    "id": 11,
+    "name": "Strait of Magellan",
+    "acceptedAnswers": ["strait of magellan", "magellan strait", "estrecho de magallanes"],
+    "lat": -53.4800,
+    "lng": -70.7800,
+    "hint": "Historic waterway separating mainland South America from Tierra del Fuego",
+    "difficulty": "medium"
+  },
+  {
+    "id": 12,
+    "name": "Iguazu Falls",
+    "acceptedAnswers": ["iguazu falls", "iguacu falls", "iguazú", "cataratas del iguazú"],
+    "lat": -25.6953,
+    "lng": -54.4367,
+    "hint": "Spectacular system of 275 waterfalls on the Brazil-Argentina border wider than Niagara",
+    "difficulty": "easy"
+  },
+  {
+    "id": 13,
+    "name": "Cape Horn",
+    "acceptedAnswers": ["cape horn", "cabo de hornos"],
+    "lat": -55.9857,
+    "lng": -67.2742,
+    "hint": "Southernmost headland of South America, notorious for treacherous seas and storms",
+    "difficulty": "medium"
+  },
+  {
+    "id": 14,
+    "name": "Drake Passage",
+    "acceptedAnswers": ["drake passage"],
+    "lat": -59.0000,
+    "lng": -65.0000,
+    "hint": "Body of water between South America and Antarctica, roughest sea crossing in the world",
+    "difficulty": "medium"
+  },
+  {
+    "id": 15,
+    "name": "Perito Moreno Glacier",
+    "acceptedAnswers": ["perito moreno", "perito moreno glacier"],
+    "lat": -50.4966,
+    "lng": -73.1378,
+    "hint": "Famous advancing glacier in Argentina's Los Glaciares National Park that calves spectacularly",
+    "difficulty": "medium"
+  },
+  {
+    "id": 16,
+    "name": "Guiana Highlands",
+    "acceptedAnswers": ["guiana highlands", "guiana shield", "guyana highlands"],
+    "lat": 5.0000,
+    "lng": -61.0000,
+    "hint": "Ancient geological formation in northern South America with dramatic tabletop mountains called tepuis",
+    "difficulty": "hard"
+  },
+  {
+    "id": 17,
+    "name": "Colca Canyon",
+    "acceptedAnswers": ["colca canyon", "canon del colca"],
+    "lat": -15.6083,
+    "lng": -71.8833,
+    "hint": "One of the deepest canyons in the world in Peru, famous for Andean condor sightings",
+    "difficulty": "hard"
+  },
+  {
+    "id": 18,
+    "name": "Orinoco Delta",
+    "acceptedAnswers": ["orinoco delta", "delta del orinoco"],
+    "lat": 9.0000,
+    "lng": -61.0000,
+    "hint": "Vast river delta in eastern Venezuela where the Orinoco empties into the Atlantic",
+    "difficulty": "hard"
+  },
+  {
+    "id": 19,
+    "name": "Gulf of Guayaquil",
+    "acceptedAnswers": ["gulf of guayaquil", "golfo de guayaquil"],
+    "lat": -3.0000,
+    "lng": -80.5000,
+    "hint": "Large inlet of the Pacific on Ecuador's coast, the largest gulf in South America",
+    "difficulty": "hard"
+  },
+  {
+    "id": 20,
+    "name": "Beagle Channel",
+    "acceptedAnswers": ["beagle channel", "canal beagle"],
+    "lat": -54.8833,
+    "lng": -68.5333,
+    "hint": "Strait in Tierra del Fuego separating Chile and Argentina, named after Darwin's ship",
+    "difficulty": "hard"
   }
 ]

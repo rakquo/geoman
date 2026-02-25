@@ -88,5 +88,95 @@
     "lng": 20.7200,
     "hint": "One of the oldest lakes in the world, on the North Macedonia-Albania border",
     "difficulty": "hard"
+  },
+  {
+    "id": 11,
+    "name": "Lake Onega",
+    "acceptedAnswers": ["onega", "lake onega", "onezhskoye"],
+    "lat": 61.5000,
+    "lng": 35.5000,
+    "hint": "Second-largest lake in Europe, in northwestern Russia near Karelia",
+    "difficulty": "hard"
+  },
+  {
+    "id": 12,
+    "name": "Lake Lucerne",
+    "acceptedAnswers": ["lake lucerne", "lucerne", "vierwaldstättersee"],
+    "lat": 47.0000,
+    "lng": 8.4300,
+    "hint": "Scenic Swiss lake surrounded by mountains, linked to the founding of Switzerland",
+    "difficulty": "medium"
+  },
+  {
+    "id": 13,
+    "name": "Lake Bled",
+    "acceptedAnswers": ["bled", "lake bled"],
+    "lat": 46.3633,
+    "lng": 14.0889,
+    "hint": "Fairy-tale Slovenian lake with a tiny island church and a clifftop medieval castle",
+    "difficulty": "medium"
+  },
+  {
+    "id": 14,
+    "name": "Lake Zurich",
+    "acceptedAnswers": ["lake zurich", "zürichsee", "zurichsee"],
+    "lat": 47.2500,
+    "lng": 8.7000,
+    "hint": "Banana-shaped Swiss lake in the heart of Zurich, popular for swimming and boating",
+    "difficulty": "medium"
+  },
+  {
+    "id": 15,
+    "name": "Loch Lomond",
+    "acceptedAnswers": ["loch lomond", "lomond"],
+    "lat": 56.0833,
+    "lng": -4.6333,
+    "hint": "Largest freshwater lake in Great Britain by surface area, in the Scottish Highlands",
+    "difficulty": "medium"
+  },
+  {
+    "id": 16,
+    "name": "Lake Neuchatel",
+    "acceptedAnswers": ["neuchatel", "lac de neuchâtel", "lake neuchatel", "lac de neuchatel"],
+    "lat": 46.8900,
+    "lng": 6.8600,
+    "hint": "Largest lake entirely within Switzerland, at the foot of the Jura Mountains",
+    "difficulty": "hard"
+  },
+  {
+    "id": 17,
+    "name": "Lake Mjosa",
+    "acceptedAnswers": ["mjosa", "mjøsa", "lake mjosa", "lake mjøsa"],
+    "lat": 60.7500,
+    "lng": 10.9500,
+    "hint": "Largest lake in Norway, stretching north from the Lillehammer region",
+    "difficulty": "hard"
+  },
+  {
+    "id": 18,
+    "name": "Lake Maggiore",
+    "acceptedAnswers": ["maggiore", "lake maggiore", "lago maggiore"],
+    "lat": 45.9500,
+    "lng": 8.6500,
+    "hint": "Second-largest Italian lake, straddling the Swiss-Italian border with beautiful islands",
+    "difficulty": "medium"
+  },
+  {
+    "id": 19,
+    "name": "Plitvice Lakes",
+    "acceptedAnswers": ["plitvice", "plitvice lakes", "plitvička jezera"],
+    "lat": 44.8654,
+    "lng": 15.5820,
+    "hint": "Stunning cascading turquoise lakes in Croatia, a UNESCO World Heritage Site",
+    "difficulty": "medium"
+  },
+  {
+    "id": 20,
+    "name": "Lake Peipus",
+    "acceptedAnswers": ["peipus", "lake peipus", "peipsi", "chudskoe"],
+    "lat": 58.5000,
+    "lng": 27.5000,
+    "hint": "Fifth-largest lake in Europe, on the Estonia-Russia border, site of a famous 1242 battle",
+    "difficulty": "hard"
   }
 ]

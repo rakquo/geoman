@@ -1,6 +1,6 @@
 import { useState, useRef, useEffect } from 'react'
 import { Link, useLocation } from 'react-router-dom'
-import { Globe, Trophy, Palette, X, Check } from 'lucide-react'
+import { Trophy, Palette, X, Check } from 'lucide-react'
 import { useQuizContext } from '../context/QuizContext'
 import { useTheme, THEMES } from '../context/ThemeContext'
 
@@ -47,20 +47,16 @@ export default function Layout({ children }) {
             className="flex items-center gap-2.5 no-underline"
             style={{ color: 'var(--text)' }}
           >
-            <div
-              className="w-8 h-8 rounded-lg flex items-center justify-center"
-              style={{
-                background: 'var(--accent)',
-                boxShadow: '0 2px 8px var(--shadow)',
-              }}
-            >
-              <Globe className="w-4 h-4 text-white" />
-            </div>
+            <img
+              src="/logo.webp"
+              alt="GeoMansi"
+              className="w-8 h-8 rounded-lg object-cover"
+            />
             <span
-              className="text-lg font-bold"
+              className="text-xl"
               style={{ fontFamily: 'var(--font-display)', color: 'var(--text)' }}
             >
-              GeoQuiz
+              GeoMansi
             </span>
           </Link>
 

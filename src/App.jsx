@@ -4,6 +4,7 @@ import { QuizProvider } from './context/QuizContext'
 import Layout from './components/Layout'
 import HomePage from './pages/HomePage'
 import QuizPage from './pages/QuizPage'
+import LuckyPage from './pages/LuckyPage'
 
 export default function App() {
   return (
@@ -13,6 +14,7 @@ export default function App() {
           <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="/continent/:continentId" element={<QuizPage />} />
+            <Route path="/lucky" element={<LuckyPage />} />
           </Routes>
         </Layout>
       </QuizProvider>

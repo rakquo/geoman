@@ -88,5 +88,140 @@
     "lng": -122.1956,
     "hint": "Volcano in Washington state that erupted catastrophically in 1980",
     "difficulty": "easy"
+  },
+  {
+    "id": 11,
+    "name": "Pico de Orizaba",
+    "acceptedAnswers": ["pico de orizaba", "orizaba", "citlaltepetl"],
+    "lat": 19.0303,
+    "lng": -97.2683,
+    "hint": "Highest mountain in Mexico and third-highest in North America, a dormant volcano",
+    "difficulty": "hard"
+  },
+  {
+    "id": 12,
+    "name": "Popocatepetl",
+    "acceptedAnswers": ["popocatepetl", "popocatépetl", "popo"],
+    "lat": 19.0225,
+    "lng": -98.6278,
+    "hint": "Active volcano near Mexico City, its name means 'Smoking Mountain' in Nahuatl",
+    "difficulty": "medium"
+  },
+  {
+    "id": 13,
+    "name": "Mount Hood",
+    "acceptedAnswers": ["mount hood", "mt hood", "hood"],
+    "lat": 45.3735,
+    "lng": -121.6959,
+    "hint": "Oregon's highest peak, a potentially active stratovolcano in the Cascade Range",
+    "difficulty": "medium"
+  },
+  {
+    "id": 14,
+    "name": "Mount Washington",
+    "acceptedAnswers": ["mount washington", "mt washington"],
+    "lat": 44.2706,
+    "lng": -71.3033,
+    "hint": "Highest peak in the northeastern US, once held the world record for wind speed",
+    "difficulty": "medium"
+  },
+  {
+    "id": 15,
+    "name": "Mauna Loa",
+    "acceptedAnswers": ["mauna loa"],
+    "lat": 19.4756,
+    "lng": -155.6054,
+    "hint": "World's largest active volcano by mass, on the Big Island of Hawaii",
+    "difficulty": "medium"
+  },
+  {
+    "id": 16,
+    "name": "Mount Shasta",
+    "acceptedAnswers": ["mount shasta", "mt shasta", "shasta"],
+    "lat": 41.4092,
+    "lng": -122.1949,
+    "hint": "Prominent stratovolcano in northern California, a spiritual mountain for many cultures",
+    "difficulty": "hard"
+  },
+  {
+    "id": 17,
+    "name": "Iztaccihuatl",
+    "acceptedAnswers": ["iztaccihuatl", "iztaccíhuatl"],
+    "lat": 19.1786,
+    "lng": -98.6419,
+    "hint": "Third-highest peak in Mexico, called the White Woman next to Popocatepetl",
+    "difficulty": "hard"
+  },
+  {
+    "id": 18,
+    "name": "Mount Robson",
+    "acceptedAnswers": ["mount robson", "mt robson", "robson"],
+    "lat": 53.1147,
+    "lng": -119.1558,
+    "hint": "Highest peak in the Canadian Rockies, in British Columbia on the Alberta border",
+    "difficulty": "hard"
+  },
+  {
+    "id": 19,
+    "name": "Sierra Madre Occidental",
+    "acceptedAnswers": ["sierra madre occidental", "sierra madre"],
+    "lat": 25.0000,
+    "lng": -106.5000,
+    "hint": "Major mountain range along western Mexico, home to the Copper Canyon",
+    "difficulty": "medium"
+  },
+  {
+    "id": 20,
+    "name": "Longs Peak",
+    "acceptedAnswers": ["longs peak", "long's peak"],
+    "lat": 40.2550,
+    "lng": -105.6151,
+    "hint": "Iconic fourteener in Rocky Mountain National Park, Colorado with a flat summit",
+    "difficulty": "hard"
+  },
+  {
+    "id": 21,
+    "name": "Mount Katahdin",
+    "acceptedAnswers": ["mount katahdin", "mt katahdin", "katahdin"],
+    "lat": 45.9044,
+    "lng": -68.9213,
+    "hint": "Highest peak in Maine, northern terminus of the Appalachian Trail",
+    "difficulty": "hard"
+  },
+  {
+    "id": 22,
+    "name": "Volcan Tajumulco",
+    "acceptedAnswers": ["tajumulco", "volcan tajumulco", "volcán tajumulco"],
+    "lat": 15.0403,
+    "lng": -91.9028,
+    "hint": "Highest peak in Central America, a stratovolcano in western Guatemala",
+    "difficulty": "hard"
+  },
+  {
+    "id": 23,
+    "name": "Mount Foraker",
+    "acceptedAnswers": ["mount foraker", "mt foraker", "foraker"],
+    "lat": 62.9611,
+    "lng": -151.3989,
+    "hint": "Third-highest peak in the US, neighbor to Denali in the Alaska Range",
+    "difficulty": "hard"
+  },
+  {
+    "id": 24,
+    "name": "Mount Kilauea",
+    "acceptedAnswers": ["kilauea", "mount kilauea", "kilauea volcano"],
+    "lat": 19.4069,
+    "lng": -155.2834,
+    "hint": "One of the most active volcanoes on Earth, on Hawaii's Big Island",
+    "difficulty": "easy"
+  },
+  {
+    "id": 25,
+    "name": "Cascade Range",
+    "acceptedAnswers": ["cascade range", "cascades", "the cascades"],
+    "lat": 46.0000,
+    "lng": -121.5000,
+    "hint": "Major volcanic mountain range stretching from British Columbia to California",
+    "difficulty": "medium"
   }
 ]

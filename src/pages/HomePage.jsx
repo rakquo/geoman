@@ -1,11 +1,12 @@
 import { useNavigate } from 'react-router-dom'
 import { motion } from 'framer-motion'
-import { ChevronRight, MapPin, Mountain, Waves, Trophy } from 'lucide-react'
+import {
+  ChevronRight, MapPin, Mountain, Waves, Trophy, Shuffle,
+} from 'lucide-react'
 import { continents } from '../data/continents'
 import { useQuizContext } from '../context/QuizContext'
 import Globe from '../components/Globe'
 
-/* Each continent gets a gradient pair from the theme palette + an emoji */
 const CONTINENTS = [
   { id: 'asia',          emoji: '🏔️', desc: 'Himalayas · Gobi · Mekong',          p: ['--p1','--p2'] },
   { id: 'europe',        emoji: '🏛️', desc: 'Alps · Rhine · Mediterranean',        p: ['--p3','--p2'] },
@@ -66,26 +67,23 @@ export default function HomePage() {
               Interactive Geography Quiz
             </div>
 
-            {/* Headline */}
+            {/* Headline — big, bold, serif */}
             <h1
-              className="text-5xl sm:text-6xl lg:text-[68px] leading-[1.1] mb-5 tracking-tight"
+              className="text-5xl sm:text-6xl lg:text-[72px] leading-[1.05] mb-6"
               style={{ fontFamily: 'var(--font-display)', color: 'var(--text)' }}
             >
-              How well do<br />
-              you know the{' '}
-              <span
-                className="relative inline-block"
-                style={{ color: 'var(--accent)' }}
-              >
+              How well do you<br />
+              know the{' '}
+              <span className="italic" style={{ color: 'var(--accent)' }}>
                 world?
               </span>
             </h1>
 
             <p
-              className="text-lg sm:text-xl max-w-md mx-auto lg:mx-0 leading-relaxed mb-8"
+              className="text-lg sm:text-xl max-w-lg mx-auto lg:mx-0 leading-relaxed mb-8"
               style={{ color: 'var(--text-secondary)' }}
             >
-              Pick a continent, click markers on the map, and name cities, mountains, rivers & more.
+              Pick a continent, click markers on the map, and name cities, mountains, rivers, deserts & more.
             </p>
 
             {/* Feature pills */}
@@ -107,7 +105,7 @@ export default function HomePage() {
               ))}
             </div>
 
-            {/* Score summary if played */}
+            {/* Score summary */}
             {hasAnyScore && (
               <div
                 className="inline-flex items-center gap-3 px-5 py-3 rounded-xl"
@@ -124,14 +122,13 @@ export default function HomePage() {
             )}
           </motion.div>
 
-          {/* Globe side */}
+          {/* Globe */}
           <motion.div
             className="shrink-0 relative z-10"
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.7, delay: 0.1, type: 'spring', stiffness: 80 }}
           >
-            {/* Glow ring behind globe */}
             <div
               className="absolute inset-0 m-auto w-72 h-72 sm:w-80 sm:h-80 rounded-full blur-3xl opacity-30"
               style={{ background: 'radial-gradient(circle, var(--accent), transparent)' }}
@@ -141,9 +138,10 @@ export default function HomePage() {
         </div>
       </div>
 
-      {/* ═══ CONTINENTS ═══ */}
+      {/* ═══ CONTENT ═══ */}
       <div className="w-full max-w-[1200px] mx-auto px-5 sm:px-10 pb-16">
-        {/* Section header */}
+
+        {/* Divider */}
         <motion.div
           className="flex items-center gap-4 mb-8"
           initial={{ opacity: 0 }}
@@ -155,12 +153,55 @@ export default function HomePage() {
             className="text-[11px] font-bold tracking-[0.18em] uppercase"
             style={{ color: 'var(--text-muted)' }}
           >
-            Choose a continent
+            Choose your adventure
           </span>
           <div className="h-px flex-1" style={{ background: 'var(--border)' }} />
         </motion.div>
 
-        {/* Grid */}
+        {/* ═══ Lucky card — full width ═══ */}
+        <motion.button
+          initial={{ opacity: 0, y: 16 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.28, duration: 0.4 }}
+          onClick={() => navigate('/lucky')}
+          className="group w-full text-left cursor-pointer rounded-2xl overflow-hidden shadow-card hover:shadow-hover transition-all duration-300 mb-6"
+          style={{ border: '1.5px solid transparent' }}
+          whileHover={{ y: -3 }}
+        >
+          <div
+            className="relative px-6 sm:px-8 py-6 sm:py-8 flex items-center gap-5 sm:gap-6 overflow-hidden"
+            style={{ background: 'linear-gradient(135deg, var(--accent), var(--accent-hover))' }}
+          >
+            {/* Decorative circles */}
+            <div className="absolute -top-8 -right-8 w-48 h-48 rounded-full opacity-15" style={{ background: 'white' }} />
+            <div className="absolute bottom-0 right-24 w-20 h-20 rounded-full opacity-10" style={{ background: 'white' }} />
+
+            {/* Icon */}
+            <div
+              className="w-14 h-14 rounded-2xl flex items-center justify-center shrink-0"
+              style={{ background: 'rgba(255,255,255,0.2)' }}
+            >
+              <Shuffle className="w-7 h-7 text-white" />
+            </div>
+
+            {/* Text */}
+            <div className="relative z-10 flex-1 min-w-0">
+              <h2
+                className="text-2xl sm:text-3xl text-white mb-1"
+                style={{ fontFamily: 'var(--font-display)' }}
+              >
+                I'm Feeling <span className="italic">Lucky</span>
+              </h2>
+              <p className="text-white/80 text-sm sm:text-base">
+                Random geography trivia from around the world — test your general knowledge!
+              </p>
+            </div>
+
+            <ChevronRight className="w-6 h-6 text-white/70 transition-transform group-hover:translate-x-1 shrink-0" />
+          </div>
+        </motion.button>
+
+        {/* ═══ Continent grid ═══ */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5">
           {CONTINENTS.map((item, i) => {
             const continent = continents[item.id]
@@ -171,42 +212,30 @@ export default function HomePage() {
                 key={item.id}
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.3 + i * 0.07, duration: 0.4 }}
+                transition={{ delay: 0.32 + i * 0.06, duration: 0.4 }}
                 onClick={() => navigate(`/continent/${item.id}`)}
                 className="group text-left cursor-pointer overflow-hidden rounded-2xl transition-all duration-300 shadow-card hover:shadow-hover"
                 style={{
                   background: 'var(--surface)',
                   border: '1.5px solid var(--border)',
-                  transform: 'translateY(0)',
                 }}
                 whileHover={{ y: -4 }}
               >
-                {/* Colorful gradient header */}
+                {/* Gradient header */}
                 <div
                   className="relative h-24 flex items-end px-6 pb-4 overflow-hidden"
                   style={{
                     background: `linear-gradient(135deg, var(${item.p[0]}), var(${item.p[1]}))`,
                   }}
                 >
-                  {/* Big emoji */}
                   <span
                     className="text-5xl leading-none select-none"
                     style={{ filter: 'drop-shadow(0 2px 4px rgba(0,0,0,0.1))' }}
                   >
                     {item.emoji}
                   </span>
-
-                  {/* Decorative circles */}
-                  <div
-                    className="absolute -top-4 -right-4 w-24 h-24 rounded-full opacity-25"
-                    style={{ background: 'white' }}
-                  />
-                  <div
-                    className="absolute top-4 right-10 w-12 h-12 rounded-full opacity-15"
-                    style={{ background: 'white' }}
-                  />
-
-                  {/* Scored badge */}
+                  <div className="absolute -top-4 -right-4 w-24 h-24 rounded-full opacity-25" style={{ background: 'white' }} />
+                  <div className="absolute top-4 right-10 w-12 h-12 rounded-full opacity-15" style={{ background: 'white' }} />
                   {hasScore && (
                     <div
                       className="absolute top-3 right-3 flex items-center gap-1 px-2 py-0.5 rounded-full text-[10px] font-bold"
@@ -221,7 +250,7 @@ export default function HomePage() {
                 {/* Content */}
                 <div className="p-5 pt-4">
                   <h2
-                    className="text-xl mb-1"
+                    className="text-2xl mb-1"
                     style={{ fontFamily: 'var(--font-display)', color: 'var(--text)' }}
                   >
                     {continent.name}

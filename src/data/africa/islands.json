@@ -1,0 +1,110 @@
+[
+  {
+    "id": 1,
+    "name": "Madagascar",
+    "acceptedAnswers": ["madagascar"],
+    "lat": -18.7669,
+    "lng": 46.8691,
+    "hint": "Fourth-largest island in the world, home to unique wildlife found nowhere else",
+    "difficulty": "easy"
+  },
+  {
+    "id": 2,
+    "name": "Zanzibar",
+    "acceptedAnswers": ["zanzibar", "unguja"],
+    "lat": -6.1659,
+    "lng": 39.1880,
+    "hint": "Spice island off Tanzania's coast, famous for cloves and Stone Town's heritage",
+    "difficulty": "easy"
+  },
+  {
+    "id": 3,
+    "name": "Mauritius",
+    "acceptedAnswers": ["mauritius"],
+    "lat": -20.3484,
+    "lng": 57.5522,
+    "hint": "Island nation in the Indian Ocean east of Madagascar, former home of the dodo",
+    "difficulty": "easy"
+  },
+  {
+    "id": 4,
+    "name": "Reunion",
+    "acceptedAnswers": ["reunion", "réunion", "la reunion"],
+    "lat": -21.1151,
+    "lng": 55.5364,
+    "hint": "French overseas department in the Indian Ocean with one of the world's most active volcanoes",
+    "difficulty": "medium"
+  },
+  {
+    "id": 5,
+    "name": "Seychelles",
+    "acceptedAnswers": ["seychelles"],
+    "lat": -4.6796,
+    "lng": 55.4920,
+    "hint": "Archipelago of 115 islands in the Indian Ocean, smallest African country by population",
+    "difficulty": "medium"
+  },
+  {
+    "id": 6,
+    "name": "Comoros",
+    "acceptedAnswers": ["comoros", "comoro islands"],
+    "lat": -12.2361,
+    "lng": 44.3531,
+    "hint": "Volcanic archipelago between Madagascar and Mozambique, known for ylang-ylang perfume",
+    "difficulty": "hard"
+  },
+  {
+    "id": 7,
+    "name": "Sao Tome",
+    "acceptedAnswers": ["sao tome", "são tomé", "sao tome island"],
+    "lat": 0.1864,
+    "lng": 6.6131,
+    "hint": "Largest island of Sao Tome and Principe in the Gulf of Guinea, right on the equator",
+    "difficulty": "hard"
+  },
+  {
+    "id": 8,
+    "name": "Cape Verde",
+    "acceptedAnswers": ["cape verde", "cabo verde"],
+    "lat": 16.5388,
+    "lng": -23.0418,
+    "hint": "Volcanic archipelago off West Africa, a crossroads of African and Portuguese culture",
+    "difficulty": "medium"
+  },
+  {
+    "id": 9,
+    "name": "Bioko Island",
+    "acceptedAnswers": ["bioko", "bioko island", "fernando po"],
+    "lat": 3.4500,
+    "lng": 8.7000,
+    "hint": "Volcanic island in the Gulf of Guinea, home to Equatorial Guinea's capital Malabo",
+    "difficulty": "hard"
+  },
+  {
+    "id": 10,
+    "name": "Lamu Island",
+    "acceptedAnswers": ["lamu", "lamu island"],
+    "lat": -2.2686,
+    "lng": 40.9019,
+    "hint": "Kenyan island with one of the oldest Swahili settlements, a UNESCO World Heritage Site",
+    "difficulty": "hard"
+  },
+  {
+    "id": 11,
+    "name": "Pemba Island",
+    "acceptedAnswers": ["pemba", "pemba island"],
+    "lat": -5.2000,
+    "lng": 39.7500,
+    "hint": "The Green Island of Tanzania known for clove production and world-class diving",
+    "difficulty": "hard"
+  },
+  {
+    "id": 12,
+    "name": "Canary Islands",
+    "acceptedAnswers": ["canary islands", "canarias"],
+    "lat": 28.1235,
+    "lng": -15.4363,
+    "hint": "Spanish archipelago off northwest Africa, popular tourist destination with volcanic landscapes",
+    "difficulty": "easy"
+  }
+]

@@ -1,0 +1,119 @@
+[
+  {
+    "id": 1,
+    "name": "Galapagos Islands",
+    "acceptedAnswers": ["galapagos", "galapagos islands", "galápagos", "islas galapagos"],
+    "lat": -0.9538,
+    "lng": -90.9656,
+    "hint": "Volcanic archipelago off Ecuador where Darwin's observations led to his theory of evolution",
+    "difficulty": "easy"
+  },
+  {
+    "id": 2,
+    "name": "Isla Grande de Tierra del Fuego",
+    "acceptedAnswers": ["tierra del fuego", "isla grande", "isla grande de tierra del fuego"],
+    "lat": -54.3000,
+    "lng": -69.0000,
+    "hint": "Largest island in South America at the continent's southern tip, shared by Argentina and Chile",
+    "difficulty": "medium"
+  },
+  {
+    "id": 3,
+    "name": "Marajo Island",
+    "acceptedAnswers": ["marajo", "marajó", "marajo island", "ilha de marajo"],
+    "lat": -1.0000,
+    "lng": -49.5000,
+    "hint": "Massive river island in the Amazon delta in Brazil, larger than Switzerland",
+    "difficulty": "hard"
+  },
+  {
+    "id": 4,
+    "name": "Easter Island",
+    "acceptedAnswers": ["easter island", "rapa nui", "isla de pascua"],
+    "lat": -27.1127,
+    "lng": -109.3497,
+    "hint": "Remote Chilean island in the Pacific famous for its mysterious moai stone statues",
+    "difficulty": "easy"
+  },
+  {
+    "id": 5,
+    "name": "Chiloé Island",
+    "acceptedAnswers": ["chiloe", "chiloé", "isla de chiloe"],
+    "lat": -42.6000,
+    "lng": -73.9667,
+    "hint": "Second-largest Chilean island known for unique wooden churches and rich mythology",
+    "difficulty": "hard"
+  },
+  {
+    "id": 6,
+    "name": "Fernando de Noronha",
+    "acceptedAnswers": ["fernando de noronha", "noronha"],
+    "lat": -3.8547,
+    "lng": -32.4247,
+    "hint": "Brazilian archipelago in the Atlantic known as a paradise for diving and dolphins",
+    "difficulty": "medium"
+  },
+  {
+    "id": 7,
+    "name": "Falkland Islands",
+    "acceptedAnswers": ["falkland islands", "falklands", "islas malvinas", "malvinas"],
+    "lat": -51.7963,
+    "lng": -59.5236,
+    "hint": "British overseas territory in the South Atlantic, subject of a 1982 war with Argentina",
+    "difficulty": "medium"
+  },
+  {
+    "id": 8,
+    "name": "Juan Fernandez Islands",
+    "acceptedAnswers": ["juan fernandez", "juan fernandez islands", "juan fernández"],
+    "lat": -33.6333,
+    "lng": -78.8500,
+    "hint": "Chilean archipelago that inspired Robinson Crusoe, over 600 km off the coast",
+    "difficulty": "hard"
+  },
+  {
+    "id": 9,
+    "name": "Isla Margarita",
+    "acceptedAnswers": ["isla margarita", "margarita island", "margarita"],
+    "lat": 11.0000,
+    "lng": -63.8667,
+    "hint": "Venezuela's largest island in the Caribbean, a popular beach and duty-free shopping destination",
+    "difficulty": "medium"
+  },
+  {
+    "id": 10,
+    "name": "Curacao",
+    "acceptedAnswers": ["curacao", "curaçao"],
+    "lat": 12.1696,
+    "lng": -68.9900,
+    "hint": "Dutch Caribbean island off Venezuela known for colorful Willemstad and blue liqueur",
+    "difficulty": "medium"
+  },
+  {
+    "id": 11,
+    "name": "Aruba",
+    "acceptedAnswers": ["aruba"],
+    "lat": 12.5211,
+    "lng": -69.9683,
+    "hint": "Small Dutch Caribbean island off Venezuela, known as One Happy Island for its tourism",
+    "difficulty": "easy"
+  },
+  {
+    "id": 12,
+    "name": "Santa Catarina Island",
+    "acceptedAnswers": ["santa catarina island", "ilha de santa catarina"],
+    "lat": -27.6000,
+    "lng": -48.5500,
+    "hint": "Brazilian island home to Florianopolis, famous for dozens of beautiful beaches",
+    "difficulty": "hard"
+  },
+  {
+    "id": 13,
+    "name": "South Georgia",
+    "acceptedAnswers": ["south georgia", "south georgia island"],
+    "lat": -54.2500,
+    "lng": -36.7500,
+    "hint": "Remote sub-Antarctic island where Ernest Shackleton's rescue expedition ended",
+    "difficulty": "hard"
+  }
+]

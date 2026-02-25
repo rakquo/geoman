@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "name": "Gobi Desert",
+    "acceptedAnswers": ["gobi", "gobi desert"],
+    "lat": 42.5900,
+    "lng": 103.4300,
+    "hint": "Vast rain-shadow desert spanning southern Mongolia and northern China",
+    "difficulty": "easy"
+  },
+  {
+    "id": 2,
+    "name": "Thar Desert",
+    "acceptedAnswers": ["thar", "thar desert", "great indian desert"],
+    "lat": 27.0000,
+    "lng": 71.0000,
+    "hint": "Most densely populated desert in the world, on the India-Pakistan border",
+    "difficulty": "medium"
+  },
+  {
+    "id": 3,
+    "name": "Karakum Desert",
+    "acceptedAnswers": ["karakum", "karakum desert", "garagum"],
+    "lat": 39.0000,
+    "lng": 59.0000,
+    "hint": "Black sand desert covering most of Turkmenistan, home to the 'Door to Hell' gas crater",
+    "difficulty": "hard"
+  },
+  {
+    "id": 4,
+    "name": "Kyzylkum Desert",
+    "acceptedAnswers": ["kyzylkum", "kyzylkum desert", "qyzylqum"],
+    "lat": 42.0000,
+    "lng": 64.0000,
+    "hint": "Red sand desert between the Amu Darya and Syr Darya rivers in Central Asia",
+    "difficulty": "hard"
+  },
+  {
+    "id": 5,
+    "name": "Taklamakan Desert",
+    "acceptedAnswers": ["taklamakan", "taklamakan desert", "taklimakan"],
+    "lat": 38.9500,
+    "lng": 82.2000,
+    "hint": "Shifting sand desert in Xinjiang, China, surrounded by the ancient Silk Road routes",
+    "difficulty": "medium"
+  },
+  {
+    "id": 6,
+    "name": "Arabian Desert",
+    "acceptedAnswers": ["arabian desert", "arabian"],
+    "lat": 23.0000,
+    "lng": 46.0000,
+    "hint": "Vast desert covering most of the Arabian Peninsula, one of the largest sand deserts",
+    "difficulty": "easy"
+  },
+  {
+    "id": 7,
+    "name": "Rub' al Khali",
+    "acceptedAnswers": ["rub al khali", "rub' al khali", "empty quarter"],
+    "lat": 20.0000,
+    "lng": 50.0000,
+    "hint": "Known as the Empty Quarter, the largest continuous sand desert on Earth",
+    "difficulty": "medium"
+  },
+  {
+    "id": 8,
+    "name": "Dasht-e Kavir",
+    "acceptedAnswers": ["dasht-e kavir", "dasht e kavir", "kavir desert", "great salt desert"],
+    "lat": 34.5000,
+    "lng": 54.0000,
+    "hint": "Iran's Great Salt Desert, a vast plateau of salt marshes and mudflats",
+    "difficulty": "hard"
+  },
+  {
+    "id": 9,
+    "name": "Dasht-e Lut",
+    "acceptedAnswers": ["dasht-e lut", "dasht e lut", "lut desert"],
+    "lat": 30.5000,
+    "lng": 59.0000,
+    "hint": "Iranian desert holding the record for Earth's hottest surface temperature ever recorded",
+    "difficulty": "hard"
+  },
+  {
+    "id": 10,
+    "name": "Negev Desert",
+    "acceptedAnswers": ["negev", "negev desert"],
+    "lat": 30.8500,
+    "lng": 34.7800,
+    "hint": "Desert occupying more than half of Israel's land area in the south",
+    "difficulty": "medium"
+  }
+]

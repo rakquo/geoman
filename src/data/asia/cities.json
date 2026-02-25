@@ -178,5 +178,275 @@
     "lng": 106.6297,
     "hint": "Vietnam's largest city, formerly known as Saigon, a bustling southern hub",
     "difficulty": "hard"
+  },
+  {
+    "id": 21,
+    "name": "Doha",
+    "acceptedAnswers": ["doha", "ad-dawhah"],
+    "lat": 25.2854,
+    "lng": 51.5310,
+    "hint": "Capital of Qatar, a wealthy Persian Gulf city that hosted the 2022 FIFA World Cup",
+    "difficulty": "medium"
+  },
+  {
+    "id": 22,
+    "name": "Muscat",
+    "acceptedAnswers": ["muscat", "masqat"],
+    "lat": 23.5880,
+    "lng": 58.3829,
+    "hint": "Capital of Oman, a port city flanked by desert and rugged mountains",
+    "difficulty": "hard"
+  },
+  {
+    "id": 23,
+    "name": "Colombo",
+    "acceptedAnswers": ["colombo"],
+    "lat": 6.9271,
+    "lng": 79.8612,
+    "hint": "Commercial capital of Sri Lanka, a major Indian Ocean port city",
+    "difficulty": "medium"
+  },
+  {
+    "id": 24,
+    "name": "Kathmandu",
+    "acceptedAnswers": ["kathmandu", "katmandu"],
+    "lat": 27.7172,
+    "lng": 85.3240,
+    "hint": "Capital of Nepal, gateway to Himalayan trekking and Mount Everest expeditions",
+    "difficulty": "medium"
+  },
+  {
+    "id": 25,
+    "name": "Ulaanbaatar",
+    "acceptedAnswers": ["ulaanbaatar", "ulan bator", "ulan-bator"],
+    "lat": 47.8864,
+    "lng": 106.9057,
+    "hint": "Capital of Mongolia, the coldest national capital in the world",
+    "difficulty": "hard"
+  },
+  {
+    "id": 26,
+    "name": "Almaty",
+    "acceptedAnswers": ["almaty", "alma-ata", "alma ata"],
+    "lat": 43.2220,
+    "lng": 76.8512,
+    "hint": "Largest city in Kazakhstan, set against the backdrop of the Tien Shan mountains",
+    "difficulty": "hard"
+  },
+  {
+    "id": 27,
+    "name": "Tashkent",
+    "acceptedAnswers": ["tashkent", "toshkent"],
+    "lat": 41.2995,
+    "lng": 69.2401,
+    "hint": "Capital of Uzbekistan, the most populous city in Central Asia",
+    "difficulty": "hard"
+  },
+  {
+    "id": 28,
+    "name": "Bishkek",
+    "acceptedAnswers": ["bishkek", "frunze"],
+    "lat": 42.8746,
+    "lng": 74.5698,
+    "hint": "Capital of Kyrgyzstan, formerly known as Frunze during the Soviet era",
+    "difficulty": "hard"
+  },
+  {
+    "id": 29,
+    "name": "Baku",
+    "acceptedAnswers": ["baku", "bakı"],
+    "lat": 40.4093,
+    "lng": 49.8671,
+    "hint": "Capital of Azerbaijan, an oil-rich city on the Caspian Sea coast",
+    "difficulty": "hard"
+  },
+  {
+    "id": 30,
+    "name": "Tbilisi",
+    "acceptedAnswers": ["tbilisi", "tiflis"],
+    "lat": 41.7151,
+    "lng": 44.8271,
+    "hint": "Capital of Georgia, an ancient city on the banks of the Kura River",
+    "difficulty": "hard"
+  },
+  {
+    "id": 31,
+    "name": "Yerevan",
+    "acceptedAnswers": ["yerevan", "erevan"],
+    "lat": 40.1792,
+    "lng": 44.4991,
+    "hint": "Capital of Armenia, one of the oldest continuously inhabited cities in the world",
+    "difficulty": "hard"
+  },
+  {
+    "id": 32,
+    "name": "Phnom Penh",
+    "acceptedAnswers": ["phnom penh"],
+    "lat": 11.5564,
+    "lng": 104.9282,
+    "hint": "Capital of Cambodia, located at the confluence of the Mekong and Tonle Sap rivers",
+    "difficulty": "medium"
+  },
+  {
+    "id": 33,
+    "name": "Vientiane",
+    "acceptedAnswers": ["vientiane", "viangchan"],
+    "lat": 17.9757,
+    "lng": 102.6331,
+    "hint": "Capital of Laos, a laid-back city on the banks of the Mekong River",
+    "difficulty": "hard"
+  },
+  {
+    "id": 34,
+    "name": "Yangon",
+    "acceptedAnswers": ["yangon", "rangoon"],
+    "lat": 16.8661,
+    "lng": 96.1951,
+    "hint": "Largest city in Myanmar, home to the golden Shwedagon Pagoda",
+    "difficulty": "medium"
+  },
+  {
+    "id": 35,
+    "name": "Lahore",
+    "acceptedAnswers": ["lahore"],
+    "lat": 31.5497,
+    "lng": 74.3436,
+    "hint": "Cultural heart of Pakistan, known for Mughal architecture and vibrant food scene",
+    "difficulty": "medium"
+  },
+  {
+    "id": 36,
+    "name": "Chennai",
+    "acceptedAnswers": ["chennai", "madras"],
+    "lat": 13.0827,
+    "lng": 80.2707,
+    "hint": "Major city in southern India, formerly known as Madras, a cultural hub",
+    "difficulty": "medium"
+  },
+  {
+    "id": 37,
+    "name": "Kolkata",
+    "acceptedAnswers": ["kolkata", "calcutta"],
+    "lat": 22.5726,
+    "lng": 88.3639,
+    "hint": "Cultural capital of India, formerly Calcutta, on the Hooghly River",
+    "difficulty": "medium"
+  },
+  {
+    "id": 38,
+    "name": "Hyderabad",
+    "acceptedAnswers": ["hyderabad"],
+    "lat": 17.3850,
+    "lng": 78.4867,
+    "hint": "Indian tech hub known as Cyberabad, famous for its biryani and Charminar",
+    "difficulty": "medium"
+  },
+  {
+    "id": 39,
+    "name": "Bangalore",
+    "acceptedAnswers": ["bangalore", "bengaluru"],
+    "lat": 12.9716,
+    "lng": 77.5946,
+    "hint": "India's Silicon Valley, a major IT hub officially called Bengaluru",
+    "difficulty": "medium"
+  },
+  {
+    "id": 40,
+    "name": "Jaipur",
+    "acceptedAnswers": ["jaipur"],
+    "lat": 26.9124,
+    "lng": 75.7873,
+    "hint": "The Pink City of India, known for its stunning Hawa Mahal palace",
+    "difficulty": "medium"
+  },
+  {
+    "id": 41,
+    "name": "Kyoto",
+    "acceptedAnswers": ["kyoto", "kyōto"],
+    "lat": 35.0116,
+    "lng": 135.7681,
+    "hint": "Former imperial capital of Japan, famous for thousands of ancient temples",
+    "difficulty": "easy"
+  },
+  {
+    "id": 42,
+    "name": "Busan",
+    "acceptedAnswers": ["busan", "pusan"],
+    "lat": 35.1796,
+    "lng": 129.0756,
+    "hint": "South Korea's second largest city, a major port known for beaches and seafood",
+    "difficulty": "medium"
+  },
+  {
+    "id": 43,
+    "name": "Taipei",
+    "acceptedAnswers": ["taipei", "taibei"],
+    "lat": 25.0330,
+    "lng": 121.5654,
+    "hint": "Capital of Taiwan, home to the towering Taipei 101 skyscraper",
+    "difficulty": "easy"
+  },
+  {
+    "id": 44,
+    "name": "Hong Kong",
+    "acceptedAnswers": ["hong kong", "hongkong"],
+    "lat": 22.3193,
+    "lng": 114.1694,
+    "hint": "Major financial hub on China's southern coast with a spectacular skyline",
+    "difficulty": "easy"
+  },
+  {
+    "id": 45,
+    "name": "Dubai",
+    "acceptedAnswers": ["dubai", "dubayy"],
+    "lat": 25.2048,
+    "lng": 55.2708,
+    "hint": "Glittering UAE city known for the Burj Khalifa, the world's tallest building",
+    "difficulty": "easy"
+  },
+  {
+    "id": 46,
+    "name": "Abu Dhabi",
+    "acceptedAnswers": ["abu dhabi"],
+    "lat": 24.4539,
+    "lng": 54.3773,
+    "hint": "Capital of the UAE, home to the stunning Sheikh Zayed Grand Mosque",
+    "difficulty": "medium"
+  },
+  {
+    "id": 47,
+    "name": "Jerusalem",
+    "acceptedAnswers": ["jerusalem", "al-quds", "yerushalayim"],
+    "lat": 31.7683,
+    "lng": 35.2137,
+    "hint": "Holy city sacred to Judaism, Christianity, and Islam",
+    "difficulty": "easy"
+  },
+  {
+    "id": 48,
+    "name": "Ankara",
+    "acceptedAnswers": ["ankara", "angora"],
+    "lat": 39.9334,
+    "lng": 32.8597,
+    "hint": "Capital of Turkey, located in the heart of the Anatolian plateau",
+    "difficulty": "medium"
+  },
+  {
+    "id": 49,
+    "name": "Guangzhou",
+    "acceptedAnswers": ["guangzhou", "canton"],
+    "lat": 23.1291,
+    "lng": 113.2644,
+    "hint": "Major southern Chinese port city, historically known as Canton",
+    "difficulty": "medium"
+  },
+  {
+    "id": 50,
+    "name": "Shenzhen",
+    "acceptedAnswers": ["shenzhen"],
+    "lat": 22.5431,
+    "lng": 114.0579,
+    "hint": "China's tech capital bordering Hong Kong, transformed from fishing village to megacity",
+    "difficulty": "medium"
   }
 ]

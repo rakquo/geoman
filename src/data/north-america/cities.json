@@ -178,5 +178,275 @@
     "lng": -69.9312,
     "hint": "Capital of the Dominican Republic, oldest continuously inhabited European settlement in the Americas",
     "difficulty": "hard"
+  },
+  {
+    "id": 21,
+    "name": "Calgary",
+    "acceptedAnswers": ["calgary"],
+    "lat": 51.0447,
+    "lng": -114.0719,
+    "hint": "Alberta city famous for the Stampede rodeo, gateway to the Canadian Rockies",
+    "difficulty": "medium"
+  },
+  {
+    "id": 22,
+    "name": "Ottawa",
+    "acceptedAnswers": ["ottawa"],
+    "lat": 45.4215,
+    "lng": -75.6972,
+    "hint": "Capital of Canada, located on the Ontario-Quebec border along the Ottawa River",
+    "difficulty": "medium"
+  },
+  {
+    "id": 23,
+    "name": "Kingston",
+    "acceptedAnswers": ["kingston"],
+    "lat": 18.0179,
+    "lng": -76.8099,
+    "hint": "Capital of Jamaica, birthplace of reggae music and Bob Marley's legacy",
+    "difficulty": "medium"
+  },
+  {
+    "id": 24,
+    "name": "San Jose",
+    "acceptedAnswers": ["san jose", "san josé"],
+    "lat": 9.9281,
+    "lng": -84.0907,
+    "hint": "Capital of Costa Rica, situated in the fertile Central Valley highlands",
+    "difficulty": "medium"
+  },
+  {
+    "id": 25,
+    "name": "Guatemala City",
+    "acceptedAnswers": ["guatemala city", "ciudad de guatemala"],
+    "lat": 14.6349,
+    "lng": -90.5069,
+    "hint": "Capital of Guatemala, largest city in Central America",
+    "difficulty": "medium"
+  },
+  {
+    "id": 26,
+    "name": "Cancun",
+    "acceptedAnswers": ["cancun", "cancún"],
+    "lat": 21.1619,
+    "lng": -86.8515,
+    "hint": "Mexican resort city on the Caribbean coast of the Yucatan Peninsula",
+    "difficulty": "easy"
+  },
+  {
+    "id": 27,
+    "name": "Portland",
+    "acceptedAnswers": ["portland"],
+    "lat": 45.5152,
+    "lng": -122.6784,
+    "hint": "Oregon's largest city known for its eco-friendly culture, food trucks, and craft beer",
+    "difficulty": "medium"
+  },
+  {
+    "id": 28,
+    "name": "Nashville",
+    "acceptedAnswers": ["nashville"],
+    "lat": 36.1627,
+    "lng": -86.7816,
+    "hint": "Capital of Tennessee, famous as Music City and the home of country music",
+    "difficulty": "medium"
+  },
+  {
+    "id": 29,
+    "name": "Austin",
+    "acceptedAnswers": ["austin"],
+    "lat": 30.2672,
+    "lng": -97.7431,
+    "hint": "Capital of Texas, known for its live music scene and the slogan Keep It Weird",
+    "difficulty": "medium"
+  },
+  {
+    "id": 30,
+    "name": "Denver",
+    "acceptedAnswers": ["denver"],
+    "lat": 39.7392,
+    "lng": -104.9903,
+    "hint": "The Mile High City, capital of Colorado at exactly one mile above sea level",
+    "difficulty": "medium"
+  },
+  {
+    "id": 31,
+    "name": "Minneapolis",
+    "acceptedAnswers": ["minneapolis"],
+    "lat": 44.9778,
+    "lng": -93.2650,
+    "hint": "City of Lakes in Minnesota, forms the Twin Cities with neighboring Saint Paul",
+    "difficulty": "medium"
+  },
+  {
+    "id": 32,
+    "name": "Detroit",
+    "acceptedAnswers": ["detroit"],
+    "lat": 42.3314,
+    "lng": -83.0458,
+    "hint": "Motor City in Michigan, birthplace of the American automobile industry and Motown music",
+    "difficulty": "medium"
+  },
+  {
+    "id": 33,
+    "name": "Philadelphia",
+    "acceptedAnswers": ["philadelphia", "philly"],
+    "lat": 39.9526,
+    "lng": -75.1652,
+    "hint": "City of Brotherly Love where the Declaration of Independence was signed",
+    "difficulty": "easy"
+  },
+  {
+    "id": 34,
+    "name": "Las Vegas",
+    "acceptedAnswers": ["las vegas", "vegas"],
+    "lat": 36.1699,
+    "lng": -115.1398,
+    "hint": "Entertainment capital of the world in the Nevada desert, famous for its Strip",
+    "difficulty": "easy"
+  },
+  {
+    "id": 35,
+    "name": "New Orleans",
+    "acceptedAnswers": ["new orleans", "nola"],
+    "lat": 29.9511,
+    "lng": -90.0715,
+    "hint": "Louisiana city famous for jazz, Mardi Gras, and Cajun and Creole cuisine",
+    "difficulty": "easy"
+  },
+  {
+    "id": 36,
+    "name": "Tegucigalpa",
+    "acceptedAnswers": ["tegucigalpa"],
+    "lat": 14.0723,
+    "lng": -87.1921,
+    "hint": "Capital of Honduras, a mountain city at over 900 meters elevation",
+    "difficulty": "hard"
+  },
+  {
+    "id": 37,
+    "name": "Managua",
+    "acceptedAnswers": ["managua"],
+    "lat": 12.1149,
+    "lng": -86.2362,
+    "hint": "Capital of Nicaragua, located on the southern shore of Lake Managua",
+    "difficulty": "hard"
+  },
+  {
+    "id": 38,
+    "name": "San Salvador",
+    "acceptedAnswers": ["san salvador"],
+    "lat": 13.6929,
+    "lng": -89.2182,
+    "hint": "Capital of El Salvador, nestled in a valley surrounded by volcanoes",
+    "difficulty": "hard"
+  },
+  {
+    "id": 39,
+    "name": "Belize City",
+    "acceptedAnswers": ["belize city"],
+    "lat": 17.4986,
+    "lng": -88.1886,
+    "hint": "Largest city in Belize, a Caribbean port and gateway to the Barrier Reef",
+    "difficulty": "hard"
+  },
+  {
+    "id": 40,
+    "name": "Port-au-Prince",
+    "acceptedAnswers": ["port-au-prince", "port au prince"],
+    "lat": 18.5944,
+    "lng": -72.3074,
+    "hint": "Capital of Haiti, a bustling port city on the Gulf of Gonave",
+    "difficulty": "hard"
+  },
+  {
+    "id": 41,
+    "name": "Edmonton",
+    "acceptedAnswers": ["edmonton"],
+    "lat": 53.5461,
+    "lng": -113.4938,
+    "hint": "Capital of Alberta, Canada, gateway to the northern oil sands and wilderness",
+    "difficulty": "medium"
+  },
+  {
+    "id": 42,
+    "name": "Winnipeg",
+    "acceptedAnswers": ["winnipeg"],
+    "lat": 49.8951,
+    "lng": -97.1384,
+    "hint": "Capital of Manitoba, at the confluence of the Red and Assiniboine Rivers",
+    "difficulty": "hard"
+  },
+  {
+    "id": 43,
+    "name": "Quebec City",
+    "acceptedAnswers": ["quebec city", "quebec", "québec"],
+    "lat": 46.8139,
+    "lng": -71.2080,
+    "hint": "Historic walled city in Canada, capital of Quebec province with French heritage",
+    "difficulty": "medium"
+  },
+  {
+    "id": 44,
+    "name": "Honolulu",
+    "acceptedAnswers": ["honolulu"],
+    "lat": 21.3069,
+    "lng": -157.8583,
+    "hint": "Capital of Hawaii, located on Oahu with famous Waikiki Beach",
+    "difficulty": "medium"
+  },
+  {
+    "id": 45,
+    "name": "Anchorage",
+    "acceptedAnswers": ["anchorage"],
+    "lat": 61.2181,
+    "lng": -149.9003,
+    "hint": "Largest city in Alaska, nestled between mountains and Cook Inlet",
+    "difficulty": "medium"
+  },
+  {
+    "id": 46,
+    "name": "Puebla",
+    "acceptedAnswers": ["puebla"],
+    "lat": 19.0414,
+    "lng": -98.2063,
+    "hint": "Mexican city famous for its colonial architecture and Cinco de Mayo battle site",
+    "difficulty": "hard"
+  },
+  {
+    "id": 47,
+    "name": "Merida",
+    "acceptedAnswers": ["merida", "mérida"],
+    "lat": 20.9674,
+    "lng": -89.5926,
+    "hint": "Capital of Yucatan state in Mexico, gateway to Mayan ruins like Chichen Itza",
+    "difficulty": "hard"
+  },
+  {
+    "id": 48,
+    "name": "Halifax",
+    "acceptedAnswers": ["halifax"],
+    "lat": 44.6488,
+    "lng": -63.5752,
+    "hint": "Capital of Nova Scotia, a major Atlantic port with maritime heritage",
+    "difficulty": "hard"
+  },
+  {
+    "id": 49,
+    "name": "San Juan",
+    "acceptedAnswers": ["san juan"],
+    "lat": 18.4655,
+    "lng": -66.1057,
+    "hint": "Capital of Puerto Rico, one of the oldest European-founded cities in the Americas",
+    "difficulty": "medium"
+  },
+  {
+    "id": 50,
+    "name": "Nassau",
+    "acceptedAnswers": ["nassau"],
+    "lat": 25.0343,
+    "lng": -77.3963,
+    "hint": "Capital of the Bahamas, a colorful Caribbean port city on New Providence Island",
+    "difficulty": "medium"
   }
 ]

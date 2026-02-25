@@ -3,7 +3,7 @@ import { useParams, useNavigate } from 'react-router-dom'
 import { motion, AnimatePresence } from 'framer-motion'
 import { MapContainer, TileLayer, CircleMarker, Tooltip, useMap } from 'react-leaflet'
 import {
-  Building2, Mountain, Waves, Droplets, Landmark,
+  Building2, Mountain, Waves, Droplets, Landmark, SunMedium, Palmtree,
   Map as MapIcon, Satellite, TreePine, Tag, Tags,
   ArrowLeft, CheckCircle, XCircle, RotateCcw, Trophy, Sparkles,
 } from 'lucide-react'
@@ -16,11 +16,13 @@ import 'leaflet/dist/leaflet.css'
 
 /* ── Categories ── */
 const CATEGORIES = [
-  { id: 'cities',    label: 'Cities',    icon: Building2, color: '#3B82F6' },
-  { id: 'mountains', label: 'Mountains', icon: Mountain,  color: '#8B5CF6' },
-  { id: 'rivers',    label: 'Rivers',    icon: Waves,     color: '#06B6D4' },
-  { id: 'lakes',     label: 'Lakes',     icon: Droplets,  color: '#14B8A6' },
-  { id: 'features',  label: 'Features',  icon: Landmark,  color: '#F59E0B' },
+  { id: 'cities',    label: 'Cities',    icon: Building2,  color: '#3B82F6' },
+  { id: 'mountains', label: 'Mountains', icon: Mountain,   color: '#8B5CF6' },
+  { id: 'rivers',    label: 'Rivers',    icon: Waves,      color: '#06B6D4' },
+  { id: 'lakes',     label: 'Lakes',     icon: Droplets,   color: '#14B8A6' },
+  { id: 'features',  label: 'Features',  icon: Landmark,   color: '#F59E0B' },
+  { id: 'deserts',   label: 'Deserts',   icon: SunMedium,   color: '#EF6C00' },
+  { id: 'islands',   label: 'Islands',   icon: Palmtree,   color: '#2E7D32' },
 ]
 
 /* ── Map styles ── */

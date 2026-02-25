@@ -88,5 +88,95 @@
     "lng": -79.0377,
     "hint": "Famous waterfalls on the US-Canada border between Lakes Erie and Ontario",
     "difficulty": "easy"
+  },
+  {
+    "id": 11,
+    "name": "Panama Canal",
+    "acceptedAnswers": ["panama canal"],
+    "lat": 9.0800,
+    "lng": -79.6800,
+    "hint": "Artificial waterway connecting the Atlantic and Pacific Oceans across Central America",
+    "difficulty": "easy"
+  },
+  {
+    "id": 12,
+    "name": "Yucatan Peninsula",
+    "acceptedAnswers": ["yucatan peninsula", "yucatan", "yucatán"],
+    "lat": 19.5000,
+    "lng": -89.0000,
+    "hint": "Limestone peninsula in Mexico known for Mayan ruins and cenotes",
+    "difficulty": "medium"
+  },
+  {
+    "id": 13,
+    "name": "Gulf of Mexico",
+    "acceptedAnswers": ["gulf of mexico"],
+    "lat": 25.0000,
+    "lng": -90.0000,
+    "hint": "Large ocean basin bordered by the US, Mexico, and Cuba",
+    "difficulty": "easy"
+  },
+  {
+    "id": 14,
+    "name": "Chesapeake Bay",
+    "acceptedAnswers": ["chesapeake bay", "chesapeake"],
+    "lat": 37.8000,
+    "lng": -76.1000,
+    "hint": "Largest estuary in the US, surrounded by Maryland and Virginia, famous for blue crabs",
+    "difficulty": "medium"
+  },
+  {
+    "id": 15,
+    "name": "Bay of Fundy",
+    "acceptedAnswers": ["bay of fundy", "fundy"],
+    "lat": 45.0000,
+    "lng": -65.5000,
+    "hint": "Bay between New Brunswick and Nova Scotia with the highest tides in the world",
+    "difficulty": "medium"
+  },
+  {
+    "id": 16,
+    "name": "Hudson Bay",
+    "acceptedAnswers": ["hudson bay"],
+    "lat": 60.0000,
+    "lng": -85.0000,
+    "hint": "Large body of saltwater in northeastern Canada, named after explorer Henry Hudson",
+    "difficulty": "medium"
+  },
+  {
+    "id": 17,
+    "name": "Baja California Peninsula",
+    "acceptedAnswers": ["baja california", "baja california peninsula", "baja"],
+    "lat": 28.0000,
+    "lng": -113.0000,
+    "hint": "Long narrow peninsula in northwestern Mexico separating the Pacific from the Sea of Cortez",
+    "difficulty": "medium"
+  },
+  {
+    "id": 18,
+    "name": "Mississippi Delta",
+    "acceptedAnswers": ["mississippi delta", "mississippi river delta"],
+    "lat": 29.1500,
+    "lng": -89.2500,
+    "hint": "River delta in Louisiana where the Mississippi empties into the Gulf of Mexico",
+    "difficulty": "medium"
+  },
+  {
+    "id": 19,
+    "name": "Strait of Florida",
+    "acceptedAnswers": ["strait of florida", "florida strait", "straits of florida"],
+    "lat": 24.0000,
+    "lng": -81.0000,
+    "hint": "Ocean strait between Florida and Cuba, carrying the Gulf Stream northward",
+    "difficulty": "hard"
+  },
+  {
+    "id": 20,
+    "name": "Copper Canyon",
+    "acceptedAnswers": ["copper canyon", "barrancas del cobre"],
+    "lat": 27.5000,
+    "lng": -108.3500,
+    "hint": "System of canyons in Mexico larger and deeper than the Grand Canyon in the Sierra Madre",
+    "difficulty": "hard"
   }
 ]

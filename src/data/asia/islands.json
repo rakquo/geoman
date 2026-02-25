@@ -1,0 +1,137 @@
+[
+  {
+    "id": 1,
+    "name": "Borneo",
+    "acceptedAnswers": ["borneo", "kalimantan"],
+    "lat": 1.0000,
+    "lng": 114.0000,
+    "hint": "Third-largest island in the world, shared by Malaysia, Indonesia, and Brunei",
+    "difficulty": "easy"
+  },
+  {
+    "id": 2,
+    "name": "Sumatra",
+    "acceptedAnswers": ["sumatra", "sumatera"],
+    "lat": 0.0000,
+    "lng": 102.0000,
+    "hint": "Sixth-largest island in the world, western Indonesia, home to orangutans and tigers",
+    "difficulty": "easy"
+  },
+  {
+    "id": 3,
+    "name": "Java",
+    "acceptedAnswers": ["java", "jawa"],
+    "lat": -7.5000,
+    "lng": 110.0000,
+    "hint": "Most populated island on Earth, home to Indonesia's capital Jakarta",
+    "difficulty": "easy"
+  },
+  {
+    "id": 4,
+    "name": "Honshu",
+    "acceptedAnswers": ["honshu", "honshū"],
+    "lat": 36.0000,
+    "lng": 138.0000,
+    "hint": "Largest island of Japan, home to Tokyo, Osaka, and Mount Fuji",
+    "difficulty": "medium"
+  },
+  {
+    "id": 5,
+    "name": "Sri Lanka",
+    "acceptedAnswers": ["sri lanka", "ceylon"],
+    "lat": 7.8731,
+    "lng": 80.7718,
+    "hint": "Teardrop-shaped island nation off India's southern coast, formerly called Ceylon",
+    "difficulty": "easy"
+  },
+  {
+    "id": 6,
+    "name": "Taiwan",
+    "acceptedAnswers": ["taiwan", "formosa"],
+    "lat": 23.6978,
+    "lng": 120.9605,
+    "hint": "Island off China's southeast coast, historically known as Formosa by Portuguese sailors",
+    "difficulty": "easy"
+  },
+  {
+    "id": 7,
+    "name": "Bali",
+    "acceptedAnswers": ["bali"],
+    "lat": -8.3405,
+    "lng": 115.0920,
+    "hint": "Famous Indonesian island known for its temples, rice paddies, and surf beaches",
+    "difficulty": "easy"
+  },
+  {
+    "id": 8,
+    "name": "Sulawesi",
+    "acceptedAnswers": ["sulawesi", "celebes"],
+    "lat": -2.0000,
+    "lng": 121.0000,
+    "hint": "Uniquely shaped Indonesian island, formerly called Celebes, known for biodiversity",
+    "difficulty": "medium"
+  },
+  {
+    "id": 9,
+    "name": "Luzon",
+    "acceptedAnswers": ["luzon"],
+    "lat": 16.0000,
+    "lng": 121.0000,
+    "hint": "Largest island of the Philippines, home to the capital Manila",
+    "difficulty": "medium"
+  },
+  {
+    "id": 10,
+    "name": "Mindanao",
+    "acceptedAnswers": ["mindanao"],
+    "lat": 7.5000,
+    "lng": 126.0000,
+    "hint": "Second-largest island in the Philippines, known for its tropical rainforests",
+    "difficulty": "medium"
+  },
+  {
+    "id": 11,
+    "name": "Hokkaido",
+    "acceptedAnswers": ["hokkaido", "hokkaidō"],
+    "lat": 43.0000,
+    "lng": 143.0000,
+    "hint": "Northernmost of Japan's main islands, famous for skiing, hot springs, and lavender fields",
+    "difficulty": "medium"
+  },
+  {
+    "id": 12,
+    "name": "Phuket",
+    "acceptedAnswers": ["phuket"],
+    "lat": 7.8804,
+    "lng": 98.3923,
+    "hint": "Thailand's largest island, a world-famous beach and resort destination",
+    "difficulty": "easy"
+  },
+  {
+    "id": 13,
+    "name": "Sakhalin",
+    "acceptedAnswers": ["sakhalin", "sakhalin island"],
+    "lat": 51.0000,
+    "lng": 143.0000,
+    "hint": "Largest Russian island, north of Japan in the Pacific, rich in oil and gas",
+    "difficulty": "hard"
+  },
+  {
+    "id": 14,
+    "name": "Jeju Island",
+    "acceptedAnswers": ["jeju", "jeju island", "jejudo"],
+    "lat": 33.4000,
+    "lng": 126.5700,
+    "hint": "Volcanic resort island off South Korea, home to Mount Hallasan",
+    "difficulty": "medium"
+  },
+  {
+    "id": 15,
+    "name": "Socotra",
+    "acceptedAnswers": ["socotra", "socotra island", "suqutra"],
+    "lat": 12.5000,
+    "lng": 54.0000,
+    "hint": "Isolated Yemeni island with alien-looking dragon blood trees, the 'Galapagos of the Indian Ocean'",
+    "difficulty": "hard"
+  }
+]

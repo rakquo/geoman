@@ -88,5 +88,95 @@
     "lng": 73.2207,
     "hint": "Chain of 26 coral atolls in the Indian Ocean, lowest country on Earth",
     "difficulty": "medium"
+  },
+  {
+    "id": 11,
+    "name": "Strait of Malacca",
+    "acceptedAnswers": ["strait of malacca", "malacca strait", "straits of malacca"],
+    "lat": 2.5000,
+    "lng": 101.0000,
+    "hint": "One of the world's busiest shipping lanes, between Peninsular Malaysia and Sumatra",
+    "difficulty": "medium"
+  },
+  {
+    "id": 12,
+    "name": "Bosphorus",
+    "acceptedAnswers": ["bosphorus", "bosporus", "istanbul strait"],
+    "lat": 41.1190,
+    "lng": 29.0750,
+    "hint": "Narrow strait in Turkey connecting the Black Sea and the Sea of Marmara",
+    "difficulty": "easy"
+  },
+  {
+    "id": 13,
+    "name": "Persian Gulf",
+    "acceptedAnswers": ["persian gulf", "arabian gulf", "the gulf"],
+    "lat": 26.0000,
+    "lng": 52.0000,
+    "hint": "Shallow body of water between Iran and the Arabian Peninsula, vital for oil trade",
+    "difficulty": "easy"
+  },
+  {
+    "id": 14,
+    "name": "Bay of Bengal",
+    "acceptedAnswers": ["bay of bengal", "bengal bay"],
+    "lat": 15.0000,
+    "lng": 88.0000,
+    "hint": "Largest bay in the world, bordered by India, Bangladesh, Myanmar, and Sri Lanka",
+    "difficulty": "easy"
+  },
+  {
+    "id": 15,
+    "name": "Khyber Pass",
+    "acceptedAnswers": ["khyber pass", "khyber"],
+    "lat": 34.0736,
+    "lng": 71.0925,
+    "hint": "Historic mountain pass connecting Afghanistan and Pakistan through the Hindu Kush",
+    "difficulty": "medium"
+  },
+  {
+    "id": 16,
+    "name": "Strait of Hormuz",
+    "acceptedAnswers": ["strait of hormuz", "hormuz strait"],
+    "lat": 26.5667,
+    "lng": 56.2500,
+    "hint": "Strategically vital chokepoint between the Persian Gulf and Gulf of Oman",
+    "difficulty": "medium"
+  },
+  {
+    "id": 17,
+    "name": "Kamchatka Peninsula",
+    "acceptedAnswers": ["kamchatka", "kamchatka peninsula"],
+    "lat": 56.0000,
+    "lng": 160.0000,
+    "hint": "Remote volcanic peninsula in Russia's Far East with geysers and brown bears",
+    "difficulty": "hard"
+  },
+  {
+    "id": 18,
+    "name": "Halong Bay",
+    "acceptedAnswers": ["halong bay", "ha long bay"],
+    "lat": 20.9101,
+    "lng": 107.1839,
+    "hint": "UNESCO site in Vietnam with thousands of towering limestone karst islands",
+    "difficulty": "medium"
+  },
+  {
+    "id": 19,
+    "name": "Taklamakan Desert",
+    "acceptedAnswers": ["taklamakan", "taklamakan desert", "taklimakan"],
+    "lat": 38.9500,
+    "lng": 82.2000,
+    "hint": "Vast sand desert in China's Xinjiang region, one of the world's largest shifting-sand deserts",
+    "difficulty": "hard"
+  },
+  {
+    "id": 20,
+    "name": "Korean DMZ",
+    "acceptedAnswers": ["korean dmz", "dmz", "demilitarized zone"],
+    "lat": 38.0000,
+    "lng": 127.0000,
+    "hint": "Heavily fortified border zone dividing North and South Korea since 1953",
+    "difficulty": "medium"
   }
 ]

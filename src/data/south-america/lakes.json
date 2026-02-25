@@ -88,5 +88,95 @@
     "lng": -72.7500,
     "hint": "Lake in Torres del Paine National Park, Chile, known for its blue color",
     "difficulty": "hard"
+  },
+  {
+    "id": 11,
+    "name": "Salar de Uyuni",
+    "acceptedAnswers": ["salar de uyuni", "uyuni", "uyuni salt flat"],
+    "lat": -20.1338,
+    "lng": -67.4891,
+    "hint": "World's largest salt flat in Bolivia, a vast mirror when covered with water",
+    "difficulty": "easy"
+  },
+  {
+    "id": 12,
+    "name": "Lagoa dos Patos",
+    "acceptedAnswers": ["lagoa dos patos", "patos lagoon"],
+    "lat": -31.5000,
+    "lng": -51.5000,
+    "hint": "Largest lagoon in Brazil, in Rio Grande do Sul, separated from the Atlantic by a sandbar",
+    "difficulty": "hard"
+  },
+  {
+    "id": 13,
+    "name": "Lake Valencia",
+    "acceptedAnswers": ["lake valencia", "lago de valencia"],
+    "lat": 10.2000,
+    "lng": -67.7500,
+    "hint": "Largest natural lake entirely within Venezuela, in the Aragua-Carabobo valley",
+    "difficulty": "hard"
+  },
+  {
+    "id": 14,
+    "name": "Lake Llanquihue",
+    "acceptedAnswers": ["llanquihue", "lake llanquihue", "lago llanquihue"],
+    "lat": -41.1167,
+    "lng": -72.8000,
+    "hint": "Second-largest lake in Chile, in the Lake District with views of Osorno Volcano",
+    "difficulty": "hard"
+  },
+  {
+    "id": 15,
+    "name": "Laguna Colorada",
+    "acceptedAnswers": ["laguna colorada"],
+    "lat": -22.1833,
+    "lng": -67.7833,
+    "hint": "Striking red-colored shallow salt lake in Bolivia's Eduardo Avaroa Reserve, home to flamingos",
+    "difficulty": "medium"
+  },
+  {
+    "id": 16,
+    "name": "Lake O'Higgins",
+    "acceptedAnswers": ["lake o'higgins", "lago o'higgins", "lake san martin"],
+    "lat": -48.9167,
+    "lng": -72.5000,
+    "hint": "Deepest lake in the Americas at 836m, shared by Chile and Argentina in Patagonia",
+    "difficulty": "hard"
+  },
+  {
+    "id": 17,
+    "name": "Laguna del Carbon",
+    "acceptedAnswers": ["laguna del carbon", "laguna del carbón"],
+    "lat": -49.5833,
+    "lng": -68.3500,
+    "hint": "Salt lake in Argentina containing the lowest point in the Western Hemisphere at -105m",
+    "difficulty": "hard"
+  },
+  {
+    "id": 18,
+    "name": "Itaipu Reservoir",
+    "acceptedAnswers": ["itaipu reservoir", "itaipu lake", "itaipu"],
+    "lat": -25.4083,
+    "lng": -54.5917,
+    "hint": "Massive reservoir behind the Itaipu Dam on the Brazil-Paraguay border",
+    "difficulty": "medium"
+  },
+  {
+    "id": 19,
+    "name": "Lake Todos Los Santos",
+    "acceptedAnswers": ["todos los santos", "lake todos los santos", "lago todos los santos"],
+    "lat": -41.1333,
+    "lng": -72.1833,
+    "hint": "Emerald-green glacial lake in Chile's Lake District surrounded by volcanoes",
+    "difficulty": "hard"
+  },
+  {
+    "id": 20,
+    "name": "Lago Pehoe",
+    "acceptedAnswers": ["lago pehoe", "lake pehoe", "pehoe"],
+    "lat": -51.0833,
+    "lng": -73.0667,
+    "hint": "Iconic turquoise lake in Torres del Paine with a famous view of the granite towers",
+    "difficulty": "hard"
   }
 ]
