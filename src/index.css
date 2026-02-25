@@ -6,7 +6,7 @@
   --font-body: 'Outfit', system-ui, sans-serif;
 }
 
-/* ─── THEMES ─── */
+/* ─── THEMES (CSS custom properties — safe outside layers) ─── */
 :root,
 [data-theme="summer"] {
   --bg: #EFF5FA;
@@ -146,54 +146,67 @@
   --map-bg: #141820;
 }
 
-/* ─── Base ─── */
-html { scroll-behavior: smooth; }
-*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+/*
+ * ─── Base layer ───
+ * CRITICAL: Must be in @layer base so Tailwind utilities (px-4 etc.) can override.
+ * Putting resets OUTSIDE a layer in Tailwind v4 nukes all utility padding/margin.
+ */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
 
-body {
-  font-family: var(--font-body);
-  background: var(--bg);
-  color: var(--text);
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  min-height: 100vh;
-  overflow-y: scroll;
-  transition: background 0.3s ease, color 0.3s ease;
+  body {
+    font-family: var(--font-body);
+    background: var(--bg);
+    color: var(--text);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    min-height: 100vh;
+    overflow-y: scroll;
+    transition: background 0.3s ease, color 0.3s ease;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+    font-weight: 700;
+    line-height: 1.2;
+  }
+
+  button, input, select, textarea {
+    font-family: inherit;
+  }
+
+  a {
+    text-decoration: none;
+  }
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: var(--font-display);
-  font-weight: 700;
-  line-height: 1.2;
-}
-
-button, input, select, textarea {
-  font-family: inherit;
-}
-
-a { text-decoration: none; }
-
-/* ─── Utility shadows ─── */
-.shadow-card {
-  box-shadow:
-    0 1px 2px rgba(0,0,0,0.04),
-    0 4px 20px -4px var(--shadow);
-}
-.shadow-elevated {
-  box-shadow:
-    0 4px 6px -1px rgba(0,0,0,0.06),
-    0 12px 40px -8px var(--shadow);
-}
-.shadow-hover {
-  box-shadow:
-    0 8px 16px -4px rgba(0,0,0,0.08),
-    0 24px 60px -12px var(--shadow);
+/* ─── Utility shadows (in utilities layer for proper cascade) ─── */
+@layer utilities {
+  .shadow-card {
+    box-shadow:
+      0 1px 2px rgba(0,0,0,0.04),
+      0 4px 20px -4px var(--shadow);
+  }
+  .shadow-elevated {
+    box-shadow:
+      0 4px 6px -1px rgba(0,0,0,0.06),
+      0 12px 40px -8px var(--shadow);
+  }
+  .shadow-hover {
+    box-shadow:
+      0 8px 16px -4px rgba(0,0,0,0.08),
+      0 24px 60px -12px var(--shadow);
+  }
 }
 
 /* ─── Scrollbar ─── */
-::-webkit-scrollbar { width: 5px; height: 5px; }
-::-webkit-scrollbar-track { background: transparent; }
-::-webkit-scrollbar-thumb { background: var(--border); border-radius: 4px; }
+@layer base {
+  ::-webkit-scrollbar { width: 5px; height: 5px; }
+  ::-webkit-scrollbar-track { background: transparent; }
+  ::-webkit-scrollbar-thumb { background: var(--border); border-radius: 4px; }
+}
 
 /* ─── Animations ─── */
 @keyframes pulse-dot {
@@ -206,15 +219,10 @@ a { text-decoration: none; }
   50% { transform: translateY(-12px); }
 }
 
-@keyframes spin-slow {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-}
-
-/* ─── Leaflet overrides ─── */
+/* ─── Leaflet overrides (use !important, OK outside layers) ─── */
 .leaflet-control-zoom {
   border: none !important;
-  border-radius: 14px !important;
+  border-radius: 10px !important;
   overflow: hidden;
   box-shadow: 0 2px 12px var(--shadow) !important;
   margin: 12px !important;
@@ -222,9 +230,9 @@ a { text-decoration: none; }
 .leaflet-control-zoom a {
   background: var(--surface) !important;
   color: var(--text) !important;
-  width: 38px !important;
-  height: 38px !important;
-  line-height: 38px !important;
+  width: 36px !important;
+  height: 36px !important;
+  line-height: 36px !important;
   font-size: 18px !important;
   border-bottom: 1px solid var(--border) !important;
   transition: background 0.15s !important;
@@ -252,7 +260,7 @@ a { text-decoration: none; }
   background: var(--surface) !important;
   border: 1px solid var(--border) !important;
   border-radius: 8px !important;
-  padding: 3px 10px !important;
+  padding: 4px 10px !important;
   box-shadow: 0 2px 12px var(--shadow) !important;
   font-family: var(--font-body) !important;
   font-size: 11px !important;
@@ -266,8 +274,6 @@ a { text-decoration: none; }
 .quiz-tooltip::after {
   border-top-color: var(--surface) !important;
 }
-
-/* Hide Leaflet default tooltip arrow for cleaner look */
 .leaflet-tooltip-top.quiz-tooltip::before {
   border-top-color: var(--border) !important;
 }

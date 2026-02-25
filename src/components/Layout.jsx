@@ -29,32 +29,31 @@ export default function Layout({ children }) {
     >
       {/* ─── Header ─── */}
       <header
-        className="sticky top-0 z-40"
+        className="sticky top-0 z-40 shadow-card"
         style={{
           background: 'var(--surface)',
           borderBottom: '1px solid var(--border)',
-          boxShadow: '0 1px 12px var(--shadow)',
         }}
       >
-        <div className="w-full max-w-[1200px] mx-auto px-5 sm:px-10 h-16 flex items-center justify-between gap-4">
+        <div className="w-full max-w-[1200px] mx-auto px-5 sm:px-10 h-14 flex items-center justify-between gap-4">
 
           {/* Logo */}
           <Link
             to="/"
-            className="flex items-center gap-3 no-underline hover:opacity-80 transition-opacity"
+            className="flex items-center gap-2.5 no-underline"
             style={{ color: 'var(--text)' }}
           >
             <div
-              className="w-9 h-9 rounded-xl flex items-center justify-center"
+              className="w-8 h-8 rounded-lg flex items-center justify-center"
               style={{
                 background: 'var(--accent)',
                 boxShadow: '0 2px 8px var(--shadow)',
               }}
             >
-              <Globe className="w-[18px] h-[18px] text-white" />
+              <Globe className="w-4 h-4 text-white" />
             </div>
             <span
-              className="text-xl font-bold"
+              className="text-lg font-bold"
               style={{ fontFamily: 'var(--font-display)', color: 'var(--text)' }}
             >
               GeoQuiz
@@ -67,11 +66,10 @@ export default function Layout({ children }) {
             {/* Score badge */}
             {state.totalAttempted > 0 && (
               <div
-                className="flex items-center gap-1.5 px-3.5 py-1.5 rounded-full text-sm font-semibold"
+                className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-sm font-semibold"
                 style={{
                   background: 'var(--accent-light)',
                   color: 'var(--accent)',
-                  border: '1px solid var(--accent)',
                 }}
               >
                 <Trophy className="w-3.5 h-3.5" />
@@ -83,10 +81,9 @@ export default function Layout({ children }) {
             <div className="relative" ref={pickerRef}>
               <button
                 onClick={() => setShowPicker(v => !v)}
-                className="w-9 h-9 rounded-xl flex items-center justify-center transition-all cursor-pointer"
+                className="w-8 h-8 rounded-lg flex items-center justify-center cursor-pointer border-none"
                 style={{
                   background: showPicker ? 'var(--accent-light)' : 'var(--surface-hover)',
-                  border: `1.5px solid ${showPicker ? 'var(--accent)' : 'var(--border)'}`,
                   color: showPicker ? 'var(--accent)' : 'var(--text-secondary)',
                 }}
                 title="Change theme"
@@ -97,17 +94,16 @@ export default function Layout({ children }) {
               {/* Dropdown */}
               {showPicker && (
                 <div
-                  className="absolute right-0 top-12 rounded-2xl z-50 overflow-hidden"
+                  className="absolute right-0 top-11 rounded-xl z-50 overflow-hidden shadow-elevated"
                   style={{
                     background: 'var(--surface)',
-                    border: '1.5px solid var(--border)',
-                    boxShadow: '0 8px 40px var(--shadow), 0 1px 8px rgba(0,0,0,0.06)',
+                    border: '1px solid var(--border)',
                     minWidth: '180px',
                   }}
                 >
                   <div className="p-2">
                     <p
-                      className="text-[10px] font-bold uppercase tracking-[0.16em] mb-2 px-2 pt-1"
+                      className="text-[10px] font-bold uppercase tracking-[0.16em] px-3 pt-2 pb-2"
                       style={{ color: 'var(--text-muted)' }}
                     >
                       Theme
@@ -116,12 +112,10 @@ export default function Layout({ children }) {
                       <button
                         key={key}
                         onClick={() => { setTheme(key); setShowPicker(false) }}
-                        className="w-full flex items-center gap-3 px-3 py-2.5 rounded-xl text-sm font-medium transition-all cursor-pointer text-left"
+                        className="w-full flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-medium cursor-pointer text-left border-none"
                         style={{
                           background: theme === key ? 'var(--accent-light)' : 'transparent',
                           color: theme === key ? 'var(--accent)' : 'var(--text-secondary)',
-                          border: 'none',
-                          fontFamily: 'var(--font-body)',
                         }}
                       >
                         {/* Color dot */}
@@ -155,7 +149,7 @@ export default function Layout({ children }) {
         className="text-center py-6 text-xs tracking-widest uppercase"
         style={{ color: 'var(--text-muted)', borderTop: '1px solid var(--border)' }}
       >
-        Made for geography nerds everywhere 🌍
+        Made for geography nerds everywhere
       </footer>
     </div>
   )

@@ -110,7 +110,7 @@ export default function HomePage() {
             {/* Score summary if played */}
             {hasAnyScore && (
               <div
-                className="inline-flex items-center gap-3 px-5 py-3 rounded-2xl"
+                className="inline-flex items-center gap-3 px-5 py-3 rounded-xl"
                 style={{
                   background: 'var(--accent-light)',
                   border: '1.5px solid var(--accent)',

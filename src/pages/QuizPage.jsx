@@ -181,26 +181,20 @@ export default function QuizPage() {
     return (
       <div className="text-center py-20">
         <p className="text-2xl mb-6" style={{ color: 'var(--text-muted)' }}>Continent not found</p>
-        <Button variant="primary" onClick={() => navigate('/')}>← Go Home</Button>
+        <Button variant="primary" onClick={() => navigate('/')}>Go Home</Button>
       </div>
     )
   }
 
   return (
-    <div className="w-full max-w-[1200px] mx-auto px-4 sm:px-8 py-5 sm:py-8">
+    <div className="w-full max-w-[1200px] mx-auto px-5 sm:px-8 py-6 sm:py-8">
 
       {/* ─── Page header ─── */}
-      <div className="flex items-center gap-4 mb-6">
-        <button
-          onClick={() => navigate('/')}
-          className="flex items-center gap-1.5 text-sm font-medium transition-colors cursor-pointer"
-          style={{ color: 'var(--text-muted)', background: 'none', border: 'none', padding: 0 }}
-          onMouseEnter={e => e.currentTarget.style.color = 'var(--text)'}
-          onMouseLeave={e => e.currentTarget.style.color = 'var(--text-muted)'}
-        >
+      <div className="flex items-center gap-3 sm:gap-4 mb-6">
+        <Button variant="ghost" size="sm" onClick={() => navigate('/')}>
           <ArrowLeft className="w-4 h-4" />
-          <span className="hidden sm:inline">All continents</span>
-        </button>
+          <span className="hidden sm:inline">Back</span>
+        </Button>
 
         <div className="h-5 w-px" style={{ background: 'var(--border)' }} />
 
@@ -214,7 +208,7 @@ export default function QuizPage() {
         {/* Score pill */}
         {total > 0 && (
           <div
-            className="ml-auto flex items-center gap-2 px-4 py-2 rounded-full text-sm font-semibold"
+            className="ml-auto flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-semibold"
             style={{ background: 'var(--accent-light)', color: 'var(--accent)' }}
           >
             <span className="text-base font-bold">{correct}</span>
@@ -226,21 +220,17 @@ export default function QuizPage() {
 
       {/* ─── Controls card ─── */}
       <motion.div
-        className="rounded-2xl mb-5 overflow-hidden"
+        className="rounded-xl mb-5 overflow-hidden shadow-card"
         style={{
           background: 'var(--surface)',
-          border: '1.5px solid var(--border)',
-          boxShadow: '0 1px 4px var(--shadow)',
+          border: '1px solid var(--border)',
         }}
         initial={{ opacity: 0, y: 8 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.3 }}
       >
         {/* ── Row 1: Categories ── */}
-        <div
-          className="px-5 py-4"
-          style={{ borderBottom: '1px solid var(--border)' }}
-        >
+        <div className="px-5 py-4" style={{ borderBottom: '1px solid var(--border)' }}>
           <p
             className="text-[10px] font-bold tracking-[0.16em] uppercase mb-3"
             style={{ color: 'var(--text-muted)' }}
@@ -256,12 +246,11 @@ export default function QuizPage() {
                 <button
                   key={cat.id}
                   onClick={() => toggleCat(cat.id)}
-                  className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-[13px] font-semibold transition-all duration-200 cursor-pointer"
+                  className="inline-flex items-center gap-2 px-4 py-2 rounded-lg text-[13px] font-semibold transition-all duration-200 cursor-pointer border-none"
                   style={{
                     background: active ? cat.color : 'var(--bg)',
                     color: active ? '#ffffff' : 'var(--text-secondary)',
-                    border: `1.5px solid ${active ? cat.color : 'var(--border)'}`,
-                    boxShadow: active ? `0 2px 8px ${cat.color}44` : 'none',
+                    boxShadow: active ? `0 2px 8px ${cat.color}44` : `inset 0 0 0 1.5px var(--border)`,
                   }}
                 >
                   <Icon className="w-3.5 h-3.5" />
@@ -279,8 +268,8 @@ export default function QuizPage() {
         <div className="px-5 py-3 flex flex-wrap items-center gap-3">
           {/* Map style segmented control */}
           <div
-            className="flex rounded-xl p-1"
-            style={{ background: 'var(--bg)', border: '1.5px solid var(--border)' }}
+            className="inline-flex rounded-lg p-1 gap-0.5"
+            style={{ background: 'var(--bg)', border: '1px solid var(--border)' }}
           >
             {MAP_STYLES.map(s => {
               const Icon = s.icon
@@ -289,12 +278,10 @@ export default function QuizPage() {
                 <button
                   key={s.id}
                   onClick={() => setMapStyle(s.id)}
-                  className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-[12px] font-semibold transition-all duration-200 cursor-pointer"
+                  className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-md text-[12px] font-semibold transition-all duration-150 cursor-pointer border-none"
                   style={{
                     background: isActive ? 'var(--accent)' : 'transparent',
                     color: isActive ? '#fff' : 'var(--text-muted)',
-                    border: 'none',
-                    fontFamily: 'var(--font-body)',
                   }}
                 >
                   <Icon className="w-3.5 h-3.5" />
@@ -307,14 +294,13 @@ export default function QuizPage() {
           {/* Labels toggle */}
           <button
             onClick={() => !labelsBuiltIn && setShowLabels(v => !v)}
-            className="inline-flex items-center gap-1.5 px-3 py-2 rounded-xl text-[12px] font-semibold transition-all duration-200"
+            className="inline-flex items-center gap-1.5 px-3 py-2 rounded-lg text-[12px] font-semibold transition-all duration-150 border-none"
             style={{
               background: (showLabels && !labelsBuiltIn) ? 'var(--accent-light)' : 'var(--bg)',
               color: (showLabels && !labelsBuiltIn) ? 'var(--accent)' : 'var(--text-muted)',
-              border: `1.5px solid ${(showLabels && !labelsBuiltIn) ? 'var(--accent)' : 'var(--border)'}`,
+              boxShadow: (showLabels && !labelsBuiltIn) ? `inset 0 0 0 1.5px var(--accent)` : `inset 0 0 0 1px var(--border)`,
               cursor: labelsBuiltIn ? 'default' : 'pointer',
               opacity: labelsBuiltIn ? 0.5 : 1,
-              fontFamily: 'var(--font-body)',
             }}
           >
             {showLabels && !labelsBuiltIn
@@ -334,7 +320,7 @@ export default function QuizPage() {
                 {answered}/{total} · {pct}%
               </span>
               <div
-                className="w-24 sm:w-40 h-2.5 rounded-full overflow-hidden"
+                className="w-24 sm:w-40 h-2 rounded-full overflow-hidden"
                 style={{ background: 'var(--border)' }}
               >
                 <motion.div
@@ -351,11 +337,10 @@ export default function QuizPage() {
 
       {/* ─── Map ─── */}
       <motion.div
-        className="relative w-full rounded-2xl overflow-hidden"
+        className="relative w-full rounded-xl overflow-hidden shadow-card"
         style={{
           height: 'clamp(400px, 65vh, 680px)',
-          border: '1.5px solid var(--border)',
-          boxShadow: '0 4px 32px -8px var(--shadow)',
+          border: '1px solid var(--border)',
         }}
         initial={{ opacity: 0, y: 12 }}
         animate={{ opacity: 1, y: 0 }}
@@ -418,7 +403,7 @@ export default function QuizPage() {
         {selectedCats.length === 0 && (
           <div className="absolute inset-0 flex items-center justify-center bg-black/20 z-[900]">
             <div
-              className="px-6 py-4 rounded-2xl text-sm font-medium text-center shadow-elevated"
+              className="px-6 py-4 rounded-xl text-sm font-medium text-center shadow-elevated"
               style={{ background: 'var(--surface)', color: 'var(--text-secondary)' }}
             >
               Select at least one category above
@@ -440,7 +425,7 @@ export default function QuizPage() {
               {lastResult && lastResult.uid === activeId ? (
                 /* Result card */
                 <div
-                  className="p-4 rounded-2xl"
+                  className="p-4 rounded-xl"
                   style={{
                     background: lastResult.correct ? 'var(--correct-bg)' : 'var(--incorrect-bg)',
                     border: `2px solid ${lastResult.correct ? 'var(--correct)' : 'var(--incorrect)'}`,
@@ -460,9 +445,9 @@ export default function QuizPage() {
                     </div>
                     <div>
                       <p className="font-bold text-sm" style={{ color: lastResult.correct ? 'var(--correct)' : 'var(--incorrect)' }}>
-                        {lastResult.correct ? '✓ Correct!' : lastResult.answer ? '✗ Not quite' : 'Skipped'}
+                        {lastResult.correct ? 'Correct!' : lastResult.answer ? 'Not quite' : 'Skipped'}
                       </p>
-                      <p className="text-xs opacity-80" style={{ color: lastResult.correct ? 'var(--correct)' : 'var(--incorrect)' }}>
+                      <p className="text-xs" style={{ color: lastResult.correct ? 'var(--correct)' : 'var(--incorrect)', opacity: 0.8 }}>
                         {lastResult.correct ? lastResult.name : <>It was <strong>{lastResult.name}</strong></>}
                       </p>
                     </div>
@@ -471,10 +456,10 @@ export default function QuizPage() {
               ) : (
                 /* Input card */
                 <div
-                  className="rounded-2xl overflow-hidden"
+                  className="rounded-xl overflow-hidden"
                   style={{
                     background: 'var(--surface)',
-                    border: '1.5px solid var(--border)',
+                    border: '1px solid var(--border)',
                     backdropFilter: 'blur(24px)',
                     boxShadow: '0 12px 48px rgba(0,0,0,0.18)',
                   }}
@@ -503,9 +488,8 @@ export default function QuizPage() {
                       onChange={e => setInputValue(e.target.value)}
                       placeholder="Type your answer…"
                       autoComplete="off"
-                      className="flex-1 h-11 px-4 rounded-xl text-sm outline-none transition-all"
+                      className="flex-1 h-10 px-4 rounded-lg text-sm outline-none"
                       style={{
-                        fontFamily: 'var(--font-body)',
                         background: 'var(--bg)',
                         border: '1.5px solid var(--border)',
                         color: 'var(--text)',
@@ -513,22 +497,17 @@ export default function QuizPage() {
                       onFocus={e => { e.target.style.borderColor = 'var(--accent)'; e.target.style.boxShadow = '0 0 0 3px var(--accent-light)' }}
                       onBlur={e => { e.target.style.borderColor = 'var(--border)'; e.target.style.boxShadow = 'none' }}
                     />
-                    <button
-                      type="submit"
-                      disabled={!inputValue.trim()}
-                      className="h-11 px-5 rounded-xl text-sm font-semibold text-white transition-all cursor-pointer disabled:opacity-40 disabled:cursor-not-allowed"
-                      style={{ background: 'var(--accent)', border: 'none', fontFamily: 'var(--font-body)' }}
-                    >
+                    <Button variant="primary" size="md" type="submit" disabled={!inputValue.trim()}>
                       Go
-                    </button>
+                    </Button>
                   </form>
 
-                  <div className="px-3 pb-3">
+                  <div className="px-4 pb-3">
                     <button
                       type="button"
                       onClick={handleSkip}
-                      className="text-[11px] transition-colors cursor-pointer"
-                      style={{ color: 'var(--text-muted)', background: 'none', border: 'none', padding: 0, fontFamily: 'var(--font-body)' }}
+                      className="text-[11px] cursor-pointer bg-transparent border-none"
+                      style={{ color: 'var(--text-muted)' }}
                       onMouseEnter={e => { e.target.style.color = 'var(--incorrect)' }}
                       onMouseLeave={e => { e.target.style.color = 'var(--text-muted)' }}
                     >
@@ -551,7 +530,6 @@ export default function QuizPage() {
             transition={{ duration: 0.5 }}
             className="mt-10"
           >
-            {/* Score */}
             <div className="text-center mb-10">
               <motion.div
                 initial={{ scale: 0 }}
@@ -573,14 +551,13 @@ export default function QuizPage() {
                 <span className="text-3xl ml-2" style={{ color: 'var(--text-muted)' }}>/ {total}</span>
               </h2>
               <p className="text-lg" style={{ color: 'var(--text-secondary)' }}>
-                {correct === total       ? '🎉 Perfect score! Geography genius!' :
-                 correct >= total * 0.8  ? '🌟 Excellent work!' :
-                 correct >= total * 0.5  ? '👍 Good effort — keep at it!' :
-                                           '📚 Room to improve — try again!'}
+                {correct === total       ? 'Perfect score! Geography genius!' :
+                 correct >= total * 0.8  ? 'Excellent work!' :
+                 correct >= total * 0.5  ? 'Good effort — keep at it!' :
+                                           'Room to improve — try again!'}
               </p>
             </div>
 
-            {/* Results grid */}
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2.5 mb-8 max-w-4xl mx-auto">
               {visibleItems.map((item, idx) => {
                 const st = itemStates[item._uid]
@@ -590,7 +567,7 @@ export default function QuizPage() {
                     initial={{ opacity: 0, y: 4 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: idx * 0.02 }}
-                    className="flex items-center gap-3 px-4 py-3 rounded-xl"
+                    className="flex items-center gap-3 px-4 py-3 rounded-lg"
                     style={{
                       background: st === 'correct' ? 'var(--correct-bg)' : 'var(--incorrect-bg)',
                       border: `1px solid ${st === 'correct' ? 'var(--correct)' : 'var(--incorrect)'}22`,
@@ -617,7 +594,6 @@ export default function QuizPage() {
               })}
             </div>
 
-            {/* Actions */}
             <div className="flex gap-3 justify-center flex-wrap">
               <Button size="lg" onClick={handleReset}>
                 <RotateCcw className="w-4 h-4" /> Try Again
