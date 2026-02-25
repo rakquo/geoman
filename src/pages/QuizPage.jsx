@@ -16,14 +16,21 @@ import 'leaflet/dist/leaflet.css'
 
 /* ── Categories ── */
 const CATEGORIES = [
-  { id: 'cities',    label: 'Cities',    icon: Building2, color: '#4A8AB8' },
-  { id: 'mountains', label: 'Mountains', icon: Mountain,  color: '#8B6CE0' },
-  { id: 'rivers',    label: 'Rivers',    icon: Waves,     color: '#2BA0D8' },
-  { id: 'lakes',     label: 'Lakes',     icon: Droplets,  color: '#18B8C8' },
-  { id: 'features',  label: 'Features',  icon: Landmark,  color: '#D89018' },
+  { id: 'cities',    label: 'Cities',    icon: Building2, color: '#3B82F6' },
+  { id: 'mountains', label: 'Mountains', icon: Mountain,  color: '#8B5CF6' },
+  { id: 'rivers',    label: 'Rivers',    icon: Waves,     color: '#06B6D4' },
+  { id: 'lakes',     label: 'Lakes',     icon: Droplets,  color: '#14B8A6' },
+  { id: 'features',  label: 'Features',  icon: Landmark,  color: '#F59E0B' },
 ]
 
-/* ── Continent views ── */
+/* ── Map styles ── */
+const MAP_STYLES = [
+  { id: 'clean',     label: 'Clean',     icon: MapIcon   },
+  { id: 'terrain',   label: 'Terrain',   icon: TreePine  },
+  { id: 'satellite', label: 'Satellite', icon: Satellite },
+]
+
+/* ── Continent view defaults ── */
 const VIEW = {
   asia:            { center: [30, 85],   zoom: 3 },
   europe:          { center: [52, 15],   zoom: 4 },
@@ -32,12 +39,6 @@ const VIEW = {
   'south-america': { center: [-15, -58], zoom: 3 },
   oceania:         { center: [-25, 140], zoom: 4 },
 }
-
-const MAP_STYLES = [
-  { id: 'clean',     label: 'Clean',     icon: MapIcon },
-  { id: 'terrain',   label: 'Terrain',   icon: TreePine },
-  { id: 'satellite', label: 'Satellite', icon: Satellite },
-]
 
 const ATTR = '&copy; <a href="https://www.openstreetmap.org/copyright">OSM</a> &copy; <a href="https://carto.com/">CARTO</a>'
 
@@ -50,7 +51,7 @@ function MapReady() {
   return null
 }
 
-/* ══════════════════════════════════════════════════ */
+/* ═══════════════════════════════════════════════════════ */
 export default function QuizPage() {
   const { continentId } = useParams()
   const navigate = useNavigate()
@@ -60,18 +61,18 @@ export default function QuizPage() {
   const { isDark } = useTheme()
 
   const [selectedCats, setSelectedCats] = useState(['cities'])
-  const [catData, setCatData] = useState({})
-  const [loadingCats, setLoadingCats] = useState({})
-  const [mapStyle, setMapStyle] = useState('clean')
-  const [showLabels, setShowLabels] = useState(false)
-  const [itemStates, setItemStates] = useState({})
-  const [activeId, setActiveId] = useState(null)
-  const [inputValue, setInputValue] = useState('')
-  const [lastResult, setLastResult] = useState(null)
-  const inputRef = useRef(null)
+  const [catData, setCatData]           = useState({})
+  const [loadingCats, setLoadingCats]   = useState({})
+  const [mapStyle, setMapStyle]         = useState('clean')
+  const [showLabels, setShowLabels]     = useState(false)
+  const [itemStates, setItemStates]     = useState({})
+  const [activeId, setActiveId]         = useState(null)
+  const [inputValue, setInputValue]     = useState('')
+  const [lastResult, setLastResult]     = useState(null)
+  const inputRef  = useRef(null)
   const timeoutRef = useRef(null)
 
-  /* Tile URLs depend on dark/light theme */
+  /* Tile URLs */
   const tiles = useMemo(() => ({
     clean: {
       url: isDark
@@ -106,7 +107,9 @@ export default function QuizPage() {
       setLoadingCats(p => ({ ...p, [cat]: true }))
       try {
         const mod = await import(`../data/${continentId}/${cat}.json`)
-        const items = (mod.default || mod).map(item => ({ ...item, category: cat, _uid: `${cat}-${item.id}` }))
+        const items = (mod.default || mod).map(item => ({
+          ...item, category: cat, _uid: `${cat}-${item.id}`,
+        }))
         setCatData(p => ({ ...p, [cat]: items }))
       } catch { /* skip */ }
       setLoadingCats(p => ({ ...p, [cat]: false }))
@@ -119,7 +122,7 @@ export default function QuizPage() {
   useEffect(() => () => clearTimeout(timeoutRef.current), [])
 
   const toggleCat = useCallback(id => {
-    setSelectedCats(p => p.includes(id) ? p.filter(c => c !== id) : [...p, id])
+    setSelectedCats(p => p.includes(id) ? (p.length > 1 ? p.filter(c => c !== id) : p) : [...p, id])
   }, [])
 
   const visibleItems = useMemo(() =>
@@ -158,112 +161,140 @@ export default function QuizPage() {
     setItemStates({}); setActiveId(null); setInputValue(''); setLastResult(null)
   }, [])
 
-  const answered = visibleItems.filter(i => itemStates[i._uid]).length
-  const correct  = visibleItems.filter(i => itemStates[i._uid] === 'correct').length
-  const total    = visibleItems.length
-  const done     = answered === total && total > 0
-  const pct      = total > 0 ? Math.round((answered / total) * 100) : 0
+  const answered   = visibleItems.filter(i => itemStates[i._uid]).length
+  const correct    = visibleItems.filter(i => itemStates[i._uid] === 'correct').length
+  const total      = visibleItems.length
+  const done       = answered === total && total > 0
+  const pct        = total > 0 ? Math.round((answered / total) * 100) : 0
   const activeItem = visibleItems.find(q => q._uid === activeId)
+
+  const tileKey      = mapStyle === 'clean' && showLabels ? 'cleanLabels' : mapStyle
+  const tile         = tiles[tileKey] || tiles.clean
+  const showOverlay  = showLabels && mapStyle === 'satellite'
+  const labelsBuiltIn = mapStyle === 'terrain'
 
   useEffect(() => {
     if (done) dispatch({ type: 'RECORD_SCORE', payload: { continentId, category: selectedCats.join('+'), correct, total } })
   }, [done]) // eslint-disable-line
 
-  const tileKey = mapStyle === 'clean' && showLabels ? 'cleanLabels' : mapStyle
-  const tile = tiles[tileKey] || tiles.clean
-  const showOverlay = showLabels && mapStyle === 'satellite'
-  const labelsBuiltIn = mapStyle === 'terrain'
-
   if (!continent) {
     return (
       <div className="text-center py-20">
-        <h2 className="text-3xl mb-4">Continent not found</h2>
-        <Button variant="ghost" onClick={() => navigate('/')}>Go Home</Button>
+        <p className="text-2xl mb-6" style={{ color: 'var(--text-muted)' }}>Continent not found</p>
+        <Button variant="primary" onClick={() => navigate('/')}>← Go Home</Button>
       </div>
     )
   }
 
   return (
-    <div className="w-full max-w-[1200px] mx-auto px-5 sm:px-8 py-6 sm:py-10">
-      {/* ── Header ── */}
-      <div className="flex items-center justify-between mb-8">
-        <Button variant="ghost" size="sm" onClick={() => navigate('/')}>
+    <div className="w-full max-w-[1200px] mx-auto px-4 sm:px-8 py-5 sm:py-8">
+
+      {/* ─── Page header ─── */}
+      <div className="flex items-center gap-4 mb-6">
+        <button
+          onClick={() => navigate('/')}
+          className="flex items-center gap-1.5 text-sm font-medium transition-colors cursor-pointer"
+          style={{ color: 'var(--text-muted)', background: 'none', border: 'none', padding: 0 }}
+          onMouseEnter={e => e.currentTarget.style.color = 'var(--text)'}
+          onMouseLeave={e => e.currentTarget.style.color = 'var(--text-muted)'}
+        >
           <ArrowLeft className="w-4 h-4" />
           <span className="hidden sm:inline">All continents</span>
-        </Button>
+        </button>
 
-        <motion.h1
-          className="text-3xl sm:text-4xl"
+        <div className="h-5 w-px" style={{ background: 'var(--border)' }} />
+
+        <h1
+          className="text-2xl sm:text-3xl leading-none"
           style={{ fontFamily: 'var(--font-display)', color: 'var(--text)' }}
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
         >
           {continent.name}
-        </motion.h1>
+        </h1>
 
-        <div
-          className="flex items-center gap-2 px-3.5 py-2 rounded-xl text-sm font-semibold"
-          style={{ background: 'var(--accent-light)', color: 'var(--accent)' }}
-        >
-          {correct}<span className="opacity-40 mx-0.5">/</span><span className="opacity-40">{total}</span>
-        </div>
+        {/* Score pill */}
+        {total > 0 && (
+          <div
+            className="ml-auto flex items-center gap-2 px-4 py-2 rounded-full text-sm font-semibold"
+            style={{ background: 'var(--accent-light)', color: 'var(--accent)' }}
+          >
+            <span className="text-base font-bold">{correct}</span>
+            <span style={{ opacity: 0.45 }}>/</span>
+            <span style={{ opacity: 0.65 }}>{total}</span>
+          </div>
+        )}
       </div>
 
-      {/* ── Categories ── */}
+      {/* ─── Controls card ─── */}
       <motion.div
-        className="mb-6"
+        className="rounded-2xl mb-5 overflow-hidden"
+        style={{
+          background: 'var(--surface)',
+          border: '1.5px solid var(--border)',
+          boxShadow: '0 1px 4px var(--shadow)',
+        }}
         initial={{ opacity: 0, y: 8 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.08 }}
+        transition={{ duration: 0.3 }}
       >
-        <p className="text-[11px] font-bold tracking-[0.12em] uppercase mb-3" style={{ color: 'var(--text-muted)' }}>
-          Categories
-        </p>
-        <div className="flex flex-wrap gap-3">
-          {CATEGORIES.map(cat => {
-            const Icon = cat.icon
-            const active = selectedCats.includes(cat.id)
-            const loading = loadingCats[cat.id] && !catData[cat.id]
-            return (
-              <Button
-                key={cat.id}
-                size="md"
-                active={active}
-                onClick={() => toggleCat(cat.id)}
-                style={active ? { background: cat.color, borderColor: cat.color } : {}}
-              >
-                <Icon className="w-4 h-4" />
-                {cat.label}
-                {loading && <span className="w-3 h-3 border-2 border-current border-t-transparent rounded-full animate-spin" />}
-              </Button>
-            )
-          })}
+        {/* ── Row 1: Categories ── */}
+        <div
+          className="px-5 py-4"
+          style={{ borderBottom: '1px solid var(--border)' }}
+        >
+          <p
+            className="text-[10px] font-bold tracking-[0.16em] uppercase mb-3"
+            style={{ color: 'var(--text-muted)' }}
+          >
+            Categories
+          </p>
+          <div className="flex flex-wrap gap-2">
+            {CATEGORIES.map(cat => {
+              const Icon = cat.icon
+              const active = selectedCats.includes(cat.id)
+              const loading = loadingCats[cat.id] && !catData[cat.id]
+              return (
+                <button
+                  key={cat.id}
+                  onClick={() => toggleCat(cat.id)}
+                  className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-[13px] font-semibold transition-all duration-200 cursor-pointer"
+                  style={{
+                    background: active ? cat.color : 'var(--bg)',
+                    color: active ? '#ffffff' : 'var(--text-secondary)',
+                    border: `1.5px solid ${active ? cat.color : 'var(--border)'}`,
+                    boxShadow: active ? `0 2px 8px ${cat.color}44` : 'none',
+                  }}
+                >
+                  <Icon className="w-3.5 h-3.5" />
+                  {cat.label}
+                  {loading && (
+                    <span className="w-3 h-3 border-2 border-current border-t-transparent rounded-full animate-spin" />
+                  )}
+                </button>
+              )
+            })}
+          </div>
         </div>
-      </motion.div>
 
-      {/* ── Map controls row ── */}
-      <motion.div
-        className="flex flex-wrap items-center gap-4 mb-6"
-        initial={{ opacity: 0, y: 8 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.12 }}
-      >
-        {/* Map style */}
-        <div className="flex items-center gap-2">
-          <p className="text-[11px] font-bold tracking-[0.12em] uppercase mr-1" style={{ color: 'var(--text-muted)' }}>Map</p>
-          <div className="flex rounded-xl p-1 border" style={{ background: 'var(--surface)', borderColor: 'var(--border)' }}>
+        {/* ── Row 2: Map + Labels + Progress ── */}
+        <div className="px-5 py-3 flex flex-wrap items-center gap-3">
+          {/* Map style segmented control */}
+          <div
+            className="flex rounded-xl p-1"
+            style={{ background: 'var(--bg)', border: '1.5px solid var(--border)' }}
+          >
             {MAP_STYLES.map(s => {
               const Icon = s.icon
-              const active = mapStyle === s.id
+              const isActive = mapStyle === s.id
               return (
                 <button
                   key={s.id}
                   onClick={() => setMapStyle(s.id)}
-                  className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-[12px] font-semibold transition-all cursor-pointer border-none"
+                  className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-[12px] font-semibold transition-all duration-200 cursor-pointer"
                   style={{
+                    background: isActive ? 'var(--accent)' : 'transparent',
+                    color: isActive ? '#fff' : 'var(--text-muted)',
+                    border: 'none',
                     fontFamily: 'var(--font-body)',
-                    background: active ? 'var(--accent)' : 'transparent',
-                    color: active ? '#fff' : 'var(--text-muted)',
                   }}
                 >
                   <Icon className="w-3.5 h-3.5" />
@@ -272,49 +303,63 @@ export default function QuizPage() {
               )
             })}
           </div>
-        </div>
 
-        {/* Divider */}
-        <div className="w-px h-6 hidden sm:block" style={{ background: 'var(--border)' }} />
+          {/* Labels toggle */}
+          <button
+            onClick={() => !labelsBuiltIn && setShowLabels(v => !v)}
+            className="inline-flex items-center gap-1.5 px-3 py-2 rounded-xl text-[12px] font-semibold transition-all duration-200"
+            style={{
+              background: (showLabels && !labelsBuiltIn) ? 'var(--accent-light)' : 'var(--bg)',
+              color: (showLabels && !labelsBuiltIn) ? 'var(--accent)' : 'var(--text-muted)',
+              border: `1.5px solid ${(showLabels && !labelsBuiltIn) ? 'var(--accent)' : 'var(--border)'}`,
+              cursor: labelsBuiltIn ? 'default' : 'pointer',
+              opacity: labelsBuiltIn ? 0.5 : 1,
+              fontFamily: 'var(--font-body)',
+            }}
+          >
+            {showLabels && !labelsBuiltIn
+              ? <Tag className="w-3.5 h-3.5" />
+              : <Tags className="w-3.5 h-3.5" />
+            }
+            {labelsBuiltIn ? 'Built-in' : showLabels ? 'Labels on' : 'Labels off'}
+          </button>
 
-        {/* Labels toggle */}
-        <Button
-          size="sm"
-          active={showLabels && !labelsBuiltIn}
-          onClick={() => !labelsBuiltIn && setShowLabels(v => !v)}
-          className={labelsBuiltIn ? 'opacity-50 pointer-events-none' : ''}
-        >
-          {showLabels ? <Tag className="w-3.5 h-3.5" /> : <Tags className="w-3.5 h-3.5" />}
-          {labelsBuiltIn ? 'Labels built-in' : showLabels ? 'Labels ON' : 'Labels OFF'}
-        </Button>
-
-        {/* Progress */}
-        {total > 0 && (
-          <div className="flex items-center gap-3 ml-auto">
-            <span className="text-[12px] font-medium" style={{ color: 'var(--text-muted)' }}>{answered}/{total}</span>
-            <div className="w-24 sm:w-36 h-2 rounded-full overflow-hidden" style={{ background: 'var(--border)' }}>
-              <motion.div
-                className="h-full rounded-full"
-                style={{ background: 'var(--accent)' }}
-                animate={{ width: `${pct}%` }}
-                transition={{ duration: 0.4 }}
-              />
+          {/* Progress bar */}
+          {total > 0 && (
+            <div className="flex items-center gap-3 ml-auto">
+              <span
+                className="text-xs font-semibold tabular-nums"
+                style={{ color: 'var(--text-muted)' }}
+              >
+                {answered}/{total} · {pct}%
+              </span>
+              <div
+                className="w-24 sm:w-40 h-2.5 rounded-full overflow-hidden"
+                style={{ background: 'var(--border)' }}
+              >
+                <motion.div
+                  className="h-full rounded-full"
+                  style={{ background: 'var(--accent)' }}
+                  animate={{ width: `${pct}%` }}
+                  transition={{ duration: 0.4 }}
+                />
+              </div>
             </div>
-          </div>
-        )}
+          )}
+        </div>
       </motion.div>
 
-      {selectedCats.length === 0 && (
-        <p className="text-center text-sm py-10" style={{ color: 'var(--text-muted)' }}>Select at least one category above to start</p>
-      )}
-
-      {/* ── MAP ── */}
+      {/* ─── Map ─── */}
       <motion.div
-        className="relative w-full rounded-2xl overflow-hidden shadow-elevated"
-        style={{ height: 'clamp(380px, 62vh, 660px)', border: '1px solid var(--border)' }}
+        className="relative w-full rounded-2xl overflow-hidden"
+        style={{
+          height: 'clamp(400px, 65vh, 680px)',
+          border: '1.5px solid var(--border)',
+          boxShadow: '0 4px 32px -8px var(--shadow)',
+        }}
         initial={{ opacity: 0, y: 12 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5, delay: 0.15 }}
+        transition={{ duration: 0.45, delay: 0.1 }}
       >
         <MapContainer
           key={`${continentId}-${isDark}`}
@@ -322,9 +367,8 @@ export default function QuizPage() {
           zoom={view.zoom}
           minZoom={2}
           maxZoom={14}
-          scrollWheelZoom={true}
+          scrollWheelZoom
           style={{ height: '100%', width: '100%', background: 'var(--map-bg)' }}
-          zoomControl={true}
         >
           <MapReady />
           <TileLayer key={tileKey} url={tile.url} attribution={tile.attr} />
@@ -334,12 +378,13 @@ export default function QuizPage() {
             const st = itemStates[item._uid]
             const isActive = activeId === item._uid
             const catConf = CATEGORIES.find(c => c.id === item.category)
-            let fillColor = catConf?.color || '#4A8AB8'
+            let fillColor = catConf?.color || '#3B82F6'
             let radius = 7
             let fillOpacity = 0.85
-            if (st === 'correct')   { fillColor = 'var(--correct)'; radius = 8 }
-            if (st === 'incorrect') { fillColor = 'var(--incorrect)'; radius = 8 }
-            if (isActive)           { radius = 11; fillOpacity = 1 }
+
+            if (st === 'correct')   { fillColor = '#22C55E'; radius = 8 }
+            if (st === 'incorrect') { fillColor = '#EF4444'; radius = 8 }
+            if (isActive)           { radius = 12; fillOpacity = 1 }
 
             return (
               <CircleMarker
@@ -348,18 +393,17 @@ export default function QuizPage() {
                 radius={radius}
                 pathOptions={{
                   fillColor,
-                  color: isActive ? '#fff' : 'rgba(255,255,255,0.6)',
-                  weight: isActive ? 2.5 : 1.5,
+                  color: isActive ? '#ffffff' : 'rgba(255,255,255,0.7)',
+                  weight: isActive ? 3 : 1.5,
                   fillOpacity,
                 }}
                 eventHandlers={{ click: () => handleMarkerClick(item) }}
               >
                 {st && (
-                  <Tooltip permanent direction="top" offset={[0, -10]} className="quiz-tooltip">
+                  <Tooltip permanent direction="top" offset={[0, -12]} className="quiz-tooltip">
                     <span style={{
-                      color: st === 'correct' ? 'var(--correct)' : 'var(--incorrect)',
+                      color: st === 'correct' ? '#16A34A' : '#DC2626',
                       fontWeight: 700,
-                      fontSize: '11px',
                     }}>
                       {item.name}
                     </span>
@@ -370,29 +414,43 @@ export default function QuizPage() {
           })}
         </MapContainer>
 
-        {/* ── Answer popup ── */}
+        {/* No category selected hint */}
+        {selectedCats.length === 0 && (
+          <div className="absolute inset-0 flex items-center justify-center bg-black/20 z-[900]">
+            <div
+              className="px-6 py-4 rounded-2xl text-sm font-medium text-center shadow-elevated"
+              style={{ background: 'var(--surface)', color: 'var(--text-secondary)' }}
+            >
+              Select at least one category above
+            </div>
+          </div>
+        )}
+
+        {/* ─── Answer popup ─── */}
         <AnimatePresence>
           {activeId !== null && activeItem && (
             <motion.div
               key={activeId}
-              initial={{ opacity: 0, y: 10, scale: 0.96 }}
+              initial={{ opacity: 0, y: 12, scale: 0.95 }}
               animate={{ opacity: 1, y: 0, scale: 1 }}
-              exit={{ opacity: 0, y: 10, scale: 0.96 }}
-              transition={{ duration: 0.2 }}
-              className="absolute bottom-4 left-1/2 -translate-x-1/2 w-[360px] max-w-[92%] z-[1000]"
+              exit={{ opacity: 0, y: 12, scale: 0.95 }}
+              transition={{ duration: 0.18 }}
+              className="absolute bottom-5 left-1/2 -translate-x-1/2 w-[380px] max-w-[92%] z-[1000]"
             >
               {lastResult && lastResult.uid === activeId ? (
+                /* Result card */
                 <div
-                  className="p-4 rounded-2xl shadow-elevated border"
+                  className="p-4 rounded-2xl"
                   style={{
                     background: lastResult.correct ? 'var(--correct-bg)' : 'var(--incorrect-bg)',
-                    borderColor: lastResult.correct ? 'var(--correct)' : 'var(--incorrect)',
+                    border: `2px solid ${lastResult.correct ? 'var(--correct)' : 'var(--incorrect)'}`,
                     backdropFilter: 'blur(20px)',
+                    boxShadow: '0 8px 32px rgba(0,0,0,0.15)',
                   }}
                 >
                   <div className="flex items-center gap-3">
                     <div
-                      className="w-9 h-9 rounded-full flex items-center justify-center shrink-0"
+                      className="w-10 h-10 rounded-full flex items-center justify-center shrink-0"
                       style={{ background: lastResult.correct ? 'var(--correct)' : 'var(--incorrect)' }}
                     >
                       {lastResult.correct
@@ -402,54 +460,81 @@ export default function QuizPage() {
                     </div>
                     <div>
                       <p className="font-bold text-sm" style={{ color: lastResult.correct ? 'var(--correct)' : 'var(--incorrect)' }}>
-                        {lastResult.correct ? 'Correct!' : lastResult.answer ? 'Not quite' : 'Skipped'}
+                        {lastResult.correct ? '✓ Correct!' : lastResult.answer ? '✗ Not quite' : 'Skipped'}
                       </p>
-                      <p className="text-xs opacity-70" style={{ color: lastResult.correct ? 'var(--correct)' : 'var(--incorrect)' }}>
+                      <p className="text-xs opacity-80" style={{ color: lastResult.correct ? 'var(--correct)' : 'var(--incorrect)' }}>
                         {lastResult.correct ? lastResult.name : <>It was <strong>{lastResult.name}</strong></>}
                       </p>
                     </div>
                   </div>
                 </div>
               ) : (
+                /* Input card */
                 <div
-                  className="p-4 rounded-2xl shadow-elevated border"
-                  style={{ background: 'var(--surface)', borderColor: 'var(--border)', backdropFilter: 'blur(20px)' }}
+                  className="rounded-2xl overflow-hidden"
+                  style={{
+                    background: 'var(--surface)',
+                    border: '1.5px solid var(--border)',
+                    backdropFilter: 'blur(24px)',
+                    boxShadow: '0 12px 48px rgba(0,0,0,0.18)',
+                  }}
                 >
-                  <p className="text-[10px] font-bold uppercase tracking-[0.12em] mb-2.5" style={{ color: 'var(--text-muted)' }}>
-                    {activeItem.category} — {activeItem.hint || 'Name this place'}
-                  </p>
-                  <form onSubmit={handleSubmit} className="flex gap-2">
+                  {/* Hint bar */}
+                  <div
+                    className="px-4 py-2.5 flex items-center gap-2"
+                    style={{ background: 'var(--bg)', borderBottom: '1px solid var(--border)' }}
+                  >
+                    {(() => {
+                      const catConf = CATEGORIES.find(c => c.id === activeItem.category)
+                      const Icon = catConf?.icon || MapIcon
+                      return <Icon className="w-3.5 h-3.5 shrink-0" style={{ color: catConf?.color || 'var(--accent)' }} />
+                    })()}
+                    <span className="text-[11px] font-semibold uppercase tracking-wider" style={{ color: 'var(--text-muted)' }}>
+                      {activeItem.hint || `Name this ${activeItem.category}`}
+                    </span>
+                  </div>
+
+                  {/* Input */}
+                  <form onSubmit={handleSubmit} className="p-3 flex gap-2 items-center">
                     <input
                       ref={inputRef}
                       type="text"
                       value={inputValue}
                       onChange={e => setInputValue(e.target.value)}
-                      placeholder="Your answer..."
+                      placeholder="Type your answer…"
                       autoComplete="off"
-                      className="flex-1 h-10 px-3.5 rounded-xl text-sm transition-all outline-none"
+                      className="flex-1 h-11 px-4 rounded-xl text-sm outline-none transition-all"
                       style={{
                         fontFamily: 'var(--font-body)',
                         background: 'var(--bg)',
-                        border: '1px solid var(--border)',
+                        border: '1.5px solid var(--border)',
                         color: 'var(--text)',
                       }}
-                      onFocus={e => { e.target.style.borderColor = 'var(--accent)' }}
-                      onBlur={e => { e.target.style.borderColor = 'var(--border)' }}
+                      onFocus={e => { e.target.style.borderColor = 'var(--accent)'; e.target.style.boxShadow = '0 0 0 3px var(--accent-light)' }}
+                      onBlur={e => { e.target.style.borderColor = 'var(--border)'; e.target.style.boxShadow = 'none' }}
                     />
-                    <Button variant="primary" size="md" disabled={!inputValue.trim()}>
+                    <button
+                      type="submit"
+                      disabled={!inputValue.trim()}
+                      className="h-11 px-5 rounded-xl text-sm font-semibold text-white transition-all cursor-pointer disabled:opacity-40 disabled:cursor-not-allowed"
+                      style={{ background: 'var(--accent)', border: 'none', fontFamily: 'var(--font-body)' }}
+                    >
                       Go
-                    </Button>
+                    </button>
                   </form>
-                  <button
-                    type="button"
-                    onClick={handleSkip}
-                    className="mt-2.5 text-[11px] transition-colors cursor-pointer bg-transparent border-none p-0"
-                    style={{ fontFamily: 'var(--font-body)', color: 'var(--text-muted)' }}
-                    onMouseEnter={e => { e.target.style.color = 'var(--incorrect)' }}
-                    onMouseLeave={e => { e.target.style.color = 'var(--text-muted)' }}
-                  >
-                    Skip — I don't know
-                  </button>
+
+                  <div className="px-3 pb-3">
+                    <button
+                      type="button"
+                      onClick={handleSkip}
+                      className="text-[11px] transition-colors cursor-pointer"
+                      style={{ color: 'var(--text-muted)', background: 'none', border: 'none', padding: 0, fontFamily: 'var(--font-body)' }}
+                      onMouseEnter={e => { e.target.style.color = 'var(--incorrect)' }}
+                      onMouseLeave={e => { e.target.style.color = 'var(--text-muted)' }}
+                    >
+                      Skip — I don't know
+                    </button>
+                  </div>
                 </div>
               )}
             </motion.div>
@@ -457,70 +542,88 @@ export default function QuizPage() {
         </AnimatePresence>
       </motion.div>
 
-      {/* ── Completion ── */}
+      {/* ─── Completion screen ─── */}
       <AnimatePresence>
         {done && (
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 0, y: 24 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
             className="mt-10"
           >
-            <div className="text-center mb-8">
+            {/* Score */}
+            <div className="text-center mb-10">
               <motion.div
                 initial={{ scale: 0 }}
                 animate={{ scale: 1 }}
-                transition={{ type: 'spring', delay: 0.2 }}
-                className="inline-flex items-center justify-center w-20 h-20 rounded-full mb-4"
+                transition={{ type: 'spring', delay: 0.2, stiffness: 120 }}
+                className="inline-flex items-center justify-center w-24 h-24 rounded-full mb-5"
                 style={{ background: 'var(--accent-light)' }}
               >
                 {correct === total
-                  ? <Sparkles className="w-9 h-9" style={{ color: 'var(--accent)' }} />
-                  : <Trophy className="w-9 h-9" style={{ color: 'var(--accent)' }} />
+                  ? <Sparkles className="w-10 h-10" style={{ color: 'var(--accent)' }} />
+                  : <Trophy className="w-10 h-10" style={{ color: 'var(--accent)' }} />
                 }
               </motion.div>
-              <h2 className="text-4xl" style={{ fontFamily: 'var(--font-display)' }}>
-                {correct} <span style={{ color: 'var(--text-muted)' }}>/ {total}</span>
+              <h2
+                className="text-5xl mb-2"
+                style={{ fontFamily: 'var(--font-display)', color: 'var(--text)' }}
+              >
+                {correct}
+                <span className="text-3xl ml-2" style={{ color: 'var(--text-muted)' }}>/ {total}</span>
               </h2>
-              <p className="mt-2" style={{ color: 'var(--text-secondary)' }}>
-                {correct === total ? 'Perfect score! Geography genius!' :
-                 correct >= total * 0.8 ? 'Excellent work!' :
-                 correct >= total * 0.5 ? 'Good effort — keep at it!' :
-                 'Room for improvement — try again!'}
+              <p className="text-lg" style={{ color: 'var(--text-secondary)' }}>
+                {correct === total       ? '🎉 Perfect score! Geography genius!' :
+                 correct >= total * 0.8  ? '🌟 Excellent work!' :
+                 correct >= total * 0.5  ? '👍 Good effort — keep at it!' :
+                                           '📚 Room to improve — try again!'}
               </p>
             </div>
 
+            {/* Results grid */}
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2.5 mb-8 max-w-4xl mx-auto">
-              {visibleItems.map((item, i) => {
+              {visibleItems.map((item, idx) => {
                 const st = itemStates[item._uid]
                 return (
                   <motion.div
                     key={item._uid}
                     initial={{ opacity: 0, y: 4 }}
                     animate={{ opacity: 1, y: 0 }}
-                    transition={{ delay: i * 0.02 }}
-                    className="flex items-center gap-2.5 px-4 py-3 rounded-xl text-sm"
-                    style={{ background: st === 'correct' ? 'var(--correct-bg)' : 'var(--incorrect-bg)' }}
+                    transition={{ delay: idx * 0.02 }}
+                    className="flex items-center gap-3 px-4 py-3 rounded-xl"
+                    style={{
+                      background: st === 'correct' ? 'var(--correct-bg)' : 'var(--incorrect-bg)',
+                      border: `1px solid ${st === 'correct' ? 'var(--correct)' : 'var(--incorrect)'}22`,
+                    }}
                   >
                     {st === 'correct'
                       ? <CheckCircle className="w-4 h-4 shrink-0" style={{ color: 'var(--correct)' }} />
-                      : <XCircle className="w-4 h-4 shrink-0" style={{ color: 'var(--incorrect)' }} />
+                      : <XCircle    className="w-4 h-4 shrink-0" style={{ color: 'var(--incorrect)' }} />
                     }
-                    <span className="font-semibold truncate" style={{ color: st === 'correct' ? 'var(--correct)' : 'var(--incorrect)' }}>
+                    <span
+                      className="font-semibold text-sm truncate"
+                      style={{ color: st === 'correct' ? 'var(--correct)' : 'var(--incorrect)' }}
+                    >
                       {item.name}
                     </span>
-                    <span className="text-[10px] ml-auto capitalize shrink-0" style={{ color: 'var(--text-muted)' }}>{item.category}</span>
+                    <span
+                      className="text-[10px] ml-auto capitalize shrink-0"
+                      style={{ color: 'var(--text-muted)' }}
+                    >
+                      {item.category}
+                    </span>
                   </motion.div>
                 )
               })}
             </div>
 
-            <div className="flex gap-4 justify-center">
+            {/* Actions */}
+            <div className="flex gap-3 justify-center flex-wrap">
               <Button size="lg" onClick={handleReset}>
                 <RotateCcw className="w-4 h-4" /> Try Again
               </Button>
               <Button variant="primary" size="lg" onClick={() => navigate('/')}>
-                Pick Another
+                Choose Another
               </Button>
             </div>
           </motion.div>

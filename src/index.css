@@ -18,12 +18,12 @@
   --border: #DAE3ED;
   --accent: #4A8AB8;
   --accent-hover: #3A7AA8;
-  --accent-light: rgba(74, 138, 184, 0.08);
-  --shadow: rgba(74, 138, 184, 0.12);
+  --accent-light: rgba(74, 138, 184, 0.10);
+  --shadow: rgba(74, 138, 184, 0.14);
   --correct: #16A34A;
-  --correct-bg: rgba(22, 163, 74, 0.08);
+  --correct-bg: rgba(22, 163, 74, 0.09);
   --incorrect: #DC2626;
-  --incorrect-bg: rgba(220, 38, 38, 0.08);
+  --incorrect-bg: rgba(220, 38, 38, 0.09);
   --p1: #DBEEF5;
   --p2: #BFD4ED;
   --p3: #F7E5D0;
@@ -41,16 +41,16 @@
   --border: #DDD8F0;
   --accent: #7A6BE6;
   --accent-hover: #6A5BD6;
-  --accent-light: rgba(122, 107, 230, 0.08);
-  --shadow: rgba(122, 107, 230, 0.12);
+  --accent-light: rgba(122, 107, 230, 0.10);
+  --shadow: rgba(122, 107, 230, 0.14);
   --correct: #16A34A;
-  --correct-bg: rgba(22, 163, 74, 0.08);
+  --correct-bg: rgba(22, 163, 74, 0.09);
   --incorrect: #DC2626;
-  --incorrect-bg: rgba(220, 38, 38, 0.08);
+  --incorrect-bg: rgba(220, 38, 38, 0.09);
   --p1: #DBD5FB;
-  --p2: #A49AF7;
+  --p2: #C5BEFA;
   --p3: #B7B9FA;
-  --p4: #B3C8FB;
+  --p4: #C3D3FB;
   --map-bg: #D8D0F0;
 }
 
@@ -64,16 +64,16 @@
   --border: #F0D8E8;
   --accent: #C058A0;
   --accent-hover: #B04890;
-  --accent-light: rgba(192, 88, 160, 0.08);
-  --shadow: rgba(192, 88, 160, 0.12);
+  --accent-light: rgba(192, 88, 160, 0.10);
+  --shadow: rgba(192, 88, 160, 0.14);
   --correct: #16A34A;
-  --correct-bg: rgba(22, 163, 74, 0.08);
+  --correct-bg: rgba(22, 163, 74, 0.09);
   --incorrect: #DC2626;
-  --incorrect-bg: rgba(220, 38, 38, 0.08);
+  --incorrect-bg: rgba(220, 38, 38, 0.09);
   --p1: #F3B7E4;
-  --p2: #F09EE9;
+  --p2: #F0C8F0;
   --p3: #F4C3FB;
-  --p4: #E9A8F8;
+  --p4: #EAC0F8;
   --map-bg: #F0D8E8;
 }
 
@@ -87,16 +87,16 @@
   --border: #E0D5F0;
   --accent: #8A68D8;
   --accent-hover: #7A58C8;
-  --accent-light: rgba(138, 104, 216, 0.08);
-  --shadow: rgba(138, 104, 216, 0.12);
+  --accent-light: rgba(138, 104, 216, 0.10);
+  --shadow: rgba(138, 104, 216, 0.14);
   --correct: #16A34A;
-  --correct-bg: rgba(22, 163, 74, 0.08);
+  --correct-bg: rgba(22, 163, 74, 0.09);
   --incorrect: #DC2626;
-  --incorrect-bg: rgba(220, 38, 38, 0.08);
-  --p1: #AC8EF8;
-  --p2: #CFACF9;
+  --incorrect-bg: rgba(220, 38, 38, 0.09);
+  --p1: #CFACF9;
+  --p2: #BCACF8;
   --p3: #E7D4FA;
-  --p4: #F7E5FD;
+  --p4: #D8CAFA;
   --map-bg: #E0D0F0;
 }
 
@@ -110,16 +110,16 @@
   --border: #E2E8F0;
   --accent: #3B82F6;
   --accent-hover: #2563EB;
-  --accent-light: rgba(59, 130, 246, 0.08);
-  --shadow: rgba(59, 130, 246, 0.10);
+  --accent-light: rgba(59, 130, 246, 0.10);
+  --shadow: rgba(59, 130, 246, 0.12);
   --correct: #16A34A;
-  --correct-bg: rgba(22, 163, 74, 0.08);
+  --correct-bg: rgba(22, 163, 74, 0.09);
   --incorrect: #DC2626;
-  --incorrect-bg: rgba(220, 38, 38, 0.08);
+  --incorrect-bg: rgba(220, 38, 38, 0.09);
   --p1: #DBEAFE;
   --p2: #BFDBFE;
-  --p3: #93C5FD;
-  --p4: #60A5FA;
+  --p3: #C7D2FE;
+  --p4: #E0E7FF;
   --map-bg: #D0E0F0;
 }
 
@@ -133,28 +133,29 @@
   --border: #2A3040;
   --accent: #C8956C;
   --accent-hover: #D4A67D;
-  --accent-light: rgba(200, 149, 108, 0.10);
-  --shadow: rgba(0, 0, 0, 0.30);
+  --accent-light: rgba(200, 149, 108, 0.12);
+  --shadow: rgba(0, 0, 0, 0.35);
   --correct: #4ADE80;
   --correct-bg: rgba(74, 222, 128, 0.10);
   --incorrect: #F87171;
   --incorrect-bg: rgba(248, 113, 113, 0.10);
-  --p1: #C8956C;
-  --p2: #A08060;
-  --p3: #806850;
-  --p4: #605040;
+  --p1: #3A2A1E;
+  --p2: #2A1E18;
+  --p3: #261A14;
+  --p4: #1E1410;
   --map-bg: #141820;
 }
 
 /* ─── Base ─── */
 html { scroll-behavior: smooth; }
-* { margin: 0; padding: 0; box-sizing: border-box; }
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
 
 body {
   font-family: var(--font-body);
   background: var(--bg);
   color: var(--text);
   -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   min-height: 100vh;
   overflow-y: scroll;
   transition: background 0.3s ease, color 0.3s ease;
@@ -163,24 +164,36 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-display);
   font-weight: 700;
+  line-height: 1.2;
 }
 
 button, input, select, textarea {
   font-family: inherit;
 }
 
+a { text-decoration: none; }
+
 /* ─── Utility shadows ─── */
 .shadow-card {
-  box-shadow: 0 1px 2px rgba(0,0,0,0.03), 0 4px 16px -4px var(--shadow);
+  box-shadow:
+    0 1px 2px rgba(0,0,0,0.04),
+    0 4px 20px -4px var(--shadow);
 }
 .shadow-elevated {
-  box-shadow: 0 4px 24px -4px var(--shadow), 0 1px 3px rgba(0,0,0,0.04);
+  box-shadow:
+    0 4px 6px -1px rgba(0,0,0,0.06),
+    0 12px 40px -8px var(--shadow);
+}
+.shadow-hover {
+  box-shadow:
+    0 8px 16px -4px rgba(0,0,0,0.08),
+    0 24px 60px -12px var(--shadow);
 }
 
 /* ─── Scrollbar ─── */
-::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar { width: 5px; height: 5px; }
 ::-webkit-scrollbar-track { background: transparent; }
-::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
+::-webkit-scrollbar-thumb { background: var(--border); border-radius: 4px; }
 
 /* ─── Animations ─── */
 @keyframes pulse-dot {
@@ -188,45 +201,73 @@ button, input, select, textarea {
   50% { transform: scale(1.5); opacity: 0.5; }
 }
 
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-12px); }
+}
+
+@keyframes spin-slow {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
 /* ─── Leaflet overrides ─── */
 .leaflet-control-zoom {
   border: none !important;
-  border-radius: 12px !important;
+  border-radius: 14px !important;
   overflow: hidden;
-  box-shadow: 0 2px 8px var(--shadow) !important;
+  box-shadow: 0 2px 12px var(--shadow) !important;
+  margin: 12px !important;
 }
 .leaflet-control-zoom a {
   background: var(--surface) !important;
   color: var(--text) !important;
-  width: 36px !important;
-  height: 36px !important;
-  line-height: 36px !important;
-  font-size: 16px !important;
+  width: 38px !important;
+  height: 38px !important;
+  line-height: 38px !important;
+  font-size: 18px !important;
   border-bottom: 1px solid var(--border) !important;
   transition: background 0.15s !important;
+}
+.leaflet-control-zoom a:last-child {
+  border-bottom: none !important;
 }
 .leaflet-control-zoom a:hover {
   background: var(--surface-hover) !important;
 }
 .leaflet-control-attribution {
-  background: var(--surface) !important;
+  background: rgba(255,255,255,0.85) !important;
   color: var(--text-muted) !important;
   font-size: 9px !important;
-  border-radius: 4px 0 0 0 !important;
-  opacity: 0.7;
+  border-radius: 6px 0 0 0 !important;
+  opacity: 0.8;
+  backdrop-filter: blur(8px);
 }
 .leaflet-control-attribution a {
   color: var(--accent) !important;
 }
+
+/* Quiz tooltip */
 .quiz-tooltip {
   background: var(--surface) !important;
   border: 1px solid var(--border) !important;
   border-radius: 8px !important;
-  padding: 3px 8px !important;
-  box-shadow: 0 2px 8px var(--shadow) !important;
+  padding: 3px 10px !important;
+  box-shadow: 0 2px 12px var(--shadow) !important;
   font-family: var(--font-body) !important;
+  font-size: 11px !important;
+  font-weight: 600 !important;
   color: var(--text) !important;
+  white-space: nowrap !important;
 }
 .quiz-tooltip::before {
+  border-top-color: var(--border) !important;
+}
+.quiz-tooltip::after {
   border-top-color: var(--surface) !important;
+}
+
+/* Hide Leaflet default tooltip arrow for cleaner look */
+.leaflet-tooltip-top.quiz-tooltip::before {
+  border-top-color: var(--border) !important;
 }
