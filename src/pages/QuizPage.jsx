@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef, useCallback, useMemo } from 'react'
 import { useParams, useNavigate } from 'react-router-dom'
 import { motion, AnimatePresence } from 'framer-motion'
-import { MapContainer, TileLayer, CircleMarker, Tooltip, useMap } from 'react-leaflet'
+import { MapContainer, TileLayer, GeoJSON, CircleMarker, Tooltip, useMap } from 'react-leaflet'
 import {
   Building2, Mountain, Waves, Droplets, Landmark, SunMedium, Palmtree,
   Map as MapIcon, Satellite, TreePine, Tag, Tags,
@@ -12,7 +12,27 @@ import { checkAnswer } from '../utils/scoring'
 import { useQuizContext } from '../context/QuizContext'
 import { useTheme } from '../context/ThemeContext'
 import Button from '../components/Button'
+import COUNTRY_COLORS from '../data/countryColors'
 import 'leaflet/dist/leaflet.css'
+
+/* ── Soft pastel palette (6 colors for graph coloring) ── */
+const PASTEL_PALETTE = [
+  { fill: '#FFB3BA', border: '#FF8A95' },   // soft pink
+  { fill: '#BAFFC9', border: '#7FE89B' },   // soft mint
+  { fill: '#BAE1FF', border: '#7FC4F5' },   // soft sky
+  { fill: '#FFFFBA', border: '#E8E07F' },   // soft lemon
+  { fill: '#E8BAFF', border: '#D17FFF' },   // soft lavender
+  { fill: '#FFD9BA', border: '#FFB87F' },   // soft peach
+]
+
+const PASTEL_PALETTE_DARK = [
+  { fill: '#5C2A30', border: '#7A3A42' },   // muted rose
+  { fill: '#2A5C38', border: '#3A7A4E' },   // muted emerald
+  { fill: '#2A3E5C', border: '#3A5478' },   // muted navy
+  { fill: '#5C5A2A', border: '#7A773A' },   // muted olive
+  { fill: '#4A2A5C', border: '#633A7A' },   // muted purple
+  { fill: '#5C3E2A', border: '#7A543A' },   // muted amber
+]
 
 /* ── Categories ── */
 const CATEGORIES = [
@@ -71,8 +91,14 @@ export default function QuizPage() {
   const [activeId, setActiveId]         = useState(null)
   const [inputValue, setInputValue]     = useState('')
   const [lastResult, setLastResult]     = useState(null)
+  const [countriesGeo, setCountriesGeo] = useState(null)
   const inputRef  = useRef(null)
   const timeoutRef = useRef(null)
+
+  /* Lazy-load country boundaries GeoJSON */
+  useEffect(() => {
+    import('../data/countries.geo.json').then(mod => setCountriesGeo(mod.default || mod))
+  }, [])
 
   /* Tile URLs */
   const tiles = useMemo(() => ({
@@ -174,6 +200,21 @@ export default function QuizPage() {
   const tile         = tiles[tileKey] || tiles.clean
   const showOverlay  = showLabels && mapStyle === 'satellite'
   const labelsBuiltIn = mapStyle === 'terrain'
+  const showCountryFill = mapStyle === 'clean'
+
+  const countryStyle = useCallback((feature) => {
+    const name = feature.properties.name
+    const palette = isDark ? PASTEL_PALETTE_DARK : PASTEL_PALETTE
+    const idx = COUNTRY_COLORS[name] ?? 0
+    const c = palette[idx % palette.length]
+    return {
+      fillColor: c.fill,
+      fillOpacity: isDark ? 0.45 : 0.35,
+      color: c.border,
+      weight: 0.8,
+      opacity: 0.5,
+    }
+  }, [isDark])
 
   useEffect(() => {
     if (done) dispatch({ type: 'RECORD_SCORE', payload: { continentId, category: selectedCats.join('+'), correct, total } })
@@ -359,6 +400,14 @@ export default function QuizPage() {
         >
           <MapReady />
           <TileLayer key={tileKey} url={tile.url} attribution={tile.attr} />
+          {showCountryFill && countriesGeo && (
+            <GeoJSON
+              key={`countries-${isDark}`}
+              data={countriesGeo}
+              style={countryStyle}
+              interactive={false}
+            />
+          )}
           {showOverlay && <TileLayer url={labelOverlayUrl} attribution="" pane="overlayPane" />}
 
           {visibleItems.map(item => {
