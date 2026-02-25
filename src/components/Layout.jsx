@@ -49,14 +49,14 @@ export default function Layout({ children }) {
           >
             <img
               src="/logo.webp"
-              alt="GeoMansi"
+              alt="Bhugol"
               className="w-8 h-8 rounded-lg object-cover"
             />
             <span
               className="text-xl"
               style={{ fontFamily: 'var(--font-display)', color: 'var(--text)' }}
             >
-              GeoMansi
+              Bhugol
             </span>
           </Link>
 

@@ -13,13 +13,13 @@ const ThemeContext = createContext()
 
 export function ThemeProvider({ children }) {
   const [theme, setTheme] = useState(() => {
-    try { return localStorage.getItem('geoquiz-theme') || 'grape' }
+    try { return localStorage.getItem('bhugol-theme') || 'grape' }
     catch { return 'grape' }
   })
 
   useEffect(() => {
     document.documentElement.setAttribute('data-theme', theme)
-    try { localStorage.setItem('geoquiz-theme', theme) } catch {}
+    try { localStorage.setItem('bhugol-theme', theme) } catch {}
   }, [theme])
 
   const isDark = theme === 'dark'
